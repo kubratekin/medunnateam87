@@ -28,4 +28,4 @@ Feature:US08_Password_Edition
 
 
 
-
+   Scenario: test negative password scenario
