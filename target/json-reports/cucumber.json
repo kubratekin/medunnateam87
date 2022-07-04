@@ -1,1 +1,942 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.538Z",
+        "line": 18,
+        "name": "TC01_Test_Valid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc01-test-valid-snn;valid-snn;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User enters \"123-12-1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-12-1234\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User shouldn\u0027t see Your SSN is invalid error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User shouldn\u0027t see Your SSN is required error message",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.727Z",
+        "line": 28,
+        "name": "TC02_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc02-test-invalid-snn;valid-snn;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User enters an \"12-312-1234\" with \"-\" sign after 3rd and 5th digits",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.756Z",
+        "line": 29,
+        "name": "TC02_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc02-test-invalid-snn;valid-snn;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User enters an \"123-121-234\" with \"-\" sign after 3rd and 5th digits",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.802Z",
+        "line": 30,
+        "name": "TC02_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc02-test-invalid-snn;valid-snn;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User enters an \"123121234\" with \"-\" sign after 3rd and 5th digits",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.831Z",
+        "line": 40,
+        "name": "TC03_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc03-test-invalid-snn;valid-snn;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User enters \"123-12-123\" not 9 digits long",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.862Z",
+        "line": 41,
+        "name": "TC03_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc03-test-invalid-snn;valid-snn;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "User enters \"123-12-12345\" not 9 digits long",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.882Z",
+        "line": 51,
+        "name": "TC04_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User enters \"123-12-123@\" containing characters or letters",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.902Z",
+        "line": 52,
+        "name": "TC04_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User enters \"a23-12-1234\" containing characters or letters",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.927Z",
+        "line": 53,
+        "name": "TC04_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User enters \"123-a2-1234\" containing characters or letters",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigate to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user Verify that Registration page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T20:37:45.942Z",
+        "line": 54,
+        "name": "TC04_Test_inValid_SNN",
+        "description": "",
+        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "User enters \"123-ab-123*\" containing characters or letters",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User should see Your SSN is invalid, error message",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@US01_TC04"
+          }
+        ]
+      }
+    ],
+    "name": "Test Registrant data",
+    "description": "",
+    "id": "test-registrant-data",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US01_Registration.feature",
+    "tags": [
+      {
+        "name": "@US_01",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

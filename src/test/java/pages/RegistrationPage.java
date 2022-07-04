@@ -37,4 +37,21 @@ public class RegistrationPage {
 
     @FindBy(xpath = "//*[text()='Registration saved!']")
     public WebElement successMessageToastContainer;
+
+    @FindBy (xpath ="//h1[@id='register-title']" )
+    public WebElement registrationTitle ;
+
+    @FindBy (className = "//*[text()='Your SSN is invalid']")
+    public WebElement ssnInvalidErrorMessage;
+
+    @FindBy (xpath = "//*[text()='Your SSN is required.']")
+    public WebElement ssnRequiredErrorMessage;
+
+    @FindBy (xpath = "//*[text()='Your FirstName is required.']")
+    public WebElement firstnameRequiredErrorMessage;
+
+    @FindBy (xpath = "//*[text()='Your LastName is required.']")
+    public WebElement lastnameRequiredErrorMessage;
+
+
 }
