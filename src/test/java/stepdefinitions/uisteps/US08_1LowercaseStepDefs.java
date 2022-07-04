@@ -1,6 +1,7 @@
 package stepdefinitions.uisteps;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.US08PasswordEditPage;
@@ -14,16 +15,7 @@ public class US08_1LowercaseStepDefs {
         Driver.getDriver().get(ConfigReader.getProperty("app_url"));
 
     }
-    @Given("User navigates to Sign in page and verifies sign in  page is displayed")
-    public void user_navigates_to_sign_in_page_and_verifies_sign_in_page_is_displayed() {
-        Driver.waitAndClick(us08PasswordEditPage.signIn);
-        Driver.sleep(1000);
-        Driver.waitAndClick(us08PasswordEditPage.signInButton);
-        Driver.sleep(1000);
 
-        Assert.assertTrue(us08PasswordEditPage.signInPage.isDisplayed());
-
-    }
     @When("User enters {string} and {string} with credentials and clicks Sign in button")
     public void user_enters_and_with_credentials_and_clicks_sign_in_button(String username, String password) {
         us08PasswordEditPage.userNameTextBox.sendKeys(username);
@@ -51,5 +43,7 @@ public class US08_1LowercaseStepDefs {
         Driver.waitAndSendText(us08PasswordEditPage.newPassword,newpassword,5);
 
     }
+
+
 
 }
