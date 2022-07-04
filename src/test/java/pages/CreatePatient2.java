@@ -1,2 +1,4 @@
-package pages;public class CreatePatient2 {
+package pages;
+
+public class CreatePatient2 {
 }
