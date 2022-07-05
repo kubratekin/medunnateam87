@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.618">
-    <testcase classname="US_09" name="TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated" time="19.238">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.534">
+    <testcase classname="US_09" name="TC_09 Admin can delete any patient info" time="27.155">
         <system-out>
             <![CDATA[Given user goes to URL......................................................passed
 And User navigates to Sign in page..........................................passed
-And User enters username "Jdoe" and password "12J34d!" with Staff credentials and clicks Sign in button.passed
-Then User verifies that landed at Staff page................................passed
-When User navigate to Patients information page from Staff page.............passed
-Then User verifies that landed at Patients information page.................passed
-When User enters patient SSN "123-10-8787" into search box..................passed
-Then User verifies that can see patient registration information populated..passed
-And User closes the browser.................................................passed
+And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
+Then User verifies that landed at Admin page................................passed
+When User navigate to Patients information page.............................passed
+And User finds patient and clicks Delete button.............................passed
+Then User verifies all informations are deleted.............................passed
 ]]>
         </system-out>
     </testcase>
