@@ -1,1 +1,174 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12228628000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 211151000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-05T12:11:22.957Z",
+        "line": 94,
+        "name": "TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated",
+        "description": "",
+        "id": "us-09;tc-08-staff-can-search-for-a-new-applicant-by-their-ssn-and-see-all-their-registration-info-populated",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 404213000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "User enters username \"Jdoe\" and password \"12J34d!\" with Staff credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jdoe\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"12J34d!\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 789597000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "User verifies that landed at Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139086000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "User navigate to Patients information page from Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33384000,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2237965000,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "User enters patient SSN \"123-10-8787\" into search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-10-8787\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersPatientSSNIntoSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2794507000,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "User verifies that can see patient registration information populated",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatCanSeePatientRegistrationInformationPopulated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 223329000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC08"
+          }
+        ]
+      }
+    ],
+    "name": "US_09",
+    "description": "",
+    "id": "us-09",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US09.feature",
+    "tags": [
+      {
+        "name": "@US09",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
