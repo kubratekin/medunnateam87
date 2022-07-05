@@ -12,8 +12,8 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 public class US09StepDefs {
     HomePageMedunna homePage = new HomePageMedunna();
     SignInPageMedunna signInPage = new SignInPageMedunna();
@@ -159,24 +159,23 @@ public class US09StepDefs {
     @Then("User verifies that can see patient registration information populated")
     public void userVerifiesThatCanSeePatientRegistrationInformationPopulated() {
         String xpath = "(//table/tbody/tr/td)[";
-        List<String> list = new ArrayList<>();
+        List<String> patientList = new ArrayList<>();
         for (int i = 1; i<16;i++){
-            list.add(Driver.getDriver().findElement(By.xpath(xpath+i+"]")).getText());
+            patientList.add(Driver.getDriver().findElement(By.xpath(xpath+i+"]")).getText());
         }
-
-
-        System.out.println(list);
         List<String> headerList = ReusableMethods.getElementsText(By.xpath("//table/thead/tr/th"));
-        System.out.println(headerList);
-        List<String> infoList = ReusableMethods.getElementsText(By.xpath("//table/tbody/tr/td"));
-        System.out.println(infoList);
-        List<String> checklist = new ArrayList<>();
-        for (int i=0;i< infoList.size();i++){
-            if (i==1||i==2||i==3||i==5||i==7){
-                checklist.add(infoList.get(i));
+        Map<String,String > patientMap = new LinkedHashMap<>();
+        for (int i=0;i<patientList.size();i++){
+            if (patientList.get(i).equals("")){
+                patientMap.put(headerList.get(i), null);
+            }else {
+                patientMap.put(headerList.get(i), patientList.get(i));
             }
         }
-        System.out.println(checklist);
-        Assert.assertEquals(5, checklist.size());
+            Assert.assertFalse(patientMap.get("SSN").isEmpty());
+            Assert.assertFalse(patientMap.get("First Name").isEmpty());
+            Assert.assertFalse(patientMap.get("Last Name").isEmpty());
+            Assert.assertFalse(patientMap.get("Email").isEmpty());
+            Assert.assertFalse(patientMap.get("User").isEmpty());
     }
 }

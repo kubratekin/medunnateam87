@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9124837000,
+              "duration": 12228628000,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 194119000,
+              "duration": 211151000,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-04T16:00:55.941Z",
+        "start_timestamp": "2022-07-05T12:11:22.957Z",
         "line": 94,
         "name": "TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated",
         "description": "",
@@ -46,7 +46,7 @@
         "steps": [
           {
             "result": {
-              "duration": 344860000,
+              "duration": 404213000,
               "status": "passed"
             },
             "line": 95,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 759270000,
+              "duration": 789597000,
               "status": "passed"
             },
             "line": 96,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 139733000,
+              "duration": 139086000,
               "status": "passed"
             },
             "line": 97,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 33721000,
+              "duration": 33384000,
               "status": "passed"
             },
             "line": 98,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 2237424000,
+              "duration": 2237965000,
               "status": "passed"
             },
             "line": 99,
@@ -122,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 3054587000,
+              "duration": 2794507000,
               "status": "passed"
             },
             "line": 100,
@@ -134,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 168883000,
+              "duration": 223329000,
               "status": "passed"
             },
             "line": 101,
