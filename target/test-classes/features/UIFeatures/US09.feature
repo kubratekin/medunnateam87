@@ -100,6 +100,24 @@ Feature: US_09
     Then User verifies that can see patient registration information populated
     And User closes the browser
 
+  @US09_TC09
+  Scenario: TC_09 Admin can delete any patient info
+    And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button
+    Then User verifies that landed at Admin page
+    When User navigate to Patients information page
+    #When User navigate to User Management page
+    And User finds patient and clicks Delete button
+    Then User verifies all informations are deleted
+    #And User closes the browser
+
+
+
+
+
+
+
+
+
 
 
 

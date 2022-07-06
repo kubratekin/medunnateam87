@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12228628000,
+              "duration": 10512972000,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 211151000,
+              "duration": 197136000,
               "status": "passed"
             },
             "line": 5,
@@ -36,113 +36,83 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-05T12:11:22.957Z",
-        "line": 94,
-        "name": "TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated",
+        "start_timestamp": "2022-07-05T22:49:46.796Z",
+        "line": 104,
+        "name": "TC_09 Admin can delete any patient info",
         "description": "",
-        "id": "us-09;tc-08-staff-can-search-for-a-new-applicant-by-their-ssn-and-see-all-their-registration-info-populated",
+        "id": "us-09;tc-09-admin-can-delete-any-patient-info",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 404213000,
+              "duration": 431517000,
               "status": "passed"
             },
-            "line": 95,
-            "name": "User enters username \"Jdoe\" and password \"12J34d!\" with Staff credentials and clicks Sign in button",
+            "line": 105,
+            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Jdoe\"",
+                  "val": "\"team87_admin\"",
                   "offset": 21
                 },
                 {
-                  "val": "\"12J34d!\"",
-                  "offset": 41
+                  "val": "\"1234567\"",
+                  "offset": 49
                 }
               ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 789597000,
+              "duration": 522108000,
               "status": "passed"
             },
-            "line": 96,
-            "name": "User verifies that landed at Staff page",
+            "line": 106,
+            "name": "User verifies that landed at Admin page",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 139086000,
+              "duration": 208157000,
               "status": "passed"
             },
-            "line": 97,
-            "name": "User navigate to Patients information page from Staff page",
+            "line": 107,
+            "name": "User navigate to Patients information page",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 33384000,
+              "duration": 10065362000,
               "status": "passed"
             },
-            "line": 98,
-            "name": "User verifies that landed at Patients information page",
+            "line": 109,
+            "name": "User finds patient and clicks Delete button",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2237965000,
-              "status": "passed"
-            },
-            "line": 99,
-            "name": "User enters patient SSN \"123-10-8787\" into search box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"123-10-8787\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersPatientSSNIntoSearchBox(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2794507000,
-              "status": "passed"
-            },
-            "line": 100,
-            "name": "User verifies that can see patient registration information populated",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatCanSeePatientRegistrationInformationPopulated()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 223329000,
-              "status": "passed"
-            },
-            "line": 101,
-            "name": "User closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+              "location": "stepdefinitions.uisteps.US09StepDefs.userFindsPatientAndClicksDeleteButton()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5043989000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "User verifies all informations are deleted",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesAllInformationsAreDeleted()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -150,7 +120,7 @@
             "name": "@US09"
           },
           {
-            "name": "@US09_TC08"
+            "name": "@US09_TC09"
           }
         ]
       }
