@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.534">
-    <testcase classname="US_09" name="TC_09 Admin can delete any patient info" time="27.155">
-        <system-out>
-            <![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
-Then User verifies that landed at Admin page................................passed
-When User navigate to Patients information page.............................passed
-And User finds patient and clicks Delete button.............................passed
-Then User verifies all informations are deleted.............................passed
-]]>
-        </system-out>
-    </testcase>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="39.195">
+<testcase classname="doctor_can_see_test-result" name="TC01" time="22.155">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User clicks on account menu............................................passed
+Then User clicks on signin..................................................passed
+And User enters username....................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+And Doctor verifies that his page is displayed..............................passed
+And Doctor clicks on mypage.................................................passed
+And Doctor clicks on myaccountement.........................................passed
+And Doctor verifies Appointement page is displayed..........................passed
+And Doctor clicks on Edit button............................................passed
+Then Doctor clicks on one of the Show Test Result button....................passed
+Then Doctor clicks on one of the View Results button........................passed
+And Doctor verifies that the Test Results page is displayed.................passed
+And Doctor verifies that  testListHeader is displayed.......................passed
+And Doctor closes the browser...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="doctor_can_see_test-result" name="TC02" time="16.434">
+<system-out><![CDATA[Given User is on the login page.............................................passed
+When User clicks on account menu............................................passed
+Then User clicks on signin..................................................passed
+And User enters username....................................................passed
+And User enters password....................................................passed
+And User clicks on signin button............................................passed
+And Doctor verifies that his page is displayed..............................passed
+And Doctor clicks on mypage.................................................passed
+And Doctor clicks on myaccountement.........................................passed
+And Doctor verifies Appointement page is displayed..........................passed
+And Doctor clicks on Edit button............................................passed
+Then Doctor clicks on the Request Inpatient Result button...................passed
+And Doctor get error message or success message.............................passed
+And Doctor closes the browser...............................................passed
+]]></system-out>
+</testcase>
 </testsuite>

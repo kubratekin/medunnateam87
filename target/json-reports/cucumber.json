@@ -4,135 +4,429 @@
     "elements": [
       {
         "line": 3,
-        "name": "US_09",
+        "name": "TC01_02_before",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 10512972000,
+              "duration": 8741000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user goes to URL",
+            "name": "User is on the login page",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_is_on_the_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 197136000,
+              "duration": 96000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "User navigates to Sign in page",
+            "name": "User clicks on account menu",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_account_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on signin",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters password",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Doctor verifies that his page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_his_page_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Doctor clicks on mypage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_mypage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Doctor clicks on myaccountement",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_myaccountement()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Doctor verifies Appointement page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_appointement_page_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2103000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_edit_button()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-05T22:49:46.796Z",
-        "line": 104,
-        "name": "TC_09 Admin can delete any patient info",
+        "start_timestamp": "2022-07-06T07:08:53.765Z",
+        "line": 17,
+        "name": "TC01",
         "description": "",
-        "id": "us-09;tc-09-admin-can-delete-any-patient-info",
+        "id": "doctor-can-see-test-result;tc01",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 431517000,
+              "duration": 5323000000,
               "status": "passed"
             },
-            "line": 105,
-            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
+            "line": 18,
+            "name": "Doctor clicks on one of the Show Test Result button.",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"team87_admin\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"1234567\"",
-                  "offset": 49
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 522108000,
-              "status": "passed"
-            },
-            "line": 106,
-            "name": "User verifies that landed at Admin page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_one_of_the_show_test_result_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 208157000,
+              "duration": 1088000000,
               "status": "passed"
             },
-            "line": 107,
-            "name": "User navigate to Patients information page",
+            "line": 19,
+            "name": "Doctor clicks on one of the View Results button.",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_one_of_the_view_results_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 224000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Doctor verifies that the Test Results page is displayed.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_the_test_results_page_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2192000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Doctor verifies that  testListHeader is displayed.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_testListHeader_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Doctor closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US13"
+          },
+          {
+            "name": "@US13_TC01"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "TC01_02_before",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6781000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on account menu",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_account_menu()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 10065362000,
+              "duration": 131000000,
               "status": "passed"
             },
-            "line": 109,
-            "name": "User finds patient and clicks Delete button",
+            "line": 6,
+            "name": "User clicks on signin",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userFindsPatientAndClicksDeleteButton()"
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_username()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5043989000,
+              "duration": 136000000,
               "status": "passed"
             },
-            "line": 110,
-            "name": "User verifies all informations are deleted",
+            "line": 8,
+            "name": "User enters password",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesAllInformationsAreDeleted()"
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1045000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Doctor verifies that his page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_his_page_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Doctor clicks on mypage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_mypage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Doctor clicks on myaccountement",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_myaccountement()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Doctor verifies Appointement page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_appointement_page_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2116000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_edit_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-06T07:09:15.958Z",
+        "line": 26,
+        "name": "TC02",
+        "description": "",
+        "id": "doctor-can-see-test-result;tc02",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 330000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Doctor clicks on the Request Inpatient Result button.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_the_request_inpatient_result_button()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5141000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Doctor get error message or success message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_get_error_message_or_success_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Doctor closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_closes_the_browser()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US09"
+            "name": "@US13"
           },
           {
-            "name": "@US09_TC09"
+            "name": "@US13_TC02"
           }
         ]
       }
     ],
-    "name": "US_09",
+    "name": "doctor_can_see_test-result",
     "description": "",
-    "id": "us-09",
+    "id": "doctor-can-see-test-result",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US09.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US13_sevim.feature",
     "tags": [
       {
-        "name": "@US09",
+        "name": "@US13",
         "type": "Tag",
         "location": {
           "line": 1,
