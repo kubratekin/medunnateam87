@@ -1,80 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="35.239">
-    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant" time="6.741">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides ssn id as "888-33-4535"...................................passed
-And user provides firstname as "Ali"........................................passed
-And user provides lastname as "Can".........................................passed
-And user provides username as "user19051"...................................passed
-And user provides email as "alican12905@gmail.com"..........................passed
-When user types password as "1234"..........................................passed
-And user types password confirmation as "1234"..............................passed
-And user clicks on Register button..........................................passed
-Then user should see Registration saved message.............................passed
-And user closes the browser.................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.879">
+<testcase classname="Update an appointment by doctor" name="Update My Appointments by doctor" time="39.372">
+<system-out><![CDATA[Given user is on the login page.............................................passed
+When user clicks on login dropdown icon.....................................passed
+And user clicks on sign in dropdown.........................................passed
+And user sends username "<username>"........................................passed
+And user sends password "<password>"........................................passed
+Then user clicks on the sign in dropdown....................................passed
+Then user verifies the login is successful..................................passed
+And user clicks on login dropdown icon......................................passed
+And Doctor navigates to My Pages Dropdown...................................passed
+And Doctor clicks on My Appointments Button.................................passed
+And Doctor selects Appointment date from and to boxes.......................passed
+And Doctor clicks on Edit Button............................................passed
+Given Doctor verifies patient's info id, start and end date, status, physician are visible.passed
+And Doctor should fills in required fields, anemnesis, treatment, diagnosis which as required fields.passed
+And Doctor should fills in optional fields precription and description Which as optional fields.passed
+And Doctor can be select as PENDING, COMPLETED or CANCELLED at Status Dropdown.passed
+And Doctor ckicks on Save Button............................................passed
+And Doctor verifies Appointment is updated succesfully......................passed
+Then Doctor clicks Sign Out Button..........................................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant" time="4.453">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides username as ""............................................passed
-Then user should see "Your username is required." message...................passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="5.626">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides ssn id as "358-33-4525"...................................passed
-And user provides firstname as "Stefan".....................................passed
-And user provides lastname as "Soluchkov"...................................passed
-And user provides username as "kurrupt818"..................................passed
-And user provides email as "soluchkow1221@gmail.com"........................passed
-When user types password as "369369"........................................passed
-And user types password confirmation as "369369"............................passed
-And user clicks on Register button..........................................passed
-Then user should see Registration saved message.............................passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="4.656">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides the invalid email as ""...................................passed
-Then user should see "Your email is required." message......................passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="4.424">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides the invalid email as "user"...............................passed
-Then user should see "Your email is required to be at least 5 characters." message.passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant2" time="4.688">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides the invalid email as "user1905@gmailcom"..................passed
-Then user should see "This field is invalid" message........................passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="email cannot be left blank" name="test email for new applicant3" time="4.329">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides email as "@gmail.com".....................................passed
-Then user should see "This field is invalid" message........................passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
+</testcase>
 </testsuite>
