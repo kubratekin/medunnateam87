@@ -22,11 +22,12 @@ public class US09StepDefs {
     StaffPageMedunna staffPage = new StaffPageMedunna();
     PatientDetailPage detailPage = new PatientDetailPage();
     CreateOrEditPatientPage createOrEdit = new CreateOrEditPatientPage();
+    UserManagementPage userManagement = new UserManagementPage();
 
 
     @Given("user goes to URL")
     public void user_goes_to_url() {
-        Driver.getDriver().get(ConfigReader.getProperty("medunna_home_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("medunnaUrl"));
     }
 
     @Given("User navigates to Sign in page")
@@ -178,4 +179,44 @@ public class US09StepDefs {
             Assert.assertFalse(patientMap.get("Email").isEmpty());
             Assert.assertFalse(patientMap.get("User").isEmpty());
     }
+
+    //TC09
+    @When("User navigate to User Management page")
+    public void userNavigateToUserManagementPage() {
+        Driver.waitAndClick(adminPage.administrationDropdown,1);
+        Driver.waitAndClick(adminPage.userManagementButton,2);
+    }
+
+    @When("User finds patient and clicks Delete button")
+    public void userFindsPatientAndClicksDeleteButton() {
+        Driver.waitAndClick(viewByAdminAndStaffPage.createNewPatientButton,1);
+        CreateOrEditPatientPage createPatient = new CreateOrEditPatientPage();
+        Driver.waitAndSendText(createPatient.firstNameTextBox, "team87del4");
+        Driver.waitAndSendText(createPatient.lastNameTextBox, "team87");
+        Driver.waitAndSendText(createPatient.emailTextBox, "aaaa@b.com");
+        Driver.waitAndSendText(createPatient.phoneTextBox, "874-444-4444");
+        Driver.waitAndClick(createOrEdit.saveButton,2);
+        Driver.wait(6);
+        List<WebElement> nameList = Driver.getDriver().findElements(By.xpath("//tbody/tr/td[3]"));
+        int row = 1;
+        for (int i = 0; i < 20; i++) {
+            if (nameList.get(i).getText().contains("team87del4")) {
+                row = i + 1;
+                break;
+            }
+        }
+        String xpath = "//tbody/tr["+row+"]/td[last()]//a[3]";
+        System.out.println(xpath);
+        WebElement deleteButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.clickWithJS(deleteButton);
+        Driver.waitAndClick(userManagement.confirmDeleteButton,3);
+
+    }
+
+    @Then("User verifies all informations are deleted")
+    public void userVerifiesAllInformationsAreDeleted() {
+        Driver.wait(5);
+        Assert.assertTrue(userManagement.deleteSuccessMessage.getText().contains("A Patient is deleted with identifier"));
+    }
+
 }
