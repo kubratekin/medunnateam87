@@ -1,25 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.879">
-<testcase classname="Update an appointment by doctor" name="Update My Appointments by doctor" time="39.372">
-<system-out><![CDATA[Given user is on the login page.............................................passed
-When user clicks on login dropdown icon.....................................passed
-And user clicks on sign in dropdown.........................................passed
-And user sends username "<username>"........................................passed
-And user sends password "<password>"........................................passed
-Then user clicks on the sign in dropdown....................................passed
-Then user verifies the login is successful..................................passed
-And user clicks on login dropdown icon......................................passed
-And Doctor navigates to My Pages Dropdown...................................passed
-And Doctor clicks on My Appointments Button.................................passed
-And Doctor selects Appointment date from and to boxes.......................passed
-And Doctor clicks on Edit Button............................................passed
-Given Doctor verifies patient's info id, start and end date, status, physician are visible.passed
-And Doctor should fills in required fields, anemnesis, treatment, diagnosis which as required fields.passed
-And Doctor should fills in optional fields precription and description Which as optional fields.passed
-And Doctor can be select as PENDING, COMPLETED or CANCELLED at Status Dropdown.passed
-And Doctor ckicks on Save Button............................................passed
-And Doctor verifies Appointment is updated succesfully......................passed
-Then Doctor clicks Sign Out Button..........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="11.734">
+<testcase classname="US_03 Registiration Password" name="TC_01 AtLeastFourChar" time="8.404">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types one char and sees the length is not enough..................passed
+And user types two char and sees the length is not enough...................passed
+And user types three char sees the length is not enough.....................passed
+Then user types 4 char and sees the length is enough........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_03 Registiration Password" name="TC_02 AtLeastSevenChars" time="0.632">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars.................................................passed
+And user sees strength level is changed to stronger.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_03 Registiration Password" name="TC_04 AtLeastSevenCharsWithOneLowerCaseOneUpperCase" time="0.603">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase and one uppercase........passed
+And user sees strength level is changed to stronger.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_03 Registiration Password" name="TC_03 AtLeastSevenCharsWithOneLowerCase" time="0.569">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase char.....................passed
+And user sees strength level is changed to stronger.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_03 Registiration Password" name="TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber" time="0.6">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase and one uppercase and number.passed
+And user sees strength level is changed to stronger.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_03 Registiration Password" name="TC_06 AtleastSevenCharsWithOneLowerCaseUpperCaseNumberSpecialChar" time="0.62">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then : user types seven chars included one lowercase and one uppercase and number and special char.passed
+And user sees strength level is changed to stronger.........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
