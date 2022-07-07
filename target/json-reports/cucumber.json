@@ -3,136 +3,69 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "US_09",
+        "start_timestamp": "2022-07-07T08:32:41.395Z",
+        "line": 4,
+        "name": "TC10_User should validate all patient info using API",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 10512972000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user goes to URL",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 197136000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User navigates to Sign in page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-05T22:49:46.796Z",
-        "line": 104,
-        "name": "TC_09 Admin can delete any patient info",
-        "description": "",
-        "id": "us-09;tc-09-admin-can-delete-any-patient-info",
+        "id": "us09-validating-info-using-api;tc10-user-should-validate-all-patient-info-using-api",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 431517000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 105,
-            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"team87_admin\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"1234567\"",
-                  "offset": 49
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            "line": 5,
+            "name": "User sets the path params to read patient info",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1158000,
+              "status": "skipped"
             },
+            "line": 6,
+            "name": "User sets expected data",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 522108000,
-              "status": "passed"
+              "duration": 1119000,
+              "status": "skipped"
             },
-            "line": 106,
-            "name": "User verifies that landed at Admin page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 208157000,
-              "status": "passed"
-            },
-            "line": 107,
-            "name": "User navigate to Patients information page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
-            },
+            "line": 7,
+            "name": "User send get request for patient info and get response",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 10065362000,
-              "status": "passed"
+              "duration": 1032000,
+              "status": "skipped"
             },
-            "line": 109,
-            "name": "User finds patient and clicks Delete button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userFindsPatientAndClicksDeleteButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5043989000,
-              "status": "passed"
-            },
-            "line": 110,
-            "name": "User verifies all informations are deleted",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesAllInformationsAreDeleted()"
-            },
+            "line": 8,
+            "name": "User validates patient info.",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US09"
-          },
-          {
-            "name": "@US09_TC09"
+            "name": "@US09_API"
           }
         ]
       }
     ],
-    "name": "US_09",
+    "name": "US09 Validating Info USing API",
     "description": "",
-    "id": "us-09",
+    "id": "us09-validating-info-using-api",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US09.feature",
+    "uri": "file:src/test/resources/features/APIFeatures/US09_GetPatientInfo.feature",
     "tags": [
       {
-        "name": "@US09",
+        "name": "@US09_API",
         "type": "Tag",
         "location": {
           "line": 1,

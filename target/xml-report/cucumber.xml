@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.534">
-    <testcase classname="US_09" name="TC_09 Admin can delete any patient info" time="27.155">
-        <system-out>
-            <![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
-Then User verifies that landed at Admin page................................passed
-When User navigate to Patients information page.............................passed
-And User finds patient and clicks Delete button.............................passed
-Then User verifies all informations are deleted.............................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.642">
+    <testcase classname="US09 Validating Info USing API" name="TC10_User should validate all patient info using API" time="0.193">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given User sets the path params to read patient info........................undefined
+And User sets expected data.................................................skipped
+When User send get request for patient info and get response................skipped
+Then User validates patient info............................................skipped
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
