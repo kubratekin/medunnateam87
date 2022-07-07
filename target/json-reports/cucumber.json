@@ -3,105 +3,502 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Common steps",
+        "line": 4,
+        "name": "",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9686000000,
+              "duration": 7520000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user is on the login page",
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userIsOnTheLoginPage()"
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 94000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user clicks on login dropdown icon",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnLoginDropdownIcon()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 149000000,
+              "duration": 153000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user clicks on sign in dropdown",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnSignInDropdown()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
-            "keyword": "And "
-          },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:39.147Z",
+        "line": 9,
+        "name": "TC_01 AtLeastFourChar",
+        "description": "",
+        "id": "us-03-registiration-password;tc-01-atleastfourchar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 117000000,
+              "duration": 192000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user sends username \"\u003cusername\u003e\"",
+            "line": 10,
+            "name": "user types one char and sees the length is not enough",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"\u003cusername\u003e\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userSendsUsername(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 134000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user sends password \"\u003cpassword\u003e\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\u003cpassword\u003e\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userSendsPassword(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 110000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user clicks on the sign in dropdown",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnTheSignInDropdown()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_one_char_and_sees_the_length_is_not_enough()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 468000000,
+              "duration": 171000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user verifies the login is successful",
+            "line": 11,
+            "name": "user types two char and sees the length is not enough",
             "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.verifyTheLoginIsSuccessful()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_two_char_and_sees_the_length_is_not_enough()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user types three char sees the length is not enough",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_three_char_sees_the_length_is_not_enough()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user types 4 char and sees the length is enough",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_char_and_sees_the_length_is_enough(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 227000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:47.571Z",
+        "line": 16,
+        "name": "TC_02 AtLeastSevenChars",
+        "description": "",
+        "id": "us-03-registiration-password;tc-02-atleastsevenchars",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 196000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user types seven chars",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user sees strength level is changed to stronger",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 222000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:48.213Z",
+        "line": 22,
+        "name": "TC_04 AtLeastSevenCharsWithOneLowerCaseOneUpperCase",
+        "description": "",
+        "id": "us-03-registiration-password;tc-04-atleastsevencharswithonelowercaseoneuppercase",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user types seven chars included one lowercase and one uppercase",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user sees strength level is changed to stronger",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 216000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:48.829Z",
+        "line": 27,
+        "name": "TC_03 AtLeastSevenCharsWithOneLowerCase",
+        "description": "",
+        "id": "us-03-registiration-password;tc-03-atleastsevencharswithonelowercase",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 119000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user types seven chars included one lowercase char",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_char()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user sees strength level is changed to stronger",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:49.404Z",
+        "line": 34,
+        "name": "TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber",
+        "description": "",
+        "id": "us-03-registiration-password;tc-05-atleastsevencharswithonelowercaseuppercasenumber",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user types seven chars included one lowercase and one uppercase and number",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user sees strength level is changed to stronger",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 198000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:50.011Z",
+        "line": 39,
+        "name": "TC_06 AtleastSevenCharsWithOneLowerCaseUpperCaseNumberSpecialChar",
+        "description": "",
+        "id": "us-03-registiration-password;tc-06-atleastsevencharswithonelowercaseuppercasenumberspecialchar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": ": user types seven chars included one lowercase and one uppercase and number and special char",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number_and_special_char()"
             },
             "keyword": "Then "
           },
@@ -110,169 +507,38 @@
               "duration": 60000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user clicks on login dropdown icon",
+            "line": 41,
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnLoginDropdownIcon()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 83000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Doctor navigates to My Pages Dropdown",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorNavigatesToMyPagesDropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 107000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Doctor clicks on My Appointments Button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorClicksOnMyAppointmentsButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1589000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Doctor selects Appointment date from and to boxes",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorSelectsAppointmentDateFromAndToBoxes()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 125000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Doctor clicks on Edit Button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorClicksOnEditButton()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-06T22:40:32.039Z",
-        "line": 18,
-        "name": "Update My Appointments by doctor",
-        "description": "",
-        "id": "update-an-appointment-by-doctor;update-my-appointments-by-doctor",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 439000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Doctor verifies patient\u0027s info id, start and end date, status, physician are visible",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorVerifiesPatientSInfoIdStartAndEndDateStatusPhysicianAreVisible()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7090000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Doctor should fills in required fields, anemnesis, treatment, diagnosis which as required fields",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorShouldFillsInRequiredFieldsAnemnesisTreatmentDiagnosisWhichAsRequiredFields()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4724000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Doctor should fills in optional fields precription and description Which as optional fields",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorShouldFillsInOptionalFieldsPrecriptionAndDescriptionWhichAsOptionalFields()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10531000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Doctor can be select as PENDING, COMPLETED or CANCELLED at Status Dropdown",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorCanBeSelectAsPENDINGCOMPLETEDOrCANCELLEDAtStatusDropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2229000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Doctor ckicks on Save Button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorCkicksOnSaveButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1109000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Doctor verifies Appointment is updated succesfully",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorVerifiesAppointmentIsUpdatedSuccesfully()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 324000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Doctor clicks Sign Out Button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorClicksSignOutButton()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Positive"
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc06"
           }
         ]
       }
     ],
-    "name": "Update an appointment by doctor",
+    "name": "US_03 Registiration Password",
     "description": "",
-    "id": "update-an-appointment-by-doctor",
+    "id": "us-03-registiration-password",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US11_CreateOrEditAnAppointmentByDoctor.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/UIFeatures/US03_fatih.feature",
+    "tags": [
+      {
+        "name": "@US03",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
