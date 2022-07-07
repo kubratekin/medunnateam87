@@ -3,6 +3,8 @@ package Hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -15,6 +17,22 @@ public class Hooks {
 //    What is in your After in the hooks?
 //    -In cucumber hooks I use reports and I take screenshot
 //    -I designed my hooks. It takes screenshot when a test scenario fails.
+
+
+    public static RequestSpecification spec;
+
+
+    @Before(value="@Api")
+    public void baseUrlSetUp(){
+
+        spec= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+    }
+
+    @Before(order=1, value="@NewApplicant")
+    public void navigateToRegistration() {
+
+        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
+    }
 
     @Before(order=2, value="@UIlogin")
     public void beforeScenario() {
