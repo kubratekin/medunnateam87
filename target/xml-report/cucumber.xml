@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.642">
-    <testcase classname="US09 Validating Info USing API" name="TC10_User should validate all patient info using API" time="0.193">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given User sets the path params to read patient info........................undefined
-And User sets expected data.................................................skipped
-When User send get request for patient info and get response................skipped
-Then User validates patient info............................................skipped
-]]>
-        </failure>
-    </testcase>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.879">
+<testcase classname="Update an appointment by doctor" name="Update My Appointments by doctor" time="39.372">
+<system-out><![CDATA[Given user is on the login page.............................................passed
+When user clicks on login dropdown icon.....................................passed
+And user clicks on sign in dropdown.........................................passed
+And user sends username "<username>"........................................passed
+And user sends password "<password>"........................................passed
+Then user clicks on the sign in dropdown....................................passed
+Then user verifies the login is successful..................................passed
+And user clicks on login dropdown icon......................................passed
+And Doctor navigates to My Pages Dropdown...................................passed
+And Doctor clicks on My Appointments Button.................................passed
+And Doctor selects Appointment date from and to boxes.......................passed
+And Doctor clicks on Edit Button............................................passed
+Given Doctor verifies patient's info id, start and end date, status, physician are visible.passed
+And Doctor should fills in required fields, anemnesis, treatment, diagnosis which as required fields.passed
+And Doctor should fills in optional fields precription and description Which as optional fields.passed
+And Doctor can be select as PENDING, COMPLETED or CANCELLED at Status Dropdown.passed
+And Doctor ckicks on Save Button............................................passed
+And Doctor verifies Appointment is updated succesfully......................passed
+Then Doctor clicks Sign Out Button..........................................passed
+]]></system-out>
+</testcase>
 </testsuite>

@@ -16,4 +16,7 @@ public class HomePageMedunna {
 
     @FindBy(css = "#login-item")
     public WebElement signInButton;
+
+   @FindBy(xpath = "//span[normalize-space()='Register']")
+    public WebElement registerButton;  //emin
 }
