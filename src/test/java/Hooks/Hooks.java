@@ -16,15 +16,15 @@ public class Hooks {
 //    -In cucumber hooks I use reports and I take screenshot
 //    -I designed my hooks. It takes screenshot when a test scenario fails.
 
-    @Before(order=2, value="@UIlogin")
-    public void beforeScenario() {
-
-    }
-
-    @Before(order=3, value="@UIregistration")
-    public void beforeRegistration() {
-        Driver.getDriver().get("https://medunna.com/account/register");
-    }
+//    @Before(order=2, value="@UIlogin")
+//    public void beforeScenario() {
+//
+//    }
+//
+//    @Before(order=3, value="@UIregistration")
+//    public void beforeRegistration() {
+//        Driver.getDriver().get("https://medunna.com/account/register");
+//    }
 
 
 

@@ -4,171 +4,275 @@
     "elements": [
       {
         "line": 3,
-        "name": "US_09",
+        "name": "Common steps",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 12228628000,
+              "duration": 9686000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "user goes to URL",
+            "name": "user is on the login page",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userIsOnTheLoginPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 211151000,
+              "duration": 94000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "User navigates to Sign in page",
+            "name": "user clicks on login dropdown icon",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnLoginDropdownIcon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on sign in dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnSignInDropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user sends username \"\u003cusername\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userSendsUsername(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user sends password \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userSendsPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on the sign in dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnTheSignInDropdown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 468000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verifies the login is successful",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.verifyTheLoginIsSuccessful()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on login dropdown icon",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.userClicksOnLoginDropdownIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Doctor navigates to My Pages Dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorNavigatesToMyPagesDropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Doctor clicks on My Appointments Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorClicksOnMyAppointmentsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1589000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Doctor selects Appointment date from and to boxes",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorSelectsAppointmentDateFromAndToBoxes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Doctor clicks on Edit Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorClicksOnEditButton()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-05T12:11:22.957Z",
-        "line": 94,
-        "name": "TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated",
+        "start_timestamp": "2022-07-06T22:40:32.039Z",
+        "line": 18,
+        "name": "Update My Appointments by doctor",
         "description": "",
-        "id": "us-09;tc-08-staff-can-search-for-a-new-applicant-by-their-ssn-and-see-all-their-registration-info-populated",
+        "id": "update-an-appointment-by-doctor;update-my-appointments-by-doctor",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 404213000,
+              "duration": 439000000,
               "status": "passed"
             },
-            "line": 95,
-            "name": "User enters username \"Jdoe\" and password \"12J34d!\" with Staff credentials and clicks Sign in button",
+            "line": 19,
+            "name": "Doctor verifies patient\u0027s info id, start and end date, status, physician are visible",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Jdoe\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"12J34d!\"",
-                  "offset": 41
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorVerifiesPatientSInfoIdStartAndEndDateStatusPhysicianAreVisible()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7090000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Doctor should fills in required fields, anemnesis, treatment, diagnosis which as required fields",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorShouldFillsInRequiredFieldsAnemnesisTreatmentDiagnosisWhichAsRequiredFields()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 789597000,
+              "duration": 4724000000,
               "status": "passed"
             },
-            "line": 96,
-            "name": "User verifies that landed at Staff page",
+            "line": 21,
+            "name": "Doctor should fills in optional fields precription and description Which as optional fields",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 139086000,
-              "status": "passed"
-            },
-            "line": 97,
-            "name": "User navigate to Patients information page from Staff page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 33384000,
-              "status": "passed"
-            },
-            "line": 98,
-            "name": "User verifies that landed at Patients information page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2237965000,
-              "status": "passed"
-            },
-            "line": 99,
-            "name": "User enters patient SSN \"123-10-8787\" into search box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"123-10-8787\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersPatientSSNIntoSearchBox(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2794507000,
-              "status": "passed"
-            },
-            "line": 100,
-            "name": "User verifies that can see patient registration information populated",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatCanSeePatientRegistrationInformationPopulated()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 223329000,
-              "status": "passed"
-            },
-            "line": 101,
-            "name": "User closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorShouldFillsInOptionalFieldsPrecriptionAndDescriptionWhichAsOptionalFields()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10531000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Doctor can be select as PENDING, COMPLETED or CANCELLED at Status Dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorCanBeSelectAsPENDINGCOMPLETEDOrCANCELLEDAtStatusDropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2229000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Doctor ckicks on Save Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorCkicksOnSaveButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1109000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Doctor verifies Appointment is updated succesfully",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorVerifiesAppointmentIsUpdatedSuccesfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 324000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Doctor clicks Sign Out Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US11_CreateOrEditAnAppointmentByDoctorStepDefs.doctorClicksSignOutButton()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US09"
-          },
-          {
-            "name": "@US09_TC08"
+            "name": "@Positive"
           }
         ]
       }
     ],
-    "name": "US_09",
+    "name": "Update an appointment by doctor",
     "description": "",
-    "id": "us-09",
+    "id": "update-an-appointment-by-doctor",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US09.feature",
-    "tags": [
-      {
-        "name": "@US09",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/UIFeatures/US11_CreateOrEditAnAppointmentByDoctor.feature",
+    "tags": []
   }
 ]
