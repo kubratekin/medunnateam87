@@ -11,103 +11,106 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 7520000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8000000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-04T20:37:45.538Z",
-        "line": 18,
-        "name": "TC01_Test_Valid_SNN",
-        "description": "",
-        "id": "test-registrant-data;tc01-test-valid-snn;valid-snn;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "User enters \"123-12-1234\"",
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"123-12-1234\"",
-                  "offset": 12
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
                 }
               ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:39.147Z",
+        "line": 9,
+        "name": "TC_01 AtLeastFourChar",
+        "description": "",
+        "id": "us-03-registiration-password;tc-01-atleastfourchar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 192000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user types one char and sees the length is not enough",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_one_char_and_sees_the_length_is_not_enough()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 171000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user types two char and sees the length is not enough",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_two_char_and_sees_the_length_is_not_enough()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
             },
             "line": 12,
-            "name": "User shouldn\u0027t see Your SSN is invalid error message",
-            "match": {},
-            "keyword": "Then "
+            "name": "user types three char sees the length is not enough",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_three_char_sees_the_length_is_not_enough()"
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 133000000,
+              "status": "passed"
             },
             "line": 13,
-            "name": "User shouldn\u0027t see Your SSN is required error message",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "close the application",
+            "name": "user types 4 char and sees the length is enough",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 11
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_char_and_sees_the_length_is_enough(java.lang.Integer)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC01"
+            "name": "@Tc01"
           }
         ]
       },
@@ -120,83 +123,158 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 227000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 151000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-04T20:37:45.727Z",
-        "line": 28,
-        "name": "TC02_Test_inValid_SNN",
+        "start_timestamp": "2022-07-07T17:53:47.571Z",
+        "line": 16,
+        "name": "TC_02 AtLeastSevenChars",
         "description": "",
-        "id": "test-registrant-data;tc02-test-invalid-snn;valid-snn;2",
+        "id": "us-03-registiration-password;tc-02-atleastsevenchars",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 196000000,
+              "status": "passed"
             },
-            "line": 22,
-            "name": "User enters an \"12-312-1234\" with \"-\" sign after 3rd and 5th digits",
-            "match": {},
-            "keyword": "When "
+            "line": 17,
+            "name": "user types seven chars",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars()"
+            },
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user sees strength level is changed to stronger",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 222000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:48.213Z",
+        "line": 22,
+        "name": "TC_04 AtLeastSevenCharsWithOneLowerCaseOneUpperCase",
+        "description": "",
+        "id": "us-03-registiration-password;tc-04-atleastsevencharswithonelowercaseoneuppercase",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
             },
             "line": 23,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
+            "name": "user types seven chars included one lowercase and one uppercase",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 59000000,
+              "status": "passed"
             },
             "line": 24,
-            "name": "close the application",
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC02"
+            "name": "@Tc03"
           }
         ]
       },
@@ -209,87 +287,76 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 216000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 166000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-04T20:37:45.756Z",
-        "line": 29,
-        "name": "TC02_Test_inValid_SNN",
+        "start_timestamp": "2022-07-07T17:53:48.829Z",
+        "line": 27,
+        "name": "TC_03 AtLeastSevenCharsWithOneLowerCase",
         "description": "",
-        "id": "test-registrant-data;tc02-test-invalid-snn;valid-snn;3",
+        "id": "us-03-registiration-password;tc-03-atleastsevencharswithonelowercase",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 119000000,
+              "status": "passed"
             },
-            "line": 22,
-            "name": "User enters an \"123-121-234\" with \"-\" sign after 3rd and 5th digits",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
+            "line": 28,
+            "name": "user types seven chars included one lowercase char",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_char()"
             },
-            "line": 23,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 61000000,
+              "status": "passed"
             },
-            "line": 24,
-            "name": "close the application",
+            "line": 29,
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC02"
+            "name": "@Tc04"
           }
         ]
       },
@@ -302,173 +369,76 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 205000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 146000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-04T20:37:45.802Z",
-        "line": 30,
-        "name": "TC02_Test_inValid_SNN",
+        "start_timestamp": "2022-07-07T17:53:49.404Z",
+        "line": 34,
+        "name": "TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber",
         "description": "",
-        "id": "test-registrant-data;tc02-test-invalid-snn;valid-snn;4",
+        "id": "us-03-registiration-password;tc-05-atleastsevencharswithonelowercaseuppercasenumber",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "User enters an \"123121234\" with \"-\" sign after 3rd and 5th digits",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 24,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC02"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-04T20:37:45.831Z",
-        "line": 40,
-        "name": "TC03_Test_inValid_SNN",
-        "description": "",
-        "id": "test-registrant-data;tc03-test-invalid-snn;valid-snn;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 34,
-            "name": "User enters \"123-12-123\" not 9 digits long",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 188000000,
+              "status": "passed"
             },
             "line": 35,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
+            "name": "user types seven chars included one lowercase and one uppercase and number",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 56000000,
+              "status": "passed"
             },
             "line": 36,
-            "name": "close the application",
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC03"
+            "name": "@Tc05"
           }
         ]
       },
@@ -481,456 +451,88 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 198000000,
+              "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 153000000,
+              "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-04T20:37:45.862Z",
-        "line": 41,
-        "name": "TC03_Test_inValid_SNN",
+        "start_timestamp": "2022-07-07T17:53:50.011Z",
+        "line": 39,
+        "name": "TC_06 AtleastSevenCharsWithOneLowerCaseUpperCaseNumberSpecialChar",
         "description": "",
-        "id": "test-registrant-data;tc03-test-invalid-snn;valid-snn;3",
+        "id": "us-03-registiration-password;tc-06-atleastsevencharswithonelowercaseuppercasenumberspecialchar",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 205000000,
+              "status": "passed"
             },
-            "line": 34,
-            "name": "User enters \"123-12-12345\" not 9 digits long",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
+            "line": 40,
+            "name": ": user types seven chars included one lowercase and one uppercase and number and special char",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number_and_special_char()"
             },
-            "line": 35,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 60000000,
+              "status": "passed"
             },
-            "line": 36,
-            "name": "close the application",
+            "line": 41,
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC03"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-04T20:37:45.882Z",
-        "line": 51,
-        "name": "TC04_Test_inValid_SNN",
-        "description": "",
-        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 45,
-            "name": "User enters \"123-12-123@\" containing characters or letters",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC04"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-04T20:37:45.902Z",
-        "line": 52,
-        "name": "TC04_Test_inValid_SNN",
-        "description": "",
-        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 45,
-            "name": "User enters \"a23-12-1234\" containing characters or letters",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC04"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-04T20:37:45.927Z",
-        "line": 53,
-        "name": "TC04_Test_inValid_SNN",
-        "description": "",
-        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 45,
-            "name": "User enters \"123-a2-1234\" containing characters or letters",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC04"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-04T20:37:45.942Z",
-        "line": 54,
-        "name": "TC04_Test_inValid_SNN",
-        "description": "",
-        "id": "test-registrant-data;tc04-test-invalid-snn;valid-snn;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 45,
-            "name": "User enters \"123-ab-123*\" containing characters or letters",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 46,
-            "name": "User should see Your SSN is invalid, error message",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC04"
+            "name": "@Tc06"
           }
         ]
       }
     ],
-    "name": "Test Registrant data",
+    "name": "US_03 Registiration Password",
     "description": "",
-    "id": "test-registrant-data",
+    "id": "us-03-registiration-password",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US01_Registration.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US03_fatih.feature",
     "tags": [
       {
-        "name": "@US_01",
+        "name": "@US03",
         "type": "Tag",
         "location": {
           "line": 1,
