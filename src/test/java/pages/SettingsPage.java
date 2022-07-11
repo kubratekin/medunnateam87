@@ -20,5 +20,10 @@ public class SettingsPage {
     public WebElement emailTextBox;
     @FindBy (xpath = "//span[text()='Save']")
     public WebElement saveButton;
+    @FindBy (xpath ="//h2[@id='settings-title']" )
+    public WebElement settingsTitle;
+    @FindBy (xpath ="//div[@class='Toastify__toast-body']")
+    public WebElement settingsSavedAlert;
+
 
 }

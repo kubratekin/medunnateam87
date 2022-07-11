@@ -13,34 +13,13 @@ public class HomePage {
     }
 
 
-    @FindBy(xpath = "//li[@class='dropdown show nav-item']")
+    @FindBy(xpath = "//a[@aria-expanded='false']")
     public WebElement accountMenuDropdown;
     @FindBy (xpath = "//a[@href='/login']")
     public WebElement accountSignInDropdownSelect;
     @FindBy (xpath = "//a[@href='/account/register']")
     public WebElement accountRegisterDropdownSelect;
 
-    //sign in after
-    @FindBy (xpath = "//span[text()='Settings']")
-    public WebElement accountSettingsDropdownSelect;
 
-
-    //sign in for patient
-    @FindBy (xpath = "//*[text()='team87patient team87patient']")
-    public WebElement accountMenuPatientUsername;
-
-    //sign in for doctor
-    @FindBy (xpath = "//*[text()='team87doctor team87doctor']")
-    public WebElement accountMenuDoctorUsername;
-
-
-    //sign in for staff
-    @FindBy (xpath = "//*[text()='team87staff team87staff']")
-    public WebElement accountMenuStaffUsername;
-
-
-    //sign in for admin
-    @FindBy (xpath = "///*[text()='team87admin team87admin']")
-    public WebElement accountMenuAdminUsername;
 
 }

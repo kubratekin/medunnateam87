@@ -1,94 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="10" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="0.759">
-<testcase classname="Test Registrant data" name="TC01_Test_Valid_SNN" time="0.158">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters "123-12-1234"..............................................skipped
-Then User shouldn't see Your SSN is invalid error message...................skipped
-And User shouldn't see Your SSN is required error message...................skipped
-And close the application...................................................skipped
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="76.142">
+<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname" time="13.21">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When user navigate to registration page.....................................passed
+Then user Verify that Registration page is displayed........................passed
+When User enters valid FirstName "a"........................................passed
+Then User shouldn't see error message Your FirstName is required............passed
+And close the application...................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC02_Test_inValid_SNN" time="0.01">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters an "12-312-1234" with "-" sign after 3rd and 5th digits....skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
+<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_2" time="10.745">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When user navigate to registration page.....................................passed
+Then user Verify that Registration page is displayed........................passed
+When User enters valid FirstName "1"........................................passed
+Then User shouldn't see error message Your FirstName is required............passed
+And close the application...................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC02_Test_inValid_SNN_2" time="0.02">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters an "123-121-234" with "-" sign after 3rd and 5th digits....skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
+<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_3" time="9.929">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When user navigate to registration page.....................................passed
+Then user Verify that Registration page is displayed........................passed
+When User enters valid FirstName "*"........................................passed
+Then User shouldn't see error message Your FirstName is required............passed
+And close the application...................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC02_Test_inValid_SNN_3" time="0.015">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters an "123121234" with "-" sign after 3rd and 5th digits......skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
+<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_4" time="11.05">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When user navigate to registration page.....................................passed
+Then user Verify that Registration page is displayed........................passed
+When User enters valid FirstName "0"........................................passed
+Then User shouldn't see error message Your FirstName is required............passed
+And close the application...................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC03_Test_inValid_SNN" time="0.013">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters "123-12-123" not 9 digits long.............................skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
+<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_5" time="9.65">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When user navigate to registration page.....................................passed
+Then user Verify that Registration page is displayed........................passed
+When User enters valid FirstName "team_87"..................................passed
+Then User shouldn't see error message Your FirstName is required............passed
+And close the application...................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC03_Test_inValid_SNN_2" time="0.008">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters "123-12-12345" not 9 digits long...........................skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
+<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_6" time="10.738">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When user navigate to registration page.....................................passed
+Then user Verify that Registration page is displayed........................passed
+When User enters valid FirstName "ayşe".....................................passed
+Then User shouldn't see error message Your FirstName is required............passed
+And close the application...................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC04_Test_inValid_SNN" time="0.01">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters "123-12-123@" containing characters or letters.............skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
-</testcase>
-<testcase classname="Test Registrant data" name="TC04_Test_inValid_SNN_2" time="0.013">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters "a23-12-1234" containing characters or letters.............skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
-</testcase>
-<testcase classname="Test Registrant data" name="TC04_Test_inValid_SNN_3" time="0.006">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters "123-a2-1234" containing characters or letters.............skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
-</testcase>
-<testcase classname="Test Registrant data" name="TC04_Test_inValid_SNN_4" time="0.005">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna page.............................................undefined
-When user navigate to registration page.....................................skipped
-Then user Verify that Registration page is displayed........................skipped
-When User enters "123-ab-123*" containing characters or letters.............skipped
-Then User should see Your SSN is invalid, error message.....................skipped
-And close the application...................................................skipped
-]]></failure>
+<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_7" time="10.446">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When user navigate to registration page.....................................passed
+Then user Verify that Registration page is displayed........................passed
+When User enters valid FirstName "123456"...................................passed
+Then User shouldn't see error message Your FirstName is required............passed
+And close the application...................................................passed
+]]></system-out>
 </testcase>
 </testsuite>
