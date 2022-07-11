@@ -35,8 +35,17 @@ public class RegistrationPage {
     @FindBy(id = "register-submit")
     public WebElement registerButton;
 
-    @FindBy(xpath = "//*[text()='Registration saved!']")
+    @FindBy(xpath = "//*[text()='Registration Saved']") // Changed by Emin
     public WebElement successMessageToastContainer;
+
+    @FindBy(xpath = "//span[normalize-space()='Registration']")
+    public WebElement registrationTitle; //emin
+
+    @FindBy (xpath = "//div[text()='Your email is required to be at least 5 characters.']")
+    public WebElement emailAtLeast5CharactersMessage; //emin
+
+    @FindBy (xpath = "//div[text()='This field is invalid']")
+    public WebElement thisFieldIsInvalid; //emin
 
     @FindBy (xpath ="//h1[@id='register-title']" )
     public WebElement registrationTitle ;

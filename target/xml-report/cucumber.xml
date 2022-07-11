@@ -1,66 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="76.142">
-<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname" time="13.21">
-<system-out><![CDATA[Given user goes to Medunna page.............................................passed
-When user navigate to registration page.....................................passed
-Then user Verify that Registration page is displayed........................passed
-When User enters valid FirstName "a"........................................passed
-Then User shouldn't see error message Your FirstName is required............passed
-And close the application...................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="11.734">
+<testcase classname="US_03 Registiration Password" name="TC_01 AtLeastFourChar" time="8.404">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types one char and sees the length is not enough..................passed
+And user types two char and sees the length is not enough...................passed
+And user types three char sees the length is not enough.....................passed
+Then user types 4 char and sees the length is enough........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_2" time="10.745">
-<system-out><![CDATA[Given user goes to Medunna page.............................................passed
-When user navigate to registration page.....................................passed
-Then user Verify that Registration page is displayed........................passed
-When User enters valid FirstName "1"........................................passed
-Then User shouldn't see error message Your FirstName is required............passed
-And close the application...................................................passed
+<testcase classname="US_03 Registiration Password" name="TC_02 AtLeastSevenChars" time="0.632">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars.................................................passed
+And user sees strength level is changed to stronger.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_3" time="9.929">
-<system-out><![CDATA[Given user goes to Medunna page.............................................passed
-When user navigate to registration page.....................................passed
-Then user Verify that Registration page is displayed........................passed
-When User enters valid FirstName "*"........................................passed
-Then User shouldn't see error message Your FirstName is required............passed
-And close the application...................................................passed
+<testcase classname="US_03 Registiration Password" name="TC_04 AtLeastSevenCharsWithOneLowerCaseOneUpperCase" time="0.603">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase and one uppercase........passed
+And user sees strength level is changed to stronger.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_4" time="11.05">
-<system-out><![CDATA[Given user goes to Medunna page.............................................passed
-When user navigate to registration page.....................................passed
-Then user Verify that Registration page is displayed........................passed
-When User enters valid FirstName "0"........................................passed
-Then User shouldn't see error message Your FirstName is required............passed
-And close the application...................................................passed
+<testcase classname="US_03 Registiration Password" name="TC_03 AtLeastSevenCharsWithOneLowerCase" time="0.569">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase char.....................passed
+And user sees strength level is changed to stronger.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_5" time="9.65">
-<system-out><![CDATA[Given user goes to Medunna page.............................................passed
-When user navigate to registration page.....................................passed
-Then user Verify that Registration page is displayed........................passed
-When User enters valid FirstName "team_87"..................................passed
-Then User shouldn't see error message Your FirstName is required............passed
-And close the application...................................................passed
+<testcase classname="US_03 Registiration Password" name="TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber" time="0.6">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase and one uppercase and number.passed
+And user sees strength level is changed to stronger.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_6" time="10.738">
-<system-out><![CDATA[Given user goes to Medunna page.............................................passed
-When user navigate to registration page.....................................passed
-Then user Verify that Registration page is displayed........................passed
-When User enters valid FirstName "ayşe".....................................passed
-Then User shouldn't see error message Your FirstName is required............passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Registrant data" name="TC07_Test_Valid_Firstname_7" time="10.446">
-<system-out><![CDATA[Given user goes to Medunna page.............................................passed
-When user navigate to registration page.....................................passed
-Then user Verify that Registration page is displayed........................passed
-When User enters valid FirstName "123456"...................................passed
-Then User shouldn't see error message Your FirstName is required............passed
-And close the application...................................................passed
+<testcase classname="US_03 Registiration Password" name="TC_06 AtleastSevenCharsWithOneLowerCaseUpperCaseNumberSpecialChar" time="0.62">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then : user types seven chars included one lowercase and one uppercase and number and special char.passed
+And user sees strength level is changed to stronger.........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -188,4 +188,22 @@ public class ReusableMethods {
     }
 
 
+    public static List<String> getElementsTextTable(By locator) {
+        String xpath = "(//table/tbody/tr/td)[";
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i<15;i++){
+             list.add(Driver.getDriver().findElement(By.xpath(xpath+i+"]")).getText());
+        }
+
+        List<WebElement> elems = Driver.getDriver().findElements(locator);
+        List<String> elemTexts = new ArrayList<>();
+        for (WebElement el : elems) {
+            if (!el.getText().isEmpty()) {
+                elemTexts.add(el.getText());
+            }
+        }
+        return elemTexts;
+    }
+
+
 }

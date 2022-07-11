@@ -11,100 +11,106 @@
         "steps": [
           {
             "result": {
-              "duration": 9621000000,
+              "duration": 7520000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2414000000,
+              "duration": 153000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 71000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-10T21:05:11.137Z",
-        "line": 84,
-        "name": "TC07_Test_Valid_Firstname",
+        "start_timestamp": "2022-07-07T17:53:39.147Z",
+        "line": 9,
+        "name": "TC_01 AtLeastFourChar",
         "description": "",
-        "id": "test-registrant-data;tc07-test-valid-firstname;valid-snn;2",
+        "id": "us-03-registiration-password;tc-01-atleastfourchar",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
+          {
+            "result": {
+              "duration": 192000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user types one char and sees the length is not enough",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_one_char_and_sees_the_length_is_not_enough()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 171000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user types two char and sees the length is not enough",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_two_char_and_sees_the_length_is_not_enough()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
               "duration": 141000000,
               "status": "passed"
             },
-            "line": 79,
-            "name": "User enters valid FirstName \"a\"",
+            "line": 12,
+            "name": "user types three char sees the length is not enough",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_three_char_sees_the_length_is_not_enough()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user types 4 char and sees the length is enough",
             "match": {
               "arguments": [
                 {
-                  "val": "\"a\"",
-                  "offset": 28
+                  "val": "4",
+                  "offset": 11
                 }
               ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters_valid_first_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 76000000,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "User shouldn\u0027t see error message Your FirstName is required.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_shouldn_t_see_error_message_your_first_name_is_required()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_char_and_sees_the_length_is_enough(java.lang.Integer)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 753000000,
-              "status": "passed"
-            },
-            "line": 81,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC07"
+            "name": "@Tc01"
           }
         ]
       },
@@ -117,100 +123,76 @@
         "steps": [
           {
             "result": {
-              "duration": 7402000000,
+              "duration": 227000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2322000000,
+              "duration": 151000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 56000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-10T21:05:24.417Z",
-        "line": 85,
-        "name": "TC07_Test_Valid_Firstname",
+        "start_timestamp": "2022-07-07T17:53:47.571Z",
+        "line": 16,
+        "name": "TC_02 AtLeastSevenChars",
         "description": "",
-        "id": "test-registrant-data;tc07-test-valid-firstname;valid-snn;3",
+        "id": "us-03-registiration-password;tc-02-atleastsevenchars",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 132000000,
+              "duration": 196000000,
               "status": "passed"
             },
-            "line": 79,
-            "name": "User enters valid FirstName \"1\"",
+            "line": 17,
+            "name": "user types seven chars",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"1\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters_valid_first_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 69000000,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "User shouldn\u0027t see error message Your FirstName is required.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_shouldn_t_see_error_message_your_first_name_is_required()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 748000000,
+              "duration": 53000000,
               "status": "passed"
             },
-            "line": 81,
-            "name": "close the application",
+            "line": 18,
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC07"
+            "name": "@Tc02"
           }
         ]
       },
@@ -223,100 +205,76 @@
         "steps": [
           {
             "result": {
-              "duration": 6644000000,
+              "duration": 222000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2280000000,
+              "duration": 144000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 60000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-10T21:05:35.177Z",
-        "line": 86,
-        "name": "TC07_Test_Valid_Firstname",
+        "start_timestamp": "2022-07-07T17:53:48.213Z",
+        "line": 22,
+        "name": "TC_04 AtLeastSevenCharsWithOneLowerCaseOneUpperCase",
         "description": "",
-        "id": "test-registrant-data;tc07-test-valid-firstname;valid-snn;4",
+        "id": "us-03-registiration-password;tc-04-atleastsevencharswithonelowercaseoneuppercase",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 108000000,
+              "duration": 174000000,
               "status": "passed"
             },
-            "line": 79,
-            "name": "User enters valid FirstName \"*\"",
+            "line": 23,
+            "name": "user types seven chars included one lowercase and one uppercase",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"*\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters_valid_first_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 62000000,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "User shouldn\u0027t see error message Your FirstName is required.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_shouldn_t_see_error_message_your_first_name_is_required()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 765000000,
+              "duration": 59000000,
               "status": "passed"
             },
-            "line": 81,
-            "name": "close the application",
+            "line": 24,
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC07"
+            "name": "@Tc03"
           }
         ]
       },
@@ -329,430 +287,252 @@
         "steps": [
           {
             "result": {
-              "duration": 7320000000,
+              "duration": 216000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user goes to Medunna page",
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2302000000,
+              "duration": 166000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user navigate to registration page",
+            "name": "user clicks on registiration button and navigates to registiration page",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 64000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-10T21:05:45.126Z",
-        "line": 87,
-        "name": "TC07_Test_Valid_Firstname",
+        "start_timestamp": "2022-07-07T17:53:48.829Z",
+        "line": 27,
+        "name": "TC_03 AtLeastSevenCharsWithOneLowerCase",
         "description": "",
-        "id": "test-registrant-data;tc07-test-valid-firstname;valid-snn;5",
+        "id": "us-03-registiration-password;tc-03-atleastsevencharswithonelowercase",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 102000000,
+              "duration": 119000000,
               "status": "passed"
             },
-            "line": 79,
-            "name": "User enters valid FirstName \"0\"",
+            "line": 28,
+            "name": "user types seven chars included one lowercase char",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"0\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters_valid_first_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 69000000,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "User shouldn\u0027t see error message Your FirstName is required.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_shouldn_t_see_error_message_your_first_name_is_required()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_char()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1185000000,
-              "status": "passed"
-            },
-            "line": 81,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC07"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6293000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2375000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 56000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-10T21:05:56.181Z",
-        "line": 88,
-        "name": "TC07_Test_Valid_Firstname",
-        "description": "",
-        "id": "test-registrant-data;tc07-test-valid-firstname;valid-snn;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 120000000,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "User enters valid FirstName \"team_87\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"team_87\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters_valid_first_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 64000000,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "User shouldn\u0027t see error message Your FirstName is required.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_shouldn_t_see_error_message_your_first_name_is_required()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 738000000,
-              "status": "passed"
-            },
-            "line": 81,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC07"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7475000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2289000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 57000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-10T21:06:05.840Z",
-        "line": 89,
-        "name": "TC07_Test_Valid_Firstname",
-        "description": "",
-        "id": "test-registrant-data;tc07-test-valid-firstname;valid-snn;7",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 106000000,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "User enters valid FirstName \"ayşe\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ayşe\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters_valid_first_name(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 60000000,
-              "status": "passed"
-            },
-            "line": 80,
-            "name": "User shouldn\u0027t see error message Your FirstName is required.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_shouldn_t_see_error_message_your_first_name_is_required()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 746000000,
-              "status": "passed"
-            },
-            "line": 81,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US_01"
-          },
-          {
-            "name": "@US01_TC07"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 7083000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to Medunna page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2395000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigate to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_navigate_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 51000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user Verify that Registration page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_verify_that_registration_page_is_displayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-10T21:06:16.595Z",
-        "line": 90,
-        "name": "TC07_Test_Valid_Firstname",
-        "description": "",
-        "id": "test-registrant-data;tc07-test-valid-firstname;valid-snn;8",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 108000000,
-              "status": "passed"
-            },
-            "line": 79,
-            "name": "User enters valid FirstName \"123456\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"123456\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_enters_valid_first_name(java.lang.String)"
-            },
-            "keyword": "When "
           },
           {
             "result": {
               "duration": 61000000,
               "status": "passed"
             },
-            "line": 80,
-            "name": "User shouldn\u0027t see error message Your FirstName is required.",
+            "line": 29,
+            "name": "user sees strength level is changed to stronger",
             "match": {
-              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_shouldn_t_see_error_message_your_first_name_is_required()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 741000000,
-              "status": "passed"
-            },
-            "line": 81,
-            "name": "close the application",
-            "match": {
-              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US_01"
+            "name": "@US03"
           },
           {
-            "name": "@US01_TC07"
+            "name": "@Tc04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:49.404Z",
+        "line": 34,
+        "name": "TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber",
+        "description": "",
+        "id": "us-03-registiration-password;tc-05-atleastsevencharswithonelowercaseuppercasenumber",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user types seven chars included one lowercase and one uppercase and number",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user sees strength level is changed to stronger",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 198000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cmedunnaUrl\u003e\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on registiration button and navigates to registiration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-07T17:53:50.011Z",
+        "line": 39,
+        "name": "TC_06 AtleastSevenCharsWithOneLowerCaseUpperCaseNumberSpecialChar",
+        "description": "",
+        "id": "us-03-registiration-password;tc-06-atleastsevencharswithonelowercaseuppercasenumberspecialchar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": ": user types seven chars included one lowercase and one uppercase and number and special char",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number_and_special_char()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user sees strength level is changed to stronger",
+            "match": {
+              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03"
+          },
+          {
+            "name": "@Tc06"
           }
         ]
       }
     ],
-    "name": "Test Registrant data",
+    "name": "US_03 Registiration Password",
     "description": "",
-    "id": "test-registrant-data",
+    "id": "us-03-registiration-password",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US01_Registration.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US03_fatih.feature",
     "tags": [
       {
-        "name": "@US_01",
+        "name": "@US03",
         "type": "Tag",
         "location": {
           "line": 1,
