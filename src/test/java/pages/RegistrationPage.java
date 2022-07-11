@@ -46,4 +46,34 @@ public class RegistrationPage {
 
     @FindBy (xpath = "//div[text()='This field is invalid']")
     public WebElement thisFieldIsInvalid; //emin
+
+    @FindBy (xpath ="//h1[@id='register-title']" )
+    public WebElement registrationTitlename ;
+
+    @FindBy (xpath = "(//div[@class='invalid-feedback'])[1]")
+    public WebElement ssnInvalidErrorMessage;
+
+    //            "//*[text()='Your SSN is invalid']"
+
+    @FindBy (xpath = "//*[text()='Your SSN is required.']")
+    public WebElement ssnRequiredErrorMessage;
+
+    @FindBy (xpath = "//*[text()='Your FirstName is required.']")
+    public WebElement firstnameRequiredErrorMessage;
+
+    @FindBy (xpath = "//*[text()='Your LastName is required.']")
+    public WebElement lastnameRequiredErrorMessage;
+
+    @FindBy (xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
+    public WebElement registrationSavedAlert;
+
+    @FindBy(xpath = "(//div[@class='form-group'])[1]")
+    public WebElement verifyValidSSN;
+
+    @FindBy(xpath = "(//div[@class='form-group'])[2]")
+    public WebElement verifyValidFirstname;
+
+    @FindBy(xpath = "(//div[@class='form-group'])[3]")
+    public WebElement verifyValidLastname;
+
 }
