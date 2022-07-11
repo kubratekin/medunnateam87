@@ -48,7 +48,7 @@ public class RegistrationPage {
     public WebElement thisFieldIsInvalid; //emin
 
     @FindBy (xpath ="//h1[@id='register-title']" )
-    public WebElement registrationTitle ;
+    public WebElement registrationTitlename ;
 
     @FindBy (xpath = "(//div[@class='invalid-feedback'])[1]")
     public WebElement ssnInvalidErrorMessage;

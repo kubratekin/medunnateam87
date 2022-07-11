@@ -37,7 +37,7 @@ public class US01_RegistrationSteps {
 
     @Then("user Verify that Registration page is displayed")
     public void user_verify_that_registration_page_is_displayed() throws InterruptedException {
-        Assert.assertTrue(registrationPage.registrationTitle.isDisplayed());
+        Assert.assertTrue(registrationPage.registrationTitlename.isDisplayed());
     }
 
     //TC01
