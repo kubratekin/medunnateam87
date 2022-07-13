@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@login_test",
-        dryRun = false
+        tags = "@US_TC_0001",
+        dryRun = true
 )
 public class TestRunner {
 

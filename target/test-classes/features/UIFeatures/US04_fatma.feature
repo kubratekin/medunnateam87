@@ -1,4 +1,4 @@
-@SignInPage @team87
+@SignInPage
 Feature:Login page should be accessible only with valid credentials
 
 
