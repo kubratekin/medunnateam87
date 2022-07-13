@@ -1,1 +1,173 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-13T20:30:42.387Z",
+        "line": 52,
+        "name": "User updates password with did you forget your password option",
+        "description": "",
+        "id": "login-page-should-be-accessible-only-with-valid-credentials;user-updates-password-with-did-you-forget-your-password-option;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6598000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user navigates to url",
+            "match": {
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.user_navigates_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3141000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user clicks on account dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.user_clicks_on_account_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2145000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user clicks on sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1106000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user verifies that sign in page is visible",
+            "match": {
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.userVerifiesThatSignInPageIsVisible()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3129000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user enters \"team87inci\" as username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87inci\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.userEntersAsUsername(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user clicks on Did you forget your password text box",
+            "match": {
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.user_clicks_on_did_you_forget_your_password_text_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user enters \"team87inci@gmail.com\" address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87inci@gmail.com\"",
+                  "offset": 12
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.userEntersAddress(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2123000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user clicks Reset password button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.user_clicks_reset_password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepdefinitions.uisteps.US04_UserLogInStepDefs.user_verifies_alert_check_your_email_for_details_on_how_to_reset_your_password(US04_UserLogInStepDefs.java:86)\r\n\tat ✽.user verifies Alert check your email for details on how to reset your password(file:///C:/Users/thelu/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US04_fatma.feature:47)\r\n",
+              "duration": 231000000,
+              "status": "failed"
+            },
+            "line": 47,
+            "name": "user verifies Alert check your email for details on how to reset your password",
+            "match": {
+              "location": "stepdefinitions.uisteps.US04_UserLogInStepDefs.user_verifies_alert_check_your_email_for_details_on_how_to_reset_your_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SignInPage"
+          },
+          {
+            "name": "@didYouForget"
+          }
+        ]
+      }
+    ],
+    "name": "Login page should be accessible only with valid credentials",
+    "description": "",
+    "id": "login-page-should-be-accessible-only-with-valid-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US04_fatma.feature",
+    "tags": [
+      {
+        "name": "@SignInPage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
