@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="35.239">
-    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant" time="6.741">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="28.623">
+    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant" time="6.146">
         <system-out><![CDATA[Given user goes to webpage..................................................passed
 When user navigates to registration page....................................passed
 And user verifies Registration is displayed.................................passed
-And user provides ssn id as "888-33-4535"...................................passed
-And user provides firstname as "Ali"........................................passed
-And user provides lastname as "Can".........................................passed
-And user provides username as "user19051"...................................passed
-And user provides email as "alican12905@gmail.com"..........................passed
+And user provides ssn id as "281-83-4535"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "abcdefghijklmn111"...........................passed
+And user provides email as "11mariocosta@gmail.com".........................passed
 When user types password as "1234"..........................................passed
 And user types password confirmation as "1234"..............................passed
 And user clicks on Register button..........................................passed
@@ -16,64 +16,83 @@ Then user should see Registration saved message.............................pass
 And user closes the browser.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant" time="4.453">
+    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 2" time="5.557">
         <system-out><![CDATA[Given user goes to webpage..................................................passed
 When user navigates to registration page....................................passed
 And user verifies Registration is displayed.................................passed
-And user provides username as ""............................................passed
-Then user should see "Your username is required." message...................passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="5.626">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides ssn id as "358-33-4525"...................................passed
-And user provides firstname as "Stefan".....................................passed
-And user provides lastname as "Soluchkov"...................................passed
-And user provides username as "kurrupt818"..................................passed
-And user provides email as "soluchkow1221@gmail.com"........................passed
-When user types password as "369369"........................................passed
-And user types password confirmation as "369369"............................passed
+And user provides ssn id as "382-73-4535"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "opqrstuvwxyz111".............................passed
+And user provides email as "11mariocosta1@gmail.com"........................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
 And user clicks on Register button..........................................passed
 Then user should see Registration saved message.............................passed
 And user closes the browser.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="4.656">
+    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 3" time="5.271">
         <system-out><![CDATA[Given user goes to webpage..................................................passed
 When user navigates to registration page....................................passed
 And user verifies Registration is displayed.................................passed
-And user provides the invalid email as ""...................................passed
-Then user should see "Your email is required." message......................passed
+And user provides ssn id as "483-63-4535"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "1234567890111"...............................passed
+And user provides email as "11mariocosta2@gmail.com"........................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
 And user closes the browser.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="4.424">
+    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 4" time="3.82">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "584-53-4535"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "!@#$%^&*()_+-=";':./,\<>{}111"...............undefined
+And user provides email as "11mariocosta3@gmail.com"........................skipped
+When user types password as "1234"..........................................skipped
+And user types password confirmation as "1234"..............................skipped
+And user clicks on Register button..........................................skipped
+Then user should see Registration saved message.............................skipped
+And user closes the browser.................................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 5" time="2.07">
         <system-out><![CDATA[Given user goes to webpage..................................................passed
 When user navigates to registration page....................................passed
 And user verifies Registration is displayed.................................passed
-And user provides the invalid email as "user"...............................passed
-Then user should see "Your email is required to be at least 5 characters." message.passed
+And user provides ssn id as "685-43-4535"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "ABCDEFGHIJKLMN111"...........................passed
+And user provides email as "11mariocosta4@gmail.com"........................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
 And user closes the browser.................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant2" time="4.688">
+    <testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 6" time="5.373">
         <system-out><![CDATA[Given user goes to webpage..................................................passed
 When user navigates to registration page....................................passed
 And user verifies Registration is displayed.................................passed
-And user provides the invalid email as "user1905@gmailcom"..................passed
-Then user should see "This field is invalid" message........................passed
-And user closes the browser.................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="email cannot be left blank" name="test email for new applicant3" time="4.329">
-        <system-out><![CDATA[Given user goes to webpage..................................................passed
-When user navigates to registration page....................................passed
-And user verifies Registration is displayed.................................passed
-And user provides email as "@gmail.com".....................................passed
-Then user should see "This field is invalid" message........................passed
+And user provides ssn id as "786-92-4535"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "OPQRSTUVWXYZ111".............................passed
+And user provides email as "11mariocosta5@gmail.com"........................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
 And user closes the browser.................................................passed
 ]]></system-out>
     </testcase>

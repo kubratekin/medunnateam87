@@ -17,7 +17,15 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
     And user closes the browser
 
     Examples: test data for applicants
-      | ssn         | firstname | lastname | username | email                | password | passwordconfirm |
-      | 888-33-4535 | Ali       | Can      | user19051 | alican12905@gmail.com | 1234     | 1234            |
+      | ssn         | firstname | lastname | username                     | email                  | password | passwordconfirm |
+      | 281-83-4535 | Mario     | Costa    | abcdefghijklmn111             | 11mariocosta@gmail.com  | 1234     | 1234            |
+      | 382-73-4535 | Mario     | Costa    | opqrstuvwxyz111               | 11mariocosta1@gmail.com | 1234     | 1234            |
+      | 483-63-4535 | Mario     | Costa    | 1234567890111                 | 11mariocosta2@gmail.com | 1234     | 1234            |
+      | 584-53-4535 | Mario     | Costa    | !@#$%^&*()_+-=";':./,\<>{}111 | 11mariocosta3@gmail.com | 1234     | 1234            |
+      | 685-43-4535 | Mario     | Costa    | ABCDEFGHIJKLMN111             | 11mariocosta4@gmail.com | 1234     | 1234            |
+      | 786-92-4535 | Mario     | Costa    | OPQRSTUVWXYZ111               | 11mariocosta5@gmail.com | 1234     | 1234            |
+
+
+
 
 

@@ -46,4 +46,7 @@ public class RegistrationPage {
 
     @FindBy (xpath = "//div[text()='This field is invalid']")
     public WebElement thisFieldIsInvalid; //emin
+
+    @FindBy (xpath = "//div[text()='Your username is invalid.']")
+    public WebElement usernameIsInvalidMessage; //emin
 }

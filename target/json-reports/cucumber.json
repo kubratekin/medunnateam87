@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-07-06T20:56:00.055Z",
+        "start_timestamp": "2022-07-08T15:25:02.788Z",
         "line": 21,
         "name": "test username for new applicant",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4797620700,
+              "duration": 4205854100,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 163415100,
+              "duration": 158901200,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 49969000,
+              "duration": 51967400,
               "status": "passed"
             },
             "line": 7,
@@ -49,15 +49,15 @@
           },
           {
             "result": {
-              "duration": 94941600,
+              "duration": 95939800,
               "status": "passed"
             },
             "line": 8,
-            "name": "user provides ssn id as \"888-33-4535\"",
+            "name": "user provides ssn id as \"281-83-4535\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"888-33-4535\"",
+                  "val": "\"281-83-4535\"",
                   "offset": 24
                 }
               ],
@@ -67,15 +67,15 @@
           },
           {
             "result": {
-              "duration": 75953200,
+              "duration": 89945300,
               "status": "passed"
             },
             "line": 9,
-            "name": "user provides firstname as \"Ali\"",
+            "name": "user provides firstname as \"Mario\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Ali\"",
+                  "val": "\"Mario\"",
                   "offset": 27
                 }
               ],
@@ -85,15 +85,15 @@
           },
           {
             "result": {
-              "duration": 78950500,
+              "duration": 76525500,
               "status": "passed"
             },
             "line": 10,
-            "name": "user provides lastname as \"Can\"",
+            "name": "user provides lastname as \"Costa\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Can\"",
+                  "val": "\"Costa\"",
                   "offset": 26
                 }
               ],
@@ -103,15 +103,15 @@
           },
           {
             "result": {
-              "duration": 87945100,
+              "duration": 106934600,
               "status": "passed"
             },
             "line": 11,
-            "name": "user provides username as \"user19051\"",
+            "name": "user provides username as \"abcdefghijklmn111\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"user19051\"",
+                  "val": "\"abcdefghijklmn111\"",
                   "offset": 26
                 }
               ],
@@ -121,15 +121,15 @@
           },
           {
             "result": {
-              "duration": 123925800,
+              "duration": 119926300,
               "status": "passed"
             },
             "line": 12,
-            "name": "user provides email as \"alican12905@gmail.com\"",
+            "name": "user provides email as \"11mariocosta@gmail.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"alican12905@gmail.com\"",
+                  "val": "\"11mariocosta@gmail.com\"",
                   "offset": 23
                 }
               ],
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 57961600,
+              "duration": 57963500,
               "status": "passed"
             },
             "line": 13,
@@ -157,7 +157,7 @@
           },
           {
             "result": {
-              "duration": 70957100,
+              "duration": 71955300,
               "status": "passed"
             },
             "line": 14,
@@ -175,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 22985500,
+              "duration": 26983500,
               "status": "passed"
             },
             "line": 15,
@@ -187,7 +187,7 @@
           },
           {
             "result": {
-              "duration": 864754200,
+              "duration": 807992100,
               "status": "passed"
             },
             "line": 16,
@@ -199,7 +199,1094 @@
           },
           {
             "result": {
-              "duration": 150905700,
+              "duration": 150530100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02"
+          },
+          {
+            "name": "@US_002_TC_001"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-08T15:25:08.954Z",
+        "line": 22,
+        "name": "test username for new applicant",
+        "description": "",
+        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3690275300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to webpage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 167847800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35976500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verifies Registration is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90214800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user provides ssn id as \"382-73-4535\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"382-73-4535\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78950900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provides firstname as \"Mario\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mario\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81949100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides lastname as \"Costa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Costa\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107053500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user provides username as \"opqrstuvwxyz111\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"opqrstuvwxyz111\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118980300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user provides email as \"11mariocosta1@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11mariocosta1@gmail.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58963000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user types password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73954700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user types password confirmation as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24985300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks on Register button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 888037300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should see Registration saved message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 123036800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02"
+          },
+          {
+            "name": "@US_002_TC_001"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-08T15:25:14.521Z",
+        "line": 23,
+        "name": "test username for new applicant",
+        "description": "",
+        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3421817200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to webpage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 158364000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32978900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verifies Registration is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90943200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user provides ssn id as \"483-63-4535\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"483-63-4535\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76951500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provides firstname as \"Mario\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mario\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78950300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides lastname as \"Costa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Costa\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93942100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user provides username as \"1234567890111\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567890111\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117925300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user provides email as \"11mariocosta2@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11mariocosta2@gmail.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55965600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user types password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75951500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user types password confirmation as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25984100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks on Register button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 863716100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should see Registration saved message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 163998200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02"
+          },
+          {
+            "name": "@US_002_TC_001"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-08T15:25:19.829Z",
+        "line": 24,
+        "name": "test username for new applicant",
+        "description": "",
+        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3373574400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to webpage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155902500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29980700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verifies Registration is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89945000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user provides ssn id as \"584-53-4535\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"584-53-4535\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83948300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provides firstname as \"Mario\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mario\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79691800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides lastname as \"Costa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Costa\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user provides username as \"!@#$%^\u0026*()_+-\u003d\";\u0027:./,\\\u003c\u003e{}111\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user provides email as \"11mariocosta3@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11mariocosta3@gmail.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user types password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user types password confirmation as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user clicks on Register button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user should see Registration saved message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02"
+          },
+          {
+            "name": "@US_002_TC_001"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-08T15:25:23.665Z",
+        "line": 25,
+        "name": "test username for new applicant",
+        "description": "",
+        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 219863700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to webpage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165896800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27983600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verifies Registration is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80949200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user provides ssn id as \"685-43-4535\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"685-43-4535\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72954300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provides firstname as \"Mario\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mario\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74953900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides lastname as \"Costa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Costa\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106932900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user provides username as \"ABCDEFGHIJKLMN111\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABCDEFGHIJKLMN111\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138915100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user provides email as \"11mariocosta4@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11mariocosta4@gmail.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57962500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user types password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79950200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user types password confirmation as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22986500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks on Register button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 852580200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should see Registration saved message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 160613900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US02"
+          },
+          {
+            "name": "@US_002_TC_001"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-08T15:25:25.746Z",
+        "line": 26,
+        "name": "test username for new applicant",
+        "description": "",
+        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3501533800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to webpage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160717600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28794400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verifies Registration is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91942700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user provides ssn id as \"786-92-4535\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"786-92-4535\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 79401400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user provides firstname as \"Mario\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mario\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78950300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user provides lastname as \"Costa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Costa\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107932400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user provides username as \"OPQRSTUVWXYZ111\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OPQRSTUVWXYZ111\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113930200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user provides email as \"11mariocosta5@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"11mariocosta5@gmail.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56184000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user types password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71955600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user types password confirmation as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28982200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user clicks on Register button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 896354600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should see Registration saved message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 148845200,
               "status": "passed"
             },
             "line": 17,
@@ -239,971 +1326,6 @@
       },
       {
         "name": "@US_002_TC_001",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 6
-        }
-      },
-      {
-        "name": "@ui",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 20
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-06T20:56:06.811Z",
-        "line": 3,
-        "name": "test username for new applicant",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4039192900,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 164871100,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 32981100,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 55015900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provides username as \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user should see \"Your username is required.\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Your username is required.\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 153487100,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_002"
-          },
-          {
-            "name": "@ui"
-          }
-        ]
-      }
-    ],
-    "name": "Choose a username that can contain any chars, but it cannot be blank",
-    "description": "",
-    "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/us_002/US_002_TC_002_UI.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@US_002_TC_002",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 6
-        }
-      },
-      {
-        "name": "@ui",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 20
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-06T20:56:11.274Z",
-        "line": 21,
-        "name": "test email for new applicant",
-        "description": "",
-        "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension;test-email-for-new-applicant;test-data-for-applicants;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3800329200,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 156767300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31138700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 86511000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides ssn id as \"358-33-4525\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"358-33-4525\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82941700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provides firstname as \"Stefan\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Stefan\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82948500,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user provides lastname as \"Soluchkov\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Soluchkov\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82947400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user provides username as \"kurrupt818\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"kurrupt818\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 113930600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user provides email as \"soluchkow1221@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"soluchkow1221@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 69955300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user types password as \"369369\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"369369\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 82947900,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user types password confirmation as \"369369\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"369369\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22986200,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 864669600,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user should see Registration saved message",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 133176300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_003"
-          },
-          {
-            "name": "@ui"
-          }
-        ]
-      }
-    ],
-    "name": "email id cannot be created without \"@\" sign and \".\" extension",
-    "description": "",
-    "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/us_002/US_002_TC_003_UI.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@US_002_TC_003",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 6
-        }
-      },
-      {
-        "name": "@ui",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 20
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-06T20:56:16.911Z",
-        "line": 3,
-        "name": "test email for new applicant",
-        "description": "",
-        "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension;test-email-for-new-applicant",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4239147500,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 168668600,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 30539900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 69915400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provides the invalid email as \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 999700,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user should see \"Your email is required.\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Your email is required.\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 141718800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_004"
-          },
-          {
-            "name": "@ui"
-          }
-        ]
-      }
-    ],
-    "name": "email id cannot be created without \"@\" sign and \".\" extension",
-    "description": "",
-    "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/us_002/US_002_TC_004_UI.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@US_002_TC_004",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 6
-        }
-      },
-      {
-        "name": "@ui",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 20
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-06T20:56:21.576Z",
-        "line": 3,
-        "name": "test email for new applicant",
-        "description": "",
-        "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension;test-email-for-new-applicant",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3960290300,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 154068900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31087800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 86107100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provides the invalid email as \"user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"user\"",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35979100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user should see \"Your email is required to be at least 5 characters.\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Your email is required to be at least 5 characters.\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 149387800,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_005"
-          },
-          {
-            "name": "@ui"
-          }
-        ]
-      }
-    ],
-    "name": "email id cannot be created without \"@\" sign and \".\" extension",
-    "description": "",
-    "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/us_002/US_002_TC_005_UI.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@US_002_TC_005",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 6
-        }
-      },
-      {
-        "name": "@ui",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 20
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-06T20:56:26.007Z",
-        "line": 3,
-        "name": "test email for new applicant2",
-        "description": "",
-        "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension;test-email-for-new-applicant2",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4095692200,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 184424300,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 33978500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 133916900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provides the invalid email as \"user1905@gmailcom\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"user1905@gmailcom\"",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44972200,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user should see \"This field is invalid\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"This field is invalid\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 187696000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_006"
-          },
-          {
-            "name": "@ui"
-          }
-        ]
-      }
-    ],
-    "name": "email id cannot be created without \"@\" sign and \".\" extension",
-    "description": "",
-    "id": "email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extension",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/us_002/US_002_TC_006_UI.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@US_002_TC_006",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 6
-        }
-      },
-      {
-        "name": "@ui",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 20
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-06T20:56:30.703Z",
-        "line": 4,
-        "name": "test email for new applicant3",
-        "description": "",
-        "id": "email-cannot-be-left-blank;test-email-for-new-applicant3",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3866716400,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 175353200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 30981100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 97939200,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides email as \"@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32978200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user should see \"This field is invalid\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"This field is invalid\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 119611700,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_007"
-          },
-          {
-            "name": "@ui"
-          }
-        ]
-      }
-    ],
-    "name": "email cannot be left blank",
-    "description": "",
-    "id": "email-cannot-be-left-blank",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/us_002/US_002_TC_007_UI.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@US_002_TC_007",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -109,9 +109,10 @@ public class US_002_Stepdefs {
     public void userProvidesTheInvalidEmailAs(String arg0) {
         registrationPage.emailTextbox.sendKeys(arg0 + Keys.ENTER);
     }
-//
-//    @And("user clicks on new password field")
-//    public void userClicksOnNewPasswordField() {
-//        registrationPage.thisFieldIsInvalid.click();
-//    }
+
+
+
+
+
+
 }
