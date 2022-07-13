@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class LoginPage {
+public class  LoginPage {
 
     public LoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -45,10 +45,6 @@ public class LoginPage {
     public WebElement signInAccountMenuDropdown;
     @FindBy (xpath = "//span[text()='Settings']")
     public WebElement accountSettingsDropdownSelect;
-
-
-
-
 
 
 
