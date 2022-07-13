@@ -33,11 +33,28 @@ public class PatientViewByAdminAndStaffPageMedunna {
     @FindBy(css = ".form-control")
     public WebElement searchBox;
 
-    @FindBy(xpath = "//table/tbody/tr")
-    public List<WebElement> infoPatientTable;
+    @FindBy(id = "jh-create-entity")
+    public WebElement createNewPatientButton;
 
 
-    @FindBy(xpath = "(//table/tbody/tr)[1]/td")
-    public List<WebElement> firstPatientInfoListOfTable;
+
+    @FindBy(xpath = "(//nav/ul/li)[9]")
+    public WebElement lastPageButton;
+
+    @FindBy(xpath = "(//nav/ul/li[6])/a")
+    public WebElement actualPageNumber;
+
+    @FindBy(xpath = "(//nav/ul/li[5])/a")
+    public WebElement previousPageNumber;
+
+
+
+    //   --  //tbody/tr/td[2]
+    //   --  //tbody/tr/td/div/a[3]
+    // delete confirmation page delete button =>  css = #jhi-confirm-delete-patient
+
+
+
+
 
 }

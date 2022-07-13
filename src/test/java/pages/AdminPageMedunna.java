@@ -19,4 +19,9 @@ public class AdminPageMedunna {
 
     @FindBy(xpath = "(//a[@href='/patient'])[1]")
     public WebElement patientButton;
+
+    @FindBy(xpath = "//a[@href='/admin/user-management']")
+    public WebElement userManagementButton;
+
+
 }
