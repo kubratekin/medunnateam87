@@ -302,7 +302,7 @@ public abstract class Driver {
     }
 
     public static void navigateToUrl(String url){
-        Driver.getDriver().get(url);
+        Driver.getDriver().get("https://medunna.com/");
     }
 
     public static void adminLogIn(String userName, String password){
