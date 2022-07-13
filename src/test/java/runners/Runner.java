@@ -14,13 +14,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-
         features = "./src/test/resources/features",//MUST
-        glue = "stepdefinitions/uisteps",//MUST
-        tags = " @US10appointment",
-
-
-        dryRun =false
+        glue = "stepdefinitions",//MUST
+        tags = "@12-13",
+        dryRun = false
 
 )
 public class Runner {
