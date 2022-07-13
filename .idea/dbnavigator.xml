@@ -29,13 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="9792920a-1417-4fcd-8b2d-a234221a44fb">
-      <console name="Medunna2" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT ssn, first_name, last_name, email FROM jhi_user WHERE EXISTS (SELECT * FROM patient WHERE patient.user_id = jhi_user.id);
-SELECT * FROM patient WHERE first_name='team87del' AND email='a@b.com' ;
-SELECT * FROM patient WHERE first_name='team87NewPatient' AND email='team87@qa.com' ;
-SELECT id FROM patient ORDER BY id ASC;
-SELECT * FROM patient WHERE id='116236';
-SELECT * FROM patient WHERE email='team87@qa.com';
-DELETE FROM patient WHERE id = '116236' RETURNING *;]]></console>
+      <console name="Medunna2" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
