@@ -2,7 +2,7 @@
   Feature: Update an appointment by doctor
 
     Background:Common steps
-      Given user is on the login pagegit branch
+      Given user is on the login page
       When user clicks on login dropdown icon
       And user clicks on sign in dropdown
       And user sends username "<username>"
@@ -13,6 +13,8 @@
       And Doctor navigates to My Pages Dropdown
       And Doctor clicks on My Appointments Button
       And Doctor selects Appointment date from and to boxes
+      And Doctor clicks on Edit Button
+
 
     @Positive
     Scenario: Update My Appointments by doctor
@@ -23,7 +25,7 @@
         And Doctor ckicks on Save Button
         And Doctor verifies Appointment is updated succesfully
         Then Doctor clicks Sign Out Button
-        Then close the application
+        Then Doctor close the application
 
     @Negative
     Scenario: Update My Appointments by doctor
@@ -36,7 +38,7 @@
         And Doctor selects UNAPPROVED from status field
         And Doctor verifies UNAPPROVED can not selecteble
         Then Doctor clicks Sign Out Button
-        Then close the application
+        Then Doctor close the application
 
 
 
