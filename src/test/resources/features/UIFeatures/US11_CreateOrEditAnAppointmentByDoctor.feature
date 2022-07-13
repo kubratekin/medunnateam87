@@ -2,7 +2,7 @@
   Feature: Update an appointment by doctor
 
     Background:Common steps
-      Given user is on the login page
+      Given user is on the login pagegit branch
       When user clicks on login dropdown icon
       And user clicks on sign in dropdown
       And user sends username "<username>"
