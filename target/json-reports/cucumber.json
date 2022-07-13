@@ -3,129 +3,395 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "TC01_02_before",
+        "line": 4,
+        "name": "Sign in to password page",
         "description": "",
         "type": "background",
         "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:02:17.522Z",
+        "line": 6,
+        "name": "US08_password_edit",
+        "description": "",
+        "id": "us008-password-update;us08-password-edit",
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8741000000,
+              "duration": 8985000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User is on the login page",
+            "line": 7,
+            "name": "user navigates to Url",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_is_on_the_login_page()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_navigates_to_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 96000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User clicks on account menu",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_account_menu()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 131000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks on signin",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 183000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User enters username",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 174000000,
+              "duration": 1138000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "User enters password",
+            "name": "user clicks on Account menu",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_password()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_clicks_on_account_menu()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 243000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "User clicks on signin button",
+            "name": "user clicks on Sign in button",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin_button()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_clicks_on_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1083000000,
+              "duration": 215000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "Doctor verifies that his page is displayed",
+            "name": "user enters \"team87user01\" as username and \"1234567\" as password",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_his_page_is_displayed()"
+              "arguments": [
+                {
+                  "val": "\"team87user01\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_enters_as_username_and_as_password(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 129000000,
               "status": "passed"
             },
             "line": 11,
-            "name": "Doctor clicks on mypage",
+            "name": "user clicks on the Signin button",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_mypage()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_clicks_on_the_signin_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 101000000,
+              "duration": 2636000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "Doctor clicks on myaccountement",
+            "name": "verify the login is successful",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_myaccountement()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.verify_the_login_is_successful()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 83000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "Doctor verifies Appointement page is displayed",
+            "name": "user clicks on account menu on the account page",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_appointement_page_is_displayed()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userClicksOnAccountMenuOnTheAccountPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2153000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on Password button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_clicks_on_password_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:02:33.254Z",
+        "line": 26,
+        "name": "The new password should be confirmed",
+        "description": "",
+        "id": "us008-password-update;the-new-password-should-be-confirmed;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2131000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user sends current password \"1234567\" to current password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_current_password_to_current_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2141000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user sends new password \"1234560\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234560\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2125000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user sends new password \"1234560\" again to new password confirmation part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234560\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_again_to_new_password_confirmation_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3097000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_clicks_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6060000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user verifies the success message on the toast container box",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesTheSuccessMessageOnTheToastContainerBox()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0001"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:02:48.833Z",
+        "line": 38,
+        "name": "for stronger password adding one LOWERCASE character",
+        "description": "",
+        "id": "us008-password-update;for-stronger-password-adding-one-lowercase-character;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2142000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user cleans the new password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2129000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user sends new password \"123456\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2115000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user verifies the password strength bar is one",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsOne()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2060000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user add character \" a\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\" a\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userAddCharacterToNewPasswordPart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2070000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user verifies the password strength bar is two",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsTwo()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0002"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:02:59.371Z",
+        "line": 50,
+        "name": "for stronger password adding one UPPERCASE character",
+        "description": "",
+        "id": "us008-password-update;for-stronger-password-adding-one-uppercase-character;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2087000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user cleans the new password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2138000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user sends new password \"1234560\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234560\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2081000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user verifies the password strength bar is two",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsTwo()"
             },
             "keyword": "And "
           },
@@ -134,299 +400,707 @@
               "duration": 2103000000,
               "status": "passed"
             },
-            "line": 14,
-            "name": "Doctor clicks on Edit button",
+            "line": 45,
+            "name": "user add character \" C\" to new password part",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_edit_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-06T07:08:53.765Z",
-        "line": 17,
-        "name": "TC01",
-        "description": "",
-        "id": "doctor-can-see-test-result;tc01",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 5323000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Doctor clicks on one of the Show Test Result button.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_one_of_the_show_test_result_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1088000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Doctor clicks on one of the View Results button.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_one_of_the_view_results_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 224000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Doctor verifies that the Test Results page is displayed.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_the_test_results_page_is_displayed()"
+              "arguments": [
+                {
+                  "val": "\" C\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userAddCharacterToNewPasswordPart(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2192000000,
+              "duration": 2076000000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "Doctor verifies that  testListHeader is displayed.",
+            "line": 46,
+            "name": "user verifies the password strength bar is four",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_testListHeader_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 180000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Doctor closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_closes_the_browser()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsFour()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US13"
+            "name": "@US_08_user_password_segment"
           },
           {
-            "name": "@US13_TC01"
+            "name": "@US08_TC_0003"
           }
         ]
       },
       {
-        "line": 3,
-        "name": "TC01_02_before",
+        "line": 4,
+        "name": "Sign in to password page",
         "description": "",
         "type": "background",
         "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:03:09.897Z",
+        "line": 62,
+        "name": "for stronger password adding one DIGIT character",
+        "description": "",
+        "id": "us008-password-update;for-stronger-password-adding-one-digit-character;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6781000000,
+              "duration": 2095000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User is on the login page",
+            "line": 54,
+            "name": "user cleans the new password part",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_is_on_the_login_page()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 82000000,
+              "duration": 2176000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User clicks on account menu",
+            "line": 55,
+            "name": "user sends new password \"qazwsX!\" to new password part",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_account_menu()"
+              "arguments": [
+                {
+                  "val": "\"qazwsX!\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2069000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user verifies the password strength bar is four",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsFour()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2112000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user add character \" 5\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\" 5\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userAddCharacterToNewPasswordPart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2080000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user verifies the password strength bar is five",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsFive()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0004"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:03:20.455Z",
+        "line": 74,
+        "name": "for stronger password adding one SPECIAL character",
+        "description": "",
+        "id": "us008-password-update;for-stronger-password-adding-one-special-character;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2102000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user cleans the new password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2123000000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user sends new password \"12345xy\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345xy\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2067000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user verifies the password strength bar is two",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsTwo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2072000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user add character \" !\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\" !\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userAddCharacterToNewPasswordPart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2093000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "user verifies the password strength bar is four",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsFour()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0005"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:03:30.944Z",
+        "line": 84,
+        "name": "(Negative Scenario) sending 4 or 5 or 6 characters to verify that is not enough for a stronger password(There should be at least 7 characters)",
+        "description": "",
+        "id": "us008-password-update;(negative-scenario)-sending-4-or-5-or-6-characters-to-verify-that-is-not-enough-for-a-stronger-password(there-should-be-at-least-7-characters);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2079000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "user cleans the new password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2163000000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "user sends new password \"qA1!\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qA1!\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2077000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user verifies the password strength bar is one",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsOne()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0006-0007-0008_negative_test_for_stronger_password_sending_7_character"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:03:37.298Z",
+        "line": 85,
+        "name": "(Negative Scenario) sending 4 or 5 or 6 characters to verify that is not enough for a stronger password(There should be at least 7 characters)",
+        "description": "",
+        "id": "us008-password-update;(negative-scenario)-sending-4-or-5-or-6-characters-to-verify-that-is-not-enough-for-a-stronger-password(there-should-be-at-least-7-characters);;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2083000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "user cleans the new password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2153000000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "user sends new password \"qA1!5\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qA1!5\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2089000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user verifies the password strength bar is one",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsOne()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0006-0007-0008_negative_test_for_stronger_password_sending_7_character"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:03:43.668Z",
+        "line": 86,
+        "name": "(Negative Scenario) sending 4 or 5 or 6 characters to verify that is not enough for a stronger password(There should be at least 7 characters)",
+        "description": "",
+        "id": "us008-password-update;(negative-scenario)-sending-4-or-5-or-6-characters-to-verify-that-is-not-enough-for-a-stronger-password(there-should-be-at-least-7-characters);;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2099000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "user cleans the new password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2138000000,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "user sends new password \"qA1!5*\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qA1!5*\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2117000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user verifies the password strength bar is one",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsOne()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0006-0007-0008_negative_test_for_stronger_password_sending_7_character"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:03:50.074Z",
+        "line": 98,
+        "name": "(Positive Scenario) sending 6 then add 1 chars to see the password is getting stronger(There should be at least 7 characters)",
+        "description": "",
+        "id": "us008-password-update;(positive-scenario)-sending-6-then-add-1-chars-to-see-the-password-is-getting-stronger(there-should-be-at-least-7-characters);;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2092000000,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "user cleans the new password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2175000000,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user sends new password \"12345x\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345x\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_new_password_to_new_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2089000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user verifies the password strength bar is one",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsOne()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2109000000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user add character \" !\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\" !\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userAddCharacterToNewPasswordPart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2084000000,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "user verifies the password strength bar is four",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userVerifiesThePasswordStrengthBarIsFour()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_08_user_password_segment"
+          },
+          {
+            "name": "@US08_TC_0009_positive_test_for_stronger_password_sending_7_character"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Sign in to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-07-13T18:04:00.665Z",
+        "line": 115,
+        "name": "old password should not be used",
+        "description": "",
+        "id": "us008-password-update;old-password-should-not-be-used;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2134000000,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "user cleans the current password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheCurrentPasswordPart()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 131000000,
+              "duration": 2072000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User clicks on signin",
+            "line": 104,
+            "name": "user cleans the new password part",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheNewPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2111000000,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user cleans the confirmation password part",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCleansTheConfirmationPasswordPart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2130000000,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user sends current password \"1234560\" to current password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234560\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_sends_current_password_to_current_password_part(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2165000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "user sends current password \"1234567\" to new password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userSendsCurrentPasswordToNewPasswordPart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2145000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "user sends current password \"1234567\" to confirmation password part",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userSendsCurrentPasswordToConfirmationPasswordPart(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3162000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.user_clicks_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6067000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user sees the success message on the toast container box as a BUG",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userSeesTheSuccessMessageOnTheToastContainerBoxAsABUG()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 166000000,
+              "duration": 817000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User enters username",
+            "line": 111,
+            "name": "user close the driver",
             "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 136000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User enters password",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_enters_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 124000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks on signin button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.user_clicks_on_signin_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1045000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Doctor verifies that his page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_that_his_page_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Doctor clicks on mypage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_mypage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 100000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Doctor clicks on myaccountement",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_myaccountement()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 48000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Doctor verifies Appointement page is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_verifies_appointement_page_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2116000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Doctor clicks on Edit button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_edit_button()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-06T07:09:15.958Z",
-        "line": 26,
-        "name": "TC02",
-        "description": "",
-        "id": "doctor-can-see-test-result;tc02",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 330000000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "Doctor clicks on the Request Inpatient Result button.",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_clicks_on_the_request_inpatient_result_button()"
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.userCloseTheDriver()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5141000000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Doctor get error message or success message",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_get_error_message_or_success_message()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 177000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Doctor closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US13_StepDefs.doctor_closes_the_browser()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US13"
+            "name": "@US_08_user_password_segment"
           },
           {
-            "name": "@US13_TC02"
+            "name": "@US08_TC_0010"
           }
         ]
       }
     ],
-    "name": "doctor_can_see_test-result",
+    "name": "US008_password_update",
     "description": "",
-    "id": "doctor-can-see-test-result",
+    "id": "us008-password-update",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US13_sevim.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US08_PasswordEdition.feature",
     "tags": [
       {
-        "name": "@US13",
+        "name": "@US_08_user_password_segment",
         "type": "Tag",
         "location": {
           "line": 1,
