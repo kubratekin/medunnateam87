@@ -24,7 +24,7 @@ public class US05_StepDefs {
 
     HomePage homePage = new HomePage();
     HomePageMedunna homePageMedunna=new HomePageMedunna();
-    RegistrationPage registrationPage= new RegistrationPage();
+    RegistrationPage registrationPage=new RegistrationPage();
     AppointmentPage appointmentPage= new AppointmentPage();
     LoginPage loginPage=new LoginPage();
     Actions actions = new Actions(Driver.getDriver());
@@ -208,13 +208,13 @@ public void user_verifies_if_navigated_to_the_appointment_page() {
     }
 
 
-    @When("user navigates to registration page")
-    public void user_navigates_to_registration_page() {
-        homePageMedunna.logInDropdown.click();
-        homePageMedunna.registerButton.click();
-
-
-    }
+//    @When("user navigates to registration page")
+//    public void user_navigates_to_registration_page() {
+//        homePageMedunna.logInDropdown.click();
+//        homePageMedunna.registerButton.click();
+//
+//
+//    }
     @Then("provide <valid> info for Registiration")
     public void provide_valid_info_for_registiration() {
         registrationPage.ssnTextbox.sendKeys(appointment.getSsn()+Keys.ENTER);
@@ -275,10 +275,10 @@ public void user_verifies_if_navigated_to_the_appointment_page() {
 
 
 
-    @And("close the application")
-    public void close_the_application() {
-        Driver.closeDriver();
-    }
+    //@And("close the application")
+   // public void close_the_application() {
+   //     Driver.closeDriver();
+   // }
 
 
 
