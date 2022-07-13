@@ -1,47 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="11.734">
-<testcase classname="US_03 Registiration Password" name="TC_01 AtLeastFourChar" time="8.404">
-<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
-Then user clicks on registiration button and navigates to registiration page.passed
-Then user types one char and sees the length is not enough..................passed
-And user types two char and sees the length is not enough...................passed
-And user types three char sees the length is not enough.....................passed
-Then user types 4 char and sees the length is enough........................passed
-]]></system-out>
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="1.216">
+<testcase classname="First Feature File" name="TC09" time="0.244">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna webpage..........................................undefined
+And verify make an appointment button is displayed..........................skipped
+When user clicks to Make an Appointment.....................................skipped
+Then verify Make an Appointment page is displayed...........................skipped
+When user provides the "123" phone number...................................skipped
+Then user gets Phone number is invalid error message........................skipped
+And close the application...................................................skipped
+]]></failure>
 </testcase>
-<testcase classname="US_03 Registiration Password" name="TC_02 AtLeastSevenChars" time="0.632">
-<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
-Then user clicks on registiration button and navigates to registiration page.passed
-Then user types seven chars.................................................passed
-And user sees strength level is changed to stronger.........................passed
-]]></system-out>
+<testcase classname="First Feature File" name="TC09_2" time="0.016">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna webpage..........................................undefined
+And verify make an appointment button is displayed..........................skipped
+When user clicks to Make an Appointment.....................................skipped
+Then verify Make an Appointment page is displayed...........................skipped
+When user provides the "00056800005" phone number...........................skipped
+Then user gets Phone number is invalid error message........................skipped
+And close the application...................................................skipped
+]]></failure>
 </testcase>
-<testcase classname="US_03 Registiration Password" name="TC_04 AtLeastSevenCharsWithOneLowerCaseOneUpperCase" time="0.603">
-<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
-Then user clicks on registiration button and navigates to registiration page.passed
-Then user types seven chars included one lowercase and one uppercase........passed
-And user sees strength level is changed to stronger.........................passed
-]]></system-out>
+<testcase classname="First Feature File" name="TC09_3" time="0.016">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna webpage..........................................undefined
+And verify make an appointment button is displayed..........................skipped
+When user clicks to Make an Appointment.....................................skipped
+Then verify Make an Appointment page is displayed...........................skipped
+When user provides the "1234568790" phone number............................skipped
+Then user gets Phone number is invalid error message........................skipped
+And close the application...................................................skipped
+]]></failure>
 </testcase>
-<testcase classname="US_03 Registiration Password" name="TC_03 AtLeastSevenCharsWithOneLowerCase" time="0.569">
-<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
-Then user clicks on registiration button and navigates to registiration page.passed
-Then user types seven chars included one lowercase char.....................passed
-And user sees strength level is changed to stronger.........................passed
-]]></system-out>
+<testcase classname="First Feature File" name="TC09_4" time="0.016">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna webpage..........................................undefined
+And verify make an appointment button is displayed..........................skipped
+When user clicks to Make an Appointment.....................................skipped
+Then verify Make an Appointment page is displayed...........................skipped
+When user provides the "12345687902" phone number...........................skipped
+Then user gets Phone number is invalid error message........................skipped
+And close the application...................................................skipped
+]]></failure>
 </testcase>
-<testcase classname="US_03 Registiration Password" name="TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber" time="0.6">
-<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
-Then user clicks on registiration button and navigates to registiration page.passed
-Then user types seven chars included one lowercase and one uppercase and number.passed
-And user sees strength level is changed to stronger.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US_03 Registiration Password" name="TC_06 AtleastSevenCharsWithOneLowerCaseUpperCaseNumberSpecialChar" time="0.62">
-<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
-Then user clicks on registiration button and navigates to registiration page.passed
-Then : user types seven chars included one lowercase and one uppercase and number and special char.passed
-And user sees strength level is changed to stronger.........................passed
-]]></system-out>
+<testcase classname="First Feature File" name="TC09_5" time="0.016">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to Medunna webpage..........................................undefined
+And verify make an appointment button is displayed..........................skipped
+When user clicks to Make an Appointment.....................................skipped
+Then verify Make an Appointment page is displayed...........................skipped
+When user provides the "12-325-45698" phone number..........................skipped
+Then user gets Phone number is invalid error message........................skipped
+And close the application...................................................skipped
+]]></failure>
 </testcase>
 </testsuite>
