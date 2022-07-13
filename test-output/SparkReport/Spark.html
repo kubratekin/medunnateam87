@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 5, 2022 03:11:21 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 13, 2022 03:42:42 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 5, 2022 03:11:21 PM</h3>
+<h3>Jul 13, 2022 03:42:42 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 5, 2022 03:11:42 PM</h3>
+<h3>Jul 13, 2022 03:42:48 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>9</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='6%'><b>1</b> steps failed,
+<b>14</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"US_09":19.116
+"US10":4.095
 };
 </script>
 <div class="row">
@@ -172,20 +177,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@US09</td>
+<td>@US10appointment</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@US09_TC08</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -210,21 +207,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 9,
-failGrandChild: 0,
+passGrandChild: 0,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 14,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -238,7 +235,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -246,31 +243,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US09</a><a class="dropdown-item" href="#">@US09_TC08</a>
+<a class="dropdown-item" href="#">@US10appointment</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">US_09</p>
+            <p class="name">US10</p>
             <p class="text-sm">
-              <span>3:11:23 PM</span> / <span>00:00:19:116</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:42:44 PM</span> / <span>00:00:04:095</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">US_09</h5>
-<span class='badge badge-success'>07.05.2022 3:11:23 PM</span>
-<span class='badge badge-danger'>07.05.2022 3:11:42 PM</span>
-<span class='badge badge-default'>00:00:19:116</span>
+<h5 class="test-status text-fail">US10</h5>
+<span class='badge badge-success'>07.13.2022 3:42:44 PM</span>
+<span class='badge badge-danger'>07.13.2022 3:42:48 PM</span>
+<span class='badge badge-default'>00:00:04:095</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,57 +279,105 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Physician checks and edit appoinment list</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
-      <div>
-      </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>Physician checks and edit appoinment list</div>
+                </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given Physician goes to Medunna page</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at utilities.Driver.navigateToUrl(Driver.java:303)
+	at stepdefinitions.uisteps.US10_AppointmentStepDef.physicianGoesToMedunnaPage(US10_AppointmentStepDef.java:30)
+	at ✽.Physician goes to Medunna page(file:///C:/Users/pc/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US10_omer.feature:6)
+</textarea>
+      
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "Jdoe" and password "12J34d!" with Staff credentials and clicks Sign in button</span>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician reaches Medunna pages to login</span>
+      <div>Step skipped
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()">
-                <span>Then User verifies that landed at Staff page</span>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician does Sign in page</span>
+      <div>Step skipped
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()">
-                <span>When User navigate to Patients information page from Staff page</span>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician types "Elharezmi"</span>
+      <div>Step skipped
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician types "1elharezmi1"</span>
+      <div>Step skipped
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersPatientSSNIntoSearchBox(java.lang.String)">
-                <span>When User enters patient SSN "123-10-8787" into search box</span>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician clicks submit</span>
+      <div>Step skipped
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatCanSeePatientRegistrationInformationPopulated()">
-                <span>Then User verifies that can see patient registration information populated</span>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Physicians goes own pages from MY PAGES tab</span>
+      <div>Step skipped
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
-      <div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Physician clicks My appoitment button</span>
+      <div>Step skipped
       </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Physician can see appoitment list</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician can check startdate</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Physician can check enddate</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Physician can clicks Edit button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician can edit the any appointment</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician can save it</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Physician can close the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
               </div>
-          </div>
+            </div>
         </div>
   </div>
 </div>
@@ -351,22 +396,22 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@US09</p>
+<p class="name">@US10appointment</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US09</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@US10appointment</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -377,13 +422,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:11:23 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:42:44 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</a>
+<a href="#" class="linked" test-id='1' id='3'>Physician checks and edit appoinment list</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</span>
+<span class="badge badge-default">US10.Physician checks and edit appoinment list</span>
 </div>
 </td>
 </tr>
@@ -391,18 +436,34 @@ eventsCount: 5,
 </table>
 </div>
 </li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@US09_TC08</p>
+<p class="name">java.lang.NullPointerException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US09_TC08</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -413,13 +474,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:11:23 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:42:44 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</a>
+<a href="#" class="linked" test-id='1' id='4'>Given Physician goes to Medunna page</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</span>
+<span class="badge badge-default">US10.Physician checks and edit appoinment list.Given Physician goes to Medunna page</span>
 </div>
 </td>
 </tr>

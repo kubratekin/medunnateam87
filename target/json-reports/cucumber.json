@@ -1,174 +1,209 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "US_09",
+        "start_timestamp": "2022-07-13T12:42:44.394Z",
+        "line": 24,
+        "name": "Physician checks and edit appoinment list",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "us10;physician-checks-and-edit-appoinment-list;user-information;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 12228628000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: null value in entry: url\u003dnull\r\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\r\n\tat com.google.common.collect.SingletonImmutableBiMap.\u003cinit\u003e(SingletonImmutableBiMap.java:42)\r\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\r\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat utilities.Driver.navigateToUrl(Driver.java:303)\r\n\tat stepdefinitions.uisteps.US10_AppointmentStepDef.physicianGoesToMedunnaPage(US10_AppointmentStepDef.java:30)\r\n\tat ✽.Physician goes to Medunna page(file:///C:/Users/pc/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US10_omer.feature:6)\r\n",
+              "duration": 3999000000,
+              "status": "failed"
             },
-            "line": 4,
-            "name": "user goes to URL",
+            "line": 6,
+            "name": "Physician goes to Medunna page",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianGoesToMedunnaPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 211151000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "User navigates to Sign in page",
+            "line": 7,
+            "name": "Physician reaches Medunna pages to login",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianReachesMedunnaPagesToLogin()"
             },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-05T12:11:22.957Z",
-        "line": 94,
-        "name": "TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated",
-        "description": "",
-        "id": "us-09;tc-08-staff-can-search-for-a-new-applicant-by-their-ssn-and-see-all-their-registration-info-populated",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "keyword": "Then "
+          },
           {
             "result": {
-              "duration": 404213000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 95,
-            "name": "User enters username \"Jdoe\" and password \"12J34d!\" with Staff credentials and clicks Sign in button",
+            "line": 8,
+            "name": "Physician does Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianDoesSignInPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Physician types \"Elharezmi\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Jdoe\"",
-                  "offset": 21
-                },
-                {
-                  "val": "\"12J34d!\"",
-                  "offset": 41
+                  "val": "\"Elharezmi\"",
+                  "offset": 16
                 }
               ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 789597000,
-              "status": "passed"
-            },
-            "line": 96,
-            "name": "User verifies that landed at Staff page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianTypes(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 139086000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 97,
-            "name": "User navigate to Patients information page from Staff page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 33384000,
-              "status": "passed"
-            },
-            "line": 98,
-            "name": "User verifies that landed at Patients information page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2237965000,
-              "status": "passed"
-            },
-            "line": 99,
-            "name": "User enters patient SSN \"123-10-8787\" into search box",
+            "line": 10,
+            "name": "Physician types \"1elharezmi1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"123-10-8787\"",
-                  "offset": 24
+                  "val": "\"1elharezmi1\"",
+                  "offset": 16
                 }
               ],
-              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersPatientSSNIntoSearchBox(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2794507000,
-              "status": "passed"
-            },
-            "line": 100,
-            "name": "User verifies that can see patient registration information populated",
-            "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatCanSeePatientRegistrationInformationPopulated()"
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianTypes(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 223329000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 101,
-            "name": "User closes the browser",
+            "line": 11,
+            "name": "Physician clicks submit",
             "match": {
-              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianClicksSubmit(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Physicians goes own pages from MY PAGES tab",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physiciansGoesOwnPagesFromMYPAGESTab()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Physician clicks My appoitment button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianClicksMyAppoitmentButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Physician can see appoitment list",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianCanSeeAppoitmentList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Physician can check startdate",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianCanCheckStartdate()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Physician can check enddate",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianCanCheckEnddate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Physician can clicks Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianCanClicksEditButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Physician can edit the any appointment",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianCanEditTheAnyAppointment()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Physician can save it",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianCanSaveIt()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Physician can close the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US10_AppointmentStepDef.physicianCanCloseTheBrowser()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US09"
-          },
-          {
-            "name": "@US09_TC08"
+            "name": "@US10appointment"
           }
         ]
       }
     ],
-    "name": "US_09",
+    "name": "US10",
     "description": "",
-    "id": "us-09",
+    "id": "us10",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US09.feature",
-    "tags": [
-      {
-        "name": "@US09",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/UIFeatures/US10_omer.feature",
+    "tags": []
   }
 ]

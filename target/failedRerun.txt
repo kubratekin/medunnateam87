@@ -1,1 +1,1 @@
-file:src/test/resources/features/UIFeatures/US08_PasswordEdition.feature:53
+file:src/test/resources/features/UIFeatures/US10_omer.feature:24
