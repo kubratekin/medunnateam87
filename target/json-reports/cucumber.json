@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9686000000,
+              "duration": 15688000000,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 94000000,
+              "duration": 86000000,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 149000000,
+              "duration": 143000000,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 117000000,
+              "duration": 110000000,
               "status": "passed"
             },
             "line": 7,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 468000000,
+              "duration": 524000000,
               "status": "passed"
             },
             "line": 10,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 60000000,
+              "duration": 61000000,
               "status": "passed"
             },
             "line": 11,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 1589000000,
+              "duration": 1444000000,
               "status": "passed"
             },
             "line": 14,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 125000000,
+              "duration": 155000000,
               "status": "passed"
             },
             "line": 15,
@@ -168,7 +168,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-07-06T22:40:32.039Z",
+        "start_timestamp": "2022-07-09T12:23:40.237Z",
         "line": 18,
         "name": "Update My Appointments by doctor",
         "description": "",
@@ -178,7 +178,7 @@
         "steps": [
           {
             "result": {
-              "duration": 439000000,
+              "duration": 452000000,
               "status": "passed"
             },
             "line": 19,
@@ -190,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 7090000000,
+              "duration": 7113000000,
               "status": "passed"
             },
             "line": 20,
@@ -202,7 +202,7 @@
           },
           {
             "result": {
-              "duration": 4724000000,
+              "duration": 4626000000,
               "status": "passed"
             },
             "line": 21,
@@ -214,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 10531000000,
+              "duration": 10482000000,
               "status": "passed"
             },
             "line": 22,
@@ -226,7 +226,7 @@
           },
           {
             "result": {
-              "duration": 2229000000,
+              "duration": 2222000000,
               "status": "passed"
             },
             "line": 23,
@@ -238,7 +238,7 @@
           },
           {
             "result": {
-              "duration": 1109000000,
+              "duration": 891000000,
               "status": "passed"
             },
             "line": 24,
@@ -250,7 +250,7 @@
           },
           {
             "result": {
-              "duration": 324000000,
+              "duration": 420000000,
               "status": "passed"
             },
             "line": 25,

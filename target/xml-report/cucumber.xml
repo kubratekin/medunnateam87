@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="39.879">
-<testcase classname="Update an appointment by doctor" name="Update My Appointments by doctor" time="39.372">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="45.571">
+<testcase classname="Update an appointment by doctor" name="Update My Appointments by doctor" time="45.049">
 <system-out><![CDATA[Given user is on the login page.............................................passed
 When user clicks on login dropdown icon.....................................passed
 And user clicks on sign in dropdown.........................................passed
