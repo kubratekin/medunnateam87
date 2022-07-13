@@ -20,6 +20,12 @@ public class HomePage {
     @FindBy (xpath = "//a[@href='/account/register']")
     public WebElement accountRegisterDropdownSelect;
 
+    @FindBy(xpath = "(//a[@href='#appointment'])[1]")
+    public WebElement makeAnAppointmentButton; //fnur
+
+    @FindBy(xpath = "//*[text()='Sign in']")
+    public WebElement signInButton;//fnur
+
 
 
 }
