@@ -1,6 +1,7 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.*;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -300,7 +302,36 @@ public abstract class Driver {
     }
 
     public static void navigateToUrl(String url){
-        Driver.getDriver().get(url);
+        Driver.getDriver().get("https://medunna.com/");
     }
 
+    public static void adminLogIn(String userName, String password){
+        navigateToUrl(ConfigReader.getProperty("medunaUrl"));
+        HomePageMedunna homePage = new HomePageMedunna();
+        waitAndClick(homePage.logInDropdown,1);
+        waitAndClick(homePage.signInButton,1);
+        SignInPageMedunna signInPage = new SignInPageMedunna();
+        waitAndSendText(signInPage.usernameBox,userName);
+        waitAndSendText(signInPage.passwordBox,password);
+        waitAndClick(signInPage.signInButton,1);
+    }
+
+    public static void createNewPatientByAdmin(String firstName,String lastName,String email,String phone){
+        adminLogIn("team87_admin","1234567");
+        AdminPageMedunna adminPage = new AdminPageMedunna();
+        waitAndClick(adminPage.itemsAndTitlesDropdown,1);
+        waitAndClick(adminPage.patientButton,2);
+        PatientViewByAdminAndStaffPageMedunna viewByAdminAndStaff = new PatientViewByAdminAndStaffPageMedunna();
+        waitAndClick(viewByAdminAndStaff.createNewPatientButton,1);
+        CreateOrEditPatientPage createPatient = new CreateOrEditPatientPage();
+        waitAndSendText(createPatient.firstNameTextBox, firstName);
+        waitAndSendText(createPatient.lastNameTextBox, lastName);
+        waitAndSendText(createPatient.emailTextBox, email);
+        waitAndSendText(createPatient.phoneTextBox, phone);
+        waitAndClick(createPatient.saveButton,1);
+        Driver.wait(3);
+        if (!viewByAdminAndStaff.infoSavedMessage.getText().contains("A Patient is created with identifier")){
+            System.out.println("Patient can not be created");
+        }
+    }
 }
