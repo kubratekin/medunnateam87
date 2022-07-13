@@ -23,10 +23,10 @@ public class US10_ApiAppointmentStepDef {
     Response response;
     RequestSpecification spec = new RequestSpecBuilder().setBaseUri("https://medunna.com/appointment-update/101942").build();
 
-//    @Given("user goes to Medunna page")
-//    public void userGoesToMedunnaPage() {
-//        spec.pathParams("first","appointment","second","patapp");
-//    }
+    @Given("user goes to Medunna page")
+    public void userGoesToMedunnaPage() {
+        spec.pathParams("first","appointment","second","patapp");
+    }
 
     @Then("user sends a request to get response")
     public void userSendsARequestToGetResponse() {
