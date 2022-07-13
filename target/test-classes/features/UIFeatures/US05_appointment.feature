@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-Feature:
-=======
 @appointment
 Feature: First Feature File
 
@@ -132,4 +129,3 @@ Feature: First Feature File
 
 
 
->>>>>>> b17072fcdc600c0770df6bf3bbb1bd34aa8c3ece

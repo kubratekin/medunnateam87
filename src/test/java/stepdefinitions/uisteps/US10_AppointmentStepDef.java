@@ -16,7 +16,7 @@ import utilities.ReusableMethods;
 
 
 public class US10_AppointmentStepDef {
-    LoginPage login = new LoginPage();
+  //  LoginPage login = new LoginPage();
    US10_AppointmentPage appointmentPage = new US10_AppointmentPage();
   //  CommonPageElements cp = new CommonPageElements();
     ReusableMethods reusableMethods = new ReusableMethods();
@@ -52,12 +52,14 @@ public class US10_AppointmentStepDef {
         appointmentPage.usernamephysician.sendKeys(username);
 
     }
-
-    @Then("Physician clicks submit")
-    public void physicianClicksSubmit(String password) {
+    @Then("Physician type {string}")
+    public void physicianType(String password) {
         appointmentPage.passwordphysician.sendKeys(password);
-
     }
+    @Then("Physician clicks submit")
+    public void physicianClicksSubmit() {appointmentPage.submit.click();
+    }
+
 
     @And("Physicians goes own pages from MY PAGES tab")
     public void physiciansGoesOwnPagesFromMYPAGESTab() {
@@ -124,6 +126,9 @@ public class US10_AppointmentStepDef {
     public void physicianCanCloseTheBrowser() {
         Driver.closeDriver();
     }
+
+
+
 }
 
 /*

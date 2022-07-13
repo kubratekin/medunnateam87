@@ -7,7 +7,7 @@ Feature: US10
     Then  Physician reaches Medunna pages to login
     Then Physician does Sign in page
     Then Physician types "<username>"
-    Then Physician types "<password>"
+    Then Physician type "<password>"
     Then Physician clicks submit
     And  Physicians goes own pages from MY PAGES tab
     And Physician clicks My appoitment button
