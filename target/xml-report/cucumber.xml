@@ -1,17 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.004">
-<testcase classname="US09_DB Validations" name="TC12_User can create new patient with DB" time="3.737">
-<system-out><![CDATA[Given User connects to DB...................................................passed
-When User creates a new patient in the patient table using the DB...........passed
-Then User verifies that new patient has been added to the DB................passed
-And User closes the DB connection...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US09_DB Validations" name="TC13_User can delete patient from DB" time="2.588">
-<system-out><![CDATA[Given User connects to DB...................................................passed
-When User deletes a patient from patient table..............................passed
-Then User verifies that patient has been deleted............................passed
-And User closes the DB connection...........................................passed
-]]></system-out>
-</testcase>
-</testsuite>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.414"/>
