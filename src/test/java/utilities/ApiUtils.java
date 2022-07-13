@@ -1,74 +1,40 @@
 package utilities;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.junit.Assert;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static baseUrl.Medunna.spec;
 import static io.restassured.RestAssured.given;
+import static utilities.Authentication.generateToken;
 
 public class ApiUtils {
 
-    public static Response getRequest(String token, String endpoint) {
-
-        Response response = given().headers(
-                "Authorization",
-                "Bearer " + token,
-                "Content-Type",
-                ContentType.JSON,
-                "Accept",
-                ContentType.JSON).when().get(endpoint);
+    static Response response;
+    static List patients;
 
 
-        return response;
+    public static String getPatientID (String firstName, String lastName, String email) {
+        spec.pathParams("1","api","2","patients");
 
+        response = given().headers("Authorization","Bearer "+generateToken(),
+                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
+                .get(ConfigReader.getProperty("patients_endpoint"));
 
-    }
-
-    public static Response deleteRequest(String token, String endpoint){
-        Response response = given().headers(
-                "Authorization",
-                "Bearer " + token,
-                "Content-Type",
-                ContentType.JSON,
-                "Accept",
-                ContentType.JSON).when().delete(endpoint);
-        return  response;
-    }
-
-    public static <RoomPost> Response postRequestRoom(String token, String endpoint, RoomPost room) throws Exception {
-
-        ObjectMapper obj=new ObjectMapper();
-
-
-        Response response = given().headers(
-                "Authorization",
-                "Bearer " + token,
-                "Content-Type",
-                ContentType.JSON,
-                "Accept",
-                ContentType.JSON).body(obj.writeValueAsString(room)).when().post(endpoint);
-        return  response;
-
-
-    }
-
-
-    public static <Room> Response putRequestRoom(String token, String endpoint, Room room) throws Exception {
-
-        ObjectMapper obj=new ObjectMapper();
-
-
-        Response response = given().headers(
-                "Authorization",
-                "Bearer " + token,
-                "Content-Type",
-                ContentType.JSON,
-                "Accept",
-                ContentType.JSON).body(obj.writeValueAsString(room)).when().put(endpoint);
-        return  response;
-
-
-    }
-
+        patients = response.as(List.class);
+        String ID = null;
+        for (Object patient : patients) {
+            if (  ((Map) patient).get("firstName").equals(firstName) &&
+                    ((Map)patient).get("lastName").equals(lastName) &&
+                    ((Map)patient).get("email").equals(email) ) {
+            ID = ((Map) patient).get("id").toString();
+            }
+            }
+        return ID;
+        }
 }
 

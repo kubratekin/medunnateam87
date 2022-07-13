@@ -1,92 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="126.795">
-<testcase classname="US008_password_update" name="US08_password_edit" time="15.703">
-<system-out><![CDATA[Given user navigates to Url.................................................passed
-And user clicks on Account menu.............................................passed
-And user clicks on Sign in button...........................................passed
-And user enters "team87user01" as username and "1234567" as password........passed
-And user clicks on the Signin button........................................passed
-And verify the login is successful..........................................passed
-And user clicks on account menu on the account page.........................passed
-Then user clicks on Password button.........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.004">
+<testcase classname="US09_DB Validations" name="TC12_User can create new patient with DB" time="3.737">
+<system-out><![CDATA[Given User connects to DB...................................................passed
+When User creates a new patient in the patient table using the DB...........passed
+Then User verifies that new patient has been added to the DB................passed
+And User closes the DB connection...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US008_password_update" name="The new password should be confirmed" time="15.565">
-<system-out><![CDATA[And user sends current password "1234567" to current password part..........passed
-And user sends new password "1234560" to new password part..................passed
-And user sends new password "1234560" again to new password confirmation part.passed
-And user clicks on save button..............................................passed
-And user verifies the success message on the toast container box............passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="for stronger password adding one LOWERCASE character" time="10.523">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "123456" to new password part...................passed
-And user verifies the password strength bar is one..........................passed
-And user add character " a" to new password part............................passed
-And user verifies the password strength bar is two..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="for stronger password adding one UPPERCASE character" time="10.493">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "1234560" to new password part..................passed
-And user verifies the password strength bar is two..........................passed
-And user add character " C" to new password part............................passed
-And user verifies the password strength bar is four.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="for stronger password adding one DIGIT character" time="10.542">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "qazwsX!" to new password part..................passed
-And user verifies the password strength bar is four.........................passed
-And user add character " 5" to new password part............................passed
-And user verifies the password strength bar is five.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="for stronger password adding one SPECIAL character" time="10.464">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "12345xy" to new password part..................passed
-And user verifies the password strength bar is two..........................passed
-And user add character " !" to new password part............................passed
-And user verifies the password strength bar is four.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="(Negative Scenario) sending 4 or 5 or 6 characters to verify that is not enough for a stronger password(There should be at least 7 characters)" time="6.324">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "qA1!" to new password part.....................passed
-And user verifies the password strength bar is one..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="(Negative Scenario) sending 4 or 5 or 6 characters to verify that is not enough for a stronger password(There should be at least 7 characters) 2" time="6.336">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "qA1!5" to new password part....................passed
-And user verifies the password strength bar is one..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="(Negative Scenario) sending 4 or 5 or 6 characters to verify that is not enough for a stronger password(There should be at least 7 characters) 3" time="6.358">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "qA1!5*" to new password part...................passed
-And user verifies the password strength bar is one..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="(Positive Scenario) sending 6 then add 1 chars to see the password is getting stronger(There should be at least 7 characters)" time="10.564">
-<system-out><![CDATA[And user cleans the new password part.......................................passed
-And user sends new password "12345x" to new password part...................passed
-And user verifies the password strength bar is one..........................passed
-And user add character " !" to new password part............................passed
-And user verifies the password strength bar is four.........................passed
-]]></system-out>
-</testcase>
-<testcase classname="US008_password_update" name="old password should not be used" time="22.816">
-<system-out><![CDATA[When user cleans the current password part..................................passed
-And user cleans the new password part.......................................passed
-And user cleans the confirmation password part..............................passed
-And user sends current password "1234560" to current password part..........passed
-And user sends current password "1234567" to new password part..............passed
-And user sends current password "1234567" to confirmation password part.....passed
-And user clicks on save button..............................................passed
-Then user sees the success message on the toast container box as a BUG......passed
-Then user close the driver..................................................passed
+<testcase classname="US09_DB Validations" name="TC13_User can delete patient from DB" time="2.588">
+<system-out><![CDATA[Given User connects to DB...................................................passed
+When User deletes a patient from patient table..............................passed
+Then User verifies that patient has been deleted............................passed
+And User closes the DB connection...........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
