@@ -334,4 +334,9 @@ public abstract class Driver {
             System.out.println("Patient can not be created");
         }
     }
+
+    public static void scrollIntoViewJS(WebElement element) {
+        JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
+        jsexecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 }
