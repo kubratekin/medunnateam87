@@ -1,4 +1,4 @@
-@US02@US_002_TC_002@ui
+@US02 @US_002_TC_002 @ui @team87
   Feature:Choose a username that can contain any chars, but it cannot be blank
     Scenario:test username for new applicant
       Given user goes to webpage
