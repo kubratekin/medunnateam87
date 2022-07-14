@@ -35,11 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<<<<<<< HEAD
-<a href="#"><span class="badge badge-primary">Jul 14, 2022 10:15:49 AM</span></a>
-=======
-<a href="#"><span class="badge badge-primary">Jul 14, 2022 01:15:26 PM</span></a>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<a href="#"><span class="badge badge-primary">Jul 14, 2022 01:34:45 AM</span></a>
 </li>
 </ul>
 </div>
@@ -61,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -70,33 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<<<<<<< HEAD
-<h3>Jul 14, 2022 10:15:49 AM</h3>
-=======
-<h3>Jul 14, 2022 01:15:26 PM</h3>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<h3>Jul 14, 2022 01:34:45 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<<<<<<< HEAD
-<h3>Jul 14, 2022 10:16:03 AM</h3>
-=======
-<h3>Jul 14, 2022 01:15:39 PM</h3>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<h3>Jul 14, 2022 01:36:53 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -112,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -135,15 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<<<<<<< HEAD
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='88%'><b>8</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
-=======
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<small data-tooltip='11%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -161,16 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<<<<<<< HEAD
-<div><small data-tooltip='66%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='97%'><b>85</b> steps passed</small></div>
 <div>
-<small data-tooltip='33%'><b>1</b> steps failed,
-=======
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> steps failed,
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -186,11 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-<<<<<<< HEAD
-"SeeAppointments":11.313
-=======
-"US_03 Registiration Password":11.401
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+"Create Edit Patient By Admin":126.417
 };
 </script>
 <div class="row">
@@ -200,15 +177,47 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<<<<<<< HEAD
-<td>@GetTheAppointments</td>
+<td>@TC01_New_Patient_Only_Created_By_Admin</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC08_State_Should_Be_Provided_Can_Not_Be_Blank_Negative</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
-=======
-<td>@US003_TC05</td>
+</tr>
+<tr>
+<td>@TC05_Admin_Can_See_All_Patient_Information</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC06_Admin_Can_Also_See_Patient_ID</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC07_State_Should_Be_Provided_Can_Not_Be_Blank</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC09_Admin_Can_Delete_Patient</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -217,12 +226,43 @@ var timeline = {
 </tr>
 <tr>
 <td>@team87</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>88.889%</td>
+</tr>
+<tr>
+<td>@TC03_New_Patients_Can_Not_Be_Created_By_Doctor</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+</tr>
+<tr>
+<td>@US_15_Create_Edit_Patient_By_Admin</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>88.889%</td>
+</tr>
+<tr>
+<td>@TC02_New_Patients_Can_Not_Be_Created_By_Staff</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC04_New_Patients_Can_Not_Be_Created_By_Patient</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -247,31 +287,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-<<<<<<< HEAD
-passChild: 0,
+passChild: 8,
 failChild: 1,
-=======
-passChild: 1,
-failChild: 0,
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-<<<<<<< HEAD
-passGrandChild: 2,
+passGrandChild: 85,
 failGrandChild: 1,
-=======
-passGrandChild: 4,
-failGrandChild: 0,
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -285,7 +315,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -293,49 +323,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<<<<<<< HEAD
-<a class="dropdown-item" href="#">@GetTheAppointments</a>
-=======
-<a class="dropdown-item" href="#">@US003_TC05</a><a class="dropdown-item" href="#">@team87</a>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<a class="dropdown-item" href="#">@TC01_New_Patient_Only_Created_By_Admin</a><a class="dropdown-item" href="#">@TC08_State_Should_Be_Provided_Can_Not_Be_Blank_Negative</a><a class="dropdown-item" href="#">@TC05_Admin_Can_See_All_Patient_Information</a><a class="dropdown-item" href="#">@TC06_Admin_Can_Also_See_Patient_ID</a><a class="dropdown-item" href="#">@TC07_State_Should_Be_Provided_Can_Not_Be_Blank</a><a class="dropdown-item" href="#">@TC09_Admin_Can_Delete_Patient</a><a class="dropdown-item" href="#">@team87</a><a class="dropdown-item" href="#">@TC03_New_Patients_Can_Not_Be_Created_By_Doctor</a><a class="dropdown-item" href="#">@US_15_Create_Edit_Patient_By_Admin</a><a class="dropdown-item" href="#">@TC02_New_Patients_Can_Not_Be_Created_By_Staff</a><a class="dropdown-item" href="#">@TC04_New_Patients_Can_Not_Be_Created_By_Patient</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-<<<<<<< HEAD
-            <p class="name">SeeAppointments</p>
+            <p class="name">Create Edit Patient By Admin</p>
             <p class="text-sm">
-              <span>10:15:51 AM</span> / <span>00:00:11:313</span>
+              <span>1:34:46 AM</span> / <span>00:02:06:417</span>
               <span class="badge fail-bg log float-right">Fail</span>
-=======
-            <p class="name">US_03 Registiration Password</p>
-            <p class="text-sm">
-              <span>1:15:27 PM</span> / <span>00:00:11:401</span>
-              <span class="badge pass-bg log float-right">Pass</span>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<<<<<<< HEAD
-<h5 class="test-status text-fail">SeeAppointments</h5>
-<span class='badge badge-success'>07.14.2022 10:15:51 AM</span>
-<span class='badge badge-danger'>07.14.2022 10:16:03 AM</span>
-<span class='badge badge-default'>00:00:11:313</span>
-=======
-<h5 class="test-status text-pass">US_03 Registiration Password</h5>
-<span class='badge badge-success'>07.14.2022 1:15:27 PM</span>
-<span class='badge badge-danger'>07.14.2022 1:15:39 PM</span>
-<span class='badge badge-default'>00:00:11:401</span>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<h5 class="test-status text-fail">Create Edit Patient By Admin</h5>
+<span class='badge badge-success'>07.14.2022 1:34:46 AM</span>
+<span class='badge badge-danger'>07.14.2022 1:36:52 AM</span>
+<span class='badge badge-default'>00:02:06:417</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -347,95 +359,607 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-<<<<<<< HEAD
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User sees his own appointments</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient</div>
       </div>
     </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.apisteps.US10_ApiAppointmentStepDef.userGoesToMedunnaPage()">
-                <span>Given user goes to Medunna page</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.apisteps.US10_ApiAppointmentStepDef.userSendsARequestToGetResponse()">
-                <span>Then user sends a request to get response</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin clicks Sign in Link</span>
       <div>
       </div>
-              </div>
-              <div class="step fail-bg" title="stepdefinitions.apisteps.US10_ApiAppointmentStepDef.userValidatesApiAppointments()">
-                <span>Then user validates api appointments</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin fills the username "team87_admin"</span>
       <div>
-        <textarea disabled class="code-block">com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashMap<java.lang.Object,java.lang.Object>` out of START_ARRAY token
- at [Source: (StringReader); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1445)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1219)
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1129)
-	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:639)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
-	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
-	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)
-	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)
-	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
-	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
-	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
-	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
-	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
-	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
-	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
-	at stepdefinitions.apisteps.US10_ApiAppointmentStepDef.userValidatesApiAppointments(US10_ApiAppointmentStepDef.java:67)
-	at ✽.user validates api appointments(file:///C:/Users/pc/IdeaProjects/medunnateam87/./src/test/resources/features/APIFeatures/US10_Appointment.feature:7)
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Items&Titles dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Patient link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Create a new Patient Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the "05/05/1980 03:20 AM","MALE","A+","A street","Big Home","jon.haley","USA","California"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Save Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the A new patient is created message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient By Staff Negative Scenario</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient By Staff Negative Scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Staff clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Staff fills the username "team87staff001"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Staff fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Staff clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the Mypages link is displayed instead of Items&Titles link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient By Doctor Negative Scenario</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient By Doctor Negative Scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Doctor clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Doctor fills the username "team87doctor001"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Doctor fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Doctor clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the Mypages link is displayed instead of Items&Titles link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="34"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient By Patient Negative Scenario</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient By Patient Negative Scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Patient clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Patient fills the username "team87patient001"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Patient fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Patient clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the Mypages(Patient) link is displayed instead of Items&Titles link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>See Patient Info</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="44"><span class="badge log pass-bg mr-2">Pass</span>See Patient Info</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin fills the username "team87_admin"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Items&Titles dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Patient link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify all patient information</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>See Patient ID</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>See Patient ID</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin fills the username "team87_admin"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Items&Titles dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Patient link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Edit Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify ID information is shown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient Provide State Positive Scenario</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>Create New Patient Provide State Positive Scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin fills the username "team87_admin"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Items&Titles dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Patient link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Create a new Patient Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the "05/05/1980 03:20 AM","MALE","A+","A street","Big Home","jon.haley","USA"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Save Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the A new patient is created message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="80"><span class="badge log pass-bg mr-2">Pass</span>Admin Delete Patient</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Admin Delete Patient</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin fills the username "team87_admin"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Items&Titles dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Patient link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Delete button next to the patient "Temprory Patient","Delete","temprory@temp.com","3685964586"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Delete button on the delete message window</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify the user is deleted message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Closes the browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="93"><span class="badge log fail-bg mr-2">Fail</span>Create New Patient Provide State Negative Scenario</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="94"><span class="badge log fail-bg mr-2">Fail</span>Create New Patient Provide State Negative Scenario</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given Go to medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Admin clicks Sign in Link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Admin fills the username "team87_admin"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the password "1234567"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Sign in button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Items&Titles dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Patient link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks the Create a new Patient Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin fills the "05/05/1980 03:20 AM","MALE","A+","A street","Big Home","jon.haley","USA"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin clicks Save Button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then Verify the A new patient is not created successfully</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_a_new_patient_is_not_created_successfully(US15_CreatePatientByAdminStepDefs.java:264)
+	at ✽.Verify the A new patient is not created successfully(file:///C:/Users/yusuf/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US15_CreateEditPatientByAdmin.feature:155)
 </textarea>
       
       </div>
-              </div>
-=======
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber</div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Closes the browser</span>
+      <div>Step skipped
       </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)">
-                <span>Given user navigates to "<medunnaUrl>"</span>
-      <div>
-      </div>
+                  </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()">
-                <span>Then user clicks on registiration button and navigates to registiration page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number()">
-                <span>Then user types seven chars included one lowercase and one uppercase and number</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()">
-                <span>And user sees strength level is changed to stronger</span>
-      <div>
-      </div>
-              </div>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
-          </div>
+            </div>
         </div>
   </div>
 </div>
@@ -454,33 +978,22 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">11</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<<<<<<< HEAD
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@GetTheAppointments</p>
-=======
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US003_TC05</p>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<p class="name">@TC01_New_Patient_Only_Created_By_Admin</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<<<<<<< HEAD
-<h4>@GetTheAppointments</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-=======
-<h4>@US003_TC05</h4>
+<h4>@TC01_New_Patient_Only_Created_By_Admin</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -491,23 +1004,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<<<<<<< HEAD
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:15:51 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>User sees his own appointments</a>
-<div class="">
-<span class="badge badge-default">SeeAppointments.User sees his own appointments</span>
-=======
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:27 PM</td>
+<td>01:34:46 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber</a>
+<a href="#" class="linked" test-id='1' id='3'>Create New Patient</a>
 <div class="">
-<span class="badge badge-default">US_03 Registiration Password.TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber</span>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient</span>
 </div>
 </td>
 </tr>
@@ -515,7 +1018,530 @@ eventsCount: 5,
 </table>
 </div>
 </li>
-<<<<<<< HEAD
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC08_State_Should_Be_Provided_Can_Not_Be_Blank_Negative</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC08_State_Should_Be_Provided_Can_Not_Be_Blank_Negative</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:36:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='94'>Create New Patient Provide State Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient Provide State Negative Scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC05_Admin_Can_See_All_Patient_Information</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC05_Admin_Can_See_All_Patient_Information</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>See Patient Info</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.See Patient Info</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC06_Admin_Can_Also_See_Patient_ID</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC06_Admin_Can_Also_See_Patient_ID</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>See Patient ID</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.See Patient ID</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC07_State_Should_Be_Provided_Can_Not_Be_Blank</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC07_State_Should_Be_Provided_Can_Not_Be_Blank</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>Create New Patient Provide State Positive Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient Provide State Positive Scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC09_Admin_Can_Delete_Patient</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC09_Admin_Can_Delete_Patient</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:36:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='81'>Admin Delete Patient</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Admin Delete Patient</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@team87</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@team87</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:34:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Create New Patient</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Create New Patient By Staff Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Staff Negative Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Create New Patient By Doctor Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Doctor Negative Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='35'>Create New Patient By Patient Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Patient Negative Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>See Patient Info</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.See Patient Info</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>See Patient ID</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.See Patient ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>Create New Patient Provide State Positive Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient Provide State Positive Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:36:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='81'>Admin Delete Patient</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Admin Delete Patient</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:36:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='94'>Create New Patient Provide State Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient Provide State Negative Scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC03_New_Patients_Can_Not_Be_Created_By_Doctor</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC03_New_Patients_Can_Not_Be_Created_By_Doctor</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Create New Patient By Doctor Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Doctor Negative Scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US_15_Create_Edit_Patient_By_Admin</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US_15_Create_Edit_Patient_By_Admin</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:34:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Create New Patient</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Create New Patient By Staff Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Staff Negative Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Create New Patient By Doctor Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Doctor Negative Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='35'>Create New Patient By Patient Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Patient Negative Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>See Patient Info</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.See Patient Info</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='55'>See Patient ID</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.See Patient ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='67'>Create New Patient Provide State Positive Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient Provide State Positive Scenario</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:36:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='81'>Admin Delete Patient</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Admin Delete Patient</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:36:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='94'>Create New Patient Provide State Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient Provide State Negative Scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC02_New_Patients_Can_Not_Be_Created_By_Staff</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC02_New_Patients_Can_Not_Be_Created_By_Staff</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Create New Patient By Staff Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Staff Negative Scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC04_New_Patients_Can_Not_Be_Created_By_Patient</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC04_New_Patients_Can_Not_Be_Created_By_Patient</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:35:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='35'>Create New Patient By Patient Negative Scenario</a>
+<div class="">
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient By Patient Negative Scenario</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 </ul>
 </div>
 </div>
@@ -537,26 +1563,13 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">com.fasterxml.jackson.databind.exc.MismatchedInputException</p>
-=======
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@team87</p>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<<<<<<< HEAD
-<h4>com.fasterxml.jackson.databind.exc.MismatchedInputException</h4>
+<h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
-=======
-<h4>@team87</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -567,23 +1580,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<<<<<<< HEAD
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:16:02 AM</td>
+<td>01:36:50 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='5'>Then user validates api appointments</a>
+<a href="#" class="linked" test-id='1' id='105'>Then Verify the A new patient is not created successfully</a>
 <div class="">
-<span class="badge badge-default">SeeAppointments.User sees his own appointments.Then user validates api appointments</span>
-=======
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:15:27 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber</a>
-<div class="">
-<span class="badge badge-default">US_03 Registiration Password.TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber</span>
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+<span class="badge badge-default">Create Edit Patient By Admin.Create New Patient Provide State Negative Scenario.Then Verify the A new patient is not created successfully</span>
 </div>
 </td>
 </tr>

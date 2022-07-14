@@ -17,8 +17,8 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1251" />
-      <charset value="windows-1251" />
+      <charset value="windows-1254" />
+      <charset value="windows-1254" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -29,10 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="b54426d0-511e-467f-8bcb-fa3be61b605b">
-      <console name="Connection 51" type="STANDARD" schema="public" session="Main"><![CDATA[use public
-
-select * from jhi_user
-where email = '11mariocosta5@gmail.com' or email = 'catherinegreen@gmail.com']]></console>
+      <console name="Connection 51" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
