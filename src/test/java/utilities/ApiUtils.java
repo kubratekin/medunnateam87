@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
-public class APIUtils {
+public class ApiUtils {
     private static String bearerToken;
     private static RequestSpecification spec;
     private static Response response;
@@ -28,10 +28,10 @@ public class APIUtils {
         return requestBody;
     }
     public static void setRequestBody(String requestBody) {
-        APIUtils.requestBody = requestBody;
+        ApiUtils.requestBody = requestBody;
     }
     public static void setBearerToken(String bearerToken) {
-        APIUtils.bearerToken = bearerToken;
+        ApiUtils.bearerToken = bearerToken;
     }
     private static RequestSpecification setUpSpec(){
         RequestSpecification spec;
@@ -163,3 +163,4 @@ public class APIUtils {
         objectPool.clear();
     }
 }
+

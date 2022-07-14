@@ -25,8 +25,8 @@ public class Authentication {
             spec.pathParams("first", "api", "second", "authenticate");
 
             //Set the expected data
-            String username = "Elharezmi";
-            String password = "1elharezmi1";
+            String username = "team87_admin";
+            String password = "1234567";
 
             Map<String, Object> expectedData = new HashMap<>();
             expectedData.put("username", username);
