@@ -22,16 +22,29 @@ import java.util.Map;
 import static io.restassured.RestAssured.*;
 import static stepdefinitions.apisteps.Authentication.generateToken;
 
+/*
 public class US10_ApiAppointmentStepDef {
 
+<<<<<<< HEAD
    Map<String, Object> physicianAppointment =new HashMap<>();
+=======
+
+   US10_PhysicianAppointment  physicianAppointment =new  US10_PhysicianAppointment();
+>>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
     Response response;
     RequestSpecification spec = new RequestSpecBuilder().setBaseUri("https://medunna.com/").build();
 
+<<<<<<< HEAD
     @Given("user goes to Medunna page")
     public void userGoesToMedunnaPage() {
         spec.pathParams("first","api","second","appointments");
     }
+=======
+//    @Given("user goes to Medunna page")
+//    public void userGoesToMedunnaPage() {
+//        spec.pathParams("first","appointment","second","patapp");
+//    }
+>>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
 
     @Then("user sends a request to get response")
     public void userSendsARequestToGetResponse() {
@@ -73,3 +86,4 @@ public class US10_ApiAppointmentStepDef {
 
 
 }
+ */

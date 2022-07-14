@@ -6,13 +6,11 @@ import org.junit.Before;
 
 public class MedunnaBaseUrl {
 
-    protected RequestSpecification spec;
+    public static RequestSpecification spec;
 
     @Before
-    public void setup(){
-
+    public RequestSpecification setup(){
         spec = new RequestSpecBuilder().setBaseUri("https://www.medunna.com/").build();
-
-
+        return spec;
     }
 }

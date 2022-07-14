@@ -12,11 +12,9 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 
-
 public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
 
     DoctorPage doctorPage = new DoctorPage();
-
 
     @Given("user is on the login page")
     public void userIsOnTheLoginPage() {
@@ -194,4 +192,8 @@ public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
         Assert.assertFalse(doctorPage.unApproved.isSelected());
     }
 
+    @Then("Doctor close the application")
+    public void doctorCloseTheApplication() {
+        Driver.closeDriver();
+    }
 }

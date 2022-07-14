@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.294">
 <testcase classname="SeeAppointments" name="User sees his own appointments" time="11.413">
 <failure message="Cannot deserialize instance of `java.util.HashMap&lt;java.lang.Object,java.lang.Object&gt;` out of START_ARRAY token&#10; at [Source: (StringReader); line: 1, column: 1]" type="com.fasterxml.jackson.databind.exc.MismatchedInputException"><![CDATA[Given user goes to Medunna page.............................................passed
@@ -45,5 +46,14 @@ com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize 
 	at stepdefinitions.apisteps.US10_ApiAppointmentStepDef.userValidatesApiAppointments(US10_ApiAppointmentStepDef.java:67)
 	at ✽.user validates api appointments(file:///C:/Users/pc/IdeaProjects/medunnateam87/./src/test/resources/features/APIFeatures/US10_Appointment.feature:7)
 ]]></failure>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.914">
+<testcase classname="US_03 Registiration Password" name="TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber" time="11.479">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase and one uppercase and number.passed
+And user sees strength level is changed to stronger.........................passed
+]]></system-out>
+>>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
 </testcase>
 </testsuite>
