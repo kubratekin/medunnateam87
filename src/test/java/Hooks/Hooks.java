@@ -3,6 +3,8 @@ package Hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.specification.RequestSpecification;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -26,7 +28,15 @@ public class Hooks {
 //        Driver.getDriver().get("https://medunna.com/account/register");
 //    }
 
+    @Before
+    public void setUp(){
 
+    }
+    public static RequestSpecification spec;
+    @Before(value="@US01_TC12")
+    public void setup(){
+        spec= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+    }
 
     @After(order=3, value="@UIregistration")
     public void tearDown(Scenario scenario) throws IOException {
@@ -41,4 +51,11 @@ public class Hooks {
 //        }
 
     }
+    @Before(order=1, value="@NewApplicant")
+    public void navigateToRegistration() {
+
+        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
+    }
+
+
 }
