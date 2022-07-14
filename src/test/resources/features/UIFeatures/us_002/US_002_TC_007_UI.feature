@@ -1,4 +1,4 @@
-@US02@US_002_TC_007@ui
+@US02 @US_002_TC_007 @ui @team87
 Feature:email cannot be left blank
 
     Scenario: test email for new applicant3
