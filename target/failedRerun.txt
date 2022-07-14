@@ -1,1 +1,2 @@
 file:src/test/resources/features/UIFeatures/us_002/US_002_TC_001_UI.feature:24
+file:src/test/resources/features/APIFeatures/us_002/US_002_TC_015_API.feature:4
