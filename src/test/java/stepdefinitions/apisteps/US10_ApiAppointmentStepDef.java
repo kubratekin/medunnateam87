@@ -1,27 +1,6 @@
 package stepdefinitions.apisteps;
 
 
-import io.cucumber.java.en.*;
-import io.cucumber.java.en.Then;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.http.ContentType;
-import io.restassured.mapper.ObjectMapper;
-import io.restassured.mapper.ObjectMapperDeserializationContext;
-import io.restassured.mapper.ObjectMapperSerializationContext;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import org.junit.Assert;
-import pages.US10_PhysicianAppointment;
-import pages.US10_PhysicianAppointment;
-import pojos.AppointmentResponse;
-import utilities.ConfigReader;
-
-import java.util.HashMap;
-import java.util.Map;
-
-import static io.restassured.RestAssured.*;
-import static stepdefinitions.apisteps.Authentication.generateToken;
-
 /*
 public class US10_ApiAppointmentStepDef {
 
@@ -69,11 +48,11 @@ public class US10_ApiAppointmentStepDef {
                 .when().post("/{first}/{second}");
 
      */
-    }
 
 
 
 
+/*
 
     @Then("user validates api appointments")
     public void userValidatesApiAppointments() {

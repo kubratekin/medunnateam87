@@ -1,11 +1,11 @@
 package getRequest;
-import baseUrl.MedunnaBaseUrl;
+import baseUrl.Medunna;
 import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GetAppointment extends MedunnaBaseUrl{
+public class GetAppointment extends Medunna {
     @Test
     public void get1() {
         // String url = "https://medunna.com/physician-appointment/1";
