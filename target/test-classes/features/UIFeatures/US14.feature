@@ -1,5 +1,5 @@
 @US14 @team87
-Feature: inpatient_info
+Feature: US14_inpatient_info
 
   Background: opening_medunna_page
     Given doctor is on the medunna website
@@ -15,7 +15,7 @@ Feature: inpatient_info
 
   @TC02
   Scenario: description_field
-    And doctor clicks on Edit button on a "<inpatient>"
+    And doctor click on Edit button on a "<inpatient>"
     And doctor updates the Description field as "<description>"
     Then doctor verifies Description field is updatable
 

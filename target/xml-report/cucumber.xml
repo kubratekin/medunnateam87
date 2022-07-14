@@ -1,2 +1,185 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.14"/>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="143.909">
+<testcase classname="US14_inpatient_info" name="all_inpatient_info" time="14.183">
+<system-out><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+Then doctor verifies all inpatient info.....................................passed
+Then doctor closes the application..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US14_inpatient_info" name="description_field" time="32.132">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'The In Patient is updated with identifier')]&quot;}&#10;  (Session info: chrome=103.0.5060.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:edec:bee:d03f:48f4%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:64783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1c41642919465b3876a76977fe02ce2b&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'The In Patient is updated with identifier')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor click on Edit button on a "<inpatient>"..........................passed
+And doctor updates the Description field as "<description>".................passed
+Then doctor verifies Description field is updatable.........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'The In Patient is updated with identifier')]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:edec:bee:d03f:48f4%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:64783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c41642919465b3876a76977fe02ce2b
+*** Element info: {Using=xpath, value=//*[contains(text(),'The In Patient is updated with identifier')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_description_field_is_updatable(US14_StepDefs.java:97)
+	at ✽.doctor verifies Description field is updatable(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="US14_inpatient_info" name="created date_field" time="21.254">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'The In Patient is updated with identifier')]&quot;}&#10;  (Session info: chrome=103.0.5060.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:edec:bee:d03f:48f4%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:64783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1c41642919465b3876a76977fe02ce2b&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'The In Patient is updated with identifier')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor clicks on Edit button on a "<inpatient>".........................passed
+And doctor updates the Created Date field as "<created date>"...............passed
+Then doctor verifies Created Date field is updatable........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'The In Patient is updated with identifier')]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:edec:bee:d03f:48f4%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:64783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c41642919465b3876a76977fe02ce2b
+*** Element info: {Using=xpath, value=//*[contains(text(),'The In Patient is updated with identifier')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_created_date_field_is_updatable(US14_StepDefs.java:114)
+	at ✽.doctor verifies Created Date field is updatable(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:26)
+]]></failure>
+</testcase>
+<testcase classname="US14_inpatient_info" name="status_field" time="4.338">
+<system-out><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor clicks on Edit button on a "<inpatient>".........................passed
+And doctor updates the Status field as "<status>"...........................passed
+Then doctor verifies Status field is updatable..............................passed
+Then doctor closes the application..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US14_inpatient_info" name="unapproved_option" time="15.924">
+<system-out><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor clicks on Edit button............................................passed
+And doctor updates status of the inpatient as UNAPPROVED....................passed
+Then doctor verifies Status field is updatable of the inpatient.............passed
+Then doctor closes the application..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US14_inpatient_info" name="staying_option" time="15.103">
+<system-out><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor clicks on Edit button............................................passed
+And doctor updates status of the inpatient as STAYING.......................passed
+Then doctor verifies Status field is updatable of the inpatient.............passed
+Then doctor closes the application..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US14_inpatient_info" name="cancelled_option" time="13.807">
+<system-out><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor clicks on Edit button............................................passed
+And doctor updates status of the inpatient as CANCELLED.....................passed
+Then doctor verifies Status field is updatable of the inpatient.............passed
+Then doctor closes the application..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US14_inpatient_info" name="reserved_room" time="26.868">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'The In Patient is updated with identifier')]&quot;}&#10;  (Session info: chrome=103.0.5060.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:edec:bee:d03f:48f4%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:64876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e1dc293f700f0465b94c5d6414be498e&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'The In Patient is updated with identifier')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor clicks on Edit button on a "<inpatient>".........................passed
+And doctor selects a room that is available.................................passed
+Then doctor verifies the Room "<room>" can be updatable.....................failed
+Then doctor closes the application..........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'The In Patient is updated with identifier')]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:edec:bee:d03f:48f4%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:64876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e1dc293f700f0465b94c5d6414be498e
+*** Element info: {Using=xpath, value=//*[contains(text(),'The In Patient is updated with identifier')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_the_room_can_be_updatable(US14_StepDefs.java:201)
+	at ✽.doctor verifies the Room "<room>" can be updatable(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:63)
+]]></failure>
+</testcase>
+</testsuite>
