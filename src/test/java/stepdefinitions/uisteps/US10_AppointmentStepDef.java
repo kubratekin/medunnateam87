@@ -26,14 +26,14 @@ public class US10_AppointmentStepDef {
 
     //*****
 
-
-    @Given("Physician goes to Medunna page")
-    public void physicianGoesToMedunnaPage() throws InterruptedException {
-        Driver.navigateToUrl(ConfigReader.getProperty("https://medunna.com/"));
+    @Given("Physician on the Medunna page")
+    public void physicianOnTheMedunnaPage() throws InterruptedException {  Driver.navigateToUrl(ConfigReader.getProperty("https://medunna.com/"));
 
         Thread.sleep(1000);
-
     }
+
+
+
 
     @Then("Physician reaches Medunna pages to login")
     public void physicianReachesMedunnaPagesToLogin() {

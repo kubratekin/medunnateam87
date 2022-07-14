@@ -41,6 +41,7 @@ public class US08_UserPasswordStepDefs {
     }
     @Given("user clicks on the Signin button")
     public void user_clicks_on_the_signin_button() {
+
         userPassword.signInPageSignInButton.click();
     }
     @Given("verify the login is successful")

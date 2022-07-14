@@ -113,4 +113,4 @@ Feature:   US008_password_update
 
     Examples:
       | current Password | new Password | confirmation Password |
-      | 1234560            | 1234567        | 1234567           |
+      | 1234560          | 1234567       | 1234567              |

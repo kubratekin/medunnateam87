@@ -21,10 +21,14 @@ public class US01_RegistrationSteps {
     RegistrationPage registrationPage = new RegistrationPage();
     SettingsPage settingsPage = new SettingsPage();
 //Background
-    //@Given("user goes to Medunna page")
-    //public void user_goes_to_medunna_page() {
-      //  Driver.getDriver().get(ConfigReader.getProperty("medunnaUrl"));
-    //}
+  /*  @Given("user goes to Medunna page")
+    public void user_goes_to_medunna_page() {
+        Driver.getDriver().get(ConfigReader.getProperty("medunnaUrl"));
+
+
+    }
+
+   */
 
 
     @When("user navigate to registration page")
