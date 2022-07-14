@@ -11,12 +11,13 @@ import java.util.List;
 import static org.junit.Assert.assertTrue;
 import static utilities.DBUtils.getColumnData;
 
-public class AppointmentDBStepDefs_US07 {
+public class US07_AppointmentDBStepDefs {
 
     List<Object> appointmentListEmail = new ArrayList<>();
 
     @Given("user sets a connection with database")
     public void user_sets_a_connection_with_database() {
+
         DBUtils.createConnection();
     }
 
@@ -30,7 +31,7 @@ public class AppointmentDBStepDefs_US07 {
 
     @Then("user validates appointment {string} with the database")
     public void user_validates_appointment_ids_with_the_database(String email) {
-        //System.out.println("appointmentListEmail.contains(email) = " + appointmentListEmail.contains(email));
+
         assertTrue(appointmentListEmail.contains(email));
     }
 

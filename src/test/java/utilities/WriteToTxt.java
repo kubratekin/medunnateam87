@@ -1,6 +1,6 @@
 package utilities;
 
-import pojos.Appointment_US07;
+import pojos.US07_Appointment;
 import pojos.AppointmentOut;
 
 import java.io.BufferedWriter;
@@ -26,7 +26,7 @@ public class WriteToTxt {
             e.printStackTrace();
         }
     }
-    public static void saveAppointmentData( Appointment_US07[] appointments ) {
+    public static void saveAppointmentData( US07_Appointment[] appointments ) {
 
         try {
             //src/resources/testdata/Registrantdata.txt

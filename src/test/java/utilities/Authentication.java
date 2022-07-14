@@ -25,20 +25,6 @@ public class Authentication{
         expectedData.put("password","vusalgasimov");
         expectedData.put("rememberMe",true);
 
-        //Set the base url and path params
-
-//        spec.pathParams("first",
-//                "api",
-//                "second",
-//                "authenticate");
-//        /*
-//        {       "password": "string",
-//                "rememberMe": true,
-//                "username": "string"}
-//        */
-//        //Set the expected data
-
-         //Send the request and get the response
 
         String endPoint ="https://medunna.com/api/authenticate";
 
