@@ -1,4 +1,4 @@
-@US_01
+@US_01 @team87
 Feature: Test Registrant data
 
    Background:

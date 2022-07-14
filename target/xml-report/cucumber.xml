@@ -1,2 +1,267 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.489"/>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="74.308">
+<testcase classname="email should be validated with API" name="email should be validated with API" time="5.368">
+<system-out><![CDATA[Given user sends POST request to get Bearer Token...........................passed
+Then user verifies that response status code is 200.........................passed
+And user sends a GET request to get email address...........................passed
+Then user verifies that response status code is 200.........................passed
+Then user verifies that the returned information matches the expected one...passed
+]]></system-out>
+</testcase>
+<testcase classname="username should be validated with API" name="username should be validated with API" time="0.032">
+<failure message="Invalid number of path parameters. Expected 1, was 2. Redundant path parameters are: second=notpatient." type="java.lang.IllegalArgumentException"><![CDATA[Given user sends POST request to get Bearer Token...........................failed
+Then user verifies that response status code is 200.........................skipped
+And user sends a GET request to get email address...........................skipped
+Then user verifies that response status code is 200.........................skipped
+Then user verifies that the returned information matches the expected one, and is unique.skipped
+
+StackTrace:
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 2. Redundant path parameters are: second=notpatient.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at utilities.APIUtils.post(APIUtils.java:106)
+	at stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_post_request_to_get_bearer_token(US_002_API_Stepdefs.java:22)
+	at ✽.user sends POST request to get Bearer Token(file:///C:/Users/SEMA/IdeaProjects/medunnateam87/./src/test/resources/features/APIFeatures/us_002/US_002_TC_015_API.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="email should be validated with DB" name="email should be validated with DB" time="1.354">
+<system-out><![CDATA[Given user connects to medunna_db with valid credentials....................passed
+When user sends a requests to get the user details with a specific valid email address.passed
+Then user confirmes the request with the email address returns information..passed
+Then user closes database connection........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant" time="7.076">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "281-13-4235"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "abcdefghijklmn11121".........................passed
+And user provides email as "1211mariocosta@gmail.com".......................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 2" time="6.571">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "382-13-4235"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "opqrstuvwxyz11121"...........................passed
+And user provides email as "1211mariocosta1@gmail.com"......................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 3" time="7.086">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "483-13-4235"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "123456789011121".............................passed
+And user provides email as "1211mariocosta2@gmail.com"......................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 4" time="4.547">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "584-13-4235"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "!@#$%^&*()_+-=";':./,\<>{}11121".............undefined
+And user provides email as "1211mariocosta3@gmail.com"......................skipped
+When user types password as "1234"..........................................skipped
+And user types password confirmation as "1234"..............................skipped
+And user clicks on Register button..........................................skipped
+Then user should see Registration saved message.............................skipped
+And user closes the browser.................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 5" time="2.8">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "685-13-4235"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "ABCDEFGHIJKLMN11121".........................passed
+And user provides email as "1211mariocosta4@gmail.com"......................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant 6" time="6.382">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "786-12-4235"...................................passed
+And user provides firstname as "Mario"......................................passed
+And user provides lastname as "Costa".......................................passed
+And user provides username as "OPQRSTUVWXYZ11121"...........................passed
+And user provides email as "1211mariocosta5@gmail.com"......................passed
+When user types password as "1234"..........................................passed
+And user types password confirmation as "1234"..............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Choose a username that can contain any chars, but it cannot be blank" name="test username for new applicant" time="4.966">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides username as ""............................................passed
+Then user should see "Your username is required." message...................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="6.81">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides ssn id as "358-11-4225"...................................passed
+And user provides firstname as "Stefan".....................................passed
+And user provides lastname as "Soluchkov"...................................passed
+And user provides username as "kurrupt81821"................................passed
+And user provides email as "soluchkow122121@gmail.com"......................passed
+When user types password as "369369"........................................passed
+And user types password confirmation as "369369"............................passed
+And user clicks on Register button..........................................passed
+Then user should see Registration saved message.............................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="4.849">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides the invalid email as ""...................................passed
+Then user should see "Your email is required." message......................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant" time="4.939">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides the invalid email as "user"...............................passed
+Then user should see "Your email is required to be at least 5 characters." message.passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extension" name="test email for new applicant2" time="5.755">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides the invalid email as "user1905@gmailcom"..................passed
+Then user should see "This field is invalid" message........................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="email cannot be left blank" name="test email for new applicant3" time="5.032">
+<system-out><![CDATA[Given user goes to webpage..................................................passed
+When user navigates to registration page....................................passed
+And user verifies Registration is displayed.................................passed
+And user provides email as "@gmail.com".....................................passed
+Then user should see "This field is invalid" message........................passed
+And user closes the browser.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

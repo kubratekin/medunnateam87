@@ -1,1 +1,4 @@
-file:src/test/resources/features/UIFeatures/US04_fatma.feature:52
+<<<<<<< HEAD
+file:src/test/resources/features/APIFeatures/US10_Appointment.feature:4
+=======
+>>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3

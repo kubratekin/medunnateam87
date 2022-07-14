@@ -3,7 +3,7 @@ Feature: US10
   @US10appointment
   Scenario Outline: Physician checks and edit appoinment list
 
-    Given Physician goes to Medunna page
+    Given Physician on the Medunna page
     Then  Physician reaches Medunna pages to login
     Then Physician does Sign in page
     Then Physician types "<username>"
@@ -26,7 +26,7 @@ Feature: US10
   @US10patient
   Scenario Outline: Physician checks patient list
 
-    Given Physician goes to Medunna page
+    Given Physician on the Medunna page
     Then  Physician reaches to login
     Then Physician  click Sign in page
     Then Physician inputs "<username>"
