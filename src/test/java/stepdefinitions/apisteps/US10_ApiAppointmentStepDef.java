@@ -17,7 +17,9 @@ import pojos.AppointmentResponse;
 
 import static io.restassured.RestAssured.*;
 
+/*
 public class US10_ApiAppointmentStepDef {
+
 
    US10_PhysicianAppointment  physicianAppointment =new  US10_PhysicianAppointment();
     Response response;
@@ -49,3 +51,4 @@ public class US10_ApiAppointmentStepDef {
         Assert.assertEquals("899-68-3333",physicianAppointment.ssn);
     }
 }
+ */
