@@ -8,6 +8,9 @@ import org.junit.Assert;
 import pages.US008_PasswordPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.io.IOException;
 
 public class US08_UserPasswordStepDefs {
 
@@ -159,10 +162,11 @@ public class US08_UserPasswordStepDefs {
     }
 
     @Then("user sees the success message on the toast container box as a BUG")
-    public void userSeesTheSuccessMessageOnTheToastContainerBoxAsABUG() throws InterruptedException {
+    public void userSeesTheSuccessMessageOnTheToastContainerBoxAsABUG() throws InterruptedException, IOException {
         String expectedResult="Password changed!";
         String actualResult=userPassword.successMessage.getText();
         Assert.assertEquals(expectedResult,actualResult);
+        ReusableMethods.getScreenshot("password changed");
         Thread.sleep(6000);
     }
 
