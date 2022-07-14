@@ -1,7 +1,6 @@
 package utilities;
 
-import pojos.Appointment_US07;
-import pojos.AppointmentOut;
+import pojos.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -9,54 +8,126 @@ import java.io.FileWriter;
 public class WriteToTxt {
 
 
-    public static void savePatientAppointmentData (AppointmentOut appointment[]) {
 
+    public static void saveRegistrantData(Registrant registrant){
         try{
-            FileWriter fw = new FileWriter(ConfigReader.getProperty("users_api_url"), true);
+            //src/resources/testdata/Registrantdata.txt
+            FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("api_registrant_data"), true);
 
-            BufferedWriter bw = new BufferedWriter(fw);
+            BufferedWriter writer = new BufferedWriter(fileWriter);
 
-            for (int i =0 ; i < appointment.length ; i++){
 
-                bw.append(appointment[i].toString()+ "\n");
-            }
+            writer.append(registrant+"\n");
 
-            bw.close();
-        }catch(Exception e){
+
+            writer.close();
+
+
+
+
+        }catch (Exception e){
             e.printStackTrace();
         }
-    }
-    public static void saveAppointmentData( Appointment_US07[] appointments ) {
 
-        try {
+
+    }
+
+    public static void saveAppointData(Appointment appointment){
+
+        try{
+
             //src/resources/testdata/Registrantdata.txt
             FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("appointment_records"), true);
 
             BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.append(appointment+"\n");
 
-            for (int i =0 ; i < appointments.length ; i++){
 
-                writer.append(appointments[i].getPatient().getFirstName()+ "," + appointments[i].getPatient().getLastName()+ ",");
-
-                if (appointments[i].getPatient().getUser()!=null){
-
-                writer.append(appointments[i].getPatient().getUser().getSsn()+"\n");
-            }else
-            {
-            writer.append("\n");
-            }
-            }
             writer.close();
 
-           // ???Registrant registrant1 = new Registrant();
 
+
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        catch(Exception e){
+
+
+    }
+    public static <Appointments> void saveAppointData(Appointments appointment){
+
+        try{
+
+            //src/resources/testdata/Registrantdata.txt
+            FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("appointment_records"), true);
+
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.append(appointment+"\n");
+
+
+            writer.close();
+
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+    }
+    public static <Appointments> void saveApiAppointmentData(Appointments appointment) {
+        try {
+            //src/resources/testdata/Registrantdata.txt
+            FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("api_appointment_data"), true);
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.append(appointment + "\n");
+            writer.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public static <AppointmentGet> void saveAppointmentCreation(AppointmentGet appointmentGet){
+        try{
+
+            FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("appointment_creation_records"), true);
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.append(appointmentGet+"\n");
+            writer.close();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
+    public static <TestItem> void saveTestItemData(TestItem testItem) {
+        try {
+            //src/resources/testdata/Registrantdata.txt
+            FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("api_test_itmes_data"), true);
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.append(testItem + "\n");
+            writer.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+    public static void saveRoomData(String roomNumber, int price, String createdDate){
+        try{
 
+            FileWriter fileWriter = new FileWriter("./src/test/resources/testdata/RoomData.txt", false);
+
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+
+
+            writer.append("Room "+roomNumber+"\n");
+
+            writer.close();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+    }
 
 }
-

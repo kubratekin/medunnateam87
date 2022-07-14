@@ -1,48 +1,144 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="90.629">
-<testcase classname="test api appointment data" name="test_appointment" time="22.477">
-<system-out><![CDATA[Given user sends a get request for appointment data.........................passed
-And user deserializes the appointment data to java..........................passed
-Then user saves the appointment' data to correspondent files and validates..passed
-]]></system-out>
-</testcase>
-<testcase classname="appointment database validation" name="Validate appointments by id with database" time="5.618">
-<system-out><![CDATA[Given user sets a connection with database..................................passed
-And user selects all "email" column data....................................passed
-Then user validates appointment "berkbey@gamil.com" with the database.......passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Make An Appointment" name="TC01_Test_Make_An_Appointment_currentDate" time="20.657">
-<system-out><![CDATA[Given user navigate to medunna page.........................................passed
-And user click on Make An Appointment.......................................passed
-Then verify "Make an Appointment " header created on the page...............passed
-And user send firstName ,lastName ,ssn ,phone ,email,as "feyza","aberkbey","123-10-1003","1234567890","aberkbey@gmail.com".passed
-And user can select current date............................................passed
-And user click Send an Appointment Request..................................passed
-Then verify created the Appointment registration saved! We will call you as soon as possible alert message is visible.passed
-And close this application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Make An Appointment" name="TC02_Test_Make_An_Appointment_futureDate" time="21.217">
-<system-out><![CDATA[Given user navigate to medunna page.........................................passed
-And user click on Make An Appointment.......................................passed
-Then verify "Make an Appointment " header created on the page...............passed
-And user send firstName ,lastName ,ssn ,phone ,email,as "feyzan","aberkbey","123-11-1003","1234567890","aberk@gmail.com".passed
-And user can select future date.............................................passed
-And user click Send an Appointment Request..................................passed
-Then verify created the Appointment registration saved! We will call you as soon as possible alert message is visible.passed
-And close this application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Make An Appointment" name="TC03_Test_Make_An_Appointment_pastDate" time="20.323">
-<system-out><![CDATA[Given user navigate to medunna page.........................................passed
-And user click on Make An Appointment.......................................passed
-Then verify "Make an Appointment " header created on the page...............passed
-And user send firstName ,lastName ,ssn ,phone ,email,as "feyzas","aberkbey","123-12-1003","1234567890","berkbey@gmail.com".passed
-And user can select past date...............................................passed
-And user click Send an Appointment Request..................................passed
-Then verify created the message Appointment date can not be past date! is visible.passed
-And close this application..................................................passed
-]]></system-out>
-</testcase>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="126.838">
+    <testcase classname="Create Edit Patient By Admin" name="Create New Patient" time="18.647">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Admin clicks Sign in Link..............................................passed
+Then Admin fills the username "team87_admin"................................passed
+And Admin fills the password "1234567"......................................passed
+And Admin clicks the Sign in button.........................................passed
+And Admin clicks the Items&Titles dropdown..................................passed
+And Admin clicks Patient link...............................................passed
+And Admin clicks the Create a new Patient Button............................passed
+And Admin fills the "05/05/1980 03:20 AM","MALE","A+","A street","Big Home","jon.haley","USA","California".passed
+And Admin clicks Save Button................................................passed
+Then Verify the A new patient is created message............................passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="Create New Patient By Staff Negative Scenario" time="9.925">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Staff clicks Sign in Link..............................................passed
+Then Staff fills the username "team87staff001"..............................passed
+And Staff fills the password "1234567"......................................passed
+And Staff clicks the Sign in button.........................................passed
+Then Verify the Mypages link is displayed instead of Items&Titles link......passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="Create New Patient By Doctor Negative Scenario" time="9.235">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Doctor clicks Sign in Link.............................................passed
+Then Doctor fills the username "team87doctor001"............................passed
+And Doctor fills the password "1234567".....................................passed
+And Doctor clicks the Sign in button........................................passed
+Then Verify the Mypages link is displayed instead of Items&Titles link......passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="Create New Patient By Patient Negative Scenario" time="9.797">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Patient clicks Sign in Link............................................passed
+Then Patient fills the username "team87patient001"..........................passed
+And Patient fills the password "1234567"....................................passed
+And Patient clicks the Sign in button.......................................passed
+Then Verify the Mypages(Patient) link is displayed instead of Items&Titles link.passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="See Patient Info" time="11.678">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Admin clicks Sign in Link..............................................passed
+Then Admin fills the username "team87_admin"................................passed
+And Admin fills the password "1234567"......................................passed
+And Admin clicks the Sign in button.........................................passed
+And Admin clicks the Items&Titles dropdown..................................passed
+And Admin clicks Patient link...............................................passed
+Then Verify all patient information.........................................passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="See Patient ID" time="12.562">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Admin clicks Sign in Link..............................................passed
+Then Admin fills the username "team87_admin"................................passed
+And Admin fills the password "1234567"......................................passed
+And Admin clicks the Sign in button.........................................passed
+And Admin clicks the Items&Titles dropdown..................................passed
+And Admin clicks Patient link...............................................passed
+And Admin clicks Edit Button................................................passed
+Then Verify ID information is shown.........................................passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="Create New Patient Provide State Positive Scenario" time="16.256">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Admin clicks Sign in Link..............................................passed
+Then Admin fills the username "team87_admin"................................passed
+And Admin fills the password "1234567"......................................passed
+And Admin clicks the Sign in button.........................................passed
+And Admin clicks the Items&Titles dropdown..................................passed
+And Admin clicks Patient link...............................................passed
+And Admin clicks the Create a new Patient Button............................passed
+And Admin fills the "05/05/1980 03:20 AM","MALE","A+","A street","Big Home","jon.haley","USA".passed
+And Admin clicks Save Button................................................passed
+Then Verify the A new patient is created message............................passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="Admin Delete Patient" time="21.565">
+        <system-out>
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Admin clicks Sign in Link..............................................passed
+Then Admin fills the username "team87_admin"................................passed
+And Admin fills the password "1234567"......................................passed
+And Admin clicks the Sign in button.........................................passed
+And Admin clicks the Items&Titles dropdown..................................passed
+And Admin clicks Patient link...............................................passed
+And Admin clicks the Delete button next to the patient "Temprory Patient","Delete","temprory@temp.com","3685964586".passed
+And Admin clicks the Delete button on the delete message window.............passed
+Then Verify the user is deleted message.....................................passed
+And Closes the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create Edit Patient By Admin" name="Create New Patient Provide State Negative Scenario" time="16.638">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given Go to medunna home page...............................................passed
+When Admin clicks Sign in Link..............................................passed
+Then Admin fills the username "team87_admin"................................passed
+And Admin fills the password "1234567"......................................passed
+And Admin clicks the Sign in button.........................................passed
+And Admin clicks the Items&Titles dropdown..................................passed
+And Admin clicks Patient link...............................................passed
+And Admin clicks the Create a new Patient Button............................passed
+And Admin fills the "05/05/1980 03:20 AM","MALE","A+","A street","Big Home","jon.haley","USA".passed
+And Admin clicks Save Button................................................passed
+Then Verify the A new patient is not created successfully...................failed
+And Closes the browser......................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_a_new_patient_is_not_created_successfully(US15_CreatePatientByAdminStepDefs.java:264)
+	at ✽.Verify the A new patient is not created successfully(file:///C:/Users/yusuf/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US15_CreateEditPatientByAdmin.feature:155)
+]]>
+        </failure>
+    </testcase>
 </testsuite>
