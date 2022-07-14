@@ -1,5 +1,5 @@
 @US14 @team87
-Feature: US14_inpatient_info
+Feature: inpatient_info
 
   Background: opening_medunna_page
     Given doctor is on the medunna website
