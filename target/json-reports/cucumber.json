@@ -1,159 +1,1534 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-07-13T15:52:08.327Z",
-        "line": 21,
-        "name": "TC12_User can create new patient with DB",
+        "line": 4,
+        "name": "US_09",
         "description": "",
-        "id": "us09-db-validations;tc12-user-can-create-new-patient-with-db",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 2505000000,
+              "duration": 11286000000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "User connects to DB",
+            "line": 5,
+            "name": "user goes to URL",
             "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.user_connects_to_db()"
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 874000000,
+              "duration": 177000000,
               "status": "passed"
             },
-            "line": 23,
-            "name": "User creates a new patient in the patient table using the DB",
+            "line": 6,
+            "name": "User navigates to Sign in page",
             "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.userCreatesANewPatientInThePatientTableUsingTheDB()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 170000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User verifies that new patient has been added to the DB",
-            "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.userVerifiesThatNewPatientHasBeenAddedToTheDB()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User closes the DB connection",
-            "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.user_closes_the_db_connection()"
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
             },
             "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US09DB"
-          },
-          {
-            "name": "@US09DB_TC12"
-          },
-          {
-            "name": "@12-13"
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-13T15:52:12.099Z",
-        "line": 29,
-        "name": "TC13_User can delete patient from DB",
+        "start_timestamp": "2022-07-14T23:40:23.176Z",
+        "line": 9,
+        "name": "TC_0001_Admin can view patient information by navigating view portal",
         "description": "",
-        "id": "us09-db-validations;tc13-user-can-delete-patient-from-db",
+        "id": "us-09;tc-0001-admin-can-view-patient-information-by-navigating-view-portal",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1170000000,
+              "duration": 366000000,
               "status": "passed"
             },
-            "line": 30,
-            "name": "User connects to DB",
+            "line": 10,
+            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
             "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.user_connects_to_db()"
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1409000000,
+              "duration": 549000000,
               "status": "passed"
             },
-            "line": 31,
-            "name": "User deletes a patient from patient table",
+            "line": 11,
+            "name": "User verifies that landed at Admin page",
             "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.userDeletesAPatientFromPatientTable()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "User verifies that patient has been deleted",
-            "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.userVerifiesThatPatientHasBeenDeleted()"
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 171000000,
               "status": "passed"
             },
-            "line": 33,
-            "name": "User closes the DB connection",
+            "line": 12,
+            "name": "User navigate to Patients information page",
             "match": {
-              "location": "stepdefinitions.dbsteps.US09_DBStepDefs.user_closes_the_db_connection()"
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 240000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User verifies that can see patient information",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_can_see_patient_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US09DB"
+            "name": "@team87"
           },
           {
-            "name": "@US09DB_TC13"
+            "name": "@US09"
           },
           {
-            "name": "@12-13"
+            "name": "@US09_TC01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7912000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:40:36.416Z",
+        "line": 18,
+        "name": "TC_0002_Staff can view patient information by navigating view portal",
+        "description": "",
+        "id": "us-09;tc-0002-staff-can-view-patient-information-by-navigating-view-portal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 390000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters username \"team87_staff\" and password \"1234567\" with Staff credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_staff\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 730000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User verifies that landed at Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User navigate to Patients information page from Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 234000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User verifies that can see patient information",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_can_see_patient_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7662000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 213000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:40:46.291Z",
+        "line": 27,
+        "name": "TC_03 Admin can edit all patient information with using ID",
+        "description": "",
+        "id": "us-09;tc-03-admin-can-edit-all-patient-information-with-using-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 373000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 499000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User verifies that landed at Admin page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User navigate to Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 269000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User clicks on ID of patient to go to Patient detail page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksOnIDOfPatientToGoToPatientDetailPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksOnEditButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User verifies Create or edit a Patient page is opened",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7509000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User writes new informations in each information boxes",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sarah1",
+                  "Watts1"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3040000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User verifies that all informations are changed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7358000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:41:06.390Z",
+        "line": 41,
+        "name": "TC_04 Admin can edit all patient information with using Edit button",
+        "description": "",
+        "id": "us-09;tc-04-admin-can-edit-all-patient-information-with-using-edit-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 369000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 491000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User verifies that landed at Admin page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User navigate to Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 289000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User clicks Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksEditButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User verifies Create or edit a Patient page is opened",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8372000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User writes new informations in each information boxes",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sarah2",
+                  "Watts2"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3030000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User verifies that all informations are changed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7149000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:41:26.910Z",
+        "line": 54,
+        "name": "TC_05 Admin can edit all patient information with using view button",
+        "description": "",
+        "id": "us-09;tc-05-admin-can-edit-all-patient-information-with-using-view-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 474000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 502000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User verifies that landed at Admin page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User navigate to Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "User clicks view button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksViewButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "User clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksOnEditButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User verifies Create or edit a Patient page is opened",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8620000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User writes new informations in each information boxes",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sarah3",
+                  "Watts3"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3039000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User verifies that all informations are changed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9006000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:41:47.768Z",
+        "line": 68,
+        "name": "TC_06 Staff can edit all patient information with using Edit button",
+        "description": "",
+        "id": "us-09;tc-06-staff-can-edit-all-patient-information-with-using-edit-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 371000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User enters username \"team87_staff\" and password \"1234567\" with Staff credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_staff\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 712000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User verifies that landed at Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 135000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "User navigate to Patients information page from Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 334000000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "User clicks Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksEditButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "User verifies Create or edit a Patient page is opened",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8321000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "User writes new informations in each information boxes",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sarah4",
+                  "Watts4"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3030000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "User verifies that all informations are changed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 160000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC06"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9359000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:42:10.121Z",
+        "line": 81,
+        "name": "TC_07 Staff can edit all patient information with using view button",
+        "description": "",
+        "id": "us-09;tc-07-staff-can-edit-all-patient-information-with-using-view-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 376000000,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "User enters username \"team87_staff\" and password \"1234567\" with Staff credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_staff\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 703000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "User verifies that landed at Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "User navigate to Patients information page from Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "User clicks view button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksViewButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "User clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userClicksOnEditButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "User verifies Create or edit a Patient page is opened",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8422000000,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "User writes new informations in each information boxes",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sarah",
+                  "Watts"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3029000000,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "User verifies that all informations are changed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 198000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC07"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7600000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:42:33.007Z",
+        "line": 95,
+        "name": "TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated",
+        "description": "",
+        "id": "us-09;tc-08-staff-can-search-for-a-new-applicant-by-their-ssn-and-see-all-their-registration-info-populated",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 414000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "User enters username \"team87_staff\" and password \"1234567\" with Staff credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_staff\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 731000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "User verifies that landed at Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 141000000,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "User navigate to Patients information page from Staff page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39000000,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "User verifies that landed at Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2231000000,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "User enters patient SSN \"123-10-8787\" into search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-10-8787\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersPatientSSNIntoSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2584000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "User verifies that can see patient registration information populated",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesThatCanSeePatientRegistrationInformationPopulated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC08"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "US_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7244000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to URL",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigates to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T23:42:47.130Z",
+        "line": 105,
+        "name": "TC_09 Admin can delete any patient info",
+        "description": "",
+        "id": "us-09;tc-09-admin-can-delete-any-patient-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 386000000,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "User enters username \"team87_admin\" and password \"1234567\" with Admin credentials and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 501000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "User verifies that landed at Admin page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "User navigate to Patients information page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9963000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "User finds patient and clicks Delete button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userFindsPatientAndClicksDeleteButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5027000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "User verifies all informations are deleted",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.userVerifiesAllInformationsAreDeleted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "User closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US09"
+          },
+          {
+            "name": "@US09_TC09"
           }
         ]
       }
     ],
-    "name": "US09_DB Validations",
+    "name": "US_09",
     "description": "",
-    "id": "us09-db-validations",
+    "id": "us-09",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DBFeatures/US09_PatientsDBValidation.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US09.feature",
     "tags": [
       {
-        "name": "@US09DB",
+        "name": "@team87",
         "type": "Tag",
         "location": {
           "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@US09",
+        "type": "Tag",
+        "location": {
+          "line": 2,
           "column": 1
         }
       }

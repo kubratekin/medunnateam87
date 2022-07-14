@@ -1,17 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.004">
-<testcase classname="US09_DB Validations" name="TC12_User can create new patient with DB" time="3.737">
-<system-out><![CDATA[Given User connects to DB...................................................passed
-When User creates a new patient in the patient table using the DB...........passed
-Then User verifies that new patient has been added to the DB................passed
-And User closes the DB connection...........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="168.292">
+<testcase classname="US_09" name="TC_0001_Admin can view patient information by navigating view portal" time="13.159">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
+Then User verifies that landed at Admin page................................passed
+When User navigate to Patients information page.............................passed
+Then User verifies that landed at Patients information page.................passed
+And User verifies that can see patient information..........................passed
+And User closes the browser.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US09_DB Validations" name="TC13_User can delete patient from DB" time="2.588">
-<system-out><![CDATA[Given User connects to DB...................................................passed
-When User deletes a patient from patient table..............................passed
-Then User verifies that patient has been deleted............................passed
-And User closes the DB connection...........................................passed
+<testcase classname="US_09" name="TC_0002_Staff can view patient information by navigating view portal" time="9.834">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
+Then User verifies that landed at Staff page................................passed
+When User navigate to Patients information page from Staff page.............passed
+Then User verifies that landed at Patients information page.................passed
+And User verifies that can see patient information..........................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_09" name="TC_03 Admin can edit all patient information with using ID" time="20.056">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
+Then User verifies that landed at Admin page................................passed
+When User navigate to Patients information page.............................passed
+Then User verifies that landed at Patients information page.................passed
+And User clicks on ID of patient to go to Patient detail page...............passed
+And User clicks on Edit button..............................................passed
+Then User verifies Create or edit a Patient page is opened..................passed
+And User writes new informations in each information boxes..................passed
+Then User verifies that all informations are changed........................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_09" name="TC_04 Admin can edit all patient information with using Edit button" time="20.495">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
+Then User verifies that landed at Admin page................................passed
+When User navigate to Patients information page.............................passed
+Then User verifies that landed at Patients information page.................passed
+And User clicks Edit button.................................................passed
+Then User verifies Create or edit a Patient page is opened..................passed
+And User writes new informations in each information boxes..................passed
+Then User verifies that all informations are changed........................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_09" name="TC_05 Admin can edit all patient information with using view button" time="20.827">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
+Then User verifies that landed at Admin page................................passed
+When User navigate to Patients information page.............................passed
+Then User verifies that landed at Patients information page.................passed
+And User clicks view button.................................................passed
+And User clicks on Edit button..............................................passed
+Then User verifies Create or edit a Patient page is opened..................passed
+And User writes new informations in each information boxes..................passed
+Then User verifies that all informations are changed........................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_09" name="TC_06 Staff can edit all patient information with using Edit button" time="22.32">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
+Then User verifies that landed at Staff page................................passed
+When User navigate to Patients information page from Staff page.............passed
+Then User verifies that landed at Patients information page.................passed
+And User clicks Edit button.................................................passed
+Then User verifies Create or edit a Patient page is opened..................passed
+And User writes new informations in each information boxes..................passed
+Then User verifies that all informations are changed........................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_09" name="TC_07 Staff can edit all patient information with using view button" time="22.854">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
+Then User verifies that landed at Staff page................................passed
+When User navigate to Patients information page from Staff page.............passed
+Then User verifies that landed at Patients information page.................passed
+And User clicks view button.................................................passed
+And User clicks on Edit button..............................................passed
+Then User verifies Create or edit a Patient page is opened..................passed
+And User writes new informations in each information boxes..................passed
+Then User verifies that all informations are changed........................passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_09" name="TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated" time="14.107">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
+Then User verifies that landed at Staff page................................passed
+When User navigate to Patients information page from Staff page.............passed
+Then User verifies that landed at Patients information page.................passed
+When User enters patient SSN "123-10-8787" into search box..................passed
+Then User verifies that can see patient registration information populated..passed
+And User closes the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US_09" name="TC_09 Admin can delete any patient info" time="23.641">
+<system-out><![CDATA[Given user goes to URL......................................................passed
+And User navigates to Sign in page..........................................passed
+And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
+Then User verifies that landed at Admin page................................passed
+When User navigate to Patients information page.............................passed
+And User finds patient and clicks Delete button.............................passed
+Then User verifies all informations are deleted.............................passed
+And User closes the browser.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
