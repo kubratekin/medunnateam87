@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.489"/>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.914">
+<testcase classname="US_03 Registiration Password" name="TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber" time="11.479">
+<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
+Then user clicks on registiration button and navigates to registiration page.passed
+Then user types seven chars included one lowercase and one uppercase and number.passed
+And user sees strength level is changed to stronger.........................passed
+]]></system-out>
+</testcase>
+</testsuite>
