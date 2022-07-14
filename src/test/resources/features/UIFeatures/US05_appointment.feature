@@ -1,4 +1,4 @@
-@appointment
+@appointment @team87
 Feature: First Feature File
 
   Background: opening medunna page

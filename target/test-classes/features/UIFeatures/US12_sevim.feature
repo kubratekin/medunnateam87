@@ -1,4 +1,4 @@
-@US12_doctor_can_request_test
+@US12_doctor_can_request_test @team87
 Feature:doctor_can_request_test
   Background: doctor-goes-to-appointment-page
     Given User is on the login page

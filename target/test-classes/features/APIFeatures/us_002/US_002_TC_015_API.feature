@@ -1,4 +1,4 @@
-@US02 @US_002_TC_015 @api
+@US02 @US_002_TC_015 @api @team87
 Feature: username should be validated with API
 
   Scenario: username should be validated with API

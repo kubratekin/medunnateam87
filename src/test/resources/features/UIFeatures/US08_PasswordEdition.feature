@@ -1,4 +1,4 @@
-@US_08_user_password_segment
+@US_08_user_password_segment @team87
 Feature:   US008_password_update
 
   Background: Sign in to password page
