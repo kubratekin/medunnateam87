@@ -1,4 +1,4 @@
-@US02 @US_002_TC_013 @db
+@US02 @US_002_TC_013 @db @team87
 Feature: email should be validated with DB
 
   Scenario: email should be validated with DB
