@@ -11,8 +11,5 @@
         <module name="medunnastartup" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cucumber-framework" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
