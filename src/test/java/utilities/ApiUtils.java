@@ -1,60 +1,18 @@
 package utilities;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Objects;
-
-import static baseUrl.Medunna.spec;
 import static io.restassured.RestAssured.given;
-import static utilities.Authentication.generateToken;
-
 public class ApiUtils {
-
-    static Response response;
-    static List<Map<String,String>> patients;
-
-
-    public static String getPatientID (String firstName, String lastName, String email) throws IOException {
-        spec.pathParams("1","api","2","patients");
-        ObjectMapper obj = new ObjectMapper();
-
-        response = given().headers("Authorization","Bearer "+generateToken(),
-                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
-                .get(ConfigReader.getProperty("patients_endpoint"));
-//response.as(List.class);
-
-        patients = obj.readValue(response.asString(), List.class);
-        String ID = null;
-        for (int i=0; i<patients.size();i++){
-            if (patients.get(i).get("firstName").equals(firstName)&&
-                patients.get(i).get("lastName").equals(lastName) &&
-                patients.get(i).get("email").equals(email)){
-                ID = patients.get(i).get("id");
-            }
-        }
-//        for (Object patient : patients) {
-//            if ( ((Map)patient).get("firstName").equals(firstName) &&
-//                    ((Map)patient).get("lastName").equals(lastName) &&
-//                    ((Map)patient).get("email").equals(email) ) {
-//            ID = ((Map<?, ?>) patient).get("id");
-//            }
-//            }
-        System.out.println(ID);
-        return ID;
-        }
-
     private static String bearerToken;
     private static RequestSpecification spec;
-    //private static Response response;
+    private static Response response;
     private static String requestBody;
     private static Map<String, Object> objectPool = new HashMap<>();
     public static RequestSpecification getSpec(){
@@ -205,4 +163,5 @@ public class ApiUtils {
         objectPool.clear();
     }
 }
+
 

@@ -1,3 +1,4 @@
+@team87
 @US_08_user_password_segment
 Feature:   US008_password_update
 
@@ -23,8 +24,7 @@ Feature:   US008_password_update
 
     Examples:
       | currentPassword | newPassword | confirmationPassword |
-      | 1234567            | 1234560        | 1234560           |
-
+      | 1234567         | 1234560   | 1234560                |
 
   @US08_TC_0002
   Scenario Outline: for stronger password adding one LOWERCASE character
@@ -34,10 +34,9 @@ Feature:   US008_password_update
     And user add character " <add character>" to new password part
     And user verifies the password strength bar is two
 
-
     Examples:
       | new password | add character|
-      | 123456     | a             |
+      | 123456       | a            |
 
   @US08_TC_0003
   Scenario Outline: for stronger password adding one UPPERCASE character
@@ -46,7 +45,6 @@ Feature:   US008_password_update
     And user verifies the password strength bar is two
     And user add character " <add character>" to new password part
     And user verifies the password strength bar is four
-
 
     Examples:
       | new password | add character |
@@ -59,7 +57,6 @@ Feature:   US008_password_update
     And user verifies the password strength bar is four
     And user add character " <add character>" to new password part
     And user verifies the password strength bar is five
-
 
     Examples:
       | new password | add character |
@@ -83,7 +80,6 @@ Feature:   US008_password_update
     And user sends new password "<new password>" to new password part
     And user verifies the password strength bar is one
 
-
     Examples:
       | new password |
       | qA1!         |
@@ -103,7 +99,6 @@ Feature:   US008_password_update
       | 12345x       | !             |
 
 
-
   @US08_TC_0010
   Scenario Outline: old password should not be used
     When user cleans the current password part
@@ -118,4 +113,4 @@ Feature:   US008_password_update
 
     Examples:
       | current Password | new Password | confirmation Password |
-      | 1234560            | 1234567        | 1234567            |
+      | 1234560          | 1234560       | 1234560              |
