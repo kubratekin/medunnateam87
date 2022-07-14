@@ -1,5 +1,6 @@
-
+  @team87
   Feature: Update an appointment by doctor
+
     Background:Common steps
       Given user is on the login page
       When user clicks on login dropdown icon
@@ -14,6 +15,7 @@
       And Doctor selects Appointment date from and to boxes
       And Doctor clicks on Edit Button
 
+
     @Positive
     Scenario: Update My Appointments by doctor
         Given Doctor verifies patient's info id, start and end date, status, physician are visible
@@ -23,9 +25,10 @@
         And Doctor ckicks on Save Button
         And Doctor verifies Appointment is updated succesfully
         Then Doctor clicks Sign Out Button
+        Then Doctor close the application
 
-      @Negative
-      Scenario: Update My Appointments by doctor
+    @Negative
+    Scenario: Update My Appointments by doctor
         Given Doctor leaves anamesis field blank
         And Doctor verifies anamesis field is required
         And Doctor leaves treatment field blank
@@ -35,6 +38,7 @@
         And Doctor selects UNAPPROVED from status field
         And Doctor verifies UNAPPROVED can not selecteble
         Then Doctor clicks Sign Out Button
+        Then Doctor close the application
 
 
 

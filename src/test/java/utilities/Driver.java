@@ -302,7 +302,7 @@ public abstract class Driver {
     }
 
     public static void navigateToUrl(String url){
-        Driver.getDriver().get(url);
+        Driver.getDriver().get("https://medunna.com/");
     }
 
     public static void adminLogIn(String userName, String password){
@@ -333,5 +333,10 @@ public abstract class Driver {
         if (!viewByAdminAndStaff.infoSavedMessage.getText().contains("A Patient is created with identifier")){
             System.out.println("Patient can not be created");
         }
+    }
+
+    public static void scrollIntoViewJS(WebElement element) {
+        JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
+        jsexecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }
