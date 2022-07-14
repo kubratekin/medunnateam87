@@ -15,7 +15,7 @@ Feature: US14_inpatient_info
 
   @TC02
   Scenario: description_field
-    And doctor clicks on Edit button on a "<inpatient>"
+    And doctor click on Edit button on a "<inpatient>"
     And doctor updates the Description field as "<description>"
     Then doctor verifies Description field is updatable
 

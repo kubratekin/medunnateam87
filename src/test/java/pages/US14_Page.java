@@ -35,7 +35,7 @@ public class US14_Page {
     @FindBy(xpath = "//*[contains(text(), 'Save')]")
     public WebElement saveButton;
 
-    @FindBy(xpath = "//a[@href='/in-patient/108114/edit']")
+    @FindBy(xpath = "//a[@href='/in-patient/119355/edit']")
     public WebElement editButton;
 
     @FindBy(xpath = "//*[contains(text(),'The In Patient is updated with identifier')]")

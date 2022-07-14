@@ -4,7 +4,6 @@ import io.cucumber.java.en.*;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
-import utilities.ApiUtils;
 
 public class US_002_API_Stepdefs {
 

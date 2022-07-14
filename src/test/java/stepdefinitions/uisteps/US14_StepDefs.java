@@ -73,10 +73,10 @@ public class US14_StepDefs {
         Driver.closeDriver();
     }
 
-    @And("doctor clicks on Edit button on a {string}")
-    public void doctor_clicks_on_edit_button_on_a(String inpatient) {
+    @And("doctor click on Edit button on a {string}")
+    public void doctor_click_on_edit_button_on_a(String inpatient) {
 
-        Driver.waitAndClick(us14Page.editButton);
+        Driver.waitAndClick(us14Page.editButton, 2);
     }
 
 
@@ -94,7 +94,9 @@ public class US14_StepDefs {
     @Then("doctor verifies Description field is updatable")
     public void doctor_verifies_description_field_is_updatable() throws IOException {
 
-        Assert.assertTrue(us14Page.successMsgAlert.isDisplayed());
+        ReusableMethods.waitFor(2);
+        Assert.assertTrue(us14Page.failureMessage.isDisplayed());
+        ReusableMethods.waitFor(2);
     }
 
     @When("doctor updates the Created Date field as {string}")
