@@ -44,4 +44,7 @@ public class US14_Page {
     @FindBy(xpath = "//*[contains (text(), 'InPatient status can not be changed with this type of status')]")
     public WebElement failureMessage;
 
+    @FindBy(xpath = "//a[@href='/in-patient/116098/edit']")
+    public WebElement editButton2;
+
 }

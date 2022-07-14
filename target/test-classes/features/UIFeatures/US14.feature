@@ -1,4 +1,4 @@
-@US14
+@US14 @team87
 Feature: inpatient_info
 
   Background: opening_medunna_page
@@ -21,23 +21,47 @@ Feature: inpatient_info
 
   @TC03
   Scenario: created date_field
-    And doctor clicks on Edit button on a inpatient
+    And doctor clicks on Edit button on a "<inpatient>"
     And doctor updates the Created Date field as "<created date>"
     Then doctor verifies Created Date field is updatable
 
 
   @TC04
   Scenario: status_field
-    And doctor clicks on Edit button on a inpatient
+    And doctor clicks on Edit button on a "<inpatient>"
     And doctor updates the Status field as "<status>"
     Then doctor verifies Status field is updatable
     Then doctor closes the application
 
 
   @TC05
+  Scenario: unapproved_option
+    And doctor clicks on Edit button
+    And doctor updates status of the inpatient as UNAPPROVED
+    Then doctor verifies Status field is updatable of the inpatient
+    Then doctor closes the application
+
+  @TC06
+  Scenario: staying_option
+    And doctor clicks on Edit button
+    And doctor updates status of the inpatient as STAYING
+    Then doctor verifies Status field is updatable of the inpatient
+    Then doctor closes the application
+
+  @TC07
+  Scenario: cancelled_option
+    And doctor clicks on Edit button
+    And doctor updates status of the inpatient as CANCELLED
+    Then doctor verifies Status field is updatable of the inpatient
+    Then doctor closes the application
+
+
+  @TC08
   Scenario: reserved_room
-    And doctor clicks on Edit button on a inpatient
+    And doctor clicks on Edit button on a "<inpatient>"
     And doctor selects a room that is available
     Then doctor verifies the Room "<room>" can be updatable
     Then doctor closes the application
+
+
 

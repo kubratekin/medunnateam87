@@ -25,7 +25,7 @@ public class US10_ApiAppointmentStepDef {
 
     @Given("user goes to Medunna page")
     public void userGoesToMedunnaPage() {
-        spec.pathParams("first","appointment","second","patapp");
+       spec.pathParams("first","appointment","second","patapp");
     }
 
     @Then("user sends a request to get response")
