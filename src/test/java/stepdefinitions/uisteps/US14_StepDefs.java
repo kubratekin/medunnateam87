@@ -15,7 +15,9 @@ import utilities.ReusableMethods;
 
 import java.io.IOException;
 
+/*
 public class US14_StepDefs {
+
 
     WebDriver driver;
     CommonPageElement cp = new CommonPageElement();
@@ -149,3 +151,4 @@ public class US14_StepDefs {
         Assert.assertTrue(us14Page.successMsgAlert.isDisplayed());
     }
 }
+ */
