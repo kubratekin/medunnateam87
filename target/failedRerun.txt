@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-file:src/test/resources/features/UIFeatures/US10_omer.feature:24
-=======
-file:src/test/resources/features/UIFeatures/US05_appointment.feature:93:94:95
->>>>>>> b17072fcdc600c0770df6bf3bbb1bd34aa8c3ece
+file:src/test/resources/features/APIFeatures/US10_Appointment.feature:4

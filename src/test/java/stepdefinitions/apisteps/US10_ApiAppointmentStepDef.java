@@ -14,38 +14,62 @@ import org.junit.Assert;
 import pages.US10_PhysicianAppointment;
 import pages.US10_PhysicianAppointment;
 import pojos.AppointmentResponse;
+import utilities.ConfigReader;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static io.restassured.RestAssured.*;
+import static stepdefinitions.apisteps.Authentication.generateToken;
 
 public class US10_ApiAppointmentStepDef {
 
-   US10_PhysicianAppointment  physicianAppointment =new  US10_PhysicianAppointment();
+   Map<String, Object> physicianAppointment =new HashMap<>();
     Response response;
-    RequestSpecification spec = new RequestSpecBuilder().setBaseUri("https://medunna.com/appointment-update/101942").build();
+    RequestSpecification spec = new RequestSpecBuilder().setBaseUri("https://medunna.com/").build();
 
     @Given("user goes to Medunna page")
     public void userGoesToMedunnaPage() {
-        spec.pathParams("first","appointment","second","patapp");
+        spec.pathParams("first","api","second","appointments");
     }
 
     @Then("user sends a request to get response")
     public void userSendsARequestToGetResponse() {
-        Response response = given().spec(spec).when().get("/{first}/{second}");
+      //  response = given().headers().when().get("/{first}/{second}");
+
+
+        response = given().headers(
+                "Authorization",
+                "Bearer " + Authentication.generateToken(),
+                "ContentType",
+                ContentType.JSON, "Accept",
+                ContentType.JSON).when().get("https://medunna.com/api/appointments");
+
         response.then().assertThat().statusCode(200).contentType(ContentType.JSON).statusLine("HTTP/1.1 200 OK");
 
-        response =given().spec(spec).contentType(ContentType.JSON)
+
+         response.prettyPrint();
+
+
+    /*    response =given().spec(spec).contentType(ContentType.JSON)
                 .body(physicianAppointment)
                 .when().post("/{first}/{second}");
+
+     */
     }
+
+
 
 
 
     @Then("user validates api appointments")
     public void userValidatesApiAppointments() {
-        physicianAppointment=response.then().extract().as(US10_PhysicianAppointment.class);
+        physicianAppointment=response.as(HashMap.class);
 
         System.out.println("response from appointment request endpoint: " + physicianAppointment);
 
-        Assert.assertEquals("899-68-3333",physicianAppointment.ssn);
+        Assert.assertEquals("899-68-3333",physicianAppointment.get("patient"));
     }
+
+
 }

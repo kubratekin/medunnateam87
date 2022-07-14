@@ -1,209 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.875">
-<testcase classname="US10" name="Physician checks and edit appoinment list" time="4.252">
-<failure message="null value in entry: url=null" type="java.lang.NullPointerException"><![CDATA[Given Physician goes to Medunna page........................................failed
-Then Physician reaches Medunna pages to login...............................skipped
-Then Physician does Sign in page............................................skipped
-Then Physician types "Elharezmi"............................................skipped
-Then Physician types "1elharezmi1"..........................................skipped
-Then Physician clicks submit................................................skipped
-And Physicians goes own pages from MY PAGES tab.............................skipped
-And Physician clicks My appoitment button...................................skipped
-And Physician can see appoitment list.......................................skipped
-Then Physician can check startdate..........................................skipped
-And Physician can check enddate.............................................skipped
-And Physician can clicks Edit button........................................skipped
-Then Physician can edit the any appointment.................................skipped
-Then Physician can save it..................................................skipped
-Then Physician can close the browser........................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.294">
+<testcase classname="SeeAppointments" name="User sees his own appointments" time="11.413">
+<failure message="Cannot deserialize instance of `java.util.HashMap&lt;java.lang.Object,java.lang.Object&gt;` out of START_ARRAY token&#10; at [Source: (StringReader); line: 1, column: 1]" type="com.fasterxml.jackson.databind.exc.MismatchedInputException"><![CDATA[Given user goes to Medunna page.............................................passed
+Then user sends a request to get response...................................passed
+Then user validates api appointments........................................failed
 
 StackTrace:
-java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
-	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at utilities.Driver.navigateToUrl(Driver.java:303)
-	at stepdefinitions.uisteps.US10_AppointmentStepDef.physicianGoesToMedunnaPage(US10_AppointmentStepDef.java:30)
-	at ✽.Physician goes to Medunna page(file:///C:/Users/pc/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US10_omer.feature:6)
-=======
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="49.412">
-<testcase classname="First Feature File" name="TC09" time="11.226">
-<system-out><![CDATA[Given user goes to Medunna webpage..........................................passed
-And verify make an appointment button is displayed..........................passed
-When user clicks to Make an Appointment.....................................passed
-Then verify Make an Appointment page is displayed...........................passed
-When user provides the "123" phone number...................................passed
-Then user gets Phone number is invalid error message........................passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="First Feature File" name="TC09_2" time="9.995">
-<system-out><![CDATA[Given user goes to Medunna webpage..........................................passed
-And verify make an appointment button is displayed..........................passed
-When user clicks to Make an Appointment.....................................passed
-Then verify Make an Appointment page is displayed...........................passed
-When user provides the "00056800005" phone number...........................passed
-Then user gets Phone number is invalid error message........................passed
-And close the application...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="First Feature File" name="TC09_3" time="22.476">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Phone number is invalid']&quot;}&#10;  (Session info: chrome=103.0.5060.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-DS5GARL', ip: '192.168.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\afazi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 708002da3cacc648564fb91cddee0fdd&#10;*** Element info: {Using=xpath, value=//*[text()='Phone number is invalid']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user goes to Medunna webpage..........................................passed
-And verify make an appointment button is displayed..........................passed
-When user clicks to Make an Appointment.....................................passed
-Then verify Make an Appointment page is displayed...........................passed
-When user provides the "1234568790" phone number............................passed
-Then user gets Phone number is invalid error message........................failed
-And close the application...................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Phone number is invalid']"}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-DS5GARL', ip: '192.168.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\afazi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 708002da3cacc648564fb91cddee0fdd
-*** Element info: {Using=xpath, value=//*[text()='Phone number is invalid']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
-	at stepdefinitions.uisteps.US05_StepDefs.user_gets_phone_number_is_invalid_error_message(US05_StepDefs.java:175)
-	at ✽.user gets Phone number is invalid error message(file:///C:/Users/afazi/IdeaProjects/medunnateam87/src/test/resources/features/UIFeatures/US05_appointment.feature:86)
-]]></failure>
-</testcase>
-<testcase classname="First Feature File" name="TC09_4" time="0.435">
-<failure message="unknown error: cannot determine loading status&#10;from disconnected: received Inspector.detached event&#10;  (Session info: chrome=103.0.5060.114)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-DS5GARL', ip: '192.168.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\afazi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 708002da3cacc648564fb91cddee0fdd" type="org.openqa.selenium.WebDriverException"><![CDATA[Given user goes to Medunna webpage..........................................failed
-And verify make an appointment button is displayed..........................skipped
-When user clicks to Make an Appointment.....................................skipped
-Then verify Make an Appointment page is displayed...........................skipped
-When user provides the "12345687902" phone number...........................skipped
-Then user gets Phone number is invalid error message........................skipped
-And close the application...................................................skipped
-
-StackTrace:
-org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-DS5GARL', ip: '192.168.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\afazi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 708002da3cacc648564fb91cddee0fdd
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at stepdefinitions.uisteps.US05_StepDefs.user_goes_to_medunna_webpage(US05_StepDefs.java:39)
-	at ✽.user goes to Medunna webpage(file:///C:/Users/afazi/IdeaProjects/medunnateam87/src/test/resources/features/UIFeatures/US05_appointment.feature:5)
-]]></failure>
-</testcase>
-<testcase classname="First Feature File" name="TC09_5" time="4.145">
-<failure message="Failed to instantiate class stepdefinitions.uisteps.US05_StepDefs" type="io.cucumber.core.exception.CucumberException"><![CDATA[Given user goes to Medunna webpage..........................................failed
-And verify make an appointment button is displayed..........................skipped
-When user clicks to Make an Appointment.....................................skipped
-Then verify Make an Appointment page is displayed...........................skipped
-When user provides the "12-325-45698" phone number..........................skipped
-Then user gets Phone number is invalid error message........................skipped
-And close the application...................................................skipped
-
-StackTrace:
-io.cucumber.core.exception.CucumberException: Failed to instantiate class stepdefinitions.uisteps.US05_StepDefs
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:149)
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:133)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:141)
-	... 38 more
-Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=103.0.5060.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-DS5GARL', ip: '192.168.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\afazi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 708002da3cacc648564fb91cddee0fdd
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at utilities.Driver.getDriver(Driver.java:60)
-	at pages.HomePage.<init>(HomePage.java:11)
-	at stepdefinitions.uisteps.US05_StepDefs.<init>(US05_StepDefs.java:25)
-	... 43 more
->>>>>>> b17072fcdc600c0770df6bf3bbb1bd34aa8c3ece
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.util.HashMap<java.lang.Object,java.lang.Object>` out of START_ARRAY token
+ at [Source: (StringReader); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1445)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1219)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1129)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromEmpty(StdDeserializer.java:639)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:360)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4218)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3214)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepdefinitions.apisteps.US10_ApiAppointmentStepDef.userValidatesApiAppointments(US10_ApiAppointmentStepDef.java:67)
+	at ✽.user validates api appointments(file:///C:/Users/pc/IdeaProjects/medunnateam87/./src/test/resources/features/APIFeatures/US10_Appointment.feature:7)
 ]]></failure>
 </testcase>
 </testsuite>

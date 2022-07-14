@@ -16,8 +16,8 @@ import org.junit.runner.RunWith;
         },
 
         features = "./src/test/resources/features",//MUST
-        glue = "stepdefinitions/uisteps",//MUST
-        tags = " @US10appointment",
+        glue = "stepdefinitions",//MUST
+        tags = "@GetTheAppointments",
 
 
         dryRun =false
