@@ -69,8 +69,9 @@ public class US10_ApiAppointmentStepDef {
                 .when().post("/{first}/{second}");
 
      */
-   /*
-    }
+/*
+}
+
     @Then("user validates api appointments")
     public void userValidatesApiAppointments() {
         physicianAppointment=response.as(HashMap.class);
@@ -82,4 +83,4 @@ public class US10_ApiAppointmentStepDef {
 
 
 }
- */
+*/
