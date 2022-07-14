@@ -1,54 +1,57 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-07-07T18:50:48.681Z",
-        "line": 4,
-        "name": "TC01",
+        "start_timestamp": "2022-07-14T12:30:04.110Z",
+        "line": 5,
+        "name": "test_appointment",
         "description": "",
-        "id": "test-api-appointment-data;tc01",
+        "id": "test-api-appointment-data;test-appointment",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5347000000,
+              "duration": 21633000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user sends a get request for users\u0027 data",
+            "line": 6,
+            "name": "user sends a get request for appointment data",
             "match": {
-              "location": "stepdefinitions.apisteps.AppointmentApiSteps.user_sends_a_get_request_for_users_data()"
+              "location": "stepdefinitions.apisteps.AppointmentAPISteps.userSendsAGetRequestForAppointmentData()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1006000000,
+              "duration": 622000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user deserializes the users\u0027 data to java",
+            "line": 7,
+            "name": "user deserializes the appointment data to java",
             "match": {
-              "location": "stepdefinitions.apisteps.AppointmentApiSteps.user_deserializes_the_users_data_to_java()"
+              "location": "stepdefinitions.apisteps.AppointmentAPISteps.userDeserializesTheAppointmentDataToJava()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 107000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user saves the users\u0027 data to correspondent files and validates",
+            "line": 8,
+            "name": "user saves the appointment\u0027 data to correspondent files and validates",
             "match": {
-              "location": "stepdefinitions.apisteps.AppointmentApiSteps.user_saves_the_users_data_to_correspondent_files_and_validates()"
+              "location": "stepdefinitions.apisteps.AppointmentAPISteps.userSavesTheAppointmentDataToCorrespondentFilesAndValidates()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
+          {
+            "name": "@team87"
+          },
           {
             "name": "@Api"
           },
@@ -63,6 +66,577 @@
     "id": "test-api-appointment-data",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/APIFeatures/Appointment.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@team87",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-14T12:30:26.622Z",
+        "line": 12,
+        "name": "Validate appointments by id with database",
+        "description": "",
+        "id": "appointment-database-validation;validate-appointments-by-id-with-database;test-data;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1429000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user sets a connection with database",
+            "match": {
+              "location": "stepdefinitions.dbsteps.AppointmentDBStepDefs.user_sets_a_connection_with_database()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4173000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user selects all \"email\" column data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefinitions.dbsteps.AppointmentDBStepDefs.user_selects_all_column_data(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates appointment \"berkbey@gamil.com\" with the database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"berkbey@gamil.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.dbsteps.AppointmentDBStepDefs.user_validates_appointment_ids_with_the_database(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@AppointmentDatabaseValidation"
+          }
+        ]
+      }
+    ],
+    "name": "appointment database validation",
+    "description": "",
+    "id": "appointment-database-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DBFeatures/AppointmentDB.feature",
+    "tags": [
+      {
+        "name": "@team87",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11298000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigate to medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_navigate_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on Make An Appointment",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_click_on_make_an_appointment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify \"Make an Appointment \" header created on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Make an Appointment \"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.verify_header_created_on_the_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T12:30:32.249Z",
+        "line": 16,
+        "name": "TC01_Test_Make_An_Appointment_currentDate",
+        "description": "",
+        "id": "test-make-an-appointment;tc01-test-make-an-appointment-currentdate;test-user-information;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 921000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user send firstName ,lastName ,ssn ,phone ,email,as \"feyza\",\"aberkbey\",\"123-10-1003\",\"1234567890\",\"aberkbey@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"feyza\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"aberkbey\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"123-10-1003\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"1234567890\"",
+                  "offset": 85
+                },
+                {
+                  "val": "\"aberkbey@gmail.com\"",
+                  "offset": 98
+                }
+              ],
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_send_first_name_last_name_ssn_phone_email_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user can select current date",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_can_select_current_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2383000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click Send an Appointment Request",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_click_send_an_appointment_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4082000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify created the Appointment registration saved! We will call you as soon as possible alert message is visible",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.verify_created_the_appointment_registration_saved_we_will_call_you_as_soon_as_possible_alert_message_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1507000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "close this application",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.close_this_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC01"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12812000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigate to medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_navigate_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on Make An Appointment",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_click_on_make_an_appointment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify \"Make an Appointment \" header created on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Make an Appointment \"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.verify_header_created_on_the_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T12:30:52.924Z",
+        "line": 26,
+        "name": "TC02_Test_Make_An_Appointment_futureDate",
+        "description": "",
+        "id": "test-make-an-appointment;tc02-test-make-an-appointment-futuredate;test-user-information;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 907000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user send firstName ,lastName ,ssn ,phone ,email,as \"feyzan\",\"aberkbey\",\"123-11-1003\",\"1234567890\",\"aberk@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"feyzan\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"aberkbey\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"123-11-1003\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"1234567890\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"aberk@gmail.com\"",
+                  "offset": 99
+                }
+              ],
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_send_first_name_last_name_ssn_phone_email_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user can select future date",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_can_select_future_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2265000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user click Send an Appointment Request",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_click_send_an_appointment_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4078000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify created the Appointment registration saved! We will call you as soon as possible alert message is visible",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.verify_created_the_appointment_registration_saved_we_will_call_you_as_soon_as_possible_alert_message_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 734000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "close this application",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.close_this_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC02"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12373000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigate to medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_navigate_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user click on Make An Appointment",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_click_on_make_an_appointment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify \"Make an Appointment \" header created on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Make an Appointment \"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.verify_header_created_on_the_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-14T12:31:14.150Z",
+        "line": 36,
+        "name": "TC03_Test_Make_An_Appointment_pastDate",
+        "description": "",
+        "id": "test-make-an-appointment;tc03-test-make-an-appointment-pastdate;test-user-information;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 930000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user send firstName ,lastName ,ssn ,phone ,email,as \"feyzas\",\"aberkbey\",\"123-12-1003\",\"1234567890\",\"berkbey@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"feyzas\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"aberkbey\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"123-12-1003\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"1234567890\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"berkbey@gmail.com\"",
+                  "offset": 99
+                }
+              ],
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_send_first_name_last_name_ssn_phone_email_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user can select past date",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_can_select_past_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2312000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user click Send an Appointment Request",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.user_click_send_an_appointment_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3083000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "verify created the message Appointment date can not be past date! is visible",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.verify_created_the_message_appointment_date_can_not_be_past_date_is_visible()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1187000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "close this application",
+            "match": {
+              "location": "stepdefinitions.uisteps.AppointmentUIStepDef_feyza.close_this_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC03"
+          }
+        ]
+      }
+    ],
+    "name": "Test Make An Appointment",
+    "description": "",
+    "id": "test-make-an-appointment",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US07_feyza_appoinment.feature",
+    "tags": [
+      {
+        "name": "@team87",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

@@ -10,35 +10,44 @@ import java.util.HashMap;
 import java.util.Map;
 import static Hooks.Hooks.spec;
 public class Authentication{
+
+    public static void main(String[] args) {
+        String newToken=generateToken();
+        System.out.println("newToken = " + newToken);
+    }
     public static String generateToken() {
+
+        String username="vusalgasimov";
+        String password ="vusalgasimov";
+
+        Map<String, Object> expectedData = new HashMap<>();
+        expectedData.put("username","vusalgasimov");
+        expectedData.put("password","vusalgasimov");
+        expectedData.put("rememberMe",true);
 
         //Set the base url and path params
 
-        spec.pathParams("first", "api", "second", "authenticate");
+//        spec.pathParams("first",
+//                "api",
+//                "second",
+//                "authenticate");
+//        /*
+//        {       "password": "string",
+//                "rememberMe": true,
+//                "username": "string"}
+//        */
+//        //Set the expected data
 
-        //Set the expected data
-/*
-        {
-            "password": "string",
-                "rememberMe": true,
-                "username": "string"
-        }
+         //Send the request and get the response
 
-*/
-        Map<String, Object> expectedData = new HashMap<>();
-         expectedData.put("password","vusalgasimov");
-         expectedData.put("rememberMe",true);
-         expectedData.put("username","vusalgasimov");
+        String endPoint ="https://medunna.com/api/authenticate";
 
+        Response response=given().contentType(ContentType.JSON).body(expectedData).when().post(endPoint);
 
-    //Send the request and get the response
+        JsonPath token = response.jsonPath();
 
-    Response response=given().spec(spec).contentType(ContentType.JSON).body(expectedData).when().post("/{first}/{second}");
+        return token.getString("id_token");
 
-    response.prettyPrint();
-
-        JsonPath json = response.jsonPath();
-        return json.getString("id_token");
     }
 }
 

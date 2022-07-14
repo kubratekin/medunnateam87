@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 7, 2022 09:50:47 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 14, 2022 03:30:03 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,19 +66,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 7, 2022 09:50:47 PM</h3>
+<h3>Jul 14, 2022 03:30:03 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 7, 2022 09:50:55 PM</h3>
+<h3>Jul 14, 2022 03:31:34 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -101,7 +101,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>1</b> features passed
+<b>3</b> features passed
 </small>
 </div>
 <div>
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>30</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"test api appointment data":6.382
+"test api appointment data":22.411,"appointment database validation":5.61,"Test Make An Appointment":62.216
 };
 </script>
 <div class="row">
@@ -172,7 +172,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Api</td>
+<td>@AppointmentDatabaseValidation</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC02</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -182,6 +190,38 @@ var timeline = {
 <tr>
 <td>@GetApiAppointment</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Api</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@team87</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -210,18 +250,18 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 3,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 5,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
+passGrandChild: 30,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -246,7 +286,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Api</a><a class="dropdown-item" href="#">@GetApiAppointment</a>
+<a class="dropdown-item" href="#">@AppointmentDatabaseValidation</a><a class="dropdown-item" href="#">@TC02</a><a class="dropdown-item" href="#">@GetApiAppointment</a><a class="dropdown-item" href="#">@TC03</a><a class="dropdown-item" href="#">@Api</a><a class="dropdown-item" href="#">@TC01</a><a class="dropdown-item" href="#">@team87</a>
 </ul>
 </li>
 </ul>
@@ -259,7 +299,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">test api appointment data</p>
             <p class="text-sm">
-              <span>9:50:48 PM</span> / <span>00:00:06:382</span>
+              <span>3:30:04 PM</span> / <span>00:00:22:411</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -268,9 +308,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">test api appointment data</h5>
-<span class='badge badge-success'>07.07.2022 9:50:48 PM</span>
-<span class='badge badge-danger'>07.07.2022 9:50:55 PM</span>
-<span class='badge badge-default'>00:00:06:382</span>
+<span class='badge badge-success'>07.14.2022 3:30:04 PM</span>
+<span class='badge badge-danger'>07.14.2022 3:30:26 PM</span>
+<span class='badge badge-default'>00:00:22:411</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,27 +322,294 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>test_appointment</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.apisteps.AppointmentApiSteps.user_sends_a_get_request_for_users_data()">
-                <span>Given user sends a get request for users' data</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.AppointmentAPISteps.userSendsAGetRequestForAppointmentData()">
+                <span>Given user sends a get request for appointment data</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.apisteps.AppointmentApiSteps.user_deserializes_the_users_data_to_java()">
-                <span>And user deserializes the users' data to java</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.AppointmentAPISteps.userDeserializesTheAppointmentDataToJava()">
+                <span>And user deserializes the appointment data to java</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.apisteps.AppointmentApiSteps.user_saves_the_users_data_to_correspondent_files_and_validates()">
-                <span>Then user saves the users' data to correspondent files and validates</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.AppointmentAPISteps.userSavesTheAppointmentDataToCorrespondentFilesAndValidates()">
+                <span>Then user saves the appointment' data to correspondent files and validates</span>
       <div>
       </div>
               </div>
           </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">appointment database validation</p>
+            <p class="text-sm">
+              <span>3:30:26 PM</span> / <span>00:00:05:610</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">appointment database validation</h5>
+<span class='badge badge-success'>07.14.2022 3:30:26 PM</span>
+<span class='badge badge-danger'>07.14.2022 3:30:32 PM</span>
+<span class='badge badge-default'>00:00:05:610</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Validate appointments by id with database</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Validate appointments by id with database</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user sets a connection with database</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects all "email" column data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user validates appointment "berkbey@gamil.com" with the database</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Make An Appointment</p>
+            <p class="text-sm">
+              <span>3:30:32 PM</span> / <span>00:01:02:216</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Make An Appointment</h5>
+<span class='badge badge-success'>07.14.2022 3:30:32 PM</span>
+<span class='badge badge-danger'>07.14.2022 3:31:34 PM</span>
+<span class='badge badge-default'>00:01:02:216</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>TC01_Test_Make_An_Appointment_currentDate</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>TC01_Test_Make_An_Appointment_currentDate</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigate to medunna page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on Make An Appointment</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify "Make an Appointment " header created on the page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user send firstName ,lastName ,ssn ,phone ,email,as "feyza","aberkbey","123-10-1003","1234567890","aberkbey@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user can select current date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click Send an Appointment Request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify created the Appointment registration saved! We will call you as soon as possible alert message is visible</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And close this application</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>TC02_Test_Make_An_Appointment_futureDate</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>TC02_Test_Make_An_Appointment_futureDate</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigate to medunna page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on Make An Appointment</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify "Make an Appointment " header created on the page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user send firstName ,lastName ,ssn ,phone ,email,as "feyzan","aberkbey","123-11-1003","1234567890","aberk@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user can select future date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click Send an Appointment Request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify created the Appointment registration saved! We will call you as soon as possible alert message is visible</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And close this application</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>TC03_Test_Make_An_Appointment_pastDate</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="34"><span class="badge log pass-bg mr-2">Pass</span>TC03_Test_Make_An_Appointment_pastDate</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigate to medunna page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click on Make An Appointment</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify "Make an Appointment " header created on the page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user send firstName ,lastName ,ssn ,phone ,email,as "feyzas","aberkbey","123-12-1003","1234567890","berkbey@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user can select past date</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user click Send an Appointment Request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify created the message Appointment date can not be past date! is visible</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And close this application</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
         </div>
   </div>
 </div>
@@ -321,7 +628,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -330,12 +637,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Api</p>
+<p class="name">@AppointmentDatabaseValidation</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Api</h4>
+<h4>@AppointmentDatabaseValidation</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -349,11 +656,47 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:50:48 PM</td>
+<td>15:30:26 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01</a>
+<a href="#" class="linked" test-id='6' id='8'>Validate appointments by id with database</a>
 <div class="">
-<span class="badge badge-default">test api appointment data.TC01</span>
+<span class="badge badge-default">appointment database validation.Validate appointments by id with database</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:30:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='24'>TC02_Test_Make_An_Appointment_futureDate</a>
+<div class="">
+<span class="badge badge-default">Test Make An Appointment.TC02_Test_Make_An_Appointment_futureDate</span>
 </div>
 </td>
 </tr>
@@ -385,11 +728,195 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>21:50:48 PM</td>
+<td>15:30:04 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01</a>
+<a href="#" class="linked" test-id='1' id='2'>test_appointment</a>
 <div class="">
-<span class="badge badge-default">test api appointment data.TC01</span>
+<span class="badge badge-default">test api appointment data.test_appointment</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='34'>TC03_Test_Make_An_Appointment_pastDate</a>
+<div class="">
+<span class="badge badge-default">Test Make An Appointment.TC03_Test_Make_An_Appointment_pastDate</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Api</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Api</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:30:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>test_appointment</a>
+<div class="">
+<span class="badge badge-default">test api appointment data.test_appointment</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:30:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='14'>TC01_Test_Make_An_Appointment_currentDate</a>
+<div class="">
+<span class="badge badge-default">Test Make An Appointment.TC01_Test_Make_An_Appointment_currentDate</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">@team87</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@team87</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:30:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>test_appointment</a>
+<div class="">
+<span class="badge badge-default">test api appointment data.test_appointment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:30:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='8'>Validate appointments by id with database</a>
+<div class="">
+<span class="badge badge-default">appointment database validation.Validate appointments by id with database</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:30:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='14'>TC01_Test_Make_An_Appointment_currentDate</a>
+<div class="">
+<span class="badge badge-default">Test Make An Appointment.TC01_Test_Make_An_Appointment_currentDate</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:30:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='24'>TC02_Test_Make_An_Appointment_futureDate</a>
+<div class="">
+<span class="badge badge-default">Test Make An Appointment.TC02_Test_Make_An_Appointment_futureDate</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='34'>TC03_Test_Make_An_Appointment_pastDate</a>
+<div class="">
+<span class="badge badge-default">Test Make An Appointment.TC03_Test_Make_An_Appointment_pastDate</span>
 </div>
 </td>
 </tr>

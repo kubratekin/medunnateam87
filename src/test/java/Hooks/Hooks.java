@@ -21,11 +21,11 @@ public class Hooks {
 
     public static RequestSpecification spec;
 
-
     @Before(value="@Api")
     public void baseUrlSetUp(){
 
         spec= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+       // spec2= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url2")).build();
     }
 
     @Before(order=1, value="@NewApplicant")

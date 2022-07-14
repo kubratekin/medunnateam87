@@ -3,112 +3,129 @@ package pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-
 public class Appointment {
-    /* "lastName": "string",
-                "phone": "string",
-                "ssn": "632-76-7763",
-                "user": {
-            "activated": true,
-                    "createdBy": "string",
-                    "createdDate": "2022-07-02T07:36:28.746Z",
-                    "email": "string",
-                    "firstName": "string",
-                    "id": 0,
-                    "imageUrl": "string",
-                    "langKey": "string",
-                    "lastName": "string",
-                    "login": "string",
-                    "resetDate": "2022-07-02T07:36:28.746Z",
-                    "ssn": "528-34-0040"
-        }*/
 
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String ssn;
-    private String phone;
+    private String createdBy;
     private String createdDate;
     private int id;
+    private String endDate;
+    private String status;
+    private String anamnesis;
+    private String treatment;
+    private String diagonosis;
+    private String prescription;
 
-    public String getFirstName() {
-        return firstName;
+    private Patient patient;
+
+    public Appointment(String createdBy, String createdDate, int id, String endDate, String status, String anamnesis, String treatment, String diagonosis, String prescription, Patient patient) {
+        this.createdBy = createdBy;
+        this.createdDate = createdDate;
+        this.id = id;
+        this.endDate = endDate;
+        this.status = status;
+        this.anamnesis = anamnesis;
+        this.treatment = treatment;
+        this.diagonosis = diagonosis;
+        this.prescription = prescription;
+        this.patient = patient;
     }
 
-    public void setFirstName(String firstName) {
-
-        this.firstName = firstName;
+    public Appointment() {
     }
 
-    public String getLastName() {
-
-        return lastName;
+    public String getCreatedBy() {
+        return createdBy;
     }
 
-    public void setLastName(String lastName) {
-
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-
-        return email;
-    }
-
-    public void setEmail(String email) {
-
-        this.email = email;
-    }
-
-    public String getSsn() {
-        return ssn;
-    }
-
-    public void setSsn(String ssn) {
-
-        this.ssn = ssn;
-    }
-
-    public String getPhone() {
-
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
     }
 
     public String getCreatedDate() {
-
         return createdDate;
     }
 
     public void setCreatedDate(String createdDate) {
-
         this.createdDate = createdDate;
     }
 
     public int getId() {
-
         return id;
     }
 
     public void setId(int id) {
-
         this.id = id;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getAnamnesis() {
+        return anamnesis;
+    }
+
+    public void setAnamnesis(String anamnesis) {
+        this.anamnesis = anamnesis;
+    }
+
+    public String getTreatment() {
+        return treatment;
+    }
+
+    public void setTreatment(String treatment) {
+        this.treatment = treatment;
+    }
+
+    public String getDiagonosis() {
+        return diagonosis;
+    }
+
+    public void setDiagonosis(String diagonosis) {
+        this.diagonosis = diagonosis;
+    }
+
+    public String getPrescription() {
+        return prescription;
+    }
+
+    public void setPrescription(String prescription) {
+        this.prescription = prescription;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
     }
 
     @Override
     public String toString() {
-        return "U007_Appointment{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", ssn='" + ssn + '\'' +
-                ", phone='" + phone + '\'' +
+        return "Appointment{" +
+                "createdBy='" + createdBy + '\'' +
                 ", createdDate='" + createdDate + '\'' +
                 ", id=" + id +
+                ", endDate='" + endDate + '\'' +
+                ", status='" + status + '\'' +
+                ", anamnesis='" + anamnesis + '\'' +
+                ", treatment='" + treatment + '\'' +
+                ", diagonosis='" + diagonosis + '\'' +
+                ", prescription='" + prescription + '\'' +
+                ", patient=" + patient +
                 '}';
     }
 }
-

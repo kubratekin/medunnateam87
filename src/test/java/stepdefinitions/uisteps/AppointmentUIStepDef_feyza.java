@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class AppointmentUIStepDef_feyza {
+
     AppointmentPage appointmentPage = new AppointmentPage();
 
     @Given("user navigate to medunna page")
@@ -34,7 +35,6 @@ public class AppointmentUIStepDef_feyza {
         appointmentPage.ssn.sendKeys(ssn);
         appointmentPage.phone.sendKeys(phone);
         appointmentPage.email.sendKeys(email);
-
     }
     @Then("user can select current date")
     public void user_can_select_current_date() {
@@ -44,7 +44,6 @@ public class AppointmentUIStepDef_feyza {
         System.out.println(strCurrentDate);
         appointmentPage.appointmentDate.sendKeys(strCurrentDate);
         //System.out.println(LocalDate.now());
-
     }
     @Then("verify created the Appointment registration saved! We will call you as soon as possible alert message is visible")
     public void verify_created_the_appointment_registration_saved_we_will_call_you_as_soon_as_possible_alert_message_is_visible() throws InterruptedException {
@@ -53,11 +52,8 @@ public class AppointmentUIStepDef_feyza {
     }
     @Then("close this application")
     public void close_this_application() {
-
         Driver.closeDriver();
     }
-
-
     @Then("user can select future date")
     public void user_can_select_future_date() {
         LocalDate futureDate =LocalDate.now().plusMonths(2);
@@ -70,7 +66,6 @@ public class AppointmentUIStepDef_feyza {
     public void user_click_send_an_appointment_request() {
         Driver.waitAndClick(appointmentPage.sendAnAppointmentRequest);
     }
-
     @Then("user can select past date")
     public void user_can_select_past_date() {
         LocalDate pastDate =LocalDate.now().minusMonths(2);
@@ -84,5 +79,4 @@ public class AppointmentUIStepDef_feyza {
         Thread.sleep(3000);
         Assert.assertTrue(appointmentPage.pastDateWarning.isDisplayed());
     }
-
 }
