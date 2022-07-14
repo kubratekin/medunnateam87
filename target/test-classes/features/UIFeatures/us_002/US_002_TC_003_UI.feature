@@ -1,4 +1,4 @@
-@US02 @US_002_TC_003 @ui
+@US02 @US_002_TC_003 @ui @team87
 Feature:email id cannot be created without "@" sign and "." extension
 
   Scenario Outline: test email for new applicant
@@ -17,5 +17,5 @@ Feature:email id cannot be created without "@" sign and "." extension
     And user closes the browser
 
     Examples: test data for applicants
-      | ssn         | firstname | lastname  | username    | email                    | password | passwordconfirm |
-      | 358-11-4225 | Stefan    | Soluchkov | kurrupt81821 | soluchkow122121@gmail.com | 369369   | 369369          |
+      | ssn         | firstname | lastname  | username      | email                      | password | passwordconfirm |
+      | 358-74-4225 | Stefan    | Soluchkov | kurrupt818217 | soluchkow1221217@gmail.com | 369369   | 369369          |
