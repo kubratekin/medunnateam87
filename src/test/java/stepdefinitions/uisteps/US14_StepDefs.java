@@ -72,11 +72,11 @@ public class US14_StepDefs {
         Driver.closeDriver();
     }
 
-    @When("doctor clicks on Edit button on a {string}")
-    public void doctor_clicks_on_edit_button_on_a(String inpatient) {
-
-        Driver.waitAndClick(us14Page.editButton);
-    }
+//    @When("doctor clicks on Edit button on a {string}")
+//    public void doctor_clicks_on_edit_button_on_a(String inpatient) {
+//
+//        Driver.waitAndClick(us14Page.editButton);
+//    }
 
 
     @When("doctor updates the Description field as {string}")
