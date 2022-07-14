@@ -1,4 +1,4 @@
-@US02@US_002_TC_004@ui
+@US02 @US_002_TC_004 @ui
   Feature: email id cannot be created without "@" sign and "." extension
     Scenario:test email for new applicant
       Given user goes to webpage

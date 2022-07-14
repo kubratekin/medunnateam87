@@ -110,6 +110,8 @@ public class DoctorPage {
 
     @FindBy(xpath = "//*[contains(text(), 'Sign out')]")
     public WebElement signOutDropdown;
-
-
 }
+
+
+
+

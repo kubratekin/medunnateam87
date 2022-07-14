@@ -1,4 +1,4 @@
-@US_06
+@US_06 @team87
 Feature: Test Settings data
 Background:
   Given user goes to Medunna page

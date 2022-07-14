@@ -1,4 +1,4 @@
-@US02@US_002_TC_001@ui
+@US02 @US_002_TC_001 @ui
 Feature: Choose a username that can contain any chars, but it cannot be blank
 
   Scenario Outline: test username for new applicant
@@ -17,7 +17,15 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
     And user closes the browser
 
     Examples: test data for applicants
-      | ssn         | firstname | lastname | username | email                | password | passwordconfirm |
-      | 888-33-4535 | Ali       | Can      | user19051 | alican12905@gmail.com | 1234     | 1234            |
+      | ssn         | firstname | lastname | username                        | email                     | password | passwordconfirm |
+      | 281-13-4235 | Mario     | Costa    | abcdefghijklmn11121             | 1211mariocosta@gmail.com  | 1234     | 1234            |
+      | 382-13-4235 | Mario     | Costa    | opqrstuvwxyz11121               | 1211mariocosta1@gmail.com | 1234     | 1234            |
+      | 483-13-4235 | Mario     | Costa    | 123456789011121                 | 1211mariocosta2@gmail.com | 1234     | 1234            |
+      | 584-13-4235 | Mario     | Costa    | !@#$%^&*()_+-=";':./,\<>{}11121 | 1211mariocosta3@gmail.com | 1234     | 1234            |
+      | 685-13-4235 | Mario     | Costa    | ABCDEFGHIJKLMN11121             | 1211mariocosta4@gmail.com | 1234     | 1234            |
+      | 786-12-4235 | Mario     | Costa    | OPQRSTUVWXYZ11121               | 1211mariocosta5@gmail.com | 1234     | 1234            |
+
+
+
 
 
