@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class AppointmentPage {
-    public AppointmentPage (){
+public class AppointmentPage_US07 {
+    public AppointmentPage_US07(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "(//a[@href='#appointment'])[1]")

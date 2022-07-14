@@ -6,7 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import pojos.Appointment;
+import pojos.Appointment_US07;
 import utilities.ConfigReader;
 
 import static io.restassured.RestAssured.given;
@@ -14,11 +14,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static utilities.Authentication.generateToken;
 
-public class AppointmentAPISteps {
+public class AppointmentAPISteps_US07 {
 
     Response response;
 
-    Appointment[] appointments;
+    Appointment_US07[] appointments;
 
     @Given("user sends a get request for appointment data")
     public void userSendsAGetRequestForAppointmentData() {
@@ -37,7 +37,7 @@ public class AppointmentAPISteps {
 
         ObjectMapper obj = new ObjectMapper();
 
-        appointments = obj.readValue(response.asString(), Appointment[].class);
+        appointments = obj.readValue(response.asString(), Appointment_US07[].class);
 
         System.out.println("Size of the actual elements :" + appointments.length);
 
@@ -59,18 +59,9 @@ public class AppointmentAPISteps {
 
              ObjectMapper obj = new ObjectMapper();
 
+             Appointment_US07 actualData [] = obj.readValue(response.asString(), Appointment_US07[].class);
 
-             Appointment actualData [] = obj.readValue(response.asString(),Appointment[].class);
-
-
-
-             // GoRestResponseBodyPojo actualPojo = response.as(GoRestResponseBodyPojo.class);
-            //Appointment actualData=response.as(Appointment.class);
-
-
-
-            assertEquals("Ciftci",actualData[2].getPatient().getFirstName());
-
+             assertEquals("Ciftci",actualData[2].getPatient().getFirstName());
 
 
     }

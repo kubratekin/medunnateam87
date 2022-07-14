@@ -3,7 +3,7 @@ package stepdefinitions.uisteps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import pages.AppointmentPage;
+import pages.AppointmentPage_US07;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 
 public class AppointmentUIStepDef_feyza {
 
-    AppointmentPage appointmentPage = new AppointmentPage();
+    AppointmentPage_US07 appointmentPage = new AppointmentPage_US07();
 
     @Given("user navigate to medunna page")
     public void user_navigate_to_medunna_page() {

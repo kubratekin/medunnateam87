@@ -3,7 +3,7 @@ package pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class User {
+public class User_US07 {
     private String createdBy;
     private String createdDate;
     private int id;
@@ -16,10 +16,10 @@ public class User {
     private String ssn;
 
 
-    public User() {
+    public User_US07() {
 
     }
-    public User(String createdBy, String createdDate, int id, String login, String firstName, String lastName, String
+    public User_US07(String createdBy, String createdDate, int id, String login, String firstName, String lastName, String
             email, boolean activated, String langKey, String ssn) {
            this.createdBy = createdBy;
            this.createdDate = createdDate;

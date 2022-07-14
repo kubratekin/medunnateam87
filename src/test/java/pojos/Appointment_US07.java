@@ -3,7 +3,7 @@ package pojos;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Appointment {
+public class Appointment_US07 {
 
     private String createdBy;
     private String createdDate;
@@ -15,9 +15,9 @@ public class Appointment {
     private String diagonosis;
     private String prescription;
 
-    private Patient patient;
+    private Patient_US07 patient;
 
-    public Appointment(String createdBy, String createdDate, int id, String endDate, String status, String anamnesis, String treatment, String diagonosis, String prescription, Patient patient) {
+    public Appointment_US07(String createdBy, String createdDate, int id, String endDate, String status, String anamnesis, String treatment, String diagonosis, String prescription, Patient_US07 patient) {
         this.createdBy = createdBy;
         this.createdDate = createdDate;
         this.id = id;
@@ -30,7 +30,7 @@ public class Appointment {
         this.patient = patient;
     }
 
-    public Appointment() {
+    public Appointment_US07() {
     }
 
     public String getCreatedBy() {
@@ -105,11 +105,11 @@ public class Appointment {
         this.prescription = prescription;
     }
 
-    public Patient getPatient() {
+    public Patient_US07 getPatient() {
         return patient;
     }
 
-    public void setPatient(Patient patient) {
+    public void setPatient(Patient_US07 patient) {
         this.patient = patient;
     }
 

@@ -5,21 +5,18 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import utilities.DBUtils;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
-import static utilities.DBUtils.createConnection;
 import static utilities.DBUtils.getColumnData;
 
-public class AppointmentDBStepDefs {
+public class AppointmentDBStepDefs_US07 {
 
     List<Object> appointmentListEmail = new ArrayList<>();
 
     @Given("user sets a connection with database")
     public void user_sets_a_connection_with_database() {
-        //createConnection("jdbc:postgresql://medunna.com:5432/medunna_db", "medunnadb_user","Medunnadb_@129");
         DBUtils.createConnection();
     }
 
@@ -36,7 +33,6 @@ public class AppointmentDBStepDefs {
         //System.out.println("appointmentListEmail.contains(email) = " + appointmentListEmail.contains(email));
         assertTrue(appointmentListEmail.contains(email));
     }
-
 
 }
 
