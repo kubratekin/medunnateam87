@@ -19,9 +19,9 @@ public class DBUtils {
      * DBUtils.createConnection(); -> to connect to teh database
      */
     public static void createConnection() {
-        String url = "jdbc:sqlserver://184.168.194.58:1433;databaseName=crystalkeyhotels2;user=Ahmet_User;password=Ahmet123!";
-        String username="Ahmet_User";
-        String password="Ahmet123!";
+        String url = ConfigReader.getProperty("db_credentials_url");
+        String username=ConfigReader.getProperty("db_username");
+        String password=ConfigReader.getProperty("db_password");
         try {
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
@@ -89,7 +89,7 @@ public class DBUtils {
     }
 
 
-//Use this to get the ResutSet object
+//Use this to get the ResultSet object
     public static ResultSet getResultset() {
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
