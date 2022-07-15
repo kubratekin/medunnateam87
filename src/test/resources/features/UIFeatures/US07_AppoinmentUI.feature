@@ -1,5 +1,5 @@
 @team87
-Feature: Test Make An Appointment
+Feature: US07_Test Make An Appointment
   Background:
     Given user navigate to medunna page
     And user click on Make An Appointment

@@ -1,8 +1,7 @@
+@team87
 Feature: US10
-
   @US10appointment
   Scenario Outline: Physician checks and edit appoinment list
-
     Given Physician on the Medunna page
     Then  Physician reaches Medunna pages to login
     Then Physician does Sign in page
@@ -18,14 +17,11 @@ Feature: US10
     Then Physician can edit the any appointment
     Then Physician can save it
     Then Physician can close the browser
-
     Examples: user information
       |username|password|
       |Elharezmi|1elharezmi1|
-
   @US10patient
   Scenario Outline: Physician checks patient list
-
     Given Physician on the Medunna page
     Then  Physician reaches to login
     Then Physician  click Sign in page
@@ -36,8 +32,6 @@ Feature: US10
     And Physician clicks My patients
     And Physician checks patient list
     Then Physician close the browser
-
-
     Examples: user information
       |username|password|
       |Elharezmi|1elharezmi1|
