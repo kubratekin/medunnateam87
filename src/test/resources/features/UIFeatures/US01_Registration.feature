@@ -1,5 +1,5 @@
-@US_01
-Feature: Test Registrant data
+@US_01 @team87
+Feature: US01_Test Registrant data
 
    Background:
    Given user goes to Medunna page
