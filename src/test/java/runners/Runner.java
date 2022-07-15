@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = "stepdefinitions",//MUST
-        tags = "@US_08_user_password_segment",
+        tags = "@TC02_New_Patients_Can_Not_Be_Created_By_Staff",
         dryRun = false
 
 )
