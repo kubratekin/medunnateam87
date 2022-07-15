@@ -3,1198 +3,330 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-07-15T11:45:25.146Z",
         "line": 4,
-        "name": "email should be validated with API",
+        "name": "opening_medunna_page",
         "description": "",
-        "id": "email-should-be-validated-with-api;email-should-be-validated-with-api",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3135000000,
+              "duration": 12006000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user sends POST request to get Bearer Token",
+            "name": "doctor is on the medunna website",
             "match": {
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_post_request_to_get_bearer_token()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 263000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user verifies that response status code is 200",
+            "name": "navigates the Sign in page",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 4687000000,
+              "duration": 370000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user sends a GET request to get email address",
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
             "match": {
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_a_get_request_to_get_email_address()"
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 12000000,
+              "duration": 153000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "user verifies that response status code is 200",
+            "name": "doctor clicks on Sign in button",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:28:05.962Z",
+        "line": 12,
+        "name": "all_inpatient_info",
+        "description": "",
+        "id": "us14-inpatient-info;all-inpatient-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 749000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "doctor verifies all inpatient info",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_all_inpatient_info()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4000000,
+              "duration": 177000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user verifies that the returned information matches the expected one",
+            "line": 14,
+            "name": "doctor closes the application",
             "match": {
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_the_returned_information_matches_the_expected_one()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_014"
-          },
-          {
-            "name": "@api"
+            "name": "@US14"
           },
           {
             "name": "@team87"
+          },
+          {
+            "name": "@TC01"
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-15T11:45:33.093Z",
-        "line": 15,
-        "name": "username should be validated with API",
+        "line": 4,
+        "name": "opening_medunna_page",
         "description": "",
-        "id": "email-should-be-validated-with-api;username-should-be-validated-with-api",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 2. Redundant path parameters are: second\u003dnotpatient.\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)\n\tat io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)\n\tat io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat io.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat io.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\n\tat io.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)\n\tat io.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)\n\tat groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)\n\tat io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)\n\tat utilities.ApiUtils.post(ApiUtils.java:106)\n\tat stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_post_request_to_get_bearer_token(US_002_API_Stepdefs.java:19)\n\tat ✽.user sends POST request to get Bearer Token(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/APIFeatures/US02_GetNewRegistrantInfo_API.feature:16)\n",
-              "duration": 12000000,
-              "status": "failed"
+              "duration": 9236000000,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "user sends POST request to get Bearer Token",
+            "line": 5,
+            "name": "doctor is on the medunna website",
             "match": {
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_post_request_to_get_bearer_token()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 210000000,
+              "status": "passed"
             },
-            "line": 17,
-            "name": "user verifies that response status code is 200",
+            "line": 6,
+            "name": "navigates the Sign in page",
             "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 43
-                }
-              ],
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 354000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 577000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:28:20.585Z",
+        "line": 17,
+        "name": "description_field",
+        "description": "",
+        "id": "us14-inpatient-info;description-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
             },
             "line": 18,
-            "name": "user sends a GET request to get email address",
+            "name": "doctor click on Edit button on a \"\u003cinpatient\u003e\"",
             "match": {
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_a_get_request_to_get_email_address()"
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_click_on_edit_button_on_a(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3055000000,
+              "status": "passed"
             },
             "line": 19,
-            "name": "user verifies that response status code is 200",
+            "name": "doctor updates the Description field as \"\u003cdescription\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 43
+                  "val": "\"\u003cdescription\u003e\"",
+                  "offset": 40
                 }
               ],
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_the_description_field_as(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains (text(), \u0027InPatient status can not be changed with this type of status\u0027)]\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003dxpath, value\u003d//*[contains (text(), \u0027InPatient status can not be changed with this type of status\u0027)]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_description_field_is_updatable(US14_StepDefs.java:98)\n\tat ✽.doctor verifies Description field is updatable(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:20)\n",
+              "duration": 17075000000,
+              "status": "failed"
             },
             "line": 20,
-            "name": "user verifies that the returned information matches the expected one, and is unique",
+            "name": "doctor verifies Description field is updatable",
             "match": {
-              "location": "stepdefinitions.apisteps.US_002_API_Stepdefs.userVerifiesThatTheReturnedInformationMatchesTheExpectedOneAndIsUnique()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_description_field_is_updatable()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_014"
-          },
-          {
-            "name": "@api"
+            "name": "@US14"
           },
           {
             "name": "@team87"
           },
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_015"
+            "name": "@TC02"
           }
         ]
-      }
-    ],
-    "name": "email should be validated with API",
-    "description": "",
-    "id": "email-should-be-validated-with-api",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/APIFeatures/US02_GetNewRegistrantInfo_API.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
       },
       {
-        "name": "@US_002_TC_014",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 7
-        }
-      },
-      {
-        "name": "@api",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 22
-        }
-      },
-      {
-        "name": "@team87",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 27
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-15T11:45:33.132Z",
         "line": 4,
-        "name": "email should be validated with DB",
+        "name": "opening_medunna_page",
         "description": "",
-        "id": "email-should-be-validated-with-db;email-should-be-validated-with-db",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3444000000,
+              "duration": 974000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user connects to medunna_db with valid credentials",
+            "name": "doctor is on the medunna website",
             "match": {
-              "location": "stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_connects_to_medunna_db_with_valid_credentials()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 275000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user sends a requests to get the user details with a specific valid email address",
-            "match": {
-              "location": "stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_sends_a_requests_to_get_the_user_details_with_a_specific_valid_email_address()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user confirmes the request with the email address returns information",
-            "match": {
-              "location": "stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_confirmes_the_request_with_the_email_address_returns_information()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user closes database connection",
-            "match": {
-              "location": "stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_closes_database_connection()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_013"
-          },
-          {
-            "name": "@db"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      }
-    ],
-    "name": "email should be validated with DB",
-    "description": "",
-    "id": "email-should-be-validated-with-db",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DBFeatures/US02_NewRegistrant_DB.feature",
-    "tags": [
-      {
-        "name": "@US02",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@US_002_TC_013",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 7
-        }
-      },
-      {
-        "name": "@db",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 22
-        }
-      },
-      {
-        "name": "@team87",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 26
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-15T11:45:36.869Z",
-        "line": 21,
-        "name": "test username for new applicant",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 14531000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 98000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 24000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides ssn id as \"281-13-5239\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"281-13-5239\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 31000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provides firstname as \"Mario\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mario\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user provides lastname as \"Costa\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Costa\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user provides username as \"abcdefghijklmn111213\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"abcdefghijklmn111213\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user provides email as \"31211mariocosta@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"31211mariocosta@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user types password as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 33000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user types password confirmation as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Registration Saved\u0027] (tried for 10 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Registration Saved\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027zeytin.local\u0027, ip: \u00272a02:4e0:2d15:d1:3184:f91b:b464:8096%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002712.4\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9832a1b3499bbea2e260fd64de600501\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Registration Saved\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
-              "duration": 15149000000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15152000000,
               "status": "failed"
             },
-            "line": 16,
-            "name": "user should see Registration saved message",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-15T11:46:06.983Z",
-        "line": 22,
-        "name": "test username for new applicant",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 433000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 60000000,
-              "status": "passed"
-            },
             "line": 6,
-            "name": "user navigates to registration page",
+            "name": "navigates the Sign in page",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 17000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides ssn id as \"382-13-5239\"",
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"382-13-5239\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provides firstname as \"Mario\"",
-            "match": {
-              "arguments": [
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
                 {
-                  "val": "\"Mario\"",
-                  "offset": 27
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
                 }
               ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 28000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user provides lastname as \"Costa\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Costa\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user provides username as \"opqrstuvwxyz111213\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"opqrstuvwxyz111213\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user provides email as \"31211mariocosta1@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"31211mariocosta1@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user types password as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 26000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user types password confirmation as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Registration Saved\u0027] (tried for 10 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Registration Saved\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027zeytin.local\u0027, ip: \u00272a02:4e0:2d15:d1:3184:f91b:b464:8096%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002712.4\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9832a1b3499bbea2e260fd64de600501\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Registration Saved\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
-              "duration": 15124000000,
-              "status": "failed"
-            },
-            "line": 16,
-            "name": "user should see Registration saved message",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-15T11:46:22.876Z",
-        "line": 23,
-        "name": "test username for new applicant",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 421000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides ssn id as \"483-13-5239\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"483-13-5239\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 31000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provides firstname as \"Mario\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mario\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user provides lastname as \"Costa\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Costa\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user provides username as \"1234567890111213\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234567890111213\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user provides email as \"31211mariocosta2@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"31211mariocosta2@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user types password as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 27000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user types password confirmation as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Registration Saved\u0027] (tried for 10 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Registration Saved\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027zeytin.local\u0027, ip: \u00272a02:4e0:2d15:d1:3184:f91b:b464:8096%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002712.4\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9832a1b3499bbea2e260fd64de600501\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Registration Saved\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
-              "duration": 15156000000,
-              "status": "failed"
-            },
-            "line": 16,
-            "name": "user should see Registration saved message",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-15T11:46:38.821Z",
-        "line": 24,
-        "name": "test username for new applicant",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 434000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 64000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 18000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides ssn id as \"584-13-5239\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"584-13-5239\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provides firstname as \"Mario\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mario\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user provides lastname as \"Costa\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Costa\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "user provides username as \"!@#$%^\u0026*()_+-\u003d\";\u0027:./,\\\u003c\u003e{}111213\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "user provides email as \"31211mariocosta3@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"31211mariocosta3@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "user types password as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "user types password confirmation as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
@@ -1203,1334 +335,853 @@
               "duration": 1000000,
               "status": "skipped"
             },
-            "line": 16,
-            "name": "user should see Registration saved message",
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "skipped"
-            },
-            "line": 17,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-15T11:46:39.449Z",
-        "line": 25,
-        "name": "test username for new applicant",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 422000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 71000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 16000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides ssn id as \"685-13-5239\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"685-13-5239\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 28000000,
-              "status": "passed"
             },
             "line": 9,
-            "name": "user provides firstname as \"Mario\"",
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Mario\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 27000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user provides lastname as \"Costa\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Costa\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user provides username as \"ABCDEFGHIJKLMN111213\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ABCDEFGHIJKLMN111213\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 40000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user provides email as \"31211mariocosta4@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"31211mariocosta4@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user types password as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user types password confirmation as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Registration Saved\u0027] (tried for 10 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Registration Saved\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027zeytin.local\u0027, ip: \u00272a02:4e0:2d15:d1:3184:f91b:b464:8096%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002712.4\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9832a1b3499bbea2e260fd64de600501\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Registration Saved\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
-              "duration": 15141000000,
-              "status": "failed"
-            },
-            "line": 16,
-            "name": "user should see Registration saved message",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-15T11:46:55.362Z",
-        "line": 26,
-        "name": "test username for new applicant",
+        "start_timestamp": "2022-07-15T11:28:51.671Z",
+        "line": 23,
+        "name": "created date_field",
         "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant;test-data-for-applicants;7",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 428000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 62000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 19000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 34000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user provides ssn id as \"786-12-5239\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"786-12-5239\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provides firstname as \"Mario\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mario\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 29000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user provides lastname as \"Costa\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Costa\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user provides username as \"OPQRSTUVWXYZ111213\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OPQRSTUVWXYZ111213\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 39000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user provides email as \"31211mariocosta5@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"31211mariocosta5@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 23000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user types password as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 27000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user types password confirmation as \"1234\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"1234\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 11000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Registration Saved\u0027] (tried for 10 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Registration Saved\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027zeytin.local\u0027, ip: \u00272a02:4e0:2d15:d1:3184:f91b:b464:8096%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002712.4\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 9832a1b3499bbea2e260fd64de600501\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Registration Saved\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
-              "duration": 15150000000,
-              "status": "failed"
-            },
-            "line": 16,
-            "name": "user should see Registration saved message",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-15T11:47:11.279Z",
-        "line": 31,
-        "name": "test username for new applicant",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-username-for-new-applicant",
+        "id": "us14-inpatient-info;created-date-field",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 427000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 32,
-            "name": "user goes to webpage",
+            "line": 24,
+            "name": "doctor clicks on Edit button on a \"\u003cinpatient\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 62000000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 18000000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_on_a_inpatient(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 25000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 35,
-            "name": "user provides username as \"\"",
+            "line": 25,
+            "name": "doctor updates the Created Date field as \"\u003ccreated date\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"\"",
-                  "offset": 26
+                  "val": "\"\u003ccreated date\u003e\"",
+                  "offset": 41
                 }
               ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_the_created_date_field_as(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 36,
-            "name": "user should see \"Your username is required.\" message",
+            "line": 26,
+            "name": "doctor verifies Created Date field is updatable",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Your username is required.\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_created_date_field_is_updatable()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 87000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
+            "name": "@US14"
           },
           {
             "name": "@team87"
           },
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_002"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
+            "name": "@TC03"
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-15T11:47:11.910Z",
-        "line": 60,
-        "name": "test email for new applicant",
+        "line": 4,
+        "name": "opening_medunna_page",
         "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-email-for-new-applicant;test-data-for-applicants;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 11641000000,
+              "duration": 902000000,
               "status": "passed"
             },
-            "line": 44,
-            "name": "user goes to webpage",
+            "line": 5,
+            "name": "doctor is on the medunna website",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 93000000,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 53000000,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "user provides ssn id as \"358-74-4225\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"358-74-4225\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_ssn_id_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30000000,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "user provides firstname as \"Stefan\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Stefan\"",
-                  "offset": 27
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_firstname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33000000,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "user provides lastname as \"Soluchkov\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Soluchkov\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_lastname_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38000000,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "user provides username as \"kurrupt818217\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"kurrupt818217\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 41000000,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "user provides email as \"soluchkow1221217@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"soluchkow1221217@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 28000000,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "user types password as \"369369\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"369369\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 28000000,
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "user types password confirmation as \"369369\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"369369\"",
-                  "offset": 36
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_types_password_confirmation_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 11000000,
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "user clicks on Register button",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_clicks_on_register_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()\u003d\u0027Registration Saved\u0027] (tried for 10 second(s) with 500 milliseconds interval)\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:55)\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Registration Saved\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027zeytin.local\u0027, ip: \u00272a02:4e0:2d15:d1:3184:f91b:b464:8096%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002712.4\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:60780}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 91ed5c3af93f6658512fc9090d94f891\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Registration Saved\u0027]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\n\tat stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\n",
-              "duration": 15163000000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15155000000,
               "status": "failed"
             },
-            "line": 55,
-            "name": "user should see Registration saved message",
+            "line": 6,
+            "name": "navigates the Sign in page",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:08.000Z",
+        "line": 30,
+        "name": "status_field",
+        "description": "",
+        "id": "us14-inpatient-info;status-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "doctor clicks on Edit button on a \"\u003cinpatient\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_on_a_inpatient(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "doctor updates the Status field as \"\u003cstatus\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cstatus\u003e\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_the_status_field_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "doctor verifies Status field is updatable",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable()"
             },
             "keyword": "Then "
           },
           {
             "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 979000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15153000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:24.165Z",
+        "line": 38,
+        "name": "unapproved_option",
+        "description": "",
+        "id": "us14-inpatient-info;unapproved-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_of_an_inpatient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "doctor updates status of the inpatient as UNAPPROVED",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_status_of_the_inpatient_as_unapproved()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "doctor verifies Status field is updatable of the inpatient",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable_of_the_inpatient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 890000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15185000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:40.353Z",
+        "line": 45,
+        "name": "staying_option",
+        "description": "",
+        "id": "us14-inpatient-info;staying-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_of_an_inpatient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "doctor updates status of the inpatient as STAYING",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_status_of_the_inpatient_as_staying()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "doctor verifies Status field is updatable of the inpatient",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable_of_the_inpatient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC06"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 904000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15238000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:56.489Z",
+        "line": 52,
+        "name": "cancelled_option",
+        "description": "",
+        "id": "us14-inpatient-info;cancelled-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_of_an_inpatient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "doctor updates status of the inpatient as CANCELLED",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_status_of_the_inpatient_as_cancelled()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "doctor verifies Status field is updatable of the inpatient",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable_of_the_inpatient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 56,
-            "name": "user closes the browser",
+            "name": "doctor closes the application",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
+            "name": "@US14"
           },
           {
             "name": "@team87"
           },
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_003"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
+            "name": "@TC07"
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-15T11:47:39.116Z",
-        "line": 65,
-        "name": "test email for new applicant",
+        "line": 4,
+        "name": "opening_medunna_page",
         "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-email-for-new-applicant",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 474000000,
+              "duration": 990000000,
               "status": "passed"
             },
-            "line": 66,
-            "name": "user goes to webpage",
+            "line": 5,
+            "name": "doctor is on the medunna website",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 66000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15247000000,
+              "status": "failed"
             },
-            "line": 67,
-            "name": "user navigates to registration page",
+            "line": 6,
+            "name": "navigates the Sign in page",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 17000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 68,
-            "name": "user verifies Registration is displayed",
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 30000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 69,
-            "name": "user provides the invalid email as \"\"",
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
               "duration": 1000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 70,
-            "name": "user should see \"Your email is required.\" message",
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Your email is required.\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 76000000,
-              "status": "passed"
-            },
-            "line": 71,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
             },
             "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          },
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_004"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-15T11:47:39.793Z",
-        "line": 75,
-        "name": "test email for new applicant",
+        "start_timestamp": "2022-07-15T11:30:12.688Z",
+        "line": 60,
+        "name": "reserved_room",
         "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-email-for-new-applicant",
+        "id": "us14-inpatient-info;reserved-room",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9576000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 76,
-            "name": "user goes to webpage",
+            "line": 61,
+            "name": "doctor clicks on Edit button on a \"\u003cinpatient\u003e\"",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 93000000,
-              "status": "passed"
-            },
-            "line": 77,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_on_a_inpatient(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 58000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 79,
-            "name": "user provides the invalid email as \"user\"",
+            "line": 62,
+            "name": "doctor selects a room that is available",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"user\"",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_selects_a_room_that_is_available()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 16000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 80,
-            "name": "user should see \"Your email is required to be at least 5 characters.\" message",
+            "line": 63,
+            "name": "doctor verifies the Room \"\u003croom\u003e\" can be updatable",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Your email is required to be at least 5 characters.\"",
-                  "offset": 16
+                  "val": "\"\u003croom\u003e\"",
+                  "offset": 25
                 }
               ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_the_room_can_be_updatable(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 76000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 81,
-            "name": "user closes the browser",
+            "line": 64,
+            "name": "doctor closes the application",
             "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          },
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_005"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-15T11:47:49.641Z",
-        "line": 86,
-        "name": "test email for new applicant2",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-email-for-new-applicant2",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 11266000000,
-              "status": "passed"
-            },
-            "line": 87,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 85000000,
-              "status": "passed"
-            },
-            "line": 88,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 89,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 62000000,
-              "status": "passed"
-            },
-            "line": 90,
-            "name": "user provides the invalid email as \"user1905@gmailcom\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"user1905@gmailcom\"",
-                  "offset": 35
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16000000,
-              "status": "passed"
-            },
-            "line": 91,
-            "name": "user should see \"This field is invalid\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"This field is invalid\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 77000000,
-              "status": "passed"
-            },
-            "line": 92,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
+            "name": "@US14"
           },
           {
             "name": "@team87"
           },
           {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_006"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-15T11:48:01.176Z",
-        "line": 98,
-        "name": "test email for new applicant3",
-        "description": "",
-        "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank;test-email-for-new-applicant3",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9431000000,
-              "status": "passed"
-            },
-            "line": 99,
-            "name": "user goes to webpage",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 88000000,
-              "status": "passed"
-            },
-            "line": 100,
-            "name": "user navigates to registration page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 101,
-            "name": "user verifies Registration is displayed",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 49000000,
-              "status": "passed"
-            },
-            "line": 102,
-            "name": "user provides email as \"@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"@gmail.com\"",
-                  "offset": 23
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16000000,
-              "status": "passed"
-            },
-            "line": 103,
-            "name": "user should see \"This field is invalid\" message",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"This field is invalid\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 73000000,
-              "status": "passed"
-            },
-            "line": 104,
-            "name": "user closes the browser",
-            "match": {
-              "location": "stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_001"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
-          },
-          {
-            "name": "@US02"
-          },
-          {
-            "name": "@US_002_TC_007"
-          },
-          {
-            "name": "@ui"
-          },
-          {
-            "name": "@team87"
+            "name": "@TC08"
           }
         ]
       }
     ],
-    "name": "Choose a username that can contain any chars, but it cannot be blank",
+    "name": "US14_inpatient_info",
     "description": "",
-    "id": "choose-a-username-that-can-contain-any-chars--but-it-cannot-be-blank",
+    "id": "us14-inpatient-info",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US14.feature",
     "tags": [
       {
-        "name": "@US02",
+        "name": "@US14",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -2538,27 +1189,11 @@
         }
       },
       {
-        "name": "@US_002_TC_001",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 7
-        }
-      },
-      {
-        "name": "@ui",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 22
-        }
-      },
-      {
         "name": "@team87",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 26
+          "column": 7
         }
       }
     ]
