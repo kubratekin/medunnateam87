@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 15, 2022 02:40:21 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 15, 2022 02:45:24 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 15, 2022 02:40:21 AM</h3>
+<h3>Jul 15, 2022 02:45:24 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 15, 2022 02:43:10 AM</h3>
+<h3>Jul 15, 2022 02:48:10 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -84,7 +89,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
+<div><small data-tooltip='33%'>
 <b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='66%'><b>2</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>9</b> scenarios passed</small></div>
+<div><small data-tooltip='46%'><b>7</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='53%'><b>8</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>91</b> steps passed</small></div>
+<div><small data-tooltip='82%'><b>111</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='5%'><b>8</b> steps failed,
+<b>16</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"US_09":167.456
+"email should be validated with API":7.928,"email should be validated with DB":3.722,"Choose a username that can contain any chars, but it cannot be blank":153.976
 };
 </script>
 <div class="row">
@@ -172,7 +177,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@US09_TC05</td>
+<td>@US_002_TC_005</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -180,7 +185,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@US09_TC09</td>
+<td>@US_002_TC_013</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -188,7 +193,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@US09_TC04</td>
+<td>@US_002_TC_006</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -196,47 +201,23 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@US09_TC06</td>
-<td>1</td>
+<td>@US02</td>
+<td>7</td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>46.667%</td>
 </tr>
 <tr>
-<td>@US09</td>
-<td>9</td>
+<td>@US_002_TC_001</td>
+<td>5</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>41.667%</td>
 </tr>
 <tr>
-<td>@US09_TC01</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@US09_TC07</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@US09_TC02</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@US09_TC08</td>
+<td>@US_002_TC_004</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -245,14 +226,70 @@ var timeline = {
 </tr>
 <tr>
 <td>@team87</td>
-<td>9</td>
+<td>7</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>46.667%</td>
+</tr>
+<tr>
+<td>@US_002_TC_015</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US_002_TC_007</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@US09_TC03</td>
+<td>@US_002_TC_003</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@api</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@db</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ui</td>
+<td>5</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>41.667%</td>
+</tr>
+<tr>
+<td>@US_002_TC_014</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@US_002_TC_002</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -283,20 +320,20 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 1,
-failParent: 0,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 9,
-failChild: 0,
+passChild: 7,
+failChild: 8,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 91,
-failGrandChild: 0,
+passGrandChild: 111,
+failGrandChild: 8,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 16,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -311,6 +348,7 @@ eventsCount: 5,
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -318,31 +356,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US09_TC05</a><a class="dropdown-item" href="#">@US09_TC09</a><a class="dropdown-item" href="#">@US09_TC04</a><a class="dropdown-item" href="#">@US09_TC06</a><a class="dropdown-item" href="#">@US09</a><a class="dropdown-item" href="#">@US09_TC01</a><a class="dropdown-item" href="#">@US09_TC07</a><a class="dropdown-item" href="#">@US09_TC02</a><a class="dropdown-item" href="#">@US09_TC08</a><a class="dropdown-item" href="#">@team87</a><a class="dropdown-item" href="#">@US09_TC03</a>
+<a class="dropdown-item" href="#">@US_002_TC_005</a><a class="dropdown-item" href="#">@US_002_TC_013</a><a class="dropdown-item" href="#">@US_002_TC_006</a><a class="dropdown-item" href="#">@US02</a><a class="dropdown-item" href="#">@US_002_TC_001</a><a class="dropdown-item" href="#">@US_002_TC_004</a><a class="dropdown-item" href="#">@team87</a><a class="dropdown-item" href="#">@US_002_TC_015</a><a class="dropdown-item" href="#">@US_002_TC_007</a><a class="dropdown-item" href="#">@US_002_TC_003</a><a class="dropdown-item" href="#">@api</a><a class="dropdown-item" href="#">@db</a><a class="dropdown-item" href="#">@ui</a><a class="dropdown-item" href="#">@US_002_TC_014</a><a class="dropdown-item" href="#">@US_002_TC_002</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">US_09</p>
+            <p class="name">email should be validated with API</p>
             <p class="text-sm">
-              <span>2:40:23 AM</span> / <span>00:02:47:456</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>14:45:25</span> / <span>00:00:07:928</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">US_09</h5>
-<span class='badge badge-success'>07.15.2022 2:40:23 AM</span>
-<span class='badge badge-danger'>07.15.2022 2:43:10 AM</span>
-<span class='badge badge-default'>00:02:47:456</span>
+<h5 class="test-status text-fail">email should be validated with API</h5>
+<span class='badge badge-success'>07.15.2022 14:45:25</span>
+<span class='badge badge-danger'>07.15.2022 14:45:33</span>
+<span class='badge badge-default'>00:00:07:928</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -354,48 +392,33 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_0001_Admin can view patient information by navigating view portal</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>email should be validated with API</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_post_request_to_get_bearer_token()">
+                <span>Given user sends POST request to get Bearer Token</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)">
+                <span>Then user verifies that response status code is 200</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_a_get_request_to_get_email_address()">
+                <span>And user sends a GET request to get email address</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()">
-                <span>Then User verifies that landed at Admin page</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)">
+                <span>Then user verifies that response status code is 200</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()">
-                <span>When User navigate to Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_can_see_patient_information()">
-                <span>And User verifies that can see patient information</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_the_returned_information_matches_the_expected_one()">
+                <span>Then user verifies that the returned information matches the expected one</span>
       <div>
       </div>
               </div>
@@ -405,48 +428,1087 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>TC_0002_Staff can view patient information by navigating view portal</div>
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>username should be validated with API</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_post_request_to_get_bearer_token()">
+                <span>Given user sends POST request to get Bearer Token</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 2. Redundant path parameters are: second=notpatient.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+	at io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+	at utilities.ApiUtils.post(ApiUtils.java:106)
+	at stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_post_request_to_get_bearer_token(US_002_API_Stepdefs.java:19)
+	at ✽.user sends POST request to get Bearer Token(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/APIFeatures/US02_GetNewRegistrantInfo_API.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)">
+                <span>Then user verifies that response status code is 200</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_sends_a_get_request_to_get_email_address()">
+                <span>And user sends a GET request to get email address</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.user_verifies_that_response_status_code_is(java.lang.Integer)">
+                <span>Then user verifies that response status code is 200</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.apisteps.US_002_API_Stepdefs.userVerifiesThatTheReturnedInformationMatchesTheExpectedOneAndIsUnique()">
+                <span>Then user verifies that the returned information matches the expected one, and is unique</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">email should be validated with DB</p>
+            <p class="text-sm">
+              <span>14:45:33</span> / <span>00:00:03:722</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">email should be validated with DB</h5>
+<span class='badge badge-success'>07.15.2022 14:45:33</span>
+<span class='badge badge-danger'>07.15.2022 14:45:36</span>
+<span class='badge badge-default'>00:00:03:722</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>email should be validated with DB</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_connects_to_medunna_db_with_valid_credentials()">
+                <span>Given user connects to medunna_db with valid credentials</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_sends_a_requests_to_get_the_user_details_with_a_specific_valid_email_address()">
+                <span>When user sends a requests to get the user details with a specific valid email address</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button</span>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_confirmes_the_request_with_the_email_address_returns_information()">
+                <span>Then user confirmes the request with the email address returns information</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()">
-                <span>Then User verifies that landed at Staff page</span>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_closes_database_connection()">
+                <span>Then user closes database connection</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()">
-                <span>When User navigate to Patients information page from Staff page</span>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Choose a username that can contain any chars, but it cannot be blank</p>
+            <p class="text-sm">
+              <span>14:45:36</span> / <span>00:02:33:976</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Choose a username that can contain any chars, but it cannot be blank</h5>
+<span class='badge badge-success'>07.15.2022 14:45:36</span>
+<span class='badge badge-danger'>07.15.2022 14:48:10</span>
+<span class='badge badge-default'>00:02:33:976</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="21"><span class="badge log fail-bg mr-2">Fail</span>test username for new applicant</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>test username for new applicant</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user goes to webpage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user navigates to registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user verifies Registration is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides ssn id as "281-13-5239"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides firstname as "Mario"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides lastname as "Costa"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides username as "abcdefghijklmn111213"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides email as "31211mariocosta@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user types password as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user types password confirmation as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on Register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user should see Registration saved message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Registration Saved'] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Registration Saved']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:3184:f91b:b464:8096%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9832a1b3499bbea2e260fd64de600501
+*** Element info: {Using=xpath, value=//*[text()='Registration Saved']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user closes the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>test username for new applicant</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user goes to webpage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user navigates to registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user verifies Registration is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides ssn id as "382-13-5239"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides firstname as "Mario"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides lastname as "Costa"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides username as "opqrstuvwxyz111213"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides email as "31211mariocosta1@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user types password as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user types password confirmation as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on Register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user should see Registration saved message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Registration Saved'] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Registration Saved']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:3184:f91b:b464:8096%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9832a1b3499bbea2e260fd64de600501
+*** Element info: {Using=xpath, value=//*[text()='Registration Saved']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user closes the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="50"><span class="badge log fail-bg mr-2">Fail</span>test username for new applicant</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user goes to webpage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user navigates to registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user verifies Registration is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides ssn id as "483-13-5239"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides firstname as "Mario"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides lastname as "Costa"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides username as "1234567890111213"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides email as "31211mariocosta2@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user types password as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user types password confirmation as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on Register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user should see Registration saved message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Registration Saved'] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Registration Saved']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:3184:f91b:b464:8096%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9832a1b3499bbea2e260fd64de600501
+*** Element info: {Using=xpath, value=//*[text()='Registration Saved']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user closes the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="64"><span class="badge log fail-bg mr-2">Fail</span>test username for new applicant</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user goes to webpage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user navigates to registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user verifies Registration is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides ssn id as "584-13-5239"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides firstname as "Mario"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides lastname as "Costa"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And user provides username as "!@#$%^&*()_+-=";':./,\<>{}111213"</span>
+      <div>Step undefined
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user provides email as "31211mariocosta3@gmail.com"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When user types password as "1234"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user types password confirmation as "1234"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user clicks on Register button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then user should see Registration saved message</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user closes the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="78"><span class="badge log fail-bg mr-2">Fail</span>test username for new applicant</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user goes to webpage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user navigates to registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user verifies Registration is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides ssn id as "685-13-5239"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides firstname as "Mario"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides lastname as "Costa"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides username as "ABCDEFGHIJKLMN111213"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides email as "31211mariocosta4@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user types password as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user types password confirmation as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on Register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user should see Registration saved message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Registration Saved'] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Registration Saved']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:3184:f91b:b464:8096%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9832a1b3499bbea2e260fd64de600501
+*** Element info: {Using=xpath, value=//*[text()='Registration Saved']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user closes the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="92"><span class="badge log fail-bg mr-2">Fail</span>test username for new applicant</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user goes to webpage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user navigates to registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user verifies Registration is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides ssn id as "786-12-5239"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides firstname as "Mario"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides lastname as "Costa"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides username as "OPQRSTUVWXYZ111213"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides email as "31211mariocosta5@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user types password as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user types password confirmation as "1234"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on Register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user should see Registration saved message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Registration Saved'] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:16)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Registration Saved']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:3184:f91b:b464:8096%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:59641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9832a1b3499bbea2e260fd64de600501
+*** Element info: {Using=xpath, value=//*[text()='Registration Saved']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user closes the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>test username for new applicant</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()">
+                <span>Given user goes to webpage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()">
+                <span>When user navigates to registration page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_can_see_patient_information()">
-                <span>And User verifies that can see patient information</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()">
+                <span>And user verifies Registration is displayed</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_provides_username_as(java.lang.String)">
+                <span>And user provides username as ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)">
+                <span>Then user should see "Your username is required." message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()">
+                <span>And user closes the browser</span>
       <div>
       </div>
               </div>
@@ -456,70 +1518,198 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>TC_03 Admin can edit all patient information with using ID</div>
+        <div class="node" id="113"><span class="badge log fail-bg mr-2">Fail</span>test email for new applicant</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="114"><span class="badge log fail-bg mr-2">Fail</span>test email for new applicant</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given user goes to webpage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user navigates to registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user verifies Registration is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides ssn id as "358-74-4225"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides firstname as "Stefan"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides lastname as "Soluchkov"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides username as "kurrupt818217"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user provides email as "soluchkow1221217@gmail.com"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user types password as "369369"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user types password confirmation as "369369"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on Register button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then user should see Registration saved message</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Registration Saved'] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at ✽.user should see Registration saved message(file:///Users/papatya/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US02_NewRegistrant_UI.feature:55)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Registration Saved']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'zeytin.local', ip: '2a02:4e0:2d15:d1:3184:f91b:b464:8096%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.4', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /var/folders/ck/bc46sjz11js...}, goog:chromeOptions: {debuggerAddress: localhost:60780}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 91ed5c3af93f6658512fc9090d94f891
+*** Element info: {Using=xpath, value=//*[text()='Registration Saved']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepdefinitions.uisteps.US_002_Stepdefs.user_should_see_registration_saved_message(US_002_Stepdefs.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And user closes the browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>test email for new applicant</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()">
+                <span>Given user goes to webpage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()">
+                <span>When user navigates to registration page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()">
+                <span>And user verifies Registration is displayed</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()">
-                <span>Then User verifies that landed at Admin page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)">
+                <span>And user provides the invalid email as ""</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()">
-                <span>When User navigate to Patients information page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)">
+                <span>Then user should see "Your email is required." message</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksOnIDOfPatientToGoToPatientDetailPage()">
-                <span>And User clicks on ID of patient to go to Patient detail page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksOnEditButton()">
-                <span>And User clicks on Edit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()">
-                <span>Then User verifies Create or edit a Patient page is opened</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)">
-                <span>And User writes new informations in each information boxes</span>
-      <div><table class='markup-table table '><tr><td>Sarah1</td><td>Watts1</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()">
-                <span>Then User verifies that all informations are changed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()">
+                <span>And user closes the browser</span>
       <div>
       </div>
               </div>
@@ -529,65 +1719,38 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>TC_04 Admin can edit all patient information with using Edit button</div>
+        <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>test email for new applicant</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()">
+                <span>Given user goes to webpage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()">
+                <span>When user navigates to registration page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()">
+                <span>And user verifies Registration is displayed</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()">
-                <span>Then User verifies that landed at Admin page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)">
+                <span>And user provides the invalid email as "user"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()">
-                <span>When User navigate to Patients information page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)">
+                <span>Then user should see "Your email is required to be at least 5 characters." message</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksEditButton()">
-                <span>And User clicks Edit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()">
-                <span>Then User verifies Create or edit a Patient page is opened</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)">
-                <span>And User writes new informations in each information boxes</span>
-      <div><table class='markup-table table '><tr><td>Sarah2</td><td>Watts2</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()">
-                <span>Then User verifies that all informations are changed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()">
+                <span>And user closes the browser</span>
       <div>
       </div>
               </div>
@@ -597,70 +1760,38 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>TC_05 Admin can edit all patient information with using view button</div>
+        <div class="node" id="142"><span class="badge log pass-bg mr-2">Pass</span>test email for new applicant2</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()">
+                <span>Given user goes to webpage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()">
+                <span>When user navigates to registration page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()">
+                <span>And user verifies Registration is displayed</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()">
-                <span>Then User verifies that landed at Admin page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userProvidesTheInvalidEmailAs(java.lang.String)">
+                <span>And user provides the invalid email as "user1905@gmailcom"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()">
-                <span>When User navigate to Patients information page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)">
+                <span>Then user should see "This field is invalid" message</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksViewButton()">
-                <span>And User clicks view button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksOnEditButton()">
-                <span>And User clicks on Edit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()">
-                <span>Then User verifies Create or edit a Patient page is opened</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)">
-                <span>And User writes new informations in each information boxes</span>
-      <div><table class='markup-table table '><tr><td>Sarah3</td><td>Watts3</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()">
-                <span>Then User verifies that all informations are changed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()">
+                <span>And user closes the browser</span>
       <div>
       </div>
               </div>
@@ -670,245 +1801,38 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="58"><span class="badge log pass-bg mr-2">Pass</span>TC_06 Staff can edit all patient information with using Edit button</div>
+        <div class="node" id="149"><span class="badge log pass-bg mr-2">Pass</span>test email for new applicant3</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_goes_to_webpage()">
+                <span>Given user goes to webpage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_navigates_to_registration_page()">
+                <span>When user navigates to registration page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_verifies_registration_is_displayed()">
+                <span>And user verifies Registration is displayed</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()">
-                <span>Then User verifies that landed at Staff page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_provides_email_as(java.lang.String)">
+                <span>And user provides email as "@gmail.com"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()">
-                <span>When User navigate to Patients information page from Staff page</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.userShouldSeeMessage(java.lang.String)">
+                <span>Then user should see "This field is invalid" message</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksEditButton()">
-                <span>And User clicks Edit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()">
-                <span>Then User verifies Create or edit a Patient page is opened</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)">
-                <span>And User writes new informations in each information boxes</span>
-      <div><table class='markup-table table '><tr><td>Sarah4</td><td>Watts4</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()">
-                <span>Then User verifies that all informations are changed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="70"><span class="badge log pass-bg mr-2">Pass</span>TC_07 Staff can edit all patient information with using view button</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()">
-                <span>Then User verifies that landed at Staff page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()">
-                <span>When User navigate to Patients information page from Staff page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksViewButton()">
-                <span>And User clicks view button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userClicksOnEditButton()">
-                <span>And User clicks on Edit button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesCreateOrEditAPatientPageIsOpened()">
-                <span>Then User verifies Create or edit a Patient page is opened</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userWritesNewInformationsInEachInformationBoxes(io.cucumber.datatable.DataTable)">
-                <span>And User writes new informations in each information boxes</span>
-      <div><table class='markup-table table '><tr><td>Sarah</td><td>Watts</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatAllInformationsAreChanged()">
-                <span>Then User verifies that all informations are changed</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatLandedAtStaffPage()">
-                <span>Then User verifies that landed at Staff page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userNavigateToPatientsInformationPageFromStaffPage()">
-                <span>When User navigate to Patients information page from Staff page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_patients_information_page()">
-                <span>Then User verifies that landed at Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersPatientSSNIntoSearchBox(java.lang.String)">
-                <span>When User enters patient SSN "123-10-8787" into search box</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesThatCanSeePatientRegistrationInformationPopulated()">
-                <span>Then User verifies that can see patient registration information populated</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>TC_09 Admin can delete any patient info</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_goes_to_url()">
-                <span>Given user goes to URL</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigates_to_sign_in_page()">
-                <span>And User navigates to Sign in page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(java.lang.String,java.lang.String)">
-                <span>And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_verifies_that_landed_at_admin_page()">
-                <span>Then User verifies that landed at Admin page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_navigate_to_patients_information_page()">
-                <span>When User navigate to Patients information page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userFindsPatientAndClicksDeleteButton()">
-                <span>And User finds patient and clicks Delete button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.userVerifiesAllInformationsAreDeleted()">
-                <span>Then User verifies all informations are deleted</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.uisteps.US09StepDefs.user_closes_the_browser()">
-                <span>And User closes the browser</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_002_Stepdefs.user_closes_the_browser()">
+                <span>And user closes the browser</span>
       <div>
       </div>
               </div>
@@ -931,7 +1855,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">11</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">15</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -940,12 +1864,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US09_TC05</p>
+<p class="name">@US_002_TC_005</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US09_TC05</h4>
+<h4>@US_002_TC_005</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -959,11 +1883,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:26 AM</td>
+<td>14:47:39 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='45'>TC_05 Admin can edit all patient information with using view button</a>
+<a href="#" class="linked" test-id='20' id='135'>test email for new applicant</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_05 Admin can edit all patient information with using view button</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
 </div>
 </td>
 </tr>
@@ -976,12 +1900,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US09_TC09</p>
+<p class="name">@US_002_TC_013</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US09_TC09</h4>
+<h4>@US_002_TC_013</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -995,11 +1919,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:47 AM</td>
+<td>14:45:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='93'>TC_09 Admin can delete any patient info</a>
+<a href="#" class="linked" test-id='14' id='15'>email should be validated with DB</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_09 Admin can delete any patient info</span>
+<span class="badge badge-default">email should be validated with DB.email should be validated with DB</span>
 </div>
 </td>
 </tr>
@@ -1012,12 +1936,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US09_TC04</p>
+<p class="name">@US_002_TC_006</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US09_TC04</h4>
+<h4>@US_002_TC_006</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1031,11 +1955,337 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:06 AM</td>
+<td>14:47:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='33'>TC_04 Admin can edit all patient information with using Edit button</a>
+<a href="#" class="linked" test-id='20' id='142'>test email for new applicant2</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_04 Admin can edit all patient information with using Edit button</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant2</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-danger'>8</span>
+</span>
+<p class="name">@US02</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US02</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>email should be validated with API</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.email should be validated with API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>username should be validated with API</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.username should be validated with API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>email should be validated with DB</a>
+<div class="">
+<span class="badge badge-default">email should be validated with DB.email should be validated with DB</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='22'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='36'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='50'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='64'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='78'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='92'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='106'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='114'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='128'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='135'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='142'>test email for new applicant2</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant2</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='149'>test email for new applicant3</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant3</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@US_002_TC_001</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US_002_TC_001</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='22'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='36'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='50'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='64'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='78'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='92'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='106'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='114'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='128'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='135'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='142'>test email for new applicant2</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant2</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='149'>test email for new applicant3</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant3</span>
 </div>
 </td>
 </tr>
@@ -1048,12 +2298,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US09_TC06</p>
+<p class="name">@US_002_TC_004</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US09_TC06</h4>
+<h4>@US_002_TC_004</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1067,11 +2317,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:47 AM</td>
+<td>14:47:39 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='58'>TC_06 Staff can edit all patient information with using Edit button</a>
+<a href="#" class="linked" test-id='20' id='128'>test email for new applicant</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_06 Staff can edit all patient information with using Edit button</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
 </div>
 </td>
 </tr>
@@ -1082,275 +2332,17 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>9</span>
-</span>
-<p class="name">@US09</p>
-<p class="duration text-sm">9 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@US09</h4>
-<span status="pass" class='badge log pass-bg'>9 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC_0001_Admin can view patient information by navigating view portal</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_0001_Admin can view patient information by navigating view portal</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:36 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>TC_0002_Staff can view patient information by navigating view portal</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_0002_Staff can view patient information by navigating view portal</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:46 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='20'>TC_03 Admin can edit all patient information with using ID</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_03 Admin can edit all patient information with using ID</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:06 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='33'>TC_04 Admin can edit all patient information with using Edit button</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_04 Admin can edit all patient information with using Edit button</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:26 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='45'>TC_05 Admin can edit all patient information with using view button</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_05 Admin can edit all patient information with using view button</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:47 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='58'>TC_06 Staff can edit all patient information with using Edit button</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_06 Staff can edit all patient information with using Edit button</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='70'>TC_07 Staff can edit all patient information with using view button</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_07 Staff can edit all patient information with using view button</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:33 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='83'>TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:47 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='93'>TC_09 Admin can delete any patient info</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_09 Admin can delete any patient info</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@US09_TC01</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@US09_TC01</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC_0001_Admin can view patient information by navigating view portal</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_0001_Admin can view patient information by navigating view portal</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@US09_TC07</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@US09_TC07</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='70'>TC_07 Staff can edit all patient information with using view button</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_07 Staff can edit all patient information with using view button</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@US09_TC02</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@US09_TC02</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:36 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>TC_0002_Staff can view patient information by navigating view portal</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_0002_Staff can view patient information by navigating view portal</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@US09_TC08</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@US09_TC08</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:33 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='83'>TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>9</span>
+<span class='badge log pass-bg'>7</span>
+<span class='badge log badge-danger'>8</span>
 </span>
 <p class="name">@team87</p>
-<p class="duration text-sm">9 tests</p>
+<p class="duration text-sm">15 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@team87</h4>
-<span status="pass" class='badge log pass-bg'>9 passed</span>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1363,91 +2355,187 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:23 AM</td>
+<td>14:45:25 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_0001_Admin can view patient information by navigating view portal</a>
+<a href="#" class="linked" test-id='1' id='2'>email should be validated with API</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_0001_Admin can view patient information by navigating view portal</span>
+<span class="badge badge-default">email should be validated with API.email should be validated with API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>username should be validated with API</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.username should be validated with API</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:36 AM</td>
+<td>14:45:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='11'>TC_0002_Staff can view patient information by navigating view portal</a>
+<a href="#" class="linked" test-id='14' id='15'>email should be validated with DB</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_0002_Staff can view patient information by navigating view portal</span>
+<span class="badge badge-default">email should be validated with DB.email should be validated with DB</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='22'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='36'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='50'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='64'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='78'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='92'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:46 AM</td>
+<td>14:47:11 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>TC_03 Admin can edit all patient information with using ID</a>
+<a href="#" class="linked" test-id='20' id='106'>test username for new applicant</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_03 Admin can edit all patient information with using ID</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='114'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:06 AM</td>
+<td>14:47:39 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='33'>TC_04 Admin can edit all patient information with using Edit button</a>
+<a href="#" class="linked" test-id='20' id='128'>test email for new applicant</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_04 Admin can edit all patient information with using Edit button</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:26 AM</td>
+<td>14:47:39 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='45'>TC_05 Admin can edit all patient information with using view button</a>
+<a href="#" class="linked" test-id='20' id='135'>test email for new applicant</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_05 Admin can edit all patient information with using view button</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:41:47 AM</td>
+<td>14:47:49 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='58'>TC_06 Staff can edit all patient information with using Edit button</a>
+<a href="#" class="linked" test-id='20' id='142'>test email for new applicant2</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_06 Staff can edit all patient information with using Edit button</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant2</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:10 AM</td>
+<td>14:48:01 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='70'>TC_07 Staff can edit all patient information with using view button</a>
+<a href="#" class="linked" test-id='20' id='149'>test email for new applicant3</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_07 Staff can edit all patient information with using view button</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant3</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:33 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='83'>TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</a>
-<div class="">
-<span class="badge badge-default">US_09.TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated</span>
+</tbody>
+</table>
 </div>
-</td>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US_002_TC_015</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US_002_TC_015</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:42:47 AM</td>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:33 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='93'>TC_09 Admin can delete any patient info</a>
+<a href="#" class="linked" test-id='1' id='8'>username should be validated with API</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_09 Admin can delete any patient info</span>
+<span class="badge badge-default">email should be validated with API.username should be validated with API</span>
 </div>
 </td>
 </tr>
@@ -1460,12 +2548,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US09_TC03</p>
+<p class="name">@US_002_TC_007</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US09_TC03</h4>
+<h4>@US_002_TC_007</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1479,11 +2567,501 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>02:40:46 AM</td>
+<td>14:48:01 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>TC_03 Admin can edit all patient information with using ID</a>
+<a href="#" class="linked" test-id='20' id='149'>test email for new applicant3</a>
 <div class="">
-<span class="badge badge-default">US_09.TC_03 Admin can edit all patient information with using ID</span>
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant3</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US_002_TC_003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US_002_TC_003</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='114'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@api</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@api</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>email should be validated with API</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.email should be validated with API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>username should be validated with API</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.username should be validated with API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@db</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='14' id='15'>email should be validated with DB</a>
+<div class="">
+<span class="badge badge-default">email should be validated with DB.email should be validated with DB</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">@ui</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ui</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='22'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='36'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='50'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='64'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='78'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='92'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='106'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='114'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='128'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='135'>test email for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='142'>test email for new applicant2</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant2</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:48:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='149'>test email for new applicant3</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant3</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US_002_TC_014</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US_002_TC_014</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:45:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>email should be validated with API</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.email should be validated with API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>username should be validated with API</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.username should be validated with API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US_002_TC_002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US_002_TC_002</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:47:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='106'>test username for new applicant</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.IllegalArgumentException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.IllegalArgumentException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Given user sends POST request to get Bearer Token</a>
+<div class="">
+<span class="badge badge-default">email should be validated with API.username should be validated with API.Given user sends POST request to get Bearer Token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:45:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='34'>Then user should see Registration saved message</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant.Then user should see Registration saved message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='48'>Then user should see Registration saved message</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant.Then user should see Registration saved message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='62'>Then user should see Registration saved message</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant.Then user should see Registration saved message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='90'>Then user should see Registration saved message</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant.Then user should see Registration saved message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:46:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='104'>Then user should see Registration saved message</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test username for new applicant.Then user should see Registration saved message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:47:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='126'>Then user should see Registration saved message</a>
+<div class="">
+<span class="badge badge-default">Choose a username that can contain any chars, but it cannot be blank.test email for new applicant.Then user should see Registration saved message</span>
 </div>
 </td>
 </tr>

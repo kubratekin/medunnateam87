@@ -27,7 +27,7 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
 
 
   @US02 @US_002_TC_002 @ui @team87
-  Feature:Choose a username that can contain any chars, but it cannot be blank
+ # Feature:Choose a username that can contain any chars, but it cannot be blank
   Scenario:test username for new applicant
     Given user goes to webpage
     When user navigates to registration page
@@ -38,7 +38,7 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
 
 
   @US02 @US_002_TC_003 @ui @team87
-  Feature:email id cannot be created without "@" sign and "." extension
+ # Feature:email id cannot be created without "@" sign and "." extension
 
   Scenario Outline: test email for new applicant
     Given user goes to webpage
@@ -61,7 +61,7 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
 
 
   @US02 @US_002_TC_004 @ui @team87
-  Feature: email id cannot be created without "@" sign and "." extension
+ # Feature: email id cannot be created without "@" sign and "." extension
   Scenario:test email for new applicant
     Given user goes to webpage
     When user navigates to registration page
@@ -71,7 +71,7 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
     And user closes the browser
 
   @US02 @US_002_TC_005 @ui @team87
-  Feature: email id cannot be created without "@" sign and "." extension
+#  Feature: email id cannot be created without "@" sign and "." extension
   Scenario: test email for new applicant
     Given user goes to webpage
     When user navigates to registration page
@@ -82,7 +82,7 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
 
 
   @US02 @US_002_TC_006 @ui @team87
-  Feature: email id cannot be created without "@" sign and "." extension
+#  Feature: email id cannot be created without "@" sign and "." extension
   Scenario: test email for new applicant2
     Given user goes to webpage
     When user navigates to registration page
@@ -93,7 +93,7 @@ Feature: Choose a username that can contain any chars, but it cannot be blank
 
 
   @US02 @US_002_TC_007 @ui @team87
-  Feature:email cannot be left blank
+ # Feature:email cannot be left blank
 
   Scenario: test email for new applicant3
     Given user goes to webpage
