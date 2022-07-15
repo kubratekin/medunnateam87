@@ -1,6 +1,6 @@
 @team87
 @US09_API
-Feature: US09 Validating Info USing API
+Feature: US09_API_Validating Info USing API
   @US09_TC10
   Scenario Outline: TC10_User should validate all patient info using API
     Given User sets the path params to read patient info

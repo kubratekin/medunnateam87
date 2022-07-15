@@ -1,5 +1,5 @@
 @US02 @US_002_TC_001 @ui @team87
-Feature: Choose a username that can contain any chars, but it cannot be blank
+Feature: US02_Choose a username that can contain any chars, but it cannot be blank
 
   Scenario Outline: test username for new applicant
     Given user goes to webpage
