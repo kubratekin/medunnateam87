@@ -1,3 +1,4 @@
+@team87
 @US09DB
 Feature: US09_DB Validations
   @US09DB_TC11
@@ -17,7 +18,6 @@ Feature: US09_DB Validations
     | patient_87       | team_87          | team87@mail.com            | 123-10-8787 |
 
   @US09DB_TC12
-    @12-13
   Scenario: TC12_User can create new patient with DB
     Given User connects to DB
     When User creates a new patient in the patient table using the DB
@@ -25,7 +25,6 @@ Feature: US09_DB Validations
     And User closes the DB connection
 
   @US09DB_TC13
-    @12-13
   Scenario: TC13_User can delete patient from DB
     Given User connects to DB
     When User deletes a patient from patient table
