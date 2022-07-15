@@ -1,5 +1,5 @@
-  @US11 @team87
-  Feature: US11 Update an appointment by doctor
+  @team87
+  Feature: US11_Update an appointment by doctor
 
     Background:Common steps
       Given user is on the login page

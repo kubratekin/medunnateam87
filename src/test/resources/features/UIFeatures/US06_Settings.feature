@@ -1,5 +1,5 @@
-@US_06
-Feature: Test Settings data
+@US_06 @team87
+Feature: US06_Test Settings data
 Background:
   Given user goes to Medunna page
   When  user navigate to sign in page
