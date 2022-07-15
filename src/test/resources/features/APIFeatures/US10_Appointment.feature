@@ -1,13 +1,12 @@
 @team87
-Feature: SeeAppointments
+Feature: US10_validation API
 
- @GetTheAppointments
-  Scenario: Appointments validate with Api
+ @US10_API
+  Scenario: Appointments validation with Api
 
-    Given  Physician sends POST request to get Bearer Token"
-    Given   Physician get request to get the Patient id
-   Then    Physician verifies that the returned  information
-    And   Physician validates appoinment info
+    Given  Physician sends a request to get response
+   Then    Physician does deserializetion appointment info
+    And   Physician validates "PENDING" appoinment status
 
 
 

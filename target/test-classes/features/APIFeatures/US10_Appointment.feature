@@ -1,17 +1,13 @@
-#@team87
-#Feature: SeeAppointments
+@team87
+Feature: US10_validation API
 
- # @GetTheAppointments
-  #Scenario: User sees his own appointments
-   # Given Physician reads patient info
-    #Given Physician sets expected data
-    #When  Physician get request and get response
-    #And   Physician validates appoinment info "<patient_id>" "<firstname>"
+ @US10_API
+  Scenario: Appointments validation with Api
 
-    #Examples :
+    Given  Physician sends a request to get response
+   Then    Physician does deserializetion appointment info
+    And   Physician validates "PENDING" appoinment status
 
-    #|patient_id|firstname|
-    #|  102038  |patient1|
 
 
 

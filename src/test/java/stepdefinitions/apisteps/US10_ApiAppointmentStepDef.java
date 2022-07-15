@@ -8,6 +8,7 @@ import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapper;
 import io.restassured.mapper.ObjectMapperDeserializationContext;
 import io.restassured.mapper.ObjectMapperSerializationContext;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
@@ -16,6 +17,7 @@ import pages.US10_PhysicianAppointment;
 import pojos.AppointmentResponse;
 import utilities.ConfigReader;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,43 +30,54 @@ import static stepdefinitions.apisteps.Authentication.generateToken;
 public class US10_ApiAppointmentStepDef extends Authentication{
 
     Response response;
-    Map<String,Object> expectedDataPatient;
-    List patients;
+    List<Map<String,Object>> Appointment;
 
     @Given("Physician reads patient info")
     public void physicianReadsPatientInfo() {
 
         RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-        spec.pathParams("first", "api", "second", "patients");
-    }
-
-    }
-
-
-/*
-    @Given("Physician sets expected data")
-    public void physicianSetsExpectedData() {
-      //  public void user_sets_the_path_params_to_read_patient_info () {
-            expectedDataPatient=new HashMap<>();
-            expectedDataPatient.put("patient_id","102038");
-            expectedDataPatient.put("firstname","patient1");
-
-        }
-
-
-
-
-    @When("Physician get request and get response")
-    public void physicianGetRequestAndGetResponse() {
-        response = given().headers("Authorization","Bearer "+generateToken(),
-                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
-                .get(ConfigReader.getProperty("patients_endpoint"));
-//        response.prettyPrint();
-
+        spec.pathParams("first", "api", "second", "appointments");
     }
 
 
- */
+
+    @Given("Physician sends a request to get response")
+    public void physicianSendsARequestToGetResponse() {
+        response = given().headers(
+                "Authorization",
+                "Bearer " + utilities.Authentication.generateToken(),
+                "ContentType",
+                ContentType.JSON, "Accept",
+                ContentType.JSON).when().get(ConfigReader.getProperty("api_appointment"));
+
+    }
+
+    @Then("Physician does deserializetion appointment info")
+    public void physicianDoesDeserializetionAppointmentInfo() {
+        Appointment =response.as(ArrayList.class);
+
+        JsonPath json = response.jsonPath();
+        List<Integer> ids = json.getList("findAll{it.id>190}.id");
+
+        System.out.println(ids);
+
+
+    }
+
+    @And("Physician validates {string} appoinment status")
+    public void physicianValidatesAppoinmentStatus(String status) {
+
+        Assert.assertTrue("Status ",status.contains(status));
+        System.out.println(status);
+
+
+
+     }
+
+
+
+}
+
 
 
 

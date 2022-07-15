@@ -17,7 +17,6 @@ public class US01_RegistrantDBSteps {
         DBUtils.getConnection();
 
     }
-
     @And("user selects all {string} column data")
     public void userSelectsAllColumnData(String ssn) {
         String query = "select * from jhi_user";
