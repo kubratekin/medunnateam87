@@ -1,6 +1,6 @@
 package stepdefinitions.apisteps;
 
-import baseUrl.Medunna;
+
 import io.cucumber.java.en.*;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;

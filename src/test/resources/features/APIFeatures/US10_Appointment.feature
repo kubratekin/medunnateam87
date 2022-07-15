@@ -1,12 +1,16 @@
+@team87
 Feature: SeeAppointments
 
-  @GetTheAppointments
-  Scenario: User sees his own appointments
-    Given user goes to Medunna page
-    Then  user sends a request to get response
-    Then user validates api appointments
+ @GetTheAppointments
+  Scenario: Appointments validate with Api
+
+    Given  Physician sends POST request to get Bearer Token"
+    Given   Physician get request to get the Patient id
+   Then    Physician verifies that the returned  information
+    And   Physician validates appoinment info
 
 
-   # @ApiAppointments
-   # Scenario: Checking Appointments
-    #  * user sees the appointments "https://www.medunna.com/api/appointments"
+
+
+
+

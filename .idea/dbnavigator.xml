@@ -28,24 +28,15 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-<<<<<<< HEAD
     <connection id="ba1ebaa6-384e-4714-8a3d-363d08d81aa9">
       <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from appointment]]></console>
-=======
-    <connection id="9792920a-1417-4fcd-8b2d-a234221a44fb">
-      <console name="Medunna2" type="STANDARD" schema="" session="Main" />
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-<<<<<<< HEAD
     <connection id="ba1ebaa6-384e-4714-8a3d-363d08d81aa9" />
-=======
-    <connection id="9792920a-1417-4fcd-8b2d-a234221a44fb" />
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -76,15 +67,9 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-<<<<<<< HEAD
       <connection id="ba1ebaa6-384e-4714-8a3d-363d08d81aa9" active="true" signed="true">
         <database>
           <name value="Connection" />
-=======
-      <connection id="9792920a-1417-4fcd-8b2d-a234221a44fb" active="true" signed="true">
-        <database>
-          <name value="Medunna2" />
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -476,7 +461,7 @@
     </code-completion-settings>
     <execution-engine-settings>
       <statement-execution>
-        <fetch-block-size value="10000" />
+        <fetch-block-size value="100" />
         <execution-timeout value="20" />
         <debug-execution-timeout value="600" />
         <focus-result value="false" />

@@ -1,18 +1,25 @@
 package utilities;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static baseUrl.Medunna.spec;
+
 import static io.restassured.RestAssured.given;
 import static utilities.Authentication.generateToken;
+import static utilities.Authentication.spec;
 
 public class ApiUtils {
+
 
     static Response response;
     static List patients;
@@ -36,5 +43,6 @@ public class ApiUtils {
             }
         return ID;
         }
+
 }
 

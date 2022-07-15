@@ -17,73 +17,54 @@ import pojos.AppointmentResponse;
 import utilities.ConfigReader;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.*;
 import static stepdefinitions.apisteps.Authentication.generateToken;
 
-/*
-public class US10_ApiAppointmentStepDef {
 
-<<<<<<< HEAD
-   Map<String, Object> physicianAppointment =new HashMap<>();
-=======
 
-   US10_PhysicianAppointment  physicianAppointment =new  US10_PhysicianAppointment();
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
+public class US10_ApiAppointmentStepDef extends Authentication{
+
     Response response;
-    RequestSpecification spec = new RequestSpecBuilder().setBaseUri("https://medunna.com/").build();
+    Map<String,Object> expectedDataPatient;
+    List patients;
 
-<<<<<<< HEAD
-    @Given("user goes to Medunna page")
-    public void userGoesToMedunnaPage() {
-        spec.pathParams("first","api","second","appointments");
+    @Given("Physician reads patient info")
+    public void physicianReadsPatientInfo() {
+
+        RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+        spec.pathParams("first", "api", "second", "patients");
     }
-=======
-//    @Given("user goes to Medunna page")
-//    public void userGoesToMedunnaPage() {
-//        spec.pathParams("first","appointment","second","patapp");
-//    }
->>>>>>> 98d48eea5611fdcdca42871e7baddb006f7bfee3
 
-    @Then("user sends a request to get response")
-    public void userSendsARequestToGetResponse() {
-      //  response = given().headers().when().get("/{first}/{second}");
-
-
-        response = given().headers(
-                "Authorization",
-                "Bearer " + Authentication.generateToken(),
-                "ContentType",
-                ContentType.JSON, "Accept",
-                ContentType.JSON).when().get("https://medunna.com/api/appointments");
-
-        response.then().assertThat().statusCode(200).contentType(ContentType.JSON).statusLine("HTTP/1.1 200 OK");
-
-
-         response.prettyPrint();
-
-
-    /*    response =given().spec(spec).contentType(ContentType.JSON)
-                .body(physicianAppointment)
-                .when().post("/{first}/{second}");
-
-     */
     }
 
 
+/*
+    @Given("Physician sets expected data")
+    public void physicianSetsExpectedData() {
+      //  public void user_sets_the_path_params_to_read_patient_info () {
+            expectedDataPatient=new HashMap<>();
+            expectedDataPatient.put("patient_id","102038");
+            expectedDataPatient.put("firstname","patient1");
+
+        }
 
 
 
-    @Then("user validates api appointments")
-    public void userValidatesApiAppointments() {
-        physicianAppointment=response.as(HashMap.class);
 
-        System.out.println("response from appointment request endpoint: " + physicianAppointment);
+    @When("Physician get request and get response")
+    public void physicianGetRequestAndGetResponse() {
+        response = given().headers("Authorization","Bearer "+generateToken(),
+                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
+                .get(ConfigReader.getProperty("patients_endpoint"));
+//        response.prettyPrint();
 
-        Assert.assertEquals("899-68-3333",physicianAppointment.get("patient"));
     }
 
 
-}
  */
+
+
+

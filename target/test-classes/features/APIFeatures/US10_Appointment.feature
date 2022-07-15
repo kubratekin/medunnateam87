@@ -1,12 +1,19 @@
-Feature: SeeAppointments
+#@team87
+#Feature: SeeAppointments
 
-  @GetTheAppointments
-  Scenario: User sees his own appointments
-    Given user goes to Medunna page
-    Then  user sends a request to get response
-    Then user validates api appointments
+ # @GetTheAppointments
+  #Scenario: User sees his own appointments
+   # Given Physician reads patient info
+    #Given Physician sets expected data
+    #When  Physician get request and get response
+    #And   Physician validates appoinment info "<patient_id>" "<firstname>"
+
+    #Examples :
+
+    #|patient_id|firstname|
+    #|  102038  |patient1|
 
 
-   # @ApiAppointments
-   # Scenario: Checking Appointments
-    #  * user sees the appointments "https://www.medunna.com/api/appointments"
+
+
+
