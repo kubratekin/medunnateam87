@@ -1,5 +1,5 @@
 @US02 @US_002_TC_013 @db @team87
-Feature: email should be validated with DB
+Feature: US02_DB_email should be validated with DB
 
   Scenario: email should be validated with DB
     Given user connects to medunna_db with valid credentials
