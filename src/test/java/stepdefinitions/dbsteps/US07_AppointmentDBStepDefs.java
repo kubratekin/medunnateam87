@@ -23,11 +23,11 @@ public class US07_AppointmentDBStepDefs {
 
     @And("user select all {string} column data")
     public void user_selects_all_column_data(String email) {
-        appointmentListEmail = getColumnData("Select * from appointment a, patient p  \n" +
+       appointmentListEmail = getColumnData("Select * from appointment a, patient p  \n" +
                 "where a.patient_id = p.id", email);
         System.out.println(appointmentListEmail);
         System.out.println("appointmentListId.size() = " + appointmentListEmail.size());
-    }
+}
 
     @Then("user validates appointment {string} with the database")
     public void user_validates_appointment_ids_with_the_database(String email) {
