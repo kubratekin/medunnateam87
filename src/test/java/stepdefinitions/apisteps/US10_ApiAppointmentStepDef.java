@@ -69,18 +69,21 @@ public class US10_ApiAppointmentStepDef {
                 .when().post("/{first}/{second}");
 
      */
-/*
-}
-
-    @Then("user validates api appointments")
-    public void userValidatesApiAppointments() {
-        physicianAppointment=response.as(HashMap.class);
-
-        System.out.println("response from appointment request endpoint: " + physicianAppointment);
-
-        Assert.assertEquals("899-68-3333",physicianAppointment.get("patient"));
-    }
-
-
-}
-*/
+//    }
+//
+//
+//
+//
+//
+//    @Then("user validates api appointments")
+//    public void userValidatesApiAppointments() {
+//        physicianAppointment=response.as(HashMap.class);
+//
+//        System.out.println("response from appointment request endpoint: " + physicianAppointment);
+//
+//        Assert.assertEquals("899-68-3333",physicianAppointment.get("patient"));
+//    }
+//
+//
+//}
+// */
