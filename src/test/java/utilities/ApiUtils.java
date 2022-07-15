@@ -162,10 +162,4 @@ public class APIUtils {
     public static void clearApiPool(){
         objectPool.clear();
     }
-<<<<<<< HEAD
 }
-=======
-}
-
-
->>>>>>> 4283bdcd1b414d88986f9503ce11174d4cff2499
