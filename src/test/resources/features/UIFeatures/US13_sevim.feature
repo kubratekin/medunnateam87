@@ -1,5 +1,6 @@
-@US13 @team87
-Feature:doctor_can_see_test-result
+@team87
+@US13
+Feature: US13_doctor_can_see_test-result
   Background: TC01_02_before
     Given User is on the login page
     When  User clicks on account menu

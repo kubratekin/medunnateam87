@@ -74,8 +74,6 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.8</version>
         </dependency>
-
-
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
@@ -90,7 +88,6 @@
             <version>4.1.2</version>
         </dependency>
 
-
         <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
         <dependency>
             <groupId>tech.grasshopper</groupId>
@@ -104,17 +101,16 @@
             <version>4.3.0</version>
         </dependency>
 
-
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
             <version>8.2.2.jre8</version>
         </dependency>
+
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>

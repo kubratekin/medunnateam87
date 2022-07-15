@@ -16,9 +16,12 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = "stepdefinitions",//MUST
-        tags = "@TC02_New_Patients_Can_Not_Be_Created_By_Staff",
+        tags = "@team87",
         dryRun = false
+
 
 )
 public class Runner {
 }
+
+
