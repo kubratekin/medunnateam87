@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-@US09 @team87
-=======
+
 @team87
 @US09
->>>>>>> 4283bdcd1b414d88986f9503ce11174d4cff2499
+
 Feature: US_09
   Background: US_09
     Given user goes to URL
