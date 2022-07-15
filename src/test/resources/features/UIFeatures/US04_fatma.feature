@@ -1,3 +1,4 @@
+
 @SignInPage @team87
 Feature: US04_Login page should be accessible only with valid credentials
 
@@ -93,7 +94,6 @@ Feature: US04_Login page should be accessible only with valid credentials
     Examples:
       | wusername | wpassword |
       | team87inc | 1Finci    |
-
 
 
 

@@ -24,7 +24,7 @@ Feature:   US008_password_update
 
     Examples:
       | currentPassword | newPassword | confirmationPassword |
-      | 1234567         | 1234560   | 1234560                |
+      |1234567|1234560|1234560|
 
   @US08_TC_0002
   Scenario Outline: for stronger password adding one LOWERCASE character
@@ -113,4 +113,4 @@ Feature:   US008_password_update
 
     Examples:
       | current Password | new Password | confirmation Password |
-      | 1234560          | 1234560       | 1234560              |
+      | 1234560          | 1234567       | 1234567              |
