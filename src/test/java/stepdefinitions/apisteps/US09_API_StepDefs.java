@@ -10,6 +10,8 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import utilities.Authentication;
 import utilities.ConfigReader;
+
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
