@@ -34,7 +34,7 @@ public class US14_StepDefs {
     @When("navigates the Sign in page")
     public void navigates_the_sign_in_page() {
 
-        Driver.waitAndClick(cp.signInAndRegistrationPortal);
+        Driver.waitAndClick(cp.signInAndRegistrationPortal,1);
         cp.signIn.click();
     }
 
@@ -76,7 +76,7 @@ public class US14_StepDefs {
     @And("doctor click on Edit button on a {string}")
     public void doctor_click_on_edit_button_on_a(String inpatient) {
 
-        Driver.waitAndClick(us14Page.editButton, 2);
+        Driver.waitAndClick(us14Page.editButton, 1);
     }
 
 
@@ -84,7 +84,7 @@ public class US14_StepDefs {
     public void doctor_updates_the_description_field_as(String description) throws IOException {
 
         us14Page.description.clear();
-        Driver.waitAndSendText(us14Page.description,"The patient has asthma");
+        Driver.waitAndSendText(us14Page.description,"The patient has asthma",1);
         Driver.clickWithJS(us14Page.saveButton);
         ReusableMethods.waitFor(2);
         ReusableMethods.getScreenshot("Description Info");
@@ -94,15 +94,13 @@ public class US14_StepDefs {
     @Then("doctor verifies Description field is updatable")
     public void doctor_verifies_description_field_is_updatable() throws IOException {
 
-        ReusableMethods.waitFor(2);
-        Assert.assertTrue(us14Page.failureMessage.isDisplayed());
-        ReusableMethods.waitFor(2);
+        Assert.assertTrue(us14Page.successMsgAlert.isDisplayed());
     }
 
     @When("doctor updates the Created Date field as {string}")
     public void doctor_updates_the_created_date_field_as(String createdDate) throws IOException {
 
-        Driver.waitAndSendText(us14Page.createdDate, "20/07/2022");
+        Driver.waitAndSendText(us14Page.createdDate, "20/07/2022",1);
         ReusableMethods.waitFor(2);
         Driver.clickWithJS(us14Page.saveButton);
         ReusableMethods.waitFor(2);
@@ -137,7 +135,7 @@ public class US14_StepDefs {
     @When("doctor clicks on Edit button")
     public void doctor_clicks_on_edit_button_of_an_inpatient() {
 
-        Driver.waitAndClick(us14Page.editButton2);
+        Driver.waitAndClick(us14Page.editButton2,1);
     }
 
     @When("doctor updates status of the inpatient as UNAPPROVED")
@@ -185,13 +183,13 @@ public class US14_StepDefs {
     @And("doctor clicks on Edit button on a {string}")
     public void doctor_clicks_on_edit_button_on_a_inpatient(String inpatient) {
 
-        Driver.waitAndClick(us14Page.editButton);
+        Driver.waitAndClick(us14Page.editButton,1);
     }
 
     @When("doctor selects a room that is available")
     public void doctor_selects_a_room_that_is_available() throws IOException {
 
-        Driver.waitAndSendText(us14Page.room,"421:TWIN");
+        Driver.waitAndSendText(us14Page.room,"160:TWIN",1);
         ReusableMethods.waitFor(1);
         Driver.clickWithJS(us14Page.saveButton);
         ReusableMethods.waitFor(1);
