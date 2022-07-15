@@ -1,121 +1,305 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="168.292">
-<testcase classname="US_09" name="TC_0001_Admin can view patient information by navigating view portal" time="13.159">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
-Then User verifies that landed at Admin page................................passed
-When User navigate to Patients information page.............................passed
-Then User verifies that landed at Patients information page.................passed
-And User verifies that can see patient information..........................passed
-And User closes the browser.................................................passed
+<testsuite errors="0" failures="7" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="143.701">
+<testcase classname="US14_inpatient_info" name="all_inpatient_info" time="14.523">
+<system-out><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+Then doctor verifies all inpatient info.....................................passed
+Then doctor closes the application..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US_09" name="TC_0002_Staff can view patient information by navigating view portal" time="9.834">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
-Then User verifies that landed at Staff page................................passed
-When User navigate to Patients information page from Staff page.............passed
-Then User verifies that landed at Patients information page.................passed
-And User verifies that can see patient information..........................passed
-And User closes the browser.................................................passed
-]]></system-out>
+<testcase classname="US14_inpatient_info" name="description_field" time="30.959">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains (text(), 'InPatient status can not be changed with this type of status')]&quot;}&#10;  (Session info: chrome=101.0.4951.64)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35cee873953cb7e2f875851bdcc5d962&#10;*** Element info: {Using=xpath, value=//*[contains (text(), 'InPatient status can not be changed with this type of status')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................passed
+And doctor sends "<username>" and "<password>"..............................passed
+And doctor clicks on Sign in button.........................................passed
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.passed
+And doctor click on Edit button on a "<inpatient>"..........................passed
+And doctor updates the Description field as "<description>".................passed
+Then doctor verifies Description field is updatable.........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains (text(), 'InPatient status can not be changed with this type of status')]"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 35cee873953cb7e2f875851bdcc5d962
+*** Element info: {Using=xpath, value=//*[contains (text(), 'InPatient status can not be changed with this type of status')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_description_field_is_updatable(US14_StepDefs.java:98)
+	at ✽.doctor verifies Description field is updatable(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:20)
+]]></failure>
 </testcase>
-<testcase classname="US_09" name="TC_03 Admin can edit all patient information with using ID" time="20.056">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
-Then User verifies that landed at Admin page................................passed
-When User navigate to Patients information page.............................passed
-Then User verifies that landed at Patients information page.................passed
-And User clicks on ID of patient to go to Patient detail page...............passed
-And User clicks on Edit button..............................................passed
-Then User verifies Create or edit a Patient page is opened..................passed
-And User writes new informations in each information boxes..................passed
-Then User verifies that all informations are changed........................passed
-And User closes the browser.................................................passed
-]]></system-out>
+<testcase classname="US14_inpatient_info" name="created date_field" time="16.272">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=101.0.4951.64)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35cee873953cb7e2f875851bdcc5d962&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................failed
+And doctor sends "<username>" and "<password>"..............................skipped
+And doctor clicks on Sign in button.........................................skipped
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.skipped
+And doctor clicks on Edit button on a "<inpatient>".........................skipped
+And doctor updates the Created Date field as "<created date>"...............skipped
+Then doctor verifies Created Date field is updatable........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 35cee873953cb7e2f875851bdcc5d962
+*** Element info: {Using=id, value=login-item}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)
+	at ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="US_09" name="TC_04 Admin can edit all patient information with using Edit button" time="20.495">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
-Then User verifies that landed at Admin page................................passed
-When User navigate to Patients information page.............................passed
-Then User verifies that landed at Patients information page.................passed
-And User clicks Edit button.................................................passed
-Then User verifies Create or edit a Patient page is opened..................passed
-And User writes new informations in each information boxes..................passed
-Then User verifies that all informations are changed........................passed
-And User closes the browser.................................................passed
-]]></system-out>
+<testcase classname="US14_inpatient_info" name="status_field" time="16.072">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=101.0.4951.64)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35cee873953cb7e2f875851bdcc5d962&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................failed
+And doctor sends "<username>" and "<password>"..............................skipped
+And doctor clicks on Sign in button.........................................skipped
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.skipped
+And doctor clicks on Edit button on a "<inpatient>".........................skipped
+And doctor updates the Status field as "<status>"...........................skipped
+Then doctor verifies Status field is updatable..............................skipped
+Then doctor closes the application..........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 35cee873953cb7e2f875851bdcc5d962
+*** Element info: {Using=id, value=login-item}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)
+	at ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="US_09" name="TC_05 Admin can edit all patient information with using view button" time="20.827">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
-Then User verifies that landed at Admin page................................passed
-When User navigate to Patients information page.............................passed
-Then User verifies that landed at Patients information page.................passed
-And User clicks view button.................................................passed
-And User clicks on Edit button..............................................passed
-Then User verifies Create or edit a Patient page is opened..................passed
-And User writes new informations in each information boxes..................passed
-Then User verifies that all informations are changed........................passed
-And User closes the browser.................................................passed
-]]></system-out>
+<testcase classname="US14_inpatient_info" name="unapproved_option" time="16.143">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=101.0.4951.64)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35cee873953cb7e2f875851bdcc5d962&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................failed
+And doctor sends "<username>" and "<password>"..............................skipped
+And doctor clicks on Sign in button.........................................skipped
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.skipped
+And doctor clicks on Edit button............................................skipped
+And doctor updates status of the inpatient as UNAPPROVED....................skipped
+Then doctor verifies Status field is updatable of the inpatient.............skipped
+Then doctor closes the application..........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 35cee873953cb7e2f875851bdcc5d962
+*** Element info: {Using=id, value=login-item}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)
+	at ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="US_09" name="TC_06 Staff can edit all patient information with using Edit button" time="22.32">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
-Then User verifies that landed at Staff page................................passed
-When User navigate to Patients information page from Staff page.............passed
-Then User verifies that landed at Patients information page.................passed
-And User clicks Edit button.................................................passed
-Then User verifies Create or edit a Patient page is opened..................passed
-And User writes new informations in each information boxes..................passed
-Then User verifies that all informations are changed........................passed
-And User closes the browser.................................................passed
-]]></system-out>
+<testcase classname="US14_inpatient_info" name="staying_option" time="16.084">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=101.0.4951.64)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35cee873953cb7e2f875851bdcc5d962&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................failed
+And doctor sends "<username>" and "<password>"..............................skipped
+And doctor clicks on Sign in button.........................................skipped
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.skipped
+And doctor clicks on Edit button............................................skipped
+And doctor updates status of the inpatient as STAYING.......................skipped
+Then doctor verifies Status field is updatable of the inpatient.............skipped
+Then doctor closes the application..........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 35cee873953cb7e2f875851bdcc5d962
+*** Element info: {Using=id, value=login-item}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)
+	at ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="US_09" name="TC_07 Staff can edit all patient information with using view button" time="22.854">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
-Then User verifies that landed at Staff page................................passed
-When User navigate to Patients information page from Staff page.............passed
-Then User verifies that landed at Patients information page.................passed
-And User clicks view button.................................................passed
-And User clicks on Edit button..............................................passed
-Then User verifies Create or edit a Patient page is opened..................passed
-And User writes new informations in each information boxes..................passed
-Then User verifies that all informations are changed........................passed
-And User closes the browser.................................................passed
-]]></system-out>
+<testcase classname="US14_inpatient_info" name="cancelled_option" time="16.153">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=101.0.4951.64)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35cee873953cb7e2f875851bdcc5d962&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................failed
+And doctor sends "<username>" and "<password>"..............................skipped
+And doctor clicks on Sign in button.........................................skipped
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.skipped
+And doctor clicks on Edit button............................................skipped
+And doctor updates status of the inpatient as CANCELLED.....................skipped
+Then doctor verifies Status field is updatable of the inpatient.............skipped
+Then doctor closes the application..........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 35cee873953cb7e2f875851bdcc5d962
+*** Element info: {Using=id, value=login-item}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)
+	at ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="US_09" name="TC_08 Staff can search for a new applicant by their SSN and see all their registration info populated" time="14.107">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_staff" and password "1234567" with Staff credentials and clicks Sign in button.passed
-Then User verifies that landed at Staff page................................passed
-When User navigate to Patients information page from Staff page.............passed
-Then User verifies that landed at Patients information page.................passed
-When User enters patient SSN "123-10-8787" into search box..................passed
-Then User verifies that can see patient registration information populated..passed
-And User closes the browser.................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US_09" name="TC_09 Admin can delete any patient info" time="23.641">
-<system-out><![CDATA[Given user goes to URL......................................................passed
-And User navigates to Sign in page..........................................passed
-And User enters username "team87_admin" and password "1234567" with Admin credentials and clicks Sign in button.passed
-Then User verifies that landed at Admin page................................passed
-When User navigate to Patients information page.............................passed
-And User finds patient and clicks Delete button.............................passed
-Then User verifies all informations are deleted.............................passed
-And User closes the browser.................................................passed
-]]></system-out>
+<testcase classname="US14_inpatient_info" name="reserved_room" time="16.249">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=101.0.4951.64)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35cee873953cb7e2f875851bdcc5d962&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given doctor is on the medunna website......................................passed
+When navigates the Sign in page.............................................failed
+And doctor sends "<username>" and "<password>"..............................skipped
+And doctor clicks on Sign in button.........................................skipped
+And doctor clicks on MY PAGES dropdown menu and selects My Inpatients section.skipped
+And doctor clicks on Edit button on a "<inpatient>".........................skipped
+And doctor selects a room that is available.................................skipped
+Then doctor verifies the Room "<room>" can be updatable.....................skipped
+Then doctor closes the application..........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
+  (Session info: chrome=101.0.4951.64)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NAZIM-MacBook-Air.local', ip: 'fe80:0:0:0:456:87a3:939a:2e77%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 35cee873953cb7e2f875851bdcc5d962
+*** Element info: {Using=id, value=login-item}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)
+	at ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)
+]]></failure>
 </testcase>
 </testsuite>
