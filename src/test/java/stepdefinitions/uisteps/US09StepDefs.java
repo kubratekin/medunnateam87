@@ -10,7 +10,6 @@ import pages.*;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
-
 import java.util.*;
 
 public class US09StepDefs {
@@ -29,14 +28,14 @@ public class US09StepDefs {
     }
     @Given("User navigates to Sign in page")
     public void user_navigates_to_sign_in_page() {
-        homePage.logInDropdown.click();
-        homePage.signInButton.click();
+        Driver.waitAndClick(homePage.logInDropdown,2);
+        Driver.waitAndClick(homePage.signInButton,2);
     }
     @And("User enters username {string} and password {string} with Admin credentials and clicks Sign in button")
     public void userEntersUsernameAndPasswordWithAdminCredentialsAndClicksSignInButton(String username, String password) {
-        signInPage.usernameBox.sendKeys(username);
-        signInPage.passwordBox.sendKeys(password);
-        signInPage.signInButton.click();
+        Driver.waitAndSendText(signInPage.usernameBox,username);
+        Driver.waitAndSendText(signInPage.passwordBox,password);
+        Driver.waitAndClick(signInPage.signInButton,2);
     }
     @Then("User verifies that landed at Admin page")
     public void user_verifies_that_landed_at_admin_page() {
@@ -45,8 +44,8 @@ public class US09StepDefs {
     }
     @When("User navigate to Patients information page")
     public void user_navigate_to_patients_information_page() {
-        adminPage.itemsAndTitlesDropdown.click();
-        adminPage.patientButton.click();
+        Driver.waitAndClick(adminPage.itemsAndTitlesDropdown,2);
+        Driver.waitAndClick(adminPage.patientButton,2);
     }
     @Then("User verifies that landed at Patients information page")
     public void user_verifies_that_landed_at_patients_information_page() {
@@ -65,19 +64,19 @@ public class US09StepDefs {
     //TC02
     @And("User enters username {string} and password {string} with Staff credentials and clicks Sign in button")
     public void userEntersUsernameAndPasswordWithStaffCredentialsAndClicksSignInButton(String username, String password) {
-        signInPage.usernameBox.sendKeys(username);
-        signInPage.passwordBox.sendKeys(password);
-        signInPage.signInButton.click();
+        Driver.waitAndSendText(signInPage.usernameBox,username);
+        Driver.waitAndSendText(signInPage.passwordBox,password);
+        Driver.waitAndClick(signInPage.signInButton,2);
     }
     @Then("User verifies that landed at Staff page")
     public void userVerifiesThatLandedAtStaffPage() {
         ReusableMethods.waitForVisibility(staffPage.staffNameDropdown,5);
-        Assert.assertEquals("team87staff team87staff",staffPage.staffNameDropdown.getText());
+        Assert.assertTrue(staffPage.staffNameDropdown.getText().contains("team87staff team87staff"));
     }
     @When("User navigate to Patients information page from Staff page")
     public void userNavigateToPatientsInformationPageFromStaffPage() {
-        staffPage.myPagesDropdown.click();
-        staffPage.searchPatientButton.click();
+        Driver.waitAndClick(staffPage.myPagesDropdown,2);
+        Driver.waitAndClick(staffPage.searchPatientButton,2);
     }
 
     //TC03

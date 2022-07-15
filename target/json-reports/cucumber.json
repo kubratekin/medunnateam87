@@ -1,0 +1,1201 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12006000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 263000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 370000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:28:05.962Z",
+        "line": 12,
+        "name": "all_inpatient_info",
+        "description": "",
+        "id": "us14-inpatient-info;all-inpatient-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 749000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "doctor verifies all inpatient info",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_all_inpatient_info()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9236000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 210000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 354000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 577000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:28:20.585Z",
+        "line": 17,
+        "name": "description_field",
+        "description": "",
+        "id": "us14-inpatient-info;description-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 301000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "doctor click on Edit button on a \"\u003cinpatient\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_click_on_edit_button_on_a(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3055000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "doctor updates the Description field as \"\u003cdescription\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cdescription\u003e\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_the_description_field_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains (text(), \u0027InPatient status can not be changed with this type of status\u0027)]\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003dxpath, value\u003d//*[contains (text(), \u0027InPatient status can not be changed with this type of status\u0027)]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_description_field_is_updatable(US14_StepDefs.java:98)\n\tat ✽.doctor verifies Description field is updatable(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:20)\n",
+              "duration": 17075000000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "doctor verifies Description field is updatable",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_description_field_is_updatable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 974000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15152000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:28:51.671Z",
+        "line": 23,
+        "name": "created date_field",
+        "description": "",
+        "id": "us14-inpatient-info;created-date-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "doctor clicks on Edit button on a \"\u003cinpatient\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_on_a_inpatient(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "doctor updates the Created Date field as \"\u003ccreated date\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003ccreated date\u003e\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_the_created_date_field_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "doctor verifies Created Date field is updatable",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_created_date_field_is_updatable()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 902000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15155000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:08.000Z",
+        "line": 30,
+        "name": "status_field",
+        "description": "",
+        "id": "us14-inpatient-info;status-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "doctor clicks on Edit button on a \"\u003cinpatient\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_on_a_inpatient(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "doctor updates the Status field as \"\u003cstatus\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cstatus\u003e\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_the_status_field_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "doctor verifies Status field is updatable",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 979000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15153000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:24.165Z",
+        "line": 38,
+        "name": "unapproved_option",
+        "description": "",
+        "id": "us14-inpatient-info;unapproved-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_of_an_inpatient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "doctor updates status of the inpatient as UNAPPROVED",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_status_of_the_inpatient_as_unapproved()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "doctor verifies Status field is updatable of the inpatient",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable_of_the_inpatient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 890000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15185000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:40.353Z",
+        "line": 45,
+        "name": "staying_option",
+        "description": "",
+        "id": "us14-inpatient-info;staying-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_of_an_inpatient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "doctor updates status of the inpatient as STAYING",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_status_of_the_inpatient_as_staying()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "doctor verifies Status field is updatable of the inpatient",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable_of_the_inpatient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC06"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 904000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15238000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:29:56.489Z",
+        "line": 52,
+        "name": "cancelled_option",
+        "description": "",
+        "id": "us14-inpatient-info;cancelled-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "doctor clicks on Edit button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_of_an_inpatient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "doctor updates status of the inpatient as CANCELLED",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_updates_status_of_the_inpatient_as_cancelled()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "doctor verifies Status field is updatable of the inpatient",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_status_field_is_updatable_of_the_inpatient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC07"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "opening_medunna_page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 990000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "doctor is on the medunna website",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_is_on_the_medunna_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login\\-item\"}\n  (Session info: chrome\u003d101.0.4951.64)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NAZIM-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:456:87a3:939a:2e77%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.64, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: /var/folders/d3/41ll1_h142n...}, goog:chromeOptions: {debuggerAddress: localhost:49251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 35cee873953cb7e2f875851bdcc5d962\n*** Element info: {Using\u003did, value\u003dlogin-item}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page(US14_StepDefs.java:38)\n\tat ✽.navigates the Sign in page(file:///Users/nzmyldz/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US14.feature:6)\n",
+              "duration": 15247000000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "navigates the Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.navigates_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "doctor sends \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cusername\u003e\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_sends_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "doctor clicks on Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "doctor clicks on MY PAGES dropdown menu and selects My Inpatients section",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_my_pages_dropdown_menu_and_selects_my_inpatients_section()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-15T11:30:12.688Z",
+        "line": 60,
+        "name": "reserved_room",
+        "description": "",
+        "id": "us14-inpatient-info;reserved-room",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "doctor clicks on Edit button on a \"\u003cinpatient\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cinpatient\u003e\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_clicks_on_edit_button_on_a_inpatient(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "doctor selects a room that is available",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_selects_a_room_that_is_available()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "doctor verifies the Room \"\u003croom\u003e\" can be updatable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003croom\u003e\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_verifies_the_room_can_be_updatable(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "doctor closes the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US14_StepDefs.doctor_closes_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US14"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@TC08"
+          }
+        ]
+      }
+    ],
+    "name": "US14_inpatient_info",
+    "description": "",
+    "id": "us14-inpatient-info",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US14.feature",
+    "tags": [
+      {
+        "name": "@US14",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@team87",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      }
+    ]
+  }
+]
