@@ -16,15 +16,15 @@ import utilities.ReusableMethods;
 
 
 public class US10_AppointmentStepDef {
-  //  LoginPage login = new LoginPage();
-   US10_AppointmentPage appointmentPage = new US10_AppointmentPage();
-  //  CommonPageElements cp = new CommonPageElements();
+    //  LoginPage login = new LoginPage();
+    US10_AppointmentPage appointmentPage = new US10_AppointmentPage();
+    //  CommonPageElements cp = new CommonPageElements();
     ReusableMethods reusableMethods = new ReusableMethods();
     CommonPageElement cp = new CommonPageElement();
 
 
 
-    //*****
+        //*****
 
     @Given("Physician on the Medunna page")
     public void physicianOnTheMedunnaPage() throws InterruptedException {  Driver.navigateToUrl(ConfigReader.getProperty("https://medunna.com/"));
@@ -128,7 +128,6 @@ public class US10_AppointmentStepDef {
     }
 
 
-
 }
 
 /*
@@ -225,7 +224,7 @@ public class US10_AppointmentStepDef {
 
             Actions actions = new Actions(Driver.getDriver());
             actions.sendKeys(Keys.ARROW_DOWN).perform();
-            actions.click().perform();
+           actions.click().perform();
 
 
         Thread.sleep(2000);

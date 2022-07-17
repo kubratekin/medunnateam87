@@ -52,8 +52,8 @@ public class US12_StepDefs {
 
     @Then("Doctor verifies A new Test  is cereated with identifier message  is displayed")
     public void doctor_verifies_a_new_test_is_cereated_with_identifier_message_is_displayed() throws InterruptedException {
-        Thread.sleep(9000);
-        Driver.waitForVisibility(us12And13Pages.testIsCreatedAlertMessage,10000);
+        Thread.sleep(2000);
+        Driver.waitForVisibility(us12And13Pages.testIsCreatedAlertMessage,1);
         Assert.assertTrue(us12And13Pages.testIsCreatedAlertMessage.isDisplayed());
     }
     @Then("Doctor verifies Test item list can not be empty message  is displayed")
