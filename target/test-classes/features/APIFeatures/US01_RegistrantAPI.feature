@@ -1,5 +1,5 @@
 @US01_API1 @team87
-Feature: Users_Ssn_Api
+Feature: US01_API_Users_Ssn_Api
 
   @US01_TC11_API
   Scenario: Users_Ssn_Test_Api
