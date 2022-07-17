@@ -16,15 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = "stepdefinitions",//MUST
-<<<<<<< HEAD
-<<<<<<< HEAD
-        tags = "@team87",
-=======
-        tags = "@US14",
->>>>>>> 4283bdcd1b414d88986f9503ce11174d4cff2499
-=======
-        tags = "@US14",
->>>>>>> 4283bdcd1b414d88986f9503ce11174d4cff2499
+        tags = "@US_08_user_password_segment",
         dryRun = false
 
 
