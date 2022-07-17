@@ -1,7 +1,8 @@
 package stepdefinitions.apisteps;
 
-import baseUrl.Medunna;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -14,7 +15,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import static io.restassured.RestAssured.*;
+
+import static io.restassured.RestAssured.given;
 
 public class US09_API_StepDefs extends Authentication{
 /*
