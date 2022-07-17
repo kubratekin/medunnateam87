@@ -1,6 +1,5 @@
 package stepdefinitions.apisteps;
 
-import com.itextpdf.text.html.simpleparser.ChainedProperties;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,17 +8,17 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
+import utilities.Authentication;
 import utilities.ConfigReader;
 
-
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static stepdefinitions.apisteps.Authentication.generateToken;
 
-public class US09_API_StepDefs {
+public class US09_API_StepDefs extends Authentication{
 /*
 {
     "createdBy": "team87delete2",
@@ -60,8 +59,6 @@ public class US09_API_StepDefs {
 
     @Given("User sets the path params to read patient info")
     public void user_sets_the_path_params_to_read_patient_info() {
-        ChainedProperties ConfigReader = null;
-        assert false;
         RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
         spec.pathParams("first","api","second","patients");
     }

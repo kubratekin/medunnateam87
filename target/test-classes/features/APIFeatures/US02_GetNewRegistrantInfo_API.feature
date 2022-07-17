@@ -1,5 +1,5 @@
 @US02 @US_002_TC_014 @api @team87
-Feature: email should be validated with API
+Feature: US02_API_email should be validated with API
 
   Scenario: email should be validated with API
   Given user sends POST request to get Bearer Token

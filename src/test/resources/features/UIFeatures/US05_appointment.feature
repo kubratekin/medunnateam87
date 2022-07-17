@@ -1,6 +1,6 @@
 @team87
 @appointment
-Feature: First Feature File
+Feature: US05_First Feature File
 
   Background: opening medunna page
     Given user goes to Medunna webpage

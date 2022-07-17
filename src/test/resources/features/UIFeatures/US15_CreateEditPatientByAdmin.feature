@@ -1,5 +1,5 @@
 @team87   @US_15_Create_Edit_Patient_By_Admin
-  Feature: Create Edit Patient By Admin
+  Feature: US15_Create Edit Patient By Admin
 
     @TC01_New_Patient_Only_Created_By_Admin
     Scenario Outline: Create New Patient

@@ -1,5 +1,5 @@
 @team87
-Feature: test api appointment data
+Feature: US07_API_test api appointment data
   @Api
   @GetApiAppointment
   Scenario: test_appointment
