@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 4283bdcd1b414d88986f9503ce11174d4cff2499
 Feature: DB Appointment tests
 
   Background:  db connection set up
@@ -11,9 +8,9 @@ Feature: DB Appointment tests
 
     Scenario Outline: db validations
 
-      Given  user send the to DB  "<query>" and "<columnName>"
+      #Given  user send the to DB  "<query>" and "<columnName>"
     #  And user saves the DB records to correspondent files
-      Then user validates DB data
+      #Then user validates DB data
 
       Examples: test data
       |query|columnName|

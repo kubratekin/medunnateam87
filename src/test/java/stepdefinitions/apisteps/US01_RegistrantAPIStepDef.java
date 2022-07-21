@@ -24,7 +24,7 @@ public class US01_RegistrantAPIStepDef {
     public void user_sends_request_and_gets_response() {
         response = given().headers(
                 "Authorization",
-                "Bearer " + generateToken(),
+                "Bearer " + generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
                 "ContentType",
                 ContentType.JSON, "Accept",
                 ContentType.JSON).when().get(ConfigReader.getProperty("registrant_endpoint"));

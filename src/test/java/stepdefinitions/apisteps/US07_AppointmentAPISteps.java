@@ -25,7 +25,7 @@ public class US07_AppointmentAPISteps {
 
         response = given().headers(
                 "Authorization",
-                "Bearer " + generateToken(),
+                "Bearer " + generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
                 "ContentType",
                 ContentType.JSON, "Accept",
                 ContentType.JSON).when().get(ConfigReader.getProperty("appointment_api_endpoint"));
