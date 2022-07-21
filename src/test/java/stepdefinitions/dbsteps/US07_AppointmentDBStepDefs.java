@@ -15,13 +15,13 @@ public class US07_AppointmentDBStepDefs {
 
     List<Object> appointmentListEmail = new ArrayList<>();
 
-    @Given("user sets a connection with database")
+    @Given("user set a connection with database")
     public void user_sets_a_connection_with_database() {
 
         DBUtils.createConnection();
     }
 
-    @And("user selects all {string} column data")
+    @And("user select all {string} column data")
     public void user_selects_all_column_data(String email) {
         appointmentListEmail = getColumnData("Select * from appointment a, patient p  \n" +
                 "where a.patient_id = p.id", email);

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="90.629">
-<testcase classname="test api appointment data" name="test_appointment" time="22.477">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="82.221">
+<testcase classname="test api appointment data" name="test_appointment" time="28.389">
 <system-out><![CDATA[Given user sends a get request for appointment data.........................passed
 And user deserializes the appointment data to java..........................passed
 Then user saves the appointment' data to correspondent files and validates..passed
 ]]></system-out>
 </testcase>
-<testcase classname="appointment database validation" name="Validate appointments by id with database" time="5.618">
-<system-out><![CDATA[Given user sets a connection with database..................................passed
-And user selects all "email" column data....................................passed
+<testcase classname="appointment database validation" name="Validate appointments by id with database" time="7.17">
+<system-out><![CDATA[Given user set a connection with database...................................passed
+And user select all "email" column data.....................................passed
 Then user validates appointment "berkbey@gamil.com" with the database.......passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Make An Appointment" name="TC01_Test_Make_An_Appointment_currentDate" time="20.657">
+<testcase classname="Test Make An Appointment" name="TC01_Test_Make_An_Appointment_currentDate" time="16.93">
 <system-out><![CDATA[Given user navigate to medunna page.........................................passed
 And user click on Make An Appointment.......................................passed
 Then verify "Make an Appointment " header created on the page...............passed
@@ -23,7 +23,7 @@ Then verify created the Appointment registration saved! We will call you as soon
 And close this application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Make An Appointment" name="TC02_Test_Make_An_Appointment_futureDate" time="21.217">
+<testcase classname="Test Make An Appointment" name="TC02_Test_Make_An_Appointment_futureDate" time="14.485">
 <system-out><![CDATA[Given user navigate to medunna page.........................................passed
 And user click on Make An Appointment.......................................passed
 Then verify "Make an Appointment " header created on the page...............passed
@@ -34,7 +34,7 @@ Then verify created the Appointment registration saved! We will call you as soon
 And close this application..................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Make An Appointment" name="TC03_Test_Make_An_Appointment_pastDate" time="20.323">
+<testcase classname="Test Make An Appointment" name="TC03_Test_Make_An_Appointment_pastDate" time="14.925">
 <system-out><![CDATA[Given user navigate to medunna page.........................................passed
 And user click on Make An Appointment.......................................passed
 Then verify "Make an Appointment " header created on the page...............passed

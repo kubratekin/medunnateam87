@@ -29,8 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="c3aedfb7-bbe5-4890-8755-ac1ef7607344">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select ssn from jhi_user;
-SELECT * from appointment;]]></console>
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="b27a5148-a59d-4011-b31d-037f8e9fcf71">
       <console name="Connection 1" type="STANDARD" schema="" session="Main" />
