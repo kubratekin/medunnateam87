@@ -22,7 +22,7 @@ public abstract class Driver {
 //My Driver class is abstract so I do not create an object of this class
 //TestBase class is also abstract
 
-    private static int timeout = 5;
+    private static final int timeout = 5;
     private Driver(){
     }
     private static WebDriver driver;

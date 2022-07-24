@@ -1,7 +1,8 @@
 package stepdefinitions.apisteps;
 
-import baseUrl.Medunna;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -10,11 +11,11 @@ import org.junit.Assert;
 import utilities.Authentication;
 import utilities.ConfigReader;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import static io.restassured.RestAssured.*;
+
+import static io.restassured.RestAssured.given;
 
 public class US09_API_StepDefs extends Authentication{
 /*
@@ -72,7 +73,7 @@ public class US09_API_StepDefs extends Authentication{
 
     @When("User send get request for patient info and get response")
     public void user_send_get_request_for_patient_info_and_get_response() {
-        response = given().headers("Authorization","Bearer "+generateToken(),
+        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
                                     "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
                 .get(ConfigReader.getProperty("patients_endpoint"));
 //        response.prettyPrint();
