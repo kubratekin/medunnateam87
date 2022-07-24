@@ -8,16 +8,14 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.HomePageMedunna;
 import pages.RegistrationPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 
-public class US_002_Stepdefs {
+public class US002_Stepdefs {
 
     HomePageMedunna homePageMedunna = new HomePageMedunna();
     RegistrationPage registrationPage = new RegistrationPage();

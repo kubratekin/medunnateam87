@@ -35,7 +35,7 @@ public class US10_ApiAppointmentStepDef extends Authentication{
                 "Bearer " + utilities.Authentication.generateToken(),
                 "ContentType",
                 ContentType.JSON, "Accept",
-                ContentType.JSON).when().get(ConfigReader.getProperty("api_appointment"));
+                ContentType.JSON).when().get(ConfigReader.getProperty("appointment_api_endpoint"));
     }
     @Then("Physician does deserializetion appointment info")
     public void physicianDoesDeserializetionAppointmentInfo() {
