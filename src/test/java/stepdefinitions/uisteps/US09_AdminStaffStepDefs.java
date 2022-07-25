@@ -86,6 +86,7 @@ public class US09_AdminStaffStepDefs {
         List<String> wantedPatient=patient.row(0);
         //ReusableMethods.findPatientAmongPagesAndClickID(wantedPatient.get(0),wantedPatient.get(1));
         //Driver.waitAndClick(viewByAdminAndStaffPage.idOfFirstPatient,2);
+        Driver.wait(1);
         WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
         WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
         List<WebElement> nameList;
@@ -97,6 +98,7 @@ public class US09_AdminStaffStepDefs {
             nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
             ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
             for (int i = 0; i < nameList.size(); i++) {
+                Driver.wait(1);
                 if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
                     row = i + 1;
                     doWhile=true;
@@ -117,10 +119,12 @@ public class US09_AdminStaffStepDefs {
                 pagesNumber--;
             }
         } while (pagesNumber>1);
+        Driver.wait(1);
         String xpath = "//tbody/tr["+row+"]/td[1]/a";
         WebElement idButton = Driver.getDriver().findElement(By.xpath(xpath));
         Driver.wait(2);
         Driver.waitAndClick(idButton,2);
+        Driver.wait(2);
     }
     @And("User clicks on Edit button")
     public void userClicksOnEditButton() {
@@ -128,6 +132,7 @@ public class US09_AdminStaffStepDefs {
     }
     @Then("User verifies Create or edit a Patient page is opened")
     public void userVerifiesCreateOrEditAPatientPageIsOpened() {
+        Driver.wait(1);
         Assert.assertEquals("Create or edit a Patient",createOrEdit.createOrEditTableHeader.getText());
     }
     @And("User writes new informations in each information boxes")
@@ -158,6 +163,7 @@ public class US09_AdminStaffStepDefs {
         Driver.wait(1);
         Driver.selectByVisibleText(createOrEdit.stateCityDropdown,newCredentials.get(7));
         Driver.waitAndClick(createOrEdit.saveButton,2);
+        Driver.wait(1);
     }
     @Then("User verifies that all informations are changed")
     public void userVerifiesThatAllInformationsAreChanged() {
@@ -171,6 +177,7 @@ public class US09_AdminStaffStepDefs {
         List<String> wantedPatient = patient.row(0);
 //        ReusableMethods.findPatientAmongPagesAndClickEdit(wantedPatient.get(0),wantedPatient.get(1));
         //Driver.waitAndClick(viewByAdminAndStaffPage.editButton,2);
+        Driver.wait(1);
         WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
         WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
         List<WebElement> nameList;
@@ -182,6 +189,7 @@ public class US09_AdminStaffStepDefs {
             nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
             ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
             for (int i = 0; i < nameList.size(); i++) {
+                Driver.wait(1);
                 if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
                     row = i + 1;
                     doWhile=true;
@@ -202,11 +210,11 @@ public class US09_AdminStaffStepDefs {
                 pagesNumber--;
             }
         } while (pagesNumber>1);
-        System.out.println(row);
         String xpath = "//tbody/tr["+row+"]/td/div/a[2]/span";
         WebElement editButton = Driver.getDriver().findElement(By.xpath(xpath));
         Driver.wait(2);
         Driver.waitAndClick(editButton,2);
+        Driver.wait(1);
     }
 
     //TC05
@@ -215,6 +223,7 @@ public class US09_AdminStaffStepDefs {
         List<String> wantedPatient = patient.row(0);
         //ReusableMethods.findPatientAmongPagesAndClickView(wantedPatient.get(0),wantedPatient.get(1));
         //Driver.waitAndClick(viewByAdminAndStaffPage.viewButton,2);
+        Driver.wait(1);
         WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
         WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
         List<WebElement> nameList;
@@ -226,6 +235,7 @@ public class US09_AdminStaffStepDefs {
             nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
             ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
             for (int i = 0; i < nameList.size(); i++) {
+                Driver.wait(1);
                 if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
                     row = i + 1;
                     doWhile=true;
@@ -250,6 +260,7 @@ public class US09_AdminStaffStepDefs {
         WebElement viewButton = Driver.getDriver().findElement(By.xpath(xpath));
         Driver.wait(2);
         Driver.waitAndClick(viewButton,2);
+        Driver.wait(1);
     }
 
     //TC06
@@ -257,7 +268,9 @@ public class US09_AdminStaffStepDefs {
     public void user_clicks_edit_button_staff(DataTable dataTable) {
         List<String> ssn=dataTable.row(0);
         Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,ssn.get(0));
+        Driver.wait(2);
         Driver.waitAndClick(viewByAdminAndStaffPage.editButton,2);
+        Driver.wait(1);
     }
 
     //TC07
@@ -265,7 +278,9 @@ public class US09_AdminStaffStepDefs {
     public void user_clicks_view_button_staff(DataTable dataTable) {
         List<String> ssn=dataTable.row(0);
         Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,ssn.get(0));
+        Driver.wait(2);
         Driver.waitAndClick(viewByAdminAndStaffPage.viewButton,2);
+        Driver.wait(1);
     }
 
     //TC08

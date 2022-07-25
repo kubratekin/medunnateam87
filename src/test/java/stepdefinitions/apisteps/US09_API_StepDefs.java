@@ -1,5 +1,6 @@
 package stepdefinitions.apisteps;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,12 +9,16 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
+import pojos.US09_PatientsPojo;
 import utilities.Authentication;
 import utilities.ConfigReader;
 
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import utilities.API_Utils;
 
 import static io.restassured.RestAssured.given;
 
@@ -52,10 +57,83 @@ public class US09_API_StepDefs extends Authentication{
     "cstate": null
 }
  */
-    Response response;
-    Map<String,Object> expectedDataMap;
-    List patients;
+    static RequestSpecification spec = API_Utils.spec;
+    static Response response;
+    static Map<String,Object> expectedDataMap;
+    static US09_PatientsPojo[] patients;
+    static US09_PatientsPojo patient;
 
+    @Given("User sets the path params to read patient info")
+    public void user_sets_the_path_params_to_read_patient_info() {
+        //RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+        spec.pathParams("first","api","second","patients");
+    }
+    @Given("User sets expected data")  // For making 1 patient assertion use this. Use patient_endpoint as endpoint. It will search with ID.
+    public void user_sets_expected_data() {
+        expectedDataMap=new HashMap<>();
+        expectedDataMap.put("firstName","team87del2");
+        expectedDataMap.put("lastName","team87");
+        expectedDataMap.put("email","aa@b.com");
+        expectedDataMap.put("ssn","872-22-2222");
+    }
+    @When("User send get request for patient info and get response")
+    public void user_send_get_request_for_patient_info_and_get_response() {
+        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
+                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
+                .get(ConfigReader.getProperty("patients_endpoint"));
+//        response.prettyPrint();
+    }
+    @Then("User validates patient info {string} {string} {string} {string} .")
+    public void userValidatesPatientInfo(String firstname, String lastname, String email, String ssn) {
+        response.then().assertThat().statusCode(200);
+        patients = response.as(US09_PatientsPojo[].class);
+        boolean flag = false;
+        for (int i = 0; i < patients.length; i++) {
+            if (patients[i].getFirstName().equals(firstname) &&
+                    patients[i].getLastName().equals(lastname) &&
+                    patients[i].getEmail().equals(email) &&
+                    patients[i].getUser().getSsn().equals(ssn)) {
+                flag = true;
+                System.out.println(patients[i]);
+            }
+        }
+        Assert.assertTrue(flag);
+    }
+
+
+    @Given("User sets the path params to create and update patient info")
+    public void userSetsThePathParamsToCreateAndUpdatePatientInfo() {
+        spec.pathParams("first","api","second","patients");
+
+    }
+
+    @When("User creates new patient using Post request firstname {string} lastname {string} email {string} ssn {string}")
+    public void userCreatesNewPatientUsingPostRequestFirstnameLastnameEmailSsn(String firstname, String lastname, String email, String ssn) throws IOException {
+        patient.setFirstName(firstname);
+        patient.setLastName(lastname);
+        patient.setEmail(email);
+        patient.getUser().setSsn(ssn);
+        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
+                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
+                contentType(ContentType.JSON).body(patient).when().post("/{first}/{second}");
+        response.prettyPrint();
+        response.then().assertThat().statusCode(201);
+
+    }
+
+//    @And("User sends Put request to update patient info firstname {string} lastname {string} email {string} ssn {string}")
+//    public void userSendsPutRequestToUpdatePatientInfoFirstnameLastnameEmailSsn(String firstName, String lastName, String email, String ssn) {
+//
+//    }
+//
+//    @Then("User validates patient new info firstname {string} lastname {string} email {string} ssn {string}")
+//    public void userValidatesPatientNewInfoFirstnameLastnameEmailSsn(String firstName, String lastName, String email, String ssn) {
+//
+//    }
+
+
+
+    /*
     @Given("User sets the path params to read patient info")
     public void user_sets_the_path_params_to_read_patient_info() {
         RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
@@ -94,7 +172,7 @@ public class US09_API_StepDefs extends Authentication{
             }
         }
         Assert.assertTrue(flag);
-
+*/
 
             // One patient validation with ID
 //        Map<String,Object> actualData = response.as(HashMap.class);
@@ -103,7 +181,7 @@ public class US09_API_StepDefs extends Authentication{
 //        Assert.assertEquals(expectedDataMap.get("lastName"),actualData.get("lastName"));
 //        Assert.assertEquals(expectedDataMap.get("email"),actualData.get("email"));
 //        Assert.assertEquals(expectedDataMap.get("ssn"),((Map<?, ?>)actualData.get("user")).get("ssn"));
-    }
+//    }
 
 
 
