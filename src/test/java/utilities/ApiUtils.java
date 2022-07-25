@@ -5,11 +5,14 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import pojos.US16_Room;
+import pojos.US16_RoomPost;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
-public class APIUtils {
+public class ApiUtils {
     private static String bearerToken;
     private static RequestSpecification spec;
     private static Response response;
@@ -28,10 +31,10 @@ public class APIUtils {
         return requestBody;
     }
     public static void setRequestBody(String requestBody) {
-        APIUtils.requestBody = requestBody;
+        ApiUtils.requestBody = requestBody;
     }
     public static void setBearerToken(String bearerToken) {
-        APIUtils.bearerToken = bearerToken;
+        ApiUtils.bearerToken = bearerToken;
     }
     private static RequestSpecification setUpSpec(){
         RequestSpecification spec;
@@ -103,7 +106,7 @@ public class APIUtils {
         response = given()
                 .spec(spec)
                 .body(requestBody)
-                .post(relativePath);
+                 .post(relativePath);
     }
     public static void put(String relativePath){
         response = given()
@@ -162,9 +165,67 @@ public class APIUtils {
     public static void clearApiPool(){
         objectPool.clear();
     }
-}
+
+    public static Response getRequest(String token, String endpoint) {
+
+        Response response = given().headers(
+                "Authorization",
+                "Bearer " + token,
+                "Content-Type",
+                ContentType.JSON,
+                "Accept",
+                ContentType.JSON).when().get(endpoint);
+
+
+        return response;
+
+
+    }
+
+    public static Response deleteRequest(String token, String endpoint){
+        Response response = given().headers(
+                "Authorization",
+                "Bearer " + token,
+                "Content-Type",
+                ContentType.JSON,
+                "Accept",
+                ContentType.JSON).when().delete(endpoint);
+        return  response;
+    }
+
+    public static Response postRequestRoom(String token, String endpoint, US16_RoomPost room) throws Exception {
+
+        ObjectMapper obj=new ObjectMapper();
+
+
+        Response response = given().headers(
+                "Authorization",
+                "Bearer " + token,
+                "Content-Type",
+                ContentType.JSON,
+                "Accept",
+                ContentType.JSON).body(obj.writeValueAsString(room)).when().post(endpoint);
+        return  response;
+
+
+    }
+
+
+    public static Response putRequestRoom(String token, String endpoint, US16_Room room) throws Exception {
+
+        ObjectMapper obj=new ObjectMapper();
+
+
+        Response response = given().headers(
+                "Authorization",
+                "Bearer " + token,
+                "Content-Type",
+                ContentType.JSON,
+                "Accept",
+                ContentType.JSON).body(obj.writeValueAsString(room)).when().put(endpoint);
+        return  response;
+
+
+    }
 
 }
-
-
-

@@ -47,7 +47,7 @@ public class US07_AppointmentUIStepDef {
     }
     @Then("verify created the Appointment registration saved! We will call you as soon as possible alert message is visible")
     public void verify_created_the_appointment_registration_saved_we_will_call_you_as_soon_as_possible_alert_message_is_visible() throws InterruptedException {
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         Assert.assertTrue(appointmentPage.alertMessage.isDisplayed());
     }
     @Then("close this application")
