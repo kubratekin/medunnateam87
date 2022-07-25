@@ -106,7 +106,7 @@ public class ApiUtils {
         response = given()
                 .spec(spec)
                 .body(requestBody)
-                .post(relativePath);
+                 .post(relativePath);
     }
     public static void put(String relativePath){
         response = given()

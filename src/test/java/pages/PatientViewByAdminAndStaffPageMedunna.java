@@ -1,6 +1,7 @@
 package pages;
 
 import io.cucumber.java.zh_cn.假如;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -36,22 +37,28 @@ public class PatientViewByAdminAndStaffPageMedunna {
     @FindBy(id = "jh-create-entity")
     public WebElement createNewPatientButton;
 
+    @FindBy(xpath = "//tbody/tr/td[3]")
+    public List<WebElement> nameList;
 
+    @FindBy(xpath = "//tbody/tr/td[2]")
+    public List<WebElement> ssnList;
 
-    @FindBy(xpath = "(//nav/ul/li)[9]")
-    public WebElement lastPageButton;
-
-    @FindBy(xpath = "(//nav/ul/li[6])/a")
-    public WebElement actualPageNumber;
-
-    @FindBy(xpath = "(//nav/ul/li[5])/a")
-    public WebElement previousPageNumber;
+    @FindBy(css = ".app-container>div>div>div>.Toastify__toast-body")
+    public WebElement appointmentSavedMessage;
 
 
 
-    //   --  //tbody/tr/td[2]
-    //   --  //tbody/tr/td/div/a[3]
-    // delete confirmation page delete button =>  css = #jhi-confirm-delete-patient
+// US21
+
+    @FindBy(css = ".col-sm-3>input")
+    public WebElement ssnSearchBox;
+
+    @FindBy(xpath = "//tbody/tr/td[last()]/div/a[last()]")
+    public WebElement showAppointmentButton;
+
+
+
+
 
 
 
