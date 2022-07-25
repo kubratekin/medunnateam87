@@ -1,5 +1,5 @@
-@US14
-Feature: inpatient_info
+@US14 @team87
+Feature: US14_inpatient_info
 
   Background: opening_medunna_page
     Given doctor is on the medunna website
@@ -15,7 +15,7 @@ Feature: inpatient_info
 
   @TC02
   Scenario: description_field
-    And doctor clicks on Edit button on a "<inpatient>"
+    And doctor click on Edit button on a "<inpatient>"
     And doctor updates the Description field as "<description>"
     Then doctor verifies Description field is updatable
 
@@ -35,9 +35,33 @@ Feature: inpatient_info
 
 
   @TC05
+  Scenario: unapproved_option
+    And doctor clicks on Edit button
+    And doctor updates status of the inpatient as UNAPPROVED
+    Then doctor verifies Status field is updatable of the inpatient
+    Then doctor closes the application
+
+  @TC06
+  Scenario: staying_option
+    And doctor clicks on Edit button
+    And doctor updates status of the inpatient as STAYING
+    Then doctor verifies Status field is updatable of the inpatient
+    Then doctor closes the application
+
+  @TC07
+  Scenario: cancelled_option
+    And doctor clicks on Edit button
+    And doctor updates status of the inpatient as CANCELLED
+    Then doctor verifies Status field is updatable of the inpatient
+    Then doctor closes the application
+
+
+  @TC08
   Scenario: reserved_room
     And doctor clicks on Edit button on a "<inpatient>"
     And doctor selects a room that is available
     Then doctor verifies the Room "<room>" can be updatable
     Then doctor closes the application
+
+
 

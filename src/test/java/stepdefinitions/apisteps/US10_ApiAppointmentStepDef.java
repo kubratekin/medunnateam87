@@ -3,23 +3,16 @@ import io.cucumber.java.en.*;
 import io.cucumber.java.en.Then;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.mapper.ObjectMapper;
-import io.restassured.mapper.ObjectMapperDeserializationContext;
-import io.restassured.mapper.ObjectMapperSerializationContext;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
-import pages.US10_PhysicianAppointment;
-import pages.US10_PhysicianAppointment;
-import pojos.AppointmentResponse;
 import utilities.ConfigReader;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import static io.restassured.RestAssured.*;
-import static stepdefinitions.apisteps.Authentication.generateToken;
+
 public class US10_ApiAppointmentStepDef extends Authentication{
     Response response;
     List<Map<String,Object>> Appointment;
@@ -32,10 +25,10 @@ public class US10_ApiAppointmentStepDef extends Authentication{
     public void physicianSendsARequestToGetResponse() {
         response = given().headers(
                 "Authorization",
-                "Bearer " + utilities.Authentication.generateToken(),
+                "Bearer " + utilities.Authentication.generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
                 "ContentType",
                 ContentType.JSON, "Accept",
-                ContentType.JSON).when().get(ConfigReader.getProperty("api_appointment"));
+                ContentType.JSON).when().get(ConfigReader.getProperty("appointment_api_endpoint"));
     }
     @Then("Physician does deserializetion appointment info")
     public void physicianDoesDeserializetionAppointmentInfo() {

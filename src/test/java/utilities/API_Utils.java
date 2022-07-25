@@ -9,6 +9,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
-public class API_Utils {
+public class  API_Utils {
 }
 
