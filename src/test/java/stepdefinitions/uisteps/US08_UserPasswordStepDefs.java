@@ -94,7 +94,7 @@ public class US08_UserPasswordStepDefs {
         String actualResult=userPassword.successMessage.getText();
 
         Assert.assertEquals(expectedResult,actualResult);
-        Thread.sleep(6000);
+        Thread.sleep(4000);
     }
 
     /*@And("user clicks account_menu")
@@ -168,7 +168,7 @@ public class US08_UserPasswordStepDefs {
         String actualResult=userPassword.successMessage.getText();
         Assert.assertEquals(expectedResult,actualResult);
         ReusableMethods.getScreenshot("password changed");
-        Thread.sleep(6000);
+        Thread.sleep(4000);
     }
 
     @And("user verifies the success message on the toast container box")
@@ -176,7 +176,7 @@ public class US08_UserPasswordStepDefs {
         String expectedResult="Password changed!";
         String actualResult=userPassword.successMessage.getText();
         Assert.assertEquals(expectedResult,actualResult);
-        Thread.sleep(6000);
+        Thread.sleep(4000);
     }
 
     @Then("user close the driver")

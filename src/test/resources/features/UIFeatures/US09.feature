@@ -1,4 +1,8 @@
+
 @US09 @team87
+
+
+
 Feature: US_09
   Background: US_09
     Given user goes to URL
@@ -108,7 +112,6 @@ Feature: US_09
     And User finds patient and clicks Delete button
     Then User verifies all informations are deleted
     And User closes the browser
-
 
 
 

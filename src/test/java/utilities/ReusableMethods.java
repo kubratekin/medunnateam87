@@ -1,23 +1,34 @@
 package utilities;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
+import pages.*;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Random;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 public class ReusableMethods {
+
+    static PatientViewByAdminAndStaffPageMedunna viewByAdmin = new PatientViewByAdminAndStaffPageMedunna();
+    static WebDriver driver2;
+
+
+
+
 /*HOW DO YOU GET SCREENSHOT?
 * I use getScreenShotAs method to take a screenshot in selenium in my framework
 * I actually store the screenshot with unique name in my framework*/
@@ -203,6 +214,50 @@ public class ReusableMethods {
             }
         }
         return elemTexts;
+    }
+
+
+    // Nazım 19.07.2022
+    public static Map<String, String> findPatientAmongPages(String firstName,String ssn){
+        WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
+        WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
+        List<WebElement> nameList;
+        List<WebElement> ssnList;
+        int row = 1;
+        int pagesNumber = Integer.parseInt(Driver.getDriver().findElement(By.xpath("//nav/ul/li[7]")).getText()); // number of last page
+        boolean doWhile = false;        // For breaking the loop
+        do {
+            nameList= viewByAdmin.nameList;     // Otherwise it gave exception
+            ssnList= viewByAdmin.ssnList;       // Otherwise it gave exception
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(firstName) && ssnList.get(i).getText().equals(ssn)) {
+                    row = i + 1;
+                    doWhile=true;
+                    break;
+                }
+            }
+            if (doWhile){
+                break;
+            }
+            nameList.clear();
+            ssnList.clear();
+            String showingNumberOfItems = Driver.getDriver().findElement(By.xpath("//div/div/span")).getText();  // To be sure that this is page 1 or not.
+            String [] showingNumberOFItems = showingNumberOfItems.split(" ");            // To be sure that this is page 1 or not.
+            if (Integer.parseInt(showingNumberOFItems[1])==1){
+                Driver.waitAndClick(lastPageButton,2);
+            }else {
+                Driver.waitAndClick(previousPageButton,2);
+                pagesNumber--;
+            }
+        } while (pagesNumber>1);
+        String xpath = "//tbody/tr["+row+"]/td";
+        List<WebElement> keyList = Driver.getDriver().findElements(By.xpath("//thead/tr/th"));
+        List<WebElement> valueList = Driver.getDriver().findElements(By.xpath(xpath));
+        Map<String,String> patientInfo = new LinkedHashMap<>();
+        for (int i=0;i<15;i++){
+            patientInfo.put(keyList.get(i).getText(),valueList.get(i).getText());
+        }
+        return patientInfo;
     }
 
 
