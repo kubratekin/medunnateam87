@@ -32,10 +32,10 @@
       <console name="Connection 51" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="c104439b-3ce6-4068-83f7-90b22f9e4d9d">
-      <console name="Medunna DB" type="STANDARD" schema="public" session="Main"><![CDATA[select id,room_number,price, room_type, status, description from room]]></console>
+      <console name="Medunna DB" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="14df6f4b-6ee6-445f-aff0-a8b847e84d25">
-      <console name="Medunna DB" type="STANDARD" schema="information_schema" session="Main" />
+      <console name="Medunna DB" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="7d979907-5740-48b3-a6ad-e6eaf27bcad6">
       <console name="Connection" type="STANDARD" schema="" session="Main" />
