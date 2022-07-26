@@ -25,27 +25,27 @@ public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
     @When("user clicks on login dropdown icon")
     public void userClicksOnLoginDropdownIcon() {
 
-        Driver.waitAndClick(doctorPage.loginDropdown);
+        Driver.waitAndClick(doctorPage.loginDropdown,1);
     }
 
     @And("user clicks on sign in dropdown")
     public void userClicksOnSignInDropdown() {
-        Driver.waitAndClick(doctorPage.signInDropdown);
+        Driver.waitAndClick(doctorPage.signInDropdown,1);
     }
 
     @And("user sends username {string}")
     public void userSendsUsername(String arg0) {
-        Driver.waitAndSendText(doctorPage.usernameBox, ConfigReader.getProperty("doctor_username"));
+        Driver.waitAndSendText(doctorPage.usernameBox, ConfigReader.getProperty("doctor_username"),1);
     }
 
     @And("user sends password {string}")
     public void userSendsPassword(String arg0) {
-        Driver.waitAndSendText(doctorPage.passwordBox, ConfigReader.getProperty("doctor_password"));
+        Driver.waitAndSendText(doctorPage.passwordBox, ConfigReader.getProperty("doctor_password"),1);
     }
 
     @Then("user clicks on the sign in dropdown")
     public void userClicksOnTheSignInDropdown() {
-        Driver.waitAndClick(doctorPage.sigInButton);
+        Driver.waitAndClick(doctorPage.sigInButton,1);
     }
 
     @Then("user verifies the login is successful")
@@ -62,19 +62,19 @@ public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
     @And("Doctor clicks on My Appointments Button")
     public void doctorClicksOnMyAppointmentsButton() {
 
-        Driver.waitAndClick(doctorPage.myAppointments,2);
+        Driver.waitAndClick(doctorPage.myAppointments,1);
     }
 
     @And("Doctor selects Appointment date from and to boxes")
     public void doctorSelectsAppointmentDateFromAndToBoxes() {
-        Driver.waitAndSendText(doctorPage.fromDate, "06.29.2022");
-        Driver.waitAndSendText(doctorPage.toDate, "07.10.2022");
-        Driver.wait(1);
+        Driver.waitAndSendText(doctorPage.fromDate, "29.06.2022",2);
+        Driver.waitAndSendText(doctorPage.toDate, "10.07.2022",2);
+        Driver.wait(2);
     }
 
     @And("Doctor clicks on Edit Button")
     public void doctorClicksOnEditButton() {
-        Driver.waitAndClick(doctorPage.editButton);
+        Driver.waitAndClick(doctorPage.editButton,2);
     }
 
     @Given("Doctor verifies patient's info id, start and end date, status, physician are visible")
@@ -88,15 +88,15 @@ public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
 
     @And("Doctor should fills in required fields, anemnesis, treatment, diagnosis which as required fields")
     public void doctorShouldFillsInRequiredFieldsAnemnesisTreatmentDiagnosisWhichAsRequiredFields() {
-        Driver.waitAndClick(doctorPage.anamnesisField);
+        Driver.waitAndClick(doctorPage.anamnesisField,1);
         doctorPage.anamnesisField.clear();
-        Driver.waitAndSendText(doctorPage.anamnesisField, "Test",2);
-        Driver.waitAndClick(doctorPage.treatmentField);
+        Driver.waitAndSendText(doctorPage.anamnesisField, "Test",1);
+        Driver.waitAndClick(doctorPage.treatmentField,1);
         doctorPage.treatmentField.clear();
-        Driver.waitAndSendText(doctorPage.treatmentField, "Test",2);
-        Driver.waitAndClick(doctorPage.diagnosisField);
+        Driver.waitAndSendText(doctorPage.treatmentField, "Test",1);
+        Driver.waitAndClick(doctorPage.diagnosisField,1);
         doctorPage.diagnosisField.clear();
-        Driver.waitAndSendText(doctorPage.diagnosisField, "Test",2);
+        Driver.waitAndSendText(doctorPage.diagnosisField, "Test",1);
 
     }
 
@@ -104,24 +104,24 @@ public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
     public void doctorShouldFillsInOptionalFieldsPrecriptionAndDescriptionWhichAsOptionalFields() {
         Driver.waitAndClick(doctorPage.prescriptionField);
         doctorPage.prescriptionField.clear();
-        Driver.waitAndSendText(doctorPage.prescriptionField, "Test", 2);
+        Driver.waitAndSendText(doctorPage.prescriptionField, "Test", 1);
         Driver.waitAndClick(doctorPage.descriptionField);
         doctorPage.descriptionField.clear();
-        Driver.waitAndSendText(doctorPage.descriptionField, "Test", 2);
+        Driver.waitAndSendText(doctorPage.descriptionField, "Test", 1);
     }
 
     @And("Doctor can be select as PENDING, COMPLETED or CANCELLED at Status Dropdown")
     public void doctorCanBeSelectAsPENDINGCOMPLETEDOrCANCELLEDAtStatusDropdown() {
-        Driver.waitAndClick(doctorPage.statusDropDown, 2);
-        Driver.waitAndClick(doctorPage.pending, 2);
+        Driver.waitAndClick(doctorPage.statusDropDown, 1);
+        Driver.waitAndClick(doctorPage.pending, 1);
         Assert.assertEquals("PENDING", doctorPage.pending.getText());
-        Driver.wait(2);
-        Driver.waitAndClick(doctorPage.cancelled,2);
+        Driver.wait(1);
+        Driver.waitAndClick(doctorPage.cancelled,1);
         Assert.assertEquals("CANCELLED", doctorPage.cancelled.getText());
-        Driver.wait(2);
+        Driver.wait(1);
         Driver.waitAndClick(doctorPage.completed,2);
         Assert.assertEquals("COMPLETED", doctorPage.completed.getText());
-        Driver.wait(2);
+        Driver.wait(1);
     }
 
     @And("Doctor ckicks on Save Button")
@@ -131,46 +131,47 @@ public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
 
     @And("Doctor verifies Appointment is updated succesfully")
     public void doctorVerifiesAppointmentIsUpdatedSuccesfully() {
-        Driver.waitForVisibility(doctorPage.appointmentUpdatedMessage,4);
+        Driver.waitForVisibility(doctorPage.appointmentUpdatedMessage,2);
         Assert.assertTrue(doctorPage.appointmentUpdatedMessage.isDisplayed());
     }
 
     @Then("Doctor clicks Sign Out Button")
     public void doctorClicksSignOutButton() {
+        Driver.wait(2);
         Driver.waitAndClick(doctorPage.loginDropdown,2);
-        Driver.waitAndClick(doctorPage.signOutDropdown);
+        Driver.waitAndClick(doctorPage.signOutDropdown,2);
         Driver.getDriver().close();
     }
 
     @Given("Doctor leaves anamesis field blank")
     public void doctorLeavesAnamesisFieldBlank() {
-        Driver.waitAndClick(doctorPage.anamnesisField);
+        Driver.waitAndClick(doctorPage.anamnesisField,1);
         doctorPage.anamnesisField.clear();
-        Driver.waitAndSendText(doctorPage.anamnesisField, ""+ Keys.TAB);
+        Driver.waitAndSendText(doctorPage.anamnesisField, ""+ Keys.TAB,2);
 
     }
 
     @And("Doctor verifies anamesis field is required")
     public void doctorVerifiesAnamesisFieldIsRequired() {
-        Assert.assertTrue(Driver.waitForVisibility(doctorPage.anamnesisMessage,3).isDisplayed());
+        Assert.assertTrue(Driver.waitForVisibility(doctorPage.anamnesisMessage,2).isDisplayed());
     }
 
     @And("Doctor leaves treatment field blank")
     public void doctorLeavesTreatmentFieldBlank() {
-        Driver.waitAndClick(doctorPage.treatmentField);
+        Driver.waitAndClick(doctorPage.treatmentField,2);
         doctorPage.treatmentField.clear();
-        Driver.waitAndSendText(doctorPage.treatmentField, ""+ Keys.TAB);
+        Driver.waitAndSendText(doctorPage.treatmentField, ""+ Keys.TAB,2);
 
     }
 
     @And("Doctor verifies treatment field required")
     public void doctorVerifiesTreatmentFieldRequired() {
-        Assert.assertTrue(Driver.waitForVisibility(doctorPage.treatmentMessage,3).isDisplayed());
+        Assert.assertTrue(Driver.waitForVisibility(doctorPage.treatmentMessage,2).isDisplayed());
     }
 
     @And("Doctor doctor leaves diagnosis field blank")
     public void doctorDoctorLeavesDiagnosisFieldBlank() {
-        Driver.waitAndClick(doctorPage.diagnosisField);
+        Driver.waitAndClick(doctorPage.diagnosisField,1);
         doctorPage.diagnosisField.clear();
         Driver.waitAndSendText(doctorPage.diagnosisField, ""+Keys.TAB);
 
@@ -183,8 +184,8 @@ public class US11_CreateOrEditAnAppointmentByDoctorStepDefs {
 
     @And("Doctor selects UNAPPROVED from status field")
     public void doctorSelectsUNAPPROVEDFromStatusField() {
-        Driver.waitAndClick(doctorPage.statusDropDown);
-        Driver.wait(2);
+        Driver.waitAndClick(doctorPage.statusDropDown,1);
+        Driver.wait(1);
     }
 
     @And("Doctor verifies UNAPPROVED can not selecteble")

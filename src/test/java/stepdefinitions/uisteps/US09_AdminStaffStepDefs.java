@@ -12,7 +12,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 import java.util.*;
 
-public class US09StepDefs {
+public class US09_AdminStaffStepDefs {
     HomePageMedunna homePage = new HomePageMedunna();
     SignInPageMedunna signInPage = new SignInPageMedunna();
     AdminPageMedunna adminPage = new AdminPageMedunna();
@@ -194,5 +194,4 @@ public class US09StepDefs {
         Driver.wait(5);
         Assert.assertTrue(userManagement.deleteSuccessMessage.getText().contains("A Patient is deleted with identifier"));
     }
-
 }
