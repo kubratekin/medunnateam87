@@ -1,6 +1,5 @@
 package utilities;
 
-import baseUrl.Medunna;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -16,7 +15,7 @@ public class Authentication {
 
 
     static RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-    public static String generateToken(){
+    public static String generateToken(String admin_username, String admin_pass){
         spec.pathParams("first","api","second","authenticate");
         Map<String,Object> expectedData = new HashMap<>();
         expectedData.put("username","team87_admin");

@@ -1,54 +1,45 @@
 package stepdefinitions.apisteps;
-
-
 import io.cucumber.java.en.*;
 import io.cucumber.java.en.Then;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.mapper.ObjectMapper;
-import io.restassured.mapper.ObjectMapperDeserializationContext;
-import io.restassured.mapper.ObjectMapperSerializationContext;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
-import pages.US10_PhysicianAppointment;
-import pages.US10_PhysicianAppointment;
-import pojos.AppointmentResponse;
-
+import utilities.ConfigReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import static io.restassured.RestAssured.*;
 
-/*
-public class US10_ApiAppointmentStepDef {
-
-
-   US10_PhysicianAppointment  physicianAppointment =new  US10_PhysicianAppointment();
+public class US10_ApiAppointmentStepDef extends Authentication{
     Response response;
-    RequestSpecification spec = new RequestSpecBuilder().setBaseUri("https://medunna.com/appointment-update/101942").build();
-
-//    @Given("user goes to Medunna page")
-//    public void userGoesToMedunnaPage() {
-//        spec.pathParams("first","appointment","second","patapp");
-//    }
-
-    @Then("user sends a request to get response")
-    public void userSendsARequestToGetResponse() {
-        Response response = given().spec(spec).when().get("/{first}/{second}");
-        response.then().assertThat().statusCode(200).contentType(ContentType.JSON).statusLine("HTTP/1.1 200 OK");
-
-        response =given().spec(spec).contentType(ContentType.JSON)
-                .body(physicianAppointment)
-                .when().post("/{first}/{second}");
+    List<Map<String,Object>> Appointment;
+    @Given("Physician reads patient info")
+    public void physicianReadsPatientInfo() {
+        RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+        spec.pathParams("first", "api", "second", "appointments");
     }
-
-
-
-    @Then("user validates api appointments")
-    public void userValidatesApiAppointments() {
-        physicianAppointment=response.then().extract().as(US10_PhysicianAppointment.class);
-
-        System.out.println("response from appointment request endpoint: " + physicianAppointment);
-
-        Assert.assertEquals("899-68-3333",physicianAppointment.ssn);
+    @Given("Physician sends a request to get response")
+    public void physicianSendsARequestToGetResponse() {
+        response = given().headers(
+                "Authorization",
+                "Bearer " + utilities.Authentication.generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
+                "ContentType",
+                ContentType.JSON, "Accept",
+                ContentType.JSON).when().get(ConfigReader.getProperty("appointment_api_endpoint"));
+    }
+    @Then("Physician does deserializetion appointment info")
+    public void physicianDoesDeserializetionAppointmentInfo() {
+        Appointment =response.as(ArrayList.class);
+        JsonPath json = response.jsonPath();
+        List<Integer> ids = json.getList("findAll{it.id>190}.id");
+        System.out.println(ids);
+    }
+    @And("Physician validates {string} appoinment status")
+    public void physicianValidatesAppoinmentStatus(String status) {
+        Assert.assertTrue("Status ", status.contains(status));
+        System.out.println(status);
     }
 }
- */
