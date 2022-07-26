@@ -1,5 +1,4 @@
   @team87
-    @US11
   Feature: US11_Update an appointment by doctor
 
     Background:Common steps
