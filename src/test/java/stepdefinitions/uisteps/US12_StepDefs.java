@@ -17,7 +17,7 @@ public class US12_StepDefs {
     @Then("Doctor clicks on the Request A Test button.")
     public void doctor_clicks_on_the_request_a_test_button() throws InterruptedException {
         Thread.sleep(2000);
-        Driver.waitAndClick(us12And13Pages.requestATestButton);
+        Driver.waitAndClick(us12And13Pages.requestATestButton,2);
     }
     @Then("Doctor verifies that the Test Items page is displayed")
     public void doctor_verifies_that_the_test_items_page_is_displayed() throws InterruptedException {
@@ -46,14 +46,14 @@ public class US12_StepDefs {
     public void doctor_clicks_on_save_tests_button() throws InterruptedException {
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).build().perform();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         Driver.clickWithJS(us12And13Pages.saveTestButton);
     }
 
     @Then("Doctor verifies A new Test  is cereated with identifier message  is displayed")
     public void doctor_verifies_a_new_test_is_cereated_with_identifier_message_is_displayed() throws InterruptedException {
-        Thread.sleep(9000);
-        Driver.waitForVisibility(us12And13Pages.testIsCreatedAlertMessage,10000);
+        Thread.sleep(2000);
+        Driver.waitForVisibility(us12And13Pages.testIsCreatedAlertMessage,1);
         Assert.assertTrue(us12And13Pages.testIsCreatedAlertMessage.isDisplayed());
     }
     @Then("Doctor verifies Test item list can not be empty message  is displayed")

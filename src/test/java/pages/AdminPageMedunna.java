@@ -23,5 +23,14 @@ public class AdminPageMedunna {
     @FindBy(xpath = "//a[@href='/admin/user-management']")
     public WebElement userManagementButton;
 
+    @FindBy(css = "#entity-menu>div>a:nth-of-type(4)")
+    public WebElement appointmentAdmin;
+
+    @FindBy(xpath = "//nav/ul/li[last()]")
+    public WebElement lastPageButton;
+
+    @FindBy(xpath = "//tbody/tr[last()]/td[last()]//a[3]")
+    public WebElement deleteButton;
+
 
 }

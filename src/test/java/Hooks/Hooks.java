@@ -7,6 +7,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import java.io.IOException;
 
@@ -30,7 +31,6 @@ public class Hooks {
 
     @Before
     public void setUp(){
-
     }
     public static RequestSpecification spec;
     @Before(value="@US01_TC12")
@@ -51,11 +51,11 @@ public class Hooks {
 //        }
 
     }
-    @Before(order=1, value="@NewApplicant")
-    public void navigateToRegistration() {
-
-        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
-    }
+//    @Before(order=1, value="@NewApplicant")
+//    public void navigateToRegistration() {
+//
+//        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
+//    }
 
 
 }
