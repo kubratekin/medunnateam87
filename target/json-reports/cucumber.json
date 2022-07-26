@@ -11,92 +11,738 @@
         "steps": [
           {
             "result": {
-              "duration": 10663000000,
+              "duration": 10630000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user navigates to \"\u003cmedunnaUrl\u003e\"",
+            "name": "user goes to Medunna page",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"\u003cmedunnaUrl\u003e\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_navigates_to(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 284000000,
+              "duration": 208000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user clicks on registiration button and navigates to registiration page",
+            "name": "User navigate to contact page",
             "match": {
-              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_clicks_on_registiration_button_and_navigates_to_registiration_page()"
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_navigate_to_contact_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that contact page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_contact_page_is_displayed()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2022-07-14T10:15:27.552Z",
-        "line": 34,
-        "name": "TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber",
+        "start_timestamp": "2022-07-26T11:04:07.097Z",
+        "line": 10,
+        "name": "US26_TC01_",
         "description": "",
-        "id": "us-03-registiration-password;tc-05-atleastsevencharswithonelowercaseuppercasenumber",
+        "id": "test-registrant-data;us26-tc01-",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 298000000,
+              "duration": 231000000,
               "status": "passed"
             },
-            "line": 35,
-            "name": "user types seven chars included one lowercase and one uppercase and number",
+            "line": 11,
+            "name": "Verify that the Name box exists",
             "match": {
-              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_types_seven_chars_included_one_lowercase_and_one_uppercase_and_number()"
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_the_name_box_exists()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 106000000,
+              "duration": 412000000,
               "status": "passed"
             },
-            "line": 36,
-            "name": "user sees strength level is changed to stronger",
+            "line": 12,
+            "name": "Verify that the E-mail box exists",
             "match": {
-              "location": "stepdefinitions.uisteps.US03_PasswordCheckStepdefs.user_sees_strength_level_is_changed_to_stronger()"
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_the_e_mail_box_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify that the Subject box exists",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_the_subject_box_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Verify that the Message box exists",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_the_message_box_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 834000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
+            "name": "@US26_Contact"
+          },
+          {
             "name": "@team87"
           },
           {
-            "name": "@US003_TC05"
+            "name": "@US26_TC01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5915000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigate to contact page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_navigate_to_contact_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that contact page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_contact_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-26T11:04:20.322Z",
+        "line": 18,
+        "name": "US26_TC02_Test_name_left_blank",
+        "description": "",
+        "id": "test-registrant-data;us26-tc02-test-name-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 267000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enter name blank",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_name_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should see error message Name is required.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_should_see_error_message_name_is_required()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 776000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26_Contact"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US26_TC02"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6875000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 157000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigate to contact page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_navigate_to_contact_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that contact page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_contact_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-26T11:04:27.734Z",
+        "line": 24,
+        "name": "US26_TC03_Test_subject_left_blank",
+        "description": "",
+        "id": "test-registrant-data;us26-tc03-test-subject-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 224000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enter subject blank",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_subject_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should see error message This field is required.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_should_see_error_message_this_field_is_required()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 791000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26_Contact"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US26_TC03"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7570000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigate to contact page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_navigate_to_contact_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that contact page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_contact_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-26T11:04:35.960Z",
+        "line": 30,
+        "name": "US26_TC04_Test_email_left_blank",
+        "description": "",
+        "id": "test-registrant-data;us26-tc04-test-email-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 214000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User enter email blank",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_email_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User should see error message Your email is required.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_should_see_error_message_your_email_is_required()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 743000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26_Contact"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US26_TC04"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7436000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigate to contact page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_navigate_to_contact_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that contact page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_contact_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-26T11:04:44.898Z",
+        "line": 44,
+        "name": "US26_TC05_Test_invalid_email",
+        "description": "",
+        "id": "test-registrant-data;us26-tc05-test-invalid-email;name-blank;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 223000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User enter inValidEmail \u0027invalidEmail\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027invalidEmail\u0027",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_in_valid_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User should see error message This field is invalid.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_should_see_error_message_this_field_is_invalid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 757000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26_Contact"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US26_TC05"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6616000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Medunna page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US01_RegistrationSteps.user_goes_to_medunna_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User navigate to contact page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_navigate_to_contact_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that contact page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.verify_that_contact_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-26T11:04:53.608Z",
+        "line": 58,
+        "name": "US26_TC06_Test_sends_message",
+        "description": "",
+        "id": "test-registrant-data;us26-tc06-test-sends-message;name-blank;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User enter Name \u0027team87_patient\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027team87_patient\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 227000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User enter valid email \u0027team87patient@gmail.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027team87patient@gmail.com\u0027",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_valid_email(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User enter Subject \u0027abcdefg\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027abcdefg\u0027",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_subject(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User enter Message \u0027abcdefgh\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027abcdefgh\u0027",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_enter_message(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User sends message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_sends_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1588000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User should see message Your message has been received",
+            "match": {
+              "location": "stepdefinitions.uisteps.US26_ContactStepDefs.user_should_see_message_your_message_has_been_received()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 749000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26_Contact"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US26_TC06"
           }
         ]
       }
     ],
-    "name": "US_03 Registiration Password",
+    "name": "Test Registrant data",
     "description": "",
-    "id": "us-03-registiration-password",
+    "id": "test-registrant-data",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US03_fatih.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US26_Contact.feature",
     "tags": [
+      {
+        "name": "@US26_Contact",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
       {
         "name": "@team87",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 1
+          "column": 15
         }
       }
     ]

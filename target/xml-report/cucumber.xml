@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.914">
-<testcase classname="US_03 Registiration Password" name="TC_05 AtLeastSevenCharsWithOneLowerCaseUpperCaseNumber" time="11.479">
-<system-out><![CDATA[Given user navigates to "<medunnaUrl>"......................................passed
-Then user clicks on registiration button and navigates to registiration page.passed
-Then user types seven chars included one lowercase and one uppercase and number.passed
-And user sees strength level is changed to stronger.........................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="57.194">
+<testcase classname="Test Registrant data" name="US26_TC01_" time="13.165">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When User navigate to contact page..........................................passed
+Then Verify that contact page is displayed..................................passed
+Then Verify that the Name box exists........................................passed
+And Verify that the E-mail box exists.......................................passed
+And Verify that the Subject box exists......................................passed
+And Verify that the Message box exists......................................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Registrant data" name="US26_TC02_Test_name_left_blank" time="7.377">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When User navigate to contact page..........................................passed
+Then Verify that contact page is displayed..................................passed
+When User enter name blank..................................................passed
+Then User should see error message Name is required.........................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Registrant data" name="US26_TC03_Test_subject_left_blank" time="8.203">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When User navigate to contact page..........................................passed
+Then Verify that contact page is displayed..................................passed
+When User enter subject blank...............................................passed
+Then User should see error message This field is required...................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Registrant data" name="US26_TC04_Test_email_left_blank" time="8.897">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When User navigate to contact page..........................................passed
+Then Verify that contact page is displayed..................................passed
+When User enter email blank.................................................passed
+Then User should see error message Your email is required...................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Registrant data" name="US26_TC05_Test_invalid_email" time="8.696">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When User navigate to contact page..........................................passed
+Then Verify that contact page is displayed..................................passed
+When User enter inValidEmail 'invalidEmail'.................................passed
+Then User should see error message This field is invalid....................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test Registrant data" name="US26_TC06_Test_sends_message" time="10.19">
+<system-out><![CDATA[Given user goes to Medunna page.............................................passed
+When User navigate to contact page..........................................passed
+Then Verify that contact page is displayed..................................passed
+When User enter Name 'team87_patient'.......................................passed
+And User enter valid email 'team87patient@gmail.com'........................passed
+And User enter Subject 'abcdefg'............................................passed
+And User enter Message 'abcdefgh'...........................................passed
+And User sends message......................................................passed
+Then User should see message Your message has been received.................passed
+And close the application...................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
