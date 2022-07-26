@@ -18,33 +18,25 @@ public class Hooks {
 //    -In cucumber hooks I use reports and I take screenshot
 //    -I designed my hooks. It takes screenshot when a test scenario fails.
 
+//    @Before(order=2, value="@UIlogin")
+//    public void beforeScenario() {
+//
+//    }
+//
+//    @Before(order=3, value="@UIregistration")
+//    public void beforeRegistration() {
+//        Driver.getDriver().get("https://medunna.com/account/register");
+//    }
 
+    @Before
+    public void setUp(){
+
+    }
     public static RequestSpecification spec;
-
-    @Before(value="@Api")
-    public void baseUrlSetUp(){
-
+    @Before(value="@US01_TC12")
+    public void setup(){
         spec= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-       // spec2= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url2")).build();
     }
-
-    @Before(order=1, value="@NewApplicant")
-    public void navigateToRegistration() {
-
-        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
-    }
-
-    @Before(order=2, value="@UIlogin")
-    public void beforeScenario() {
-
-    }
-
-    @Before(order=3, value="@UIregistration")
-    public void beforeRegistration() {
-        Driver.getDriver().get("https://medunna.com/account/register");
-    }
-
-
 
     @After(order=3, value="@UIregistration")
     public void tearDown(Scenario scenario) throws IOException {
@@ -59,4 +51,11 @@ public class Hooks {
 //        }
 
     }
+    @Before(order=1, value="@NewApplicant")
+    public void navigateToRegistration() {
+
+        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
+    }
+
+
 }

@@ -10,4 +10,3 @@ Feature: appointment database validation
     Examples: test data
       | email   |
       |berkbey@gamil.com|
-

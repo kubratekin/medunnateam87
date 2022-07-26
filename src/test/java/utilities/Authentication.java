@@ -1,40 +1,30 @@
 package utilities;
-import io.cucumber.java.en.Given;
+
+import baseUrl.Medunna;
 import io.restassured.builder.RequestSpecBuilder;
-import static io.restassured.RestAssured.given;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.openqa.selenium.json.Json;
+import io.restassured.specification.RequestSpecification;
+
 import java.util.HashMap;
 import java.util.Map;
-import static Hooks.Hooks.spec;
-public class Authentication{
 
-    public static void main(String[] args) {
-        String newToken=generateToken();
-        System.out.println("newToken = " + newToken);
-    }
-    public static String generateToken() {
+import static io.restassured.RestAssured.*;
 
-        String username="vusalgasimov";
-        String password ="vusalgasimov";
+public class Authentication {
 
-        Map<String, Object> expectedData = new HashMap<>();
-        expectedData.put("username","vusalgasimov");
-        expectedData.put("password","vusalgasimov");
+
+    static RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+    public static String generateToken(){
+        spec.pathParams("first","api","second","authenticate");
+        Map<String,Object> expectedData = new HashMap<>();
+        expectedData.put("username","team87_admin");
+        expectedData.put("password","1234567");
         expectedData.put("rememberMe",true);
-
-
-        String endPoint ="https://medunna.com/api/authenticate";
-
-        Response response=given().contentType(ContentType.JSON).body(expectedData).when().post(endPoint);
-
-        JsonPath token = response.jsonPath();
-
-        return token.getString("id_token");
-
+        Response response = given().spec(spec).contentType(ContentType.JSON).
+                            body(expectedData).when().post("/{first}/{second}");
+        JsonPath json = response.jsonPath();
+        return json.getString("id_token");
     }
 }
-
-

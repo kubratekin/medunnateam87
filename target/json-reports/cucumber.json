@@ -3,460 +3,201 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-07-14T19:58:17.064Z",
-        "line": 5,
-        "name": "test_appointment",
+        "start_timestamp": "2022-07-13T22:34:46.396Z",
+        "line": 21,
+        "name": "Create New Patient",
         "description": "",
-        "id": "test-api-appointment-data;test-appointment",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 27745000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user sends a get request for appointment data",
-            "match": {
-              "location": "stepdefinitions.apisteps.US07_AppointmentAPISteps.userSendsAGetRequestForAppointmentData()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 248000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user deserializes the appointment data to java",
-            "match": {
-              "location": "stepdefinitions.apisteps.US07_AppointmentAPISteps.userDeserializesTheAppointmentDataToJava()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 318000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user saves the appointment\u0027 data to correspondent files and validates",
-            "match": {
-              "location": "stepdefinitions.apisteps.US07_AppointmentAPISteps.userSavesTheAppointmentDataToCorrespondentFilesAndValidates()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@team87"
-          },
-          {
-            "name": "@Api"
-          },
-          {
-            "name": "@GetApiAppointment"
-          }
-        ]
-      }
-    ],
-    "name": "test api appointment data",
-    "description": "",
-    "id": "test-api-appointment-data",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/APIFeatures/US07_AppointmentAPI.feature",
-    "tags": [
-      {
-        "name": "@team87",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2022-07-14T19:58:45.472Z",
-        "line": 12,
-        "name": "Validate appointments by id with database",
-        "description": "",
-        "id": "appointment-database-validation;validate-appointments-by-id-with-database;test-data;2",
+        "id": "create-edit-patient-by-admin;create-new-patient;test-datas;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1571000000,
+              "duration": 8169516000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user set a connection with database",
+            "name": "Go to medunna home page",
             "match": {
-              "location": "stepdefinitions.dbsteps.US07_AppointmentDBStepDefs.user_sets_a_connection_with_database()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5589000000,
+              "duration": 1194730600,
               "status": "passed"
             },
             "line": 7,
-            "name": "user select all \"email\" column data",
+            "name": "Admin clicks Sign in Link",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"email\"",
-                  "offset": 16
-                }
-              ],
-              "location": "stepdefinitions.dbsteps.US07_AppointmentDBStepDefs.user_selects_all_column_data(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_sign_in_link()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
+              "duration": 96168500,
               "status": "passed"
             },
             "line": 8,
-            "name": "user validates appointment \"berkbey@gamil.com\" with the database",
+            "name": "Admin fills the username \"team87_admin\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"berkbey@gamil.com\"",
-                  "offset": 27
+                  "val": "\"team87_admin\"",
+                  "offset": 25
                 }
               ],
-              "location": "stepdefinitions.dbsteps.US07_AppointmentDBStepDefs.user_validates_appointment_ids_with_the_database(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_username(java.lang.String)"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@team87"
-          },
-          {
-            "name": "@AppointmentDatabaseValidation"
-          }
-        ]
-      }
-    ],
-    "name": "appointment database validation",
-    "description": "",
-    "id": "appointment-database-validation",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DBFeatures/US07_AppointmentDB.feature",
-    "tags": [
-      {
-        "name": "@team87",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9126000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user navigate to medunna page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_navigate_to_medunna_page()"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 84000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click on Make An Appointment",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_click_on_make_an_appointment()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 65000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "verify \"Make an Appointment \" header created on the page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Make an Appointment \"",
-                  "offset": 7
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.verify_header_created_on_the_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-14T19:58:52.651Z",
-        "line": 16,
-        "name": "TC01_Test_Make_An_Appointment_currentDate",
-        "description": "",
-        "id": "test-make-an-appointment;tc01-test-make-an-appointment-currentdate;test-user-information;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 486000000,
+              "duration": 96407200,
               "status": "passed"
             },
             "line": 9,
-            "name": "user send firstName ,lastName ,ssn ,phone ,email,as \"feyza\",\"aberkbey\",\"123-10-1003\",\"1234567890\",\"aberkbey@gmail.com\"",
+            "name": "Admin fills the password \"1234567\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"feyza\"",
-                  "offset": 52
-                },
-                {
-                  "val": "\"aberkbey\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"123-10-1003\"",
-                  "offset": 71
-                },
-                {
-                  "val": "\"1234567890\"",
-                  "offset": 85
-                },
-                {
-                  "val": "\"aberkbey@gmail.com\"",
-                  "offset": 98
+                  "val": "\"1234567\"",
+                  "offset": 25
                 }
               ],
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_send_first_name_last_name_ssn_phone_email_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_password(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 100728200,
               "status": "passed"
             },
             "line": 10,
-            "name": "user can select current date",
+            "name": "Admin clicks the Sign in button",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_can_select_current_date()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2203000000,
+              "duration": 481710800,
               "status": "passed"
             },
             "line": 11,
-            "name": "user click Send an Appointment Request",
+            "name": "Admin clicks the Items\u0026Titles dropdown",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_click_send_an_appointment_request()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_items_titles_dropdown()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4065000000,
+              "duration": 1094571600,
               "status": "passed"
             },
             "line": 12,
-            "name": "verify created the Appointment registration saved! We will call you as soon as possible alert message is visible",
+            "name": "Admin clicks Patient link",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.verify_created_the_appointment_registration_saved_we_will_call_you_as_soon_as_possible_alert_message_is_visible()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_patient_link()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 773000000,
+              "duration": 92750900,
               "status": "passed"
             },
             "line": 13,
-            "name": "close this application",
+            "name": "Admin clicks the Create a new Patient Button",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.close_this_application()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@team87"
-          },
-          {
-            "name": "@TC01"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6921000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user navigate to medunna page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_navigate_to_medunna_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 58000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click on Make An Appointment",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_click_on_make_an_appointment()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_create_a_new_patient_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 4308887600,
               "status": "passed"
             },
-            "line": 6,
-            "name": "verify \"Make an Appointment \" header created on the page",
+            "line": 14,
+            "name": "Admin fills the \"05/05/1980 03:20 AM\",\"MALE\",\"A+\",\"A street\",\"Big Home\",\"jon.haley\",\"USA\",\"California\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Make an Appointment \"",
-                  "offset": 7
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.verify_header_created_on_the_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-14T19:59:09.595Z",
-        "line": 26,
-        "name": "TC02_Test_Make_An_Appointment_futureDate",
-        "description": "",
-        "id": "test-make-an-appointment;tc02-test-make-an-appointment-futuredate;test-user-information;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 445000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user send firstName ,lastName ,ssn ,phone ,email,as \"feyzan\",\"aberkbey\",\"123-11-1003\",\"1234567890\",\"aberk@gmail.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"feyzan\"",
-                  "offset": 52
+                  "val": "\"05/05/1980 03:20 AM\"",
+                  "offset": 16
                 },
                 {
-                  "val": "\"aberkbey\"",
+                  "val": "\"MALE\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"A+\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"A street\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Big Home\"",
                   "offset": 61
                 },
                 {
-                  "val": "\"123-11-1003\"",
+                  "val": "\"jon.haley\"",
                   "offset": 72
                 },
                 {
-                  "val": "\"1234567890\"",
-                  "offset": 86
+                  "val": "\"USA\"",
+                  "offset": 84
                 },
                 {
-                  "val": "\"aberk@gmail.com\"",
-                  "offset": 99
+                  "val": "\"California\"",
+                  "offset": 90
                 }
               ],
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_send_first_name_last_name_ssn_phone_email_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 86000000,
+              "duration": 83580000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "user can select future date",
+            "line": 15,
+            "name": "Admin clicks Save Button",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_can_select_future_date()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_save_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2178000000,
+              "duration": 2070302100,
               "status": "passed"
             },
-            "line": 21,
-            "name": "user click Send an Appointment Request",
+            "line": 16,
+            "name": "Verify the A new patient is created message",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_click_send_an_appointment_request()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4051000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "verify created the Appointment registration saved! We will call you as soon as possible alert message is visible",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.verify_created_the_appointment_registration_saved_we_will_call_you_as_soon_as_possible_alert_message_is_visible()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_a_new_patient_is_created_message()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 699000000,
+              "duration": 727325300,
               "status": "passed"
             },
-            "line": 23,
-            "name": "close this application",
+            "line": 17,
+            "name": "Closes the browser",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.close_this_application()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
             },
             "keyword": "And "
           }
@@ -466,149 +207,115 @@
             "name": "@team87"
           },
           {
-            "name": "@TC02"
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC01_New_Patient_Only_Created_By_Admin"
           }
         ]
       },
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8290000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user navigate to medunna page",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_navigate_to_medunna_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 58000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click on Make An Appointment",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_click_on_make_an_appointment()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "verify \"Make an Appointment \" header created on the page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Make an Appointment \"",
-                  "offset": 7
-                }
-              ],
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.verify_header_created_on_the_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-14T19:59:24.093Z",
+        "start_timestamp": "2022-07-13T22:35:05.102Z",
         "line": 36,
-        "name": "TC03_Test_Make_An_Appointment_pastDate",
+        "name": "Create New Patient By Staff Negative Scenario",
         "description": "",
-        "id": "test-make-an-appointment;tc03-test-make-an-appointment-pastdate;test-user-information;2",
+        "id": "create-edit-patient-by-admin;create-new-patient-by-staff-negative-scenario;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 505000000,
+              "duration": 7252266600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1217042600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Staff clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.staff_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114692200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Staff fills the username \"team87staff001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87staff001\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.staff_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 93750300,
               "status": "passed"
             },
             "line": 29,
-            "name": "user send firstName ,lastName ,ssn ,phone ,email,as \"feyzas\",\"aberkbey\",\"123-12-1003\",\"1234567890\",\"berkbey@gmail.com\"",
+            "name": "Staff fills the password \"1234567\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"feyzas\"",
-                  "offset": 52
-                },
-                {
-                  "val": "\"aberkbey\"",
-                  "offset": 61
-                },
-                {
-                  "val": "\"123-12-1003\"",
-                  "offset": 72
-                },
-                {
-                  "val": "\"1234567890\"",
-                  "offset": 86
-                },
-                {
-                  "val": "\"berkbey@gmail.com\"",
-                  "offset": 99
+                  "val": "\"1234567\"",
+                  "offset": 25
                 }
               ],
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_send_first_name_last_name_ssn_phone_email_as(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.staff_fills_the_password(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 84000000,
+              "duration": 71807900,
               "status": "passed"
             },
             "line": 30,
-            "name": "user can select past date",
+            "name": "Staff clicks the Sign in button",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_can_select_past_date()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.staff_clicks_the_sign_in_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2190000000,
+              "duration": 431845800,
               "status": "passed"
             },
             "line": 31,
-            "name": "user click Send an Appointment Request",
+            "name": "Verify the Mypages link is displayed instead of Items\u0026Titles link",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_click_send_an_appointment_request()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3045000000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "verify created the message Appointment date can not be past date! is visible",
-            "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.verify_created_the_message_appointment_date_can_not_be_past_date_is_visible()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_mypages_link_is_displayed_instead_of_items_titles_link()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 702000000,
+              "duration": 736028300,
               "status": "passed"
             },
-            "line": 33,
-            "name": "close this application",
+            "line": 32,
+            "name": "Closes the browser",
             "match": {
-              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.close_this_application()"
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
             },
             "keyword": "And "
           }
@@ -618,16 +325,1151 @@
             "name": "@team87"
           },
           {
-            "name": "@TC03"
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC02_New_Patients_Can_Not_Be_Created_By_Staff"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T22:35:15.052Z",
+        "line": 51,
+        "name": "Create New Patient By Doctor Negative Scenario",
+        "description": "",
+        "id": "create-edit-patient-by-admin;create-new-patient-by-doctor-negative-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6551787900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1197908100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Doctor clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.doctor_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110087000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Doctor fills the username \"team87doctor001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87doctor001\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.doctor_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 124673300,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Doctor fills the password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.doctor_fills_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96734500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Doctor clicks the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.doctor_clicks_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 443814300,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Verify the Mypages link is displayed instead of Items\u0026Titles link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_mypages_link_is_displayed_instead_of_items_titles_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 707106300,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC03_New_Patients_Can_Not_Be_Created_By_Doctor"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T22:35:24.312Z",
+        "line": 66,
+        "name": "Create New Patient By Patient Negative Scenario",
+        "description": "",
+        "id": "create-edit-patient-by-admin;create-new-patient-by-patient-negative-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7148272800,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1205350200,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Patient clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.patient_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95757700,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Patient fills the username \"team87patient001\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87patient001\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.patient_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 101713900,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Patient fills the password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.patient_fills_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89758500,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Patient clicks the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.patient_clicks_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 426160000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Verify the Mypages(Patient) link is displayed instead of Items\u0026Titles link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_mypages_patient_link_is_displayed_instead_of_items_titles_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 724061500,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC04_New_Patients_Can_Not_Be_Created_By_Patient"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T22:35:34.131Z",
+        "line": 83,
+        "name": "See Patient Info",
+        "description": "",
+        "id": "create-edit-patient-by-admin;see-patient-info;credentials;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6738296200,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1207558100,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "Admin clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80185800,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "Admin fills the username \"team87_admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 94746000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "Admin fills the password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104718600,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "Admin clicks the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 482707300,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "Admin clicks the Items\u0026Titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_items_titles_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1102308900,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "Admin clicks Patient link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_patient_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 738013400,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "Verify all patient information",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_all_patient_information()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1122994900,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC05_Admin_Can_See_All_Patient_Information"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T22:35:45.829Z",
+        "line": 101,
+        "name": "See Patient ID",
+        "description": "",
+        "id": "create-edit-patient-by-admin;see-patient-id;credentials;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7893371500,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1189144800,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "Admin clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87764100,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Admin fills the username \"team87_admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 93765200,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "Admin fills the password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72789800,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "Admin clicks the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 486774000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "Admin clicks the Items\u0026Titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_items_titles_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1092806300,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "Admin clicks Patient link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_patient_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 295201800,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "Admin clicks Edit Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_edit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203455400,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "Verify ID information is shown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_id_information_is_shown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1139935200,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "Closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC06_Admin_Can_Also_See_Patient_ID"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T22:35:58.413Z",
+        "line": 121,
+        "name": "Create New Patient Provide State Positive Scenario",
+        "description": "",
+        "id": "create-edit-patient-by-admin;create-new-patient-provide-state-positive-scenario;test-datas;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6513514500,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1192236500,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "Admin clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103722300,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "Admin fills the username \"team87_admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105716600,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "Admin fills the password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66822700,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "Admin clicks the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469741400,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "Admin clicks the Items\u0026Titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_items_titles_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1091916300,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "Admin clicks Patient link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_patient_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92753500,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "Admin clicks the Create a new Patient Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_create_a_new_patient_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3740071700,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "Admin fills the \"05/05/1980 03:20 AM\",\"MALE\",\"A+\",\"A street\",\"Big Home\",\"jon.haley\",\"USA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/05/1980 03:20 AM\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"MALE\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"A+\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"A street\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Big Home\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"jon.haley\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"USA\"",
+                  "offset": 84
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100951000,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "Admin clicks Save Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2053590800,
+              "status": "passed"
+            },
+            "line": 116,
+            "name": "Verify the A new patient is created message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_a_new_patient_is_created_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 721901000,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "Closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC07_State_Should_Be_Provided_Can_Not_Be_Blank"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T22:36:14.685Z",
+        "line": 140,
+        "name": "Admin Delete Patient",
+        "description": "",
+        "id": "create-edit-patient-by-admin;admin-delete-patient;credentials;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5937949200,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1195789600,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "Admin clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80037000,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "Admin fills the username \"team87_admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 90713200,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "Admin fills the password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75867000,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "Admin clicks the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 486037800,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "Admin clicks the Items\u0026Titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_items_titles_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1097144500,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "Admin clicks Patient link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_patient_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10312612400,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "Admin clicks the Delete button next to the patient \"Temprory Patient\",\"Delete\",\"temprory@temp.com\",\"3685964586\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Temprory Patient\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"Delete\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"temprory@temp.com\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"3685964586\"",
+                  "offset": 99
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_delete_button_next_to_the_patient(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81781900,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "Admin clicks the Delete button on the delete message window",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_delete_button_on_the_delete_message_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1072132900,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "Verify the user is deleted message",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_user_is_deleted_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1127981500,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "Closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC09_Admin_Can_Delete_Patient"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T22:36:36.270Z",
+        "line": 160,
+        "name": "Create New Patient Provide State Negative Scenario",
+        "description": "",
+        "id": "create-edit-patient-by-admin;create-new-patient-provide-state-negative-scenario;test-datas;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7617403500,
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "Go to medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Go_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1179095500,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "Admin clicks Sign in Link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80366000,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "Admin fills the username \"team87_admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_username(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 104407500,
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "Admin fills the password \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92749300,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "Admin clicks the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 470739600,
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "Admin clicks the Items\u0026Titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_items_titles_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1101200100,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "Admin clicks Patient link",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_patient_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99728800,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "Admin clicks the Create a new Patient Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_the_create_a_new_patient_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3723779400,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "Admin fills the \"05/05/1980 03:20 AM\",\"MALE\",\"A+\",\"A street\",\"Big Home\",\"jon.haley\",\"USA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/05/1980 03:20 AM\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"MALE\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"A+\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"A street\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Big Home\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"jon.haley\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"USA\"",
+                  "offset": 84
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_fills_the(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84772500,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "Admin clicks Save Button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.admin_clicks_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertFalse(Assert.java:65)\r\n\tat org.junit.Assert.assertFalse(Assert.java:75)\r\n\tat stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_a_new_patient_is_not_created_successfully(US15_CreatePatientByAdminStepDefs.java:264)\r\n\tat ✽.Verify the A new patient is not created successfully(file:///C:/Users/yusuf/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US15_CreateEditPatientByAdmin.feature:155)\r\n",
+              "duration": 2075255100,
+              "status": "failed"
+            },
+            "line": 155,
+            "name": "Verify the A new patient is not created successfully",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.verify_the_a_new_patient_is_not_created_successfully()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 156,
+            "name": "Closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US15_CreatePatientByAdminStepDefs.Closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US_15_Create_Edit_Patient_By_Admin"
+          },
+          {
+            "name": "@TC08_State_Should_Be_Provided_Can_Not_Be_Blank_Negative"
           }
         ]
       }
     ],
-    "name": "Test Make An Appointment",
+    "name": "Create Edit Patient By Admin",
     "description": "",
-    "id": "test-make-an-appointment",
+    "id": "create-edit-patient-by-admin",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UIFeatures/US07_AppoinmentUI.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US15_CreateEditPatientByAdmin.feature",
     "tags": [
       {
         "name": "@team87",
@@ -635,6 +1477,14 @@
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@US_15_Create_Edit_Patient_By_Admin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 11
         }
       }
     ]
