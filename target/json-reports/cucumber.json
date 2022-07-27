@@ -1,0 +1,296 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User on My Appointment Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13214000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1256000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User signs in as a patient.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.user_signs_in_as_a_patient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 432000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Patient clicks on My Page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_clicks_on_my_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Patient clicks on My Appointments",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_clicks_on_my_appointments()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-26T09:22:05.566Z",
+        "line": 10,
+        "name": "AC01 Patient can view the test result",
+        "description": "",
+        "id": "us24-patient-can-view-the-test-result-and-the-invoice;ac01-patient-can-view-the-test-result",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 273000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Patient clicks on one of the Show Tests",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_clicks_on_one_of_the_show_tests()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 231000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Patient clicks on one of the View Results",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_clicks_on_one_of_the_view_results()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 377000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Patient verifies test results header is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_verifies_test_results_header_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Patient verifies all test items are displayed.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_verifies_all_test_items_are_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Patent  closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patent_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US24"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US24_AC01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User on My Appointment Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7065000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US13_StepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 837000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User signs in as a patient.",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.user_signs_in_as_a_patient()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 476000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Patient clicks on My Page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_clicks_on_my_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 103000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Patient clicks on My Appointments",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_clicks_on_my_appointments()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-26T09:22:22.187Z",
+        "line": 18,
+        "name": "AC02 Patient can view the invoice",
+        "description": "",
+        "id": "us24-patient-can-view-the-test-result-and-the-invoice;ac02-patient-can-view-the-invoice",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Patient clicks on one of the Show Invoice",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_clicks_on_one_of_the_show_invoice()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Patient verifies Invoice header is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_verifies_invoice_header_is_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2322000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Patient verifies all information is displayed  such as SSN, Total Cost …",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patient_verifies_all_information_is_displayed_such_as_ssn_total_cost()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Patent  closes the browser",
+            "match": {
+              "location": "stepdefinitions.uisteps.US24Stepdefinition.patent_closes_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US24"
+          },
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US24_AC02"
+          }
+        ]
+      }
+    ],
+    "name": "US24_Patient can view the test result and the invoice",
+    "description": "",
+    "id": "us24-patient-can-view-the-test-result-and-the-invoice",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US24.feature",
+    "tags": [
+      {
+        "name": "@US24",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@team87",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
