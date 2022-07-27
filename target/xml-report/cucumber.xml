@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4">
-<testcase classname="US10_DB validation" name="User tests Appointment DB" time="3.249">
-<system-out><![CDATA[Given User connects to database.............................................passed
-Then User gets appointment "status".........................................passed
-And User verifies the "PENDING" by DB.......................................passed
-]]></system-out>
-</testcase>
-</testsuite>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.251"/>
