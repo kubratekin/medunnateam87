@@ -16,10 +16,11 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = "stepdefinitions",//MUST
-        tags = "@US21",
+
+        tags = "@tag",
         dryRun = false
+
+
 )
 public class Runner {
 }
-
-
