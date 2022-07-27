@@ -1,5 +1,5 @@
 @team87
-Feature:Users_Ssn_DB
+Feature: US01_DB_Users_Ssn_DB
   @US01_TC12_DB
   Scenario:Users_Ssn_Test_DB
     Given user sets a connection with database
