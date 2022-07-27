@@ -1,7 +1,4 @@
-
 @US09 @team87
-
-
 
 Feature: US_09
   Background: US_09
@@ -33,10 +30,11 @@ Feature: US_09
     When User navigate to Patients information page
     Then User verifies that landed at Patients information page
     And User clicks on ID of patient to go to Patient detail page
+    |team87-patient2|879-99-9998|
     And User clicks on Edit button
     Then User verifies Create or edit a Patient page is opened
     And User writes new informations in each information boxes
-      |Sarah1|Watts1|
+      |Sarah1|Watts1|01.01.1987|01:01|1234567891|change87-1|25|Adana|
     Then User verifies that all informations are changed
     And User closes the browser
 
@@ -47,9 +45,10 @@ Feature: US_09
     When User navigate to Patients information page
     Then User verifies that landed at Patients information page
     And User clicks Edit button
+      |Sarah1|879-99-9998|
     Then User verifies Create or edit a Patient page is opened
     And User writes new informations in each information boxes
-      |Sarah2|Watts2|
+      |Sarah2|Watts2|02.02.1987|01:01|1234567892|change87-2|25|Adıyaman|
     Then User verifies that all informations are changed
     And User closes the browser
 
@@ -60,10 +59,11 @@ Feature: US_09
     When User navigate to Patients information page
     Then User verifies that landed at Patients information page
     And User clicks view button
+      |Sarah2|879-99-9998|
     And User clicks on Edit button
     Then User verifies Create or edit a Patient page is opened
     And User writes new informations in each information boxes
-      |Sarah3|Watts3|
+      |Sarah3|Watts3|03.03.1987|01:01|1234567893|change87-3|25|Afyonkarahisar|
     Then User verifies that all informations are changed
     And User closes the browser
 
@@ -73,10 +73,11 @@ Feature: US_09
     Then User verifies that landed at Staff page
     When User navigate to Patients information page from Staff page
     Then User verifies that landed at Patients information page
-    And User clicks Edit button
+    And User clicks Edit button Staff
+      |Sarah3|879-99-9998|
     Then User verifies Create or edit a Patient page is opened
     And User writes new informations in each information boxes
-      |Sarah4|Watts4|
+      |Sarah4|Watts4|04.04.1987|01:01|1234567894|change87-4|25|Ağrı|
     Then User verifies that all informations are changed
     And User closes the browser
 
@@ -86,11 +87,12 @@ Feature: US_09
     Then User verifies that landed at Staff page
     When User navigate to Patients information page from Staff page
     Then User verifies that landed at Patients information page
-    And User clicks view button
+    And User clicks view button Staff
+      |Sarah4|879-99-9998|
     And User clicks on Edit button
     Then User verifies Create or edit a Patient page is opened
     And User writes new informations in each information boxes
-      |Sarah|Watts|
+      |team87-patient2|team87|05.05.1987|01:01|1234567895|change87-5|25|Amasya|
     Then User verifies that all informations are changed
     And User closes the browser
 

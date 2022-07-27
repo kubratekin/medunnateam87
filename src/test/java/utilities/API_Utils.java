@@ -10,5 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
 public class  API_Utils {
+
+    public static RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+
 }
 
