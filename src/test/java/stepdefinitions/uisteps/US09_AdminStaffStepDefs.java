@@ -13,6 +13,7 @@ import utilities.ReusableMethods;
 import java.util.*;
 
 public class US09_AdminStaffStepDefs {
+/*
     HomePageMedunna homePage = new HomePageMedunna();
     SignInPageMedunna signInPage = new SignInPageMedunna();
     AdminPageMedunna adminPage = new AdminPageMedunna();
@@ -58,7 +59,7 @@ public class US09_AdminStaffStepDefs {
     }
     @Then("User closes the browser")
     public void user_closes_the_browser() {
-        Driver.closeDriver();
+      Driver.closeDriver();
     }
 
     //TC02
@@ -193,5 +194,7 @@ public class US09_AdminStaffStepDefs {
     public void userVerifiesAllInformationsAreDeleted() {
         Driver.wait(5);
         Assert.assertTrue(userManagement.deleteSuccessMessage.getText().contains("A Patient is deleted with identifier"));
+
+ */
     }
-}
+

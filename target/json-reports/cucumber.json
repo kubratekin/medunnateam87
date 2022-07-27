@@ -3,81 +3,1053 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-07-25T15:01:21.492Z",
-        "line": 4,
-        "name": "User tests Appointment DB",
+        "start_timestamp": "2022-07-27T15:00:43.130Z",
+        "line": 5,
+        "name": "Admin verifies all names, emails and messages are displayed",
         "description": "",
-        "id": "us10-db-validation;user-tests-appointment-db",
+        "id": "us027-admin-should-be-able-to-go-to-messages-portal-and-view-all-messages--their-authors-and-emails;admin-verifies-all-names--emails-and-messages-are-displayed",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1546000000,
+              "duration": 7933000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User connects to database",
+            "line": 6,
+            "name": "FK Admin navigates to Medunna home page",
             "match": {
-              "location": "stepdefinitions.dbsteps.US10_DBstepDef.userConnectsToDatabase()"
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_navigates_to_medunna_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8214000000,
+              "duration": 2058000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User gets appointment \"status\"",
+            "line": 7,
+            "name": "FK Admin clicks on human icon",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_human_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2092000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "FK Admin clicks on sign in button under human icon at homepage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "FK Admin sends username \"kfadmin\" and password \"kfadmin\" in sign in page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"status\"",
-                  "offset": 22
+                  "val": "\"kfadmin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"kfadmin\"",
+                  "offset": 47
                 }
               ],
-              "location": "stepdefinitions.dbsteps.US10_DBstepDef.userGetsAppointment(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_sends_username_and_password_in_sign_in_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2076000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "FK Admin clicks on sign in button in sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_in_sign_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "FK Admin verifies the admin page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_admin_page_is_displayed()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 2071000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User verifies the \"PENDING\" by DB",
+            "line": 12,
+            "name": "FK Admin clicks on items and titles dropdown",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"PENDING\"",
-                  "offset": 18
-                }
-              ],
-              "location": "stepdefinitions.dbsteps.US10_DBstepDef.userVerifiesTheByDB(java.lang.String)"
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_items_and_titles_dropdown()"
             },
-            "keyword": "And "
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2108000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "FK Admin clicks on messages button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_messages_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2060000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "FK Admin verifies the messages page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_messages_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4077000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "FK Admin verifies all names, emails and messages are displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_all_names_emails_and_messages_are_displayed()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@team87"
+            "name": "@US027"
           },
           {
-            "name": "@US10_DB"
+            "name": "@US027_TC001"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T15:01:07.944Z",
+        "line": 39,
+        "name": "Admin should be able to create messages",
+        "description": "",
+        "id": "us027-admin-should-be-able-to-go-to-messages-portal-and-view-all-messages--their-authors-and-emails;admin-should-be-able-to-create-messages;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 429000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "FK Admin navigates to Medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_navigates_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2089000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "FK Admin clicks on human icon",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_human_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@id\u003d\u0027login-item\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SNI330F\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\\Users\\Hp\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:54929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 56174a8baf65e4382e5f521b350779e3\n*** Element info: {Using\u003dxpath, value\u003d//a[@id\u003d\u0027login-item\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage(US_027_AdminPagesStepDefs.java:34)\r\n\tat ✽.FK Admin clicks on sign in button under human icon at homepage(file:///C:/Users/Hp/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US027.feature:21)\r\n",
+              "duration": 15077000000,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "FK Admin clicks on sign in button under human icon at homepage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "FK Admin sends username \"kfadmin\" and password \"kfadmin\" in sign in page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kfadmin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"kfadmin\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_sends_username_and_password_in_sign_in_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "FK Admin clicks on sign in button in sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_in_sign_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "FK Admin verifies the admin page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_admin_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "FK Admin clicks on items and titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_items_and_titles_dropdown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "FK Admin clicks on messages button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_messages_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "FK Admin verifies the messages page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_messages_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "FK Admin clicks on the create a new message button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_the_create_a_new_message_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "FK Admin verifies the Create or edit a Message page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_create_or_edit_a_message_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "FK Admin enters name \"Admin Message\" into name text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin Message\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_enters_name_into_name_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "FK Admin enters email \"adminmessage@yahoo.com\" into email text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adminmessage@yahoo.com\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_enters_email_into_email_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "FK Admin enters subject \"Admin creates\" into subject text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin creates\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_enters_subject_into_subject_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "FK Admin enters message \"Admin creates message\" into message text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin creates message\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_enters_message_into_message_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "FK Admin clicks on save button in create or edit a message page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_save_button_in_create_or_edit_a_message_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "FK Admin verifies successfully created message is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_successfully_created_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US027"
+          },
+          {
+            "name": "@US027_TC002"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T15:01:25.593Z",
+        "line": 64,
+        "name": "Admin should be able to update messages",
+        "description": "",
+        "id": "us027-admin-should-be-able-to-go-to-messages-portal-and-view-all-messages--their-authors-and-emails;admin-should-be-able-to-update-messages;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 367000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "FK Admin navigates to Medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_navigates_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2066000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "FK Admin clicks on human icon",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_human_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@id\u003d\u0027login-item\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SNI330F\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\\Users\\Hp\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:54929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 56174a8baf65e4382e5f521b350779e3\n*** Element info: {Using\u003dxpath, value\u003d//a[@id\u003d\u0027login-item\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage(US_027_AdminPagesStepDefs.java:34)\r\n\tat ✽.FK Admin clicks on sign in button under human icon at homepage(file:///C:/Users/Hp/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US027.feature:45)\r\n",
+              "duration": 15073000000,
+              "status": "failed"
+            },
+            "line": 45,
+            "name": "FK Admin clicks on sign in button under human icon at homepage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "FK Admin sends username \"kfadmin\" and password \"kfadmin\" in sign in page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kfadmin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"kfadmin\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_sends_username_and_password_in_sign_in_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "FK Admin clicks on sign in button in sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_in_sign_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "FK Admin verifies the admin page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_admin_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "FK Admin clicks on items and titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_items_and_titles_dropdown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "FK Admin clicks on messages button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_messages_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "FK Admin verifies the messages page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_messages_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "FK Admin clicks on the edit button in the message page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_the_edit_button_in_the_message_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "FK Admin verifies the Create or edit a Message page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_create_or_edit_a_message_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "FK Admin updates the name \"Admin update\" into name text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin update\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_updates_the_name_into_name_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "FK Admin updates the email \"adminupdate@yahoo.com\" into email text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adminupdate@yahoo.com\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_updates_the_email_into_email_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "FK Admin updates the subject \"Admin updates\" into subject text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin updates\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_updates_the_subject_into_subject_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "FK Admin updates the message \"Admin updates message\" into message text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin updates message\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_updates_the_message_into_message_text_box(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "FK Admin clicks on save button in create or edit a message page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_save_button_in_create_or_edit_a_message_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "FK Admin verifies successfully updated message is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_successfully_updated_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US027"
+          },
+          {
+            "name": "@US027_TC003"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T15:01:43.131Z",
+        "line": 67,
+        "name": "Admin should be able to delete messages",
+        "description": "",
+        "id": "us027-admin-should-be-able-to-go-to-messages-portal-and-view-all-messages--their-authors-and-emails;admin-should-be-able-to-delete-messages",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 408000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "FK Admin navigates to Medunna home page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_navigates_to_medunna_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2086000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "FK Admin clicks on human icon",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_human_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@id\u003d\u0027login-item\u0027]\"}\n  (Session info: chrome\u003d103.0.5060.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-SNI330F\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_333\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\\Users\\Hp\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:54929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 56174a8baf65e4382e5f521b350779e3\n*** Element info: {Using\u003dxpath, value\u003d//a[@id\u003d\u0027login-item\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage(US_027_AdminPagesStepDefs.java:34)\r\n\tat ✽.FK Admin clicks on sign in button under human icon at homepage(file:///C:/Users/Hp/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US027.feature:70)\r\n",
+              "duration": 15045000000,
+              "status": "failed"
+            },
+            "line": 70,
+            "name": "FK Admin clicks on sign in button under human icon at homepage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 71,
+            "name": "FK Admin sends username \"kfadmin\" and password \"kfadmin\" in sign in page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kfadmin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"kfadmin\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_sends_username_and_password_in_sign_in_page(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "FK Admin clicks on sign in button in sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_in_sign_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "FK Admin verifies the admin page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_admin_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "FK Admin clicks on items and titles dropdown",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_items_and_titles_dropdown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "FK Admin clicks on messages button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_messages_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "FK Admin verifies the messages page is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_messages_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "FK Admin clicks on the delete button in the message page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_the_delete_button_in_the_message_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "FK Admin verifies the delete confirmation toast container is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_delete_confirmation_toast_container_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "FK Admin clicks the delete button in the toast container",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_the_delete_button_in_the_toast_container()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "FK Admin verifies successfully deleted message is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_successfully_deleted_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US027"
+          },
+          {
+            "name": "@US027_TC004"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T15:02:00.702Z",
+        "before": [
+          {
+            "result": {
+              "duration": 469000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 83,
+        "name": "Admin should validate creating messages using API",
+        "description": "",
+        "id": "us027-admin-should-be-able-to-go-to-messages-portal-and-view-all-messages--their-authors-and-emails;admin-should-validate-creating-messages-using-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 140000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "FK Admin set the path params for message",
+            "match": {
+              "location": "stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_set_the_path_params_for_message()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "FK Admin enters expected data for message",
+            "match": {
+              "location": "stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_enters_expected_data_for_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4564000000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "FK Admin sends POST request and receives response for message",
+            "match": {
+              "location": "stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_sends_post_request_and_receives_response_for_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "FK Admin save all aappii information for message",
+            "match": {
+              "location": "stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_save_all_aappii_information_for_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "FK Admin verify aappii records for message",
+            "match": {
+              "location": "stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_verify_aappii_records_for_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US027"
+          },
+          {
+            "name": "@US027_TC005"
+          },
+          {
+            "name": "@Api"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T15:02:05.953Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1297000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Hooks.setUpDb()"
+            }
+          }
+        ],
+        "line": 92,
+        "name": "Admin should validate messages with DB",
+        "description": "",
+        "id": "us027-admin-should-be-able-to-go-to-messages-portal-and-view-all-messages--their-authors-and-emails;admin-should-validate-messages-with-db",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1189000000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "FK Admin connects to the database",
+            "match": {
+              "location": "stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_connects_to_the_database()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 172000000,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "FK Admin creates a new message data with these values \"\u002778055\u0027,\u0027admin dbde\u0027,\u0027admindbde@yahoo.com\u0027,\u0027admindb\u0027,\u0027admin databasede\u0027\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u002778055\u0027,\u0027admin dbde\u0027,\u0027admindbde@yahoo.com\u0027,\u0027admindb\u0027,\u0027admin databasede\u0027\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_creates_a_new_message_data_with_these_values(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 313000000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "FK Admin reads all of the \"message\" column data from \"cmessage\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"message\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"cmessage\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_reads_all_of_the_column_data_from_table(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1499000000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "FK Admin reads all of the \"select * from cmessage\" and \"id\" and \"name\" and \"email\" and \"subject\" and \"message\" column data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"select * from cmessage\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"id\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"name\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"email\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"subject\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"message\"",
+                  "offset": 101
+                }
+              ],
+              "location": "stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_reads_all_of_the_and_and_and_and_and_column_data(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "FK Admin verifies the creation is successfull using DB",
+            "match": {
+              "location": "stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_verifies_the_creation_is_successfull_using_db()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US027"
+          },
+          {
+            "name": "@US027_TC006"
+          },
+          {
+            "name": "@Db"
           }
         ]
       }
     ],
-    "name": "US10_DB validation",
+    "name": "US027 Admin should be able to go to messages portal and view all messages, their authors and emails",
     "description": "",
-    "id": "us10-db-validation",
+    "id": "us027-admin-should-be-able-to-go-to-messages-portal-and-view-all-messages--their-authors-and-emails",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DBFeatures/US10_DB_Appointment.feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US027.feature",
     "tags": [
       {
-        "name": "@team87",
+        "name": "@US027",
         "type": "Tag",
         "location": {
           "line": 1,

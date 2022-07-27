@@ -18,12 +18,12 @@ Feature: US02_Choose a username that can contain any chars, but it cannot be bla
 
     Examples: test data for applicants
       | ssn         | firstname | lastname | username                         | email                      | password | passwordconfirm |
-      | 281-13-5239 | Mario     | Costa    | abcdefghijklmn111213             | 31211mariocosta@gmail.com  | 1234     | 1234            |
-      | 382-13-5239 | Mario     | Costa    | opqrstuvwxyz111213               | 31211mariocosta1@gmail.com | 1234     | 1234            |
-      | 483-13-5239 | Mario     | Costa    | 1234567890111213                 | 31211mariocosta2@gmail.com | 1234     | 1234            |
-      | 584-13-5239 | Mario     | Costa    | !@#$%^&*()_+-=";':./,\<>{}111213 | 31211mariocosta3@gmail.com | 1234     | 1234            |
-      | 685-13-5239 | Mario     | Costa    | ABCDEFGHIJKLMN111213             | 31211mariocosta4@gmail.com | 1234     | 1234            |
-      | 786-12-5239 | Mario     | Costa    | OPQRSTUVWXYZ111213               | 31211mariocosta5@gmail.com | 1234     | 1234            |
+      | 281-13-5243 | Mario     | Costa    | abcdefghijklmn994             | 994mariocosta@gmail.com  | 1234     | 1234            |
+      | 382-13-5243 | Mario     | Costa    | opqrstuvwxyz994             | 994mariocosta1@gmail.com | 1234     | 1234            |
+      | 483-13-5243 | Mario     | Costa    | 123456789011194                 | 994mariocosta2@gmail.com | 1234     | 1234            |
+      | 584-13-5243 | Mario     | Costa    | !@#*_+-=";':./?!?!           | 994mariocosta3@gmail.com | 1234     | 1234            |
+      | 685-13-5243 | Mario     | Costa    | ABCDEFGHIJKLMN11994             | 994mariocosta4@gmail.com | 1234     | 1234            |
+      | 786-12-5243 | Mario     | Costa    | OPQRSTUVWXYZ111994               | 994mariocosta5@gmail.com | 1234     | 1234            |
 
 
   @US02 @US_002_TC_002 @ui @team87
@@ -57,7 +57,7 @@ Feature: US02_Choose a username that can contain any chars, but it cannot be bla
 
     Examples: test data for applicants
       | ssn         | firstname | lastname  | username      | email                      | password | passwordconfirm |
-      | 358-74-4225 | Stefan    | Soluchkov | kurrupt818217 | soluchkow1221217@gmail.com | 369369   | 369369          |
+      | 358-74-4229 | Stefan    | Soluchkov | kurrupt993 | soluchkow993@gmail.com | 369369   | 369369          |
 
 
   @US02 @US_002_TC_004 @ui @team87

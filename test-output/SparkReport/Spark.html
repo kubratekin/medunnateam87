@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 25, 2022 06:01:20 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 27, 2022 06:00:42 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 25, 2022 06:01:20 PM</h3>
+<h3>Jul 27, 2022 06:00:42 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 25, 2022 06:01:31 PM</h3>
+<h3>Jul 27, 2022 06:02:10 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='50%'><b>3</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='50%'><b>3</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='38%'><b>26</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='4%'><b>3</b> steps failed,
+<b>38</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"US10_DB validation":9.775
+"US027 Admin should be able to go to messages portal and view all messages, their authors and emails":87.214
 };
 </script>
 <div class="row">
@@ -172,7 +177,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@team87</td>
+<td>@Db</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -180,7 +185,63 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@US10_DB</td>
+<td>@US027</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@US027_TC002</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US027_TC003</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US027_TC001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US027_TC004</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US027_TC006</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Api</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US027_TC005</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -210,21 +271,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 3,
+failChild: 3,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
-failGrandChild: 0,
+passGrandChild: 26,
+failGrandChild: 3,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 38,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -238,7 +299,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -246,31 +307,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@team87</a><a class="dropdown-item" href="#">@US10_DB</a>
+<a class="dropdown-item" href="#">@Db</a><a class="dropdown-item" href="#">@US027</a><a class="dropdown-item" href="#">@US027_TC002</a><a class="dropdown-item" href="#">@US027_TC003</a><a class="dropdown-item" href="#">@US027_TC001</a><a class="dropdown-item" href="#">@US027_TC004</a><a class="dropdown-item" href="#">@US027_TC006</a><a class="dropdown-item" href="#">@Api</a><a class="dropdown-item" href="#">@US027_TC005</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">US10_DB validation</p>
+            <p class="name">US027 Admin should be able to go to messages portal and view all messages, their authors and emails</p>
             <p class="text-sm">
-              <span>6:01:21 PM</span> / <span>00:00:09:775</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>6:00:43 PM</span> / <span>00:01:27:214</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">US10_DB validation</h5>
-<span class='badge badge-success'>07.25.2022 6:01:21 PM</span>
-<span class='badge badge-danger'>07.25.2022 6:01:31 PM</span>
-<span class='badge badge-default'>00:00:09:775</span>
+<h5 class="test-status text-fail">US027 Admin should be able to go to messages portal and view all messages, their authors and emails</h5>
+<span class='badge badge-success'>07.27.2022 6:00:43 PM</span>
+<span class='badge badge-danger'>07.27.2022 6:02:10 PM</span>
+<span class='badge badge-default'>00:01:27:214</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,23 +343,502 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User tests Appointment DB</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Admin verifies all names, emails and messages are displayed</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.dbsteps.US10_DBstepDef.userConnectsToDatabase()">
-                <span>Given User connects to database</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_navigates_to_medunna_home_page()">
+                <span>Given FK Admin navigates to Medunna home page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.dbsteps.US10_DBstepDef.userGetsAppointment(java.lang.String)">
-                <span>Then User gets appointment "status"</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_human_icon()">
+                <span>And FK Admin clicks on human icon</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.dbsteps.US10_DBstepDef.userVerifiesTheByDB(java.lang.String)">
-                <span>And User verifies the "PENDING" by DB</span>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage()">
+                <span>And FK Admin clicks on sign in button under human icon at homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_sends_username_and_password_in_sign_in_page(java.lang.String,java.lang.String)">
+                <span>And FK Admin sends username "kfadmin" and password "kfadmin" in sign in page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_in_sign_in_page()">
+                <span>And FK Admin clicks on sign in button in sign in page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_admin_page_is_displayed()">
+                <span>Then FK Admin verifies the admin page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_items_and_titles_dropdown()">
+                <span>Then FK Admin clicks on items and titles dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_messages_button()">
+                <span>Given FK Admin clicks on messages button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_messages_page_is_displayed()">
+                <span>Then FK Admin verifies the messages page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_all_names_emails_and_messages_are_displayed()">
+                <span>Then FK Admin verifies all names, emails and messages are displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>Admin should be able to create messages</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Admin should be able to create messages</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given FK Admin navigates to Medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And FK Admin clicks on human icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And FK Admin clicks on sign in button under human icon at homepage</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='login-item']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SNI330F', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56174a8baf65e4382e5f521b350779e3
+*** Element info: {Using=xpath, value=//a[@id='login-item']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage(US_027_AdminPagesStepDefs.java:34)
+	at ✽.FK Admin clicks on sign in button under human icon at homepage(file:///C:/Users/Hp/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US027.feature:21)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin sends username "kfadmin" and password "kfadmin" in sign in page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on sign in button in sign in page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies the admin page is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin clicks on items and titles dropdown</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on messages button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies the messages page is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on the create a new message button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies the Create or edit a Message page is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin enters name "Admin Message" into name text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin enters email "adminmessage@yahoo.com" into email text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin enters subject "Admin creates" into subject text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin enters message "Admin creates message" into message text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on save button in create or edit a message page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies successfully created message is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log fail-bg mr-2">Fail</span>Admin should be able to update messages</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="33"><span class="badge log fail-bg mr-2">Fail</span>Admin should be able to update messages</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given FK Admin navigates to Medunna home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And FK Admin clicks on human icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And FK Admin clicks on sign in button under human icon at homepage</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='login-item']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SNI330F', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56174a8baf65e4382e5f521b350779e3
+*** Element info: {Using=xpath, value=//a[@id='login-item']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage(US_027_AdminPagesStepDefs.java:34)
+	at ✽.FK Admin clicks on sign in button under human icon at homepage(file:///C:/Users/Hp/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US027.feature:45)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin sends username "kfadmin" and password "kfadmin" in sign in page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on sign in button in sign in page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies the admin page is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin clicks on items and titles dropdown</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on messages button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies the messages page is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on the edit button in the message page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies the Create or edit a Message page is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin updates the name "Admin update" into name text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin updates the email "adminupdate@yahoo.com" into email text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin updates the subject "Admin updates" into subject text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin updates the message "Admin updates message" into message text box</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And FK Admin clicks on save button in create or edit a message page</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then FK Admin verifies successfully updated message is displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log fail-bg mr-2">Fail</span>Admin should be able to delete messages</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_navigates_to_medunna_home_page()">
+                <span>Given FK Admin navigates to Medunna home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_human_icon()">
+                <span>And FK Admin clicks on human icon</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage()">
+                <span>And FK Admin clicks on sign in button under human icon at homepage</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='login-item']"}
+  (Session info: chrome=103.0.5060.134)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-SNI330F', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56174a8baf65e4382e5f521b350779e3
+*** Element info: {Using=xpath, value=//a[@id='login-item']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage(US_027_AdminPagesStepDefs.java:34)
+	at ✽.FK Admin clicks on sign in button under human icon at homepage(file:///C:/Users/Hp/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US027.feature:70)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_sends_username_and_password_in_sign_in_page(java.lang.String,java.lang.String)">
+                <span>And FK Admin sends username "kfadmin" and password "kfadmin" in sign in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_sign_in_button_in_sign_in_page()">
+                <span>And FK Admin clicks on sign in button in sign in page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_admin_page_is_displayed()">
+                <span>Then FK Admin verifies the admin page is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_items_and_titles_dropdown()">
+                <span>Then FK Admin clicks on items and titles dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_messages_button()">
+                <span>And FK Admin clicks on messages button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_messages_page_is_displayed()">
+                <span>Then FK Admin verifies the messages page is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_on_the_delete_button_in_the_message_page()">
+                <span>And FK Admin clicks on the delete button in the message page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_the_delete_confirmation_toast_container_is_displayed()">
+                <span>Then FK Admin verifies the delete confirmation toast container is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_clicks_the_delete_button_in_the_toast_container()">
+                <span>And FK Admin clicks the delete button in the toast container</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.uisteps.US_027_AdminPagesStepDefs.fk_admin_verifies_successfully_deleted_message_is_displayed()">
+                <span>Then FK Admin verifies successfully deleted message is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Admin should validate creating messages using API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_set_the_path_params_for_message()">
+                <span>Given FK Admin set the path params for message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_enters_expected_data_for_message()">
+                <span>And FK Admin enters expected data for message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_sends_post_request_and_receives_response_for_message()">
+                <span>And FK Admin sends POST request and receives response for message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_save_all_aappii_information_for_message()">
+                <span>Then FK Admin save all aappii information for message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.apisteps.US_027ApiStepDefs.fk_admin_verify_aappii_records_for_message()">
+                <span>Then FK Admin verify aappii records for message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>Admin should validate messages with DB</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_connects_to_the_database()">
+                <span>Given FK Admin connects to the database</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_creates_a_new_message_data_with_these_values(java.lang.String)">
+                <span>And FK Admin creates a new message data with these values "'78055','admin dbde','admindbde@yahoo.com','admindb','admin databasede'"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_reads_all_of_the_column_data_from_table(java.lang.String,java.lang.String)">
+                <span>And FK Admin reads all of the "message" column data from "cmessage" table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_reads_all_of_the_and_and_and_and_and_column_data(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And FK Admin reads all of the "select * from cmessage" and "id" and "name" and "email" and "subject" and "message" column data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.dbsteps.US_027_DbStepDefs.fk_admin_verifies_the_creation_is_successfull_using_db()">
+                <span>Then FK Admin verifies the creation is successfull using DB</span>
       <div>
       </div>
               </div>
@@ -321,7 +861,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">9</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -330,12 +870,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@team87</p>
+<p class="name">@Db</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@team87</h4>
+<h4>@Db</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -349,11 +889,171 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:01:21 PM</td>
+<td>18:02:05 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>User tests Appointment DB</a>
+<a href="#" class="linked" test-id='1' id='72'>Admin should validate messages with DB</a>
 <div class="">
-<span class="badge badge-default">US10_DB validation.User tests Appointment DB</span>
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should validate messages with DB</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@US027</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US027</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:00:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Admin verifies all names, emails and messages are displayed</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin verifies all names, emails and messages are displayed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Admin should be able to create messages</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to create messages</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Admin should be able to update messages</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to update messages</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>Admin should be able to delete messages</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to delete messages</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:02:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='65'>Admin should validate creating messages using API</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should validate creating messages using API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:02:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>Admin should validate messages with DB</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should validate messages with DB</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US027_TC002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US027_TC002</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>Admin should be able to create messages</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to create messages</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US027_TC003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US027_TC003</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>Admin should be able to update messages</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to update messages</span>
 </div>
 </td>
 </tr>
@@ -366,12 +1066,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US10_DB</p>
+<p class="name">@US027_TC001</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US10_DB</h4>
+<h4>@US027_TC001</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -385,11 +1085,227 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:01:21 PM</td>
+<td>18:00:43 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>User tests Appointment DB</a>
+<a href="#" class="linked" test-id='1' id='2'>Admin verifies all names, emails and messages are displayed</a>
 <div class="">
-<span class="badge badge-default">US10_DB validation.User tests Appointment DB</span>
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin verifies all names, emails and messages are displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US027_TC004</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US027_TC004</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>Admin should be able to delete messages</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to delete messages</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US027_TC006</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US027_TC006</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:02:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>Admin should validate messages with DB</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should validate messages with DB</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Api</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Api</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:02:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='65'>Admin should validate creating messages using API</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should validate creating messages using API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US027_TC005</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US027_TC005</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:02:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='65'>Admin should validate creating messages using API</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should validate creating messages using API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>And FK Admin clicks on sign in button under human icon at homepage</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to create messages.And FK Admin clicks on sign in button under human icon at homepage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>And FK Admin clicks on sign in button under human icon at homepage</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to update messages.And FK Admin clicks on sign in button under human icon at homepage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:01:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>And FK Admin clicks on sign in button under human icon at homepage</a>
+<div class="">
+<span class="badge badge-default">US027 Admin should be able to go to messages portal and view all messages, their authors and emails.Admin should be able to delete messages.And FK Admin clicks on sign in button under human icon at homepage</span>
 </div>
 </td>
 </tr>
