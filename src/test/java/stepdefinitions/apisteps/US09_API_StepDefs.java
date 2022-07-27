@@ -10,6 +10,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import pojos.US09_PatientsPojo;
+import pojos.US09_UserPojo;
 import utilities.Authentication;
 import utilities.ConfigReader;
 
@@ -61,6 +62,7 @@ public class US09_API_StepDefs extends Authentication{
     static Response response;
     static Map<String,Object> expectedDataMap;
     static US09_PatientsPojo[] patients;
+    static US09_UserPojo user;
     static US09_PatientsPojo patient;
 
     @Given("User sets the path params to read patient info")
@@ -88,13 +90,13 @@ public class US09_API_StepDefs extends Authentication{
         response.then().assertThat().statusCode(200);
         patients = response.as(US09_PatientsPojo[].class);
         boolean flag = false;
-        for (int i = 0; i < patients.length; i++) {
-            if (patients[i].getFirstName().equals(firstname) &&
-                    patients[i].getLastName().equals(lastname) &&
-                    patients[i].getEmail().equals(email) &&
-                    patients[i].getUser().getSsn().equals(ssn)) {
+        for (US09_PatientsPojo us09_patientsPojo : patients) {
+            if (us09_patientsPojo.getFirstName().equals(firstname) &&
+                    us09_patientsPojo.getLastName().equals(lastname) &&
+                    us09_patientsPojo.getEmail().equals(email) &&
+                    us09_patientsPojo.getUser().getSsn().equals(ssn)) {
                 flag = true;
-                System.out.println(patients[i]);
+                System.out.println(us09_patientsPojo);
             }
         }
         Assert.assertTrue(flag);
@@ -104,26 +106,28 @@ public class US09_API_StepDefs extends Authentication{
     @Given("User sets the path params to create and update patient info")
     public void userSetsThePathParamsToCreateAndUpdatePatientInfo() {
         spec.pathParams("first","api","second","patients");
-
     }
 
     @When("User creates new patient using Post request firstname {string} lastname {string} email {string} ssn {string}")
     public void userCreatesNewPatientUsingPostRequestFirstnameLastnameEmailSsn(String firstname, String lastname, String email, String ssn) throws IOException {
-        patient.setFirstName(firstname);
-        patient.setLastName(lastname);
-        patient.setEmail(email);
-        patient.getUser().setSsn(ssn);
+        user= new US09_UserPojo(firstname,lastname,"team87apiPatient",ssn);
+        patient= new US09_PatientsPojo(firstname,lastname,"1234567890",email);
         response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
                         "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
-                contentType(ContentType.JSON).body(patient).when().post("/{first}/{second}");
+                contentType(ContentType.JSON).body(patient).when().post(ConfigReader.getProperty("patient_endpoint"));
         response.prettyPrint();
         response.then().assertThat().statusCode(201);
-
     }
 
 //    @And("User sends Put request to update patient info firstname {string} lastname {string} email {string} ssn {string}")
 //    public void userSendsPutRequestToUpdatePatientInfoFirstnameLastnameEmailSsn(String firstName, String lastName, String email, String ssn) {
-//
+//        user= new US09_UserPojo(firstName,lastName,"team87apiPatient",ssn);
+//        patient= new US09_PatientsPojo(firstName,lastName,"1234567890",email);
+//        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
+//                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
+//                contentType(ContentType.JSON).body(patient).when().put(ConfigReader.getProperty("patient_endpoint"));
+//        response.prettyPrint();
+//        response.then().assertThat().statusCode(201);
 //    }
 //
 //    @Then("User validates patient new info firstname {string} lastname {string} email {string} ssn {string}")

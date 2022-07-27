@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class US09_PatientsPojo {
 
-    private String createdBy;
-    private String createdDate;
+//    private String createdBy;
+//    private String createdDate;
     private String firstName;
     private String lastName;
     private String phone;
@@ -16,9 +16,9 @@ public class US09_PatientsPojo {
     public US09_PatientsPojo() {
     }
 
-    public US09_PatientsPojo(String createdBy, String createdDate, String firstName, String lastName, String phone, String email, US09_UserPojo user) {
-        this.createdBy = createdBy;
-        this.createdDate = createdDate;
+    public US09_PatientsPojo(String firstName, String lastName, String phone, String email) {
+//        this.createdBy = createdBy;
+//        this.createdDate = createdDate;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -26,21 +26,21 @@ public class US09_PatientsPojo {
         this.user = user;
     }
 
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public String getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
-    }
+//    public String getCreatedBy() {
+//        return createdBy;
+//    }
+//
+//    public void setCreatedBy(String createdBy) {
+//        this.createdBy = createdBy;
+//    }
+//
+//    public String getCreatedDate() {
+//        return createdDate;
+//    }
+//
+//    public void setCreatedDate(String createdDate) {
+//        this.createdDate = createdDate;
+//    }
 
     public String getFirstName() {
         return firstName;
@@ -85,8 +85,8 @@ public class US09_PatientsPojo {
     @Override
     public String toString() {
         return "US09_PatientsPojo{" +
-                "createdBy='" + createdBy + '\'' +
-                ", createdDate='" + createdDate + '\'' +
+               // "createdBy='" + createdBy + '\'' +
+             //   ", createdDate='" + createdDate + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", phone='" + phone + '\'' +

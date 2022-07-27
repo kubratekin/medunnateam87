@@ -98,7 +98,6 @@ public class US09_AdminStaffStepDefs {
             nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
             ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
             for (int i = 0; i < nameList.size(); i++) {
-                Driver.wait(1);
                 if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
                     row = i + 1;
                     doWhile=true;
@@ -189,7 +188,6 @@ public class US09_AdminStaffStepDefs {
             nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
             ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
             for (int i = 0; i < nameList.size(); i++) {
-                Driver.wait(1);
                 if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
                     row = i + 1;
                     doWhile=true;
@@ -235,7 +233,6 @@ public class US09_AdminStaffStepDefs {
             nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
             ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
             for (int i = 0; i < nameList.size(); i++) {
-                Driver.wait(1);
                 if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
                     row = i + 1;
                     doWhile=true;
@@ -266,20 +263,43 @@ public class US09_AdminStaffStepDefs {
     //TC06
     @Then("User clicks Edit button Staff")
     public void user_clicks_edit_button_staff(DataTable dataTable) {
-        List<String> ssn=dataTable.row(0);
-        Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,ssn.get(0));
+        List<String> wantedPatient=dataTable.row(0);
+        Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,wantedPatient.get(1));
         Driver.wait(2);
-        Driver.waitAndClick(viewByAdminAndStaffPage.editButton,2);
+        int row = 1;
+        List<WebElement> nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
+        List<WebElement> ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
+                    row = i + 1;
+                    break;
+                }
+            }
+        String xpath = "//tbody/tr["+row+"]/td/div/a[2]/span";
+        WebElement editButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.waitAndClick(editButton,2);
         Driver.wait(1);
+
     }
 
     //TC07
     @Then("User clicks view button Staff")
     public void user_clicks_view_button_staff(DataTable dataTable) {
-        List<String> ssn=dataTable.row(0);
-        Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,ssn.get(0));
+        List<String> wantedPatient=dataTable.row(0);
+        Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,wantedPatient.get(1));
         Driver.wait(2);
-        Driver.waitAndClick(viewByAdminAndStaffPage.viewButton,2);
+        int row = 1;
+        List<WebElement> nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
+        List<WebElement> ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
+        for (int i = 0; i < nameList.size(); i++) {
+            if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
+                row = i + 1;
+                break;
+            }
+        }
+        String xpath = "//tbody/tr["+row+"]/td/div/a[1]/span";
+        WebElement viewButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.waitAndClick(viewButton,2);
         Driver.wait(1);
     }
 

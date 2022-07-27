@@ -74,7 +74,7 @@ Feature: US_09
     When User navigate to Patients information page from Staff page
     Then User verifies that landed at Patients information page
     And User clicks Edit button Staff
-      |879-99-9998|
+      |Sarah3|879-99-9998|
     Then User verifies Create or edit a Patient page is opened
     And User writes new informations in each information boxes
       |Sarah4|Watts4|04.04.1987|01:01|1234567894|change87-4|25|Ağrı|
@@ -88,7 +88,7 @@ Feature: US_09
     When User navigate to Patients information page from Staff page
     Then User verifies that landed at Patients information page
     And User clicks view button Staff
-      |879-99-9998|
+      |Sarah4|879-99-9998|
     And User clicks on Edit button
     Then User verifies Create or edit a Patient page is opened
     And User writes new informations in each information boxes
