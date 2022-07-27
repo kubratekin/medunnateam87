@@ -22,7 +22,7 @@ public abstract class Driver {
 //My Driver class is abstract so I do not create an object of this class
 //TestBase class is also abstract
 
-    private static int timeout = 5;
+    private static final int timeout = 5;
     private Driver(){
     }
     private static WebDriver driver;
@@ -56,6 +56,43 @@ public abstract class Driver {
 
             }
         }
+        assert driver != null;
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        return driver;
+    }
+
+    public static WebDriver getDriver2(String browser){
+        if(driver==null) {
+            switch (browser) {
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+
+                case "ie":
+                    WebDriverManager.iedriver().setup();
+                    driver = new InternetExplorerDriver();
+                    break;
+
+                case "chrome-headless":
+//                    WebDriverManager.chromedriver().setup();
+//                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    WebDriverManager.chromedriver().setup();
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("headless");
+                    options.addArguments("disable-gpu");
+                    driver = new ChromeDriver(options);
+                    break;
+
+            }
+        }
+        assert driver != null;
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         return driver;
@@ -339,4 +376,6 @@ public abstract class Driver {
         JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
         jsexecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+
 }

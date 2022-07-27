@@ -19,12 +19,12 @@ public class US13_StepDefs {
     @When("User clicks on account menu")
     public void user_clicks_on_account_menu() {
 
-        Driver.waitAndClick(us12And13Pages.accountMenu);
+        Driver.waitAndClick(us12And13Pages.accountMenu,2);
     }
     @Then("User clicks on signin")
     public void user_clicks_on_signin() {
 
-        Driver.waitAndClick(us12And13Pages.loginItem);
+        Driver.waitAndClick(us12And13Pages.loginItem,2);
     }
     @Then("User enters username")
     public void user_enters_username() {
@@ -46,11 +46,11 @@ public class US13_StepDefs {
     }
     @Then("Doctor clicks on mypage")
     public void doctor_clicks_on_mypage() {
-        Driver.waitAndClick(us12And13Pages.myPage);
+        Driver.waitAndClick(us12And13Pages.myPage,2);
     }
     @Then("Doctor clicks on myaccountement")
     public void doctor_clicks_on_myaccountement() {
-        Driver.waitAndClick(us12And13Pages.myAppointement);
+        Driver.waitAndClick(us12And13Pages.myAppointement,2);
     }
     @Then("Doctor verifies Appointement page is displayed")
     public void doctor_verifies_appointement_page_is_displayed() {
@@ -59,7 +59,7 @@ public class US13_StepDefs {
     @Then("Doctor clicks on Edit button")
     public void doctor_clicks_on_edit_button() throws InterruptedException {
         Thread.sleep(2000);
-        Driver.waitAndClick(us12And13Pages.editButton);
+        Driver.waitAndClick(us12And13Pages.editButton,2);
     }
     @Then("Doctor clicks on one of the Show Test Result button.")
     public void doctor_clicks_on_one_of_the_show_test_result_button() throws InterruptedException {
@@ -70,7 +70,7 @@ public class US13_StepDefs {
     @Then("Doctor clicks on one of the View Results button.")
     public void doctor_clicks_on_one_of_the_view_results_button() throws InterruptedException {
         Thread.sleep(1000);
-        Driver.waitAndClick(us12And13Pages.viewResultButton);
+        Driver.waitAndClick(us12And13Pages.viewResultButton,2);
     }
     @Then("Doctor verifies that the Test Results page is displayed.")
     public void doctor_verifies_that_the_test_results_page_is_displayed() {
@@ -84,7 +84,7 @@ public class US13_StepDefs {
         Driver.waitForVisibility(us12And13Pages.testResultHeadingList,2);
         String strOfList = "ID Name Result Default Min. Value Default Max. Value Test Description Date";
         String actuelStrOfList= us12And13Pages.testResultHeadingList.getText();
-        Assert.assertTrue(strOfList.equals(actuelStrOfList));
+        Assert.assertEquals(strOfList, actuelStrOfList);
     }
     @Then("Doctor closes the browser")
     public void doctor_closes_the_browser() {
@@ -100,11 +100,11 @@ public class US13_StepDefs {
         Thread.sleep(1000);
         try {
             Thread.sleep(1000);
-            Boolean result = us12And13Pages.InpatientRequestDoneAlertSuccessMessage.isDisplayed();
+            boolean result = us12And13Pages.InpatientRequestDoneAlertSuccessMessage.isDisplayed();
             Assert.assertTrue(result);
 
         }catch (NoSuchElementException e){
-            Boolean result = us12And13Pages.InpatientRequestDoneAlertErrorMessage.isDisplayed();
+            boolean result = us12And13Pages.InpatientRequestDoneAlertErrorMessage.isDisplayed();
             Assert.assertTrue(result);
         }
     }

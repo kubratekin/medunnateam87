@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.043">
+<testcase classname="US25_AppointmentOnPortal" name="TC08" time="21.966">
+<system-out><![CDATA[Given user goes to Medunna webpage..........................................passed
+When navigate to Sign in page...............................................passed
+When user enters "ali6589" and "1234" clicks sign in........................passed
+And user clicks to Make an appointment button under My Pages menu...........passed
+And user provides the "123-457-7896" phone number...........................passed
+And user selects future date................................................passed
+And user click Send an Appointment Request..................................passed
+Then verify Appointment registration saved! We will call you as soon as possible. is displayed.passed
+When navigate to My Appointments............................................passed
+Then verify that the created Appointment is displayed.......................passed
+And close the application...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

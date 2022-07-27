@@ -10,7 +10,6 @@ Feature: US02_API_email should be validated with API
 
 
   @US02 @US_002_TC_015
- # Feature: username should be validated with API
 
   Scenario: username should be validated with API
     Given user sends POST request to get Bearer Token
