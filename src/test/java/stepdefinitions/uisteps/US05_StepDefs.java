@@ -172,6 +172,7 @@ public void user_verifies_if_navigated_to_the_appointment_page() {
 
     @Then("user gets Phone number is invalid error message")
     public void user_gets_phone_number_is_invalid_error_message() {
+        Driver.wait(1);
         Assert.assertTrue(appointmentPage.phoneInvalid.isDisplayed());
     }
 
@@ -179,11 +180,6 @@ public void user_verifies_if_navigated_to_the_appointment_page() {
     public void userGetsPhoneNumberIsRequiredErrorMessage() {
         Assert.assertTrue(appointmentPage.phoneRequired.isDisplayed());
     }
-
-
-
-
-
 
     @When("user provides the {string} Email")
     public void user_provides_the_email(String email) {

@@ -1,0 +1,209 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "open medunna page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8321000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Medunna webpage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US05_StepDefs.user_goes_to_medunna_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 393000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to Sign in page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US05_StepDefs.navigate_to_sign_in_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-27T19:14:00.260Z",
+        "line": 112,
+        "name": "TC08",
+        "description": "",
+        "id": "us25-appointmentonportal;tc08;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 610000000,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "user enters \"ali6589\" and \"1234\" clicks sign in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ali6589\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"1234\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US25_StepDefs.user_enters_and_clicks_sign_in(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1341000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "user clicks to Make an appointment button under My Pages menu",
+            "match": {
+              "location": "stepdefinitions.uisteps.US25_StepDefs.user_clicks_to_make_an_appointment_button_under_my_pages_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "user provides the \"123-457-7896\" phone number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-457-7896\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US05_StepDefs.user_provides_the_phone_number(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "user selects future date",
+            "match": {
+              "location": "stepdefinitions.uisteps.US25_StepDefs.user_can_select_future_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "user click Send an Appointment Request",
+            "match": {
+              "location": "stepdefinitions.uisteps.US07_AppointmentUIStepDef.user_click_send_an_appointment_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3129000000,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "verify Appointment registration saved! We will call you as soon as possible. is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US05_StepDefs.verify_appointment_registration_saved_we_will_call_you_as_soon_as_possible_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2298000000,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "navigate to My Appointments",
+            "match": {
+              "location": "stepdefinitions.uisteps.US05_StepDefs.navigate_to_my_appointments()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4138000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "verify that the created Appointment is displayed",
+            "match": {
+              "location": "stepdefinitions.uisteps.US25_StepDefs.verifyThatTheCreatedAppointmentIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 864000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "close the application",
+            "match": {
+              "location": "stepdefinitions.uisteps.US08_UserPasswordStepDefs.close_the_application()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@team87"
+          },
+          {
+            "name": "@US25"
+          },
+          {
+            "name": "@US25_TC08"
+          }
+        ]
+      }
+    ],
+    "name": "US25_AppointmentOnPortal",
+    "description": "",
+    "id": "us25-appointmentonportal",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UIFeatures/US25_AppointmentOnPortal.feature",
+    "tags": [
+      {
+        "name": "@team87",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@US25",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 9
+        }
+      }
+    ]
+  }
+]

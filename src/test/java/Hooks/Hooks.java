@@ -5,8 +5,12 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import utilities.ConfigReader;
+import utilities.DBUtils;
 import utilities.Driver;
+
 
 import java.io.IOException;
 
@@ -28,19 +32,36 @@ public class Hooks {
 //        Driver.getDriver().get("https://medunna.com/account/register");
 //    }
 
-    @Before
-    public void setUp(){
-
-    }
     public static RequestSpecification spec;
-    @Before(value="@US01_TC12")
-    public void setup(){
-        spec= new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
+
+    @Before(value="@Api")
+    public void setUp(){
+        spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("medunnaUrl")).build();
     }
 
-    @After(order=3, value="@UIregistration")
-    public void tearDown(Scenario scenario) throws IOException {
-        System.out.println();
+    @Before(value="@Db")
+    public void setUpDb(){
+        DBUtils.createConnection();
+    }
+
+    @Before(order = 1, value = "@UIRegistration")
+    public void navigateToRegistration(){
+        Driver.getDriver().get(ConfigReader.getProperty("medunnaRegistration"));
+    }
+
+
+    @After(value="~Api")
+    public void tearDown(Scenario scenario){
+
+        if (scenario.isFailed()) {
+            final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png","screenshots");
+            Driver.getDriver().get("https://www.medunna.com/logout");
+        }
+
+        Driver.closeDriver();
+    }
+}
 //////        System.out.println("This is hooks after method");
 //////        Getting the screenshot: getScreenshotAs method takes the screenshot
 //        final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -50,12 +71,12 @@ public class Hooks {
 //            scenario.attach(screenshot, "image/png", "Screenshot");
 //        }
 
-    }
-    @Before(order=1, value="@NewApplicant")
-    public void navigateToRegistration() {
 
-        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
-    }
+//    @Before(order=1, value="@NewApplicant")
+//    public void navigateToRegistration() {
+//
+//        Driver.getDriver().get(ConfigReader.getProperty("registrant_endpoint"));
+//    }
 
 
-}
+
