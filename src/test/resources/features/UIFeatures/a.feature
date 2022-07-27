@@ -1,6 +1,6 @@
 @team87
 Feature: US22wer
-
+   @tag
   Scenario Outline: User can search patients by SSN
     Given User staff goes to Medunna HomePage
     Then User staff logs on
@@ -20,7 +20,7 @@ Feature: US22wer
 
       |username|password|
       |NoEraseStaff|1staff1|
-
+  @tag
   Scenario Outline: User can check and describe results
     Given User staff goes to Medunna HomePage
     Then User staff logs on
