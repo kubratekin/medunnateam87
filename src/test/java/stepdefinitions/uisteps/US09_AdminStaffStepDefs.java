@@ -5,6 +5,7 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import pages.*;
 import utilities.ConfigReader;
@@ -13,6 +14,7 @@ import utilities.ReusableMethods;
 import java.util.*;
 
 public class US09_AdminStaffStepDefs {
+/*
     HomePageMedunna homePage = new HomePageMedunna();
     SignInPageMedunna signInPage = new SignInPageMedunna();
     AdminPageMedunna adminPage = new AdminPageMedunna();
@@ -58,7 +60,7 @@ public class US09_AdminStaffStepDefs {
     }
     @Then("User closes the browser")
     public void user_closes_the_browser() {
-        Driver.closeDriver();
+      Driver.closeDriver();
     }
 
     //TC02
@@ -81,8 +83,48 @@ public class US09_AdminStaffStepDefs {
 
     //TC03
     @And("User clicks on ID of patient to go to Patient detail page")
-    public void userClicksOnIDOfPatientToGoToPatientDetailPage() {
-        Driver.waitAndClick(viewByAdminAndStaffPage.idOfFirstPatient,2);
+    public void userClicksOnIDOfPatientToGoToPatientDetailPage(DataTable patient) {
+        List<String> wantedPatient=patient.row(0);
+        //ReusableMethods.findPatientAmongPagesAndClickID(wantedPatient.get(0),wantedPatient.get(1));
+        //Driver.waitAndClick(viewByAdminAndStaffPage.idOfFirstPatient,2);
+        Driver.wait(1);
+        WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
+        WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
+        List<WebElement> nameList;
+        List<WebElement> ssnList;
+        int row = 1;
+        int pagesNumber = Integer.parseInt(Driver.getDriver().findElement(By.xpath("//nav/ul/li[7]")).getText()); // number of last page
+        boolean doWhile = false;        // For breaking the loop
+        do {
+            nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
+            ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
+                    row = i + 1;
+                    doWhile=true;
+                    break;
+                }
+            }
+            if (doWhile){
+                break;
+            }
+            nameList.clear();
+            ssnList.clear();
+            String showingNumberOfItems = Driver.getDriver().findElement(By.xpath("//div/div/span")).getText();  // To be sure that this is page 1 or not.
+            String [] showingNumberOFItems = showingNumberOfItems.split(" ");            // To be sure that this is page 1 or not.
+            if (Integer.parseInt(showingNumberOFItems[1])==1){
+                Driver.waitAndClick(lastPageButton,2);
+            }else {
+                Driver.waitAndClick(previousPageButton,2);
+                pagesNumber--;
+            }
+        } while (pagesNumber>1);
+        Driver.wait(1);
+        String xpath = "//tbody/tr["+row+"]/td[1]/a";
+        WebElement idButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.wait(2);
+        Driver.waitAndClick(idButton,2);
+        Driver.wait(2);
     }
     @And("User clicks on Edit button")
     public void userClicksOnEditButton() {
@@ -90,6 +132,7 @@ public class US09_AdminStaffStepDefs {
     }
     @Then("User verifies Create or edit a Patient page is opened")
     public void userVerifiesCreateOrEditAPatientPageIsOpened() {
+        Driver.wait(1);
         Assert.assertEquals("Create or edit a Patient",createOrEdit.createOrEditTableHeader.getText());
     }
     @And("User writes new informations in each information boxes")
@@ -101,21 +144,26 @@ public class US09_AdminStaffStepDefs {
         Driver.wait(2);
         createOrEdit.lastNameTextBox.clear();
         Driver.waitAndSendText(createOrEdit.lastNameTextBox,newCredentials.get(1));
-        Driver.waitAndSendText(createOrEdit.birthDateTextBox,"01.01.1987 01:01");
+        Driver.waitAndSendText(createOrEdit.birthDateTextBox,newCredentials.get(2)+Keys.ARROW_RIGHT+newCredentials.get(3));
         createOrEdit.emailTextBox.clear();
         Driver.waitAndSendText(createOrEdit.emailTextBox, Faker.instance().internet().emailAddress());
         createOrEdit.phoneTextBox.clear();
-        Driver.waitAndSendText(createOrEdit.phoneTextBox,"1234567890");
+        Driver.waitAndSendText(createOrEdit.phoneTextBox,newCredentials.get(4));
         Driver.selectByIndex(createOrEdit.genderDropdown,1);
         Driver.selectByIndex(createOrEdit.bloodGroupDropdown,3);
         createOrEdit.addressTextBox.clear();
         Driver.waitAndSendText(createOrEdit.addressTextBox,Faker.instance().address().fullAddress());
         createOrEdit.descriptionTextBox.clear();
-        Driver.waitAndSendText(createOrEdit.descriptionTextBox,"change87");
+        Driver.waitAndSendText(createOrEdit.descriptionTextBox,newCredentials.get(5));
         Driver.selectByIndex(createOrEdit.userDropdown,0);
-        Driver.selectByIndex(createOrEdit.countryDropdown,5);
-        Driver.selectByIndex(createOrEdit.stateCityDropdown,0);
+        Driver.wait(1);
+        Driver.selectByIndex(createOrEdit.countryDropdown,2);
+        Driver.wait(1);
+        Driver.selectByIndex(createOrEdit.countryDropdown,Integer.parseInt(newCredentials.get(6)));
+        Driver.wait(1);
+        Driver.selectByVisibleText(createOrEdit.stateCityDropdown,newCredentials.get(7));
         Driver.waitAndClick(createOrEdit.saveButton,2);
+        Driver.wait(1);
     }
     @Then("User verifies that all informations are changed")
     public void userVerifiesThatAllInformationsAreChanged() {
@@ -125,14 +173,135 @@ public class US09_AdminStaffStepDefs {
 
     //TC04
     @And("User clicks Edit button")
-    public void userClicksEditButton() {
-        Driver.waitAndClick(viewByAdminAndStaffPage.editButton,2);
+    public void userClicksEditButton(DataTable patient) {
+        List<String> wantedPatient = patient.row(0);
+//        ReusableMethods.findPatientAmongPagesAndClickEdit(wantedPatient.get(0),wantedPatient.get(1));
+        //Driver.waitAndClick(viewByAdminAndStaffPage.editButton,2);
+        Driver.wait(1);
+        WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
+        WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
+        List<WebElement> nameList;
+        List<WebElement> ssnList;
+        int row = 1;
+        int pagesNumber = Integer.parseInt(Driver.getDriver().findElement(By.xpath("//nav/ul/li[7]")).getText()); // number of last page
+        boolean doWhile = false;        // For breaking the loop
+        do {
+            nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
+            ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
+                    row = i + 1;
+                    doWhile=true;
+                    break;
+                }
+            }
+            if (doWhile){
+                break;
+            }
+            nameList.clear();
+            ssnList.clear();
+            String showingNumberOfItems = Driver.getDriver().findElement(By.xpath("//div/div/span")).getText();  // To be sure that this is page 1 or not.
+            String [] showingNumberOFItems = showingNumberOfItems.split(" ");            // To be sure that this is page 1 or not.
+            if (Integer.parseInt(showingNumberOFItems[1])==1){
+                Driver.waitAndClick(lastPageButton,2);
+            }else {
+                Driver.waitAndClick(previousPageButton,2);
+                pagesNumber--;
+            }
+        } while (pagesNumber>1);
+        String xpath = "//tbody/tr["+row+"]/td/div/a[2]/span";
+        WebElement editButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.wait(2);
+        Driver.waitAndClick(editButton,2);
+        Driver.wait(1);
     }
 
     //TC05
     @And("User clicks view button")
-    public void userClicksViewButton() {
-        Driver.waitAndClick(viewByAdminAndStaffPage.viewButton,2);
+    public void userClicksViewButton(DataTable patient) {
+        List<String> wantedPatient = patient.row(0);
+        //ReusableMethods.findPatientAmongPagesAndClickView(wantedPatient.get(0),wantedPatient.get(1));
+        //Driver.waitAndClick(viewByAdminAndStaffPage.viewButton,2);
+        Driver.wait(1);
+        WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
+        WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
+        List<WebElement> nameList;
+        List<WebElement> ssnList;
+        int row = 1;
+        int pagesNumber = Integer.parseInt(Driver.getDriver().findElement(By.xpath("//nav/ul/li[7]")).getText()); // number of last page
+        boolean doWhile = false;        // For breaking the loop
+        do {
+            nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
+            ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
+                    row = i + 1;
+                    doWhile=true;
+                    break;
+                }
+            }
+            if (doWhile){
+                break;
+            }
+            nameList.clear();
+            ssnList.clear();
+            String showingNumberOfItems = Driver.getDriver().findElement(By.xpath("//div/div/span")).getText();  // To be sure that this is page 1 or not.
+            String [] showingNumberOFItems = showingNumberOfItems.split(" ");            // To be sure that this is page 1 or not.
+            if (Integer.parseInt(showingNumberOFItems[1])==1){
+                Driver.waitAndClick(lastPageButton,2);
+            }else {
+                Driver.waitAndClick(previousPageButton,2);
+                pagesNumber--;
+            }
+        } while (pagesNumber>1);
+        String xpath = "//tbody/tr["+row+"]/td/div/a[1]/span";
+        WebElement viewButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.wait(2);
+        Driver.waitAndClick(viewButton,2);
+        Driver.wait(1);
+    }
+
+    //TC06
+    @Then("User clicks Edit button Staff")
+    public void user_clicks_edit_button_staff(DataTable dataTable) {
+        List<String> wantedPatient=dataTable.row(0);
+        Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,wantedPatient.get(1));
+        Driver.wait(2);
+        int row = 1;
+        List<WebElement> nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
+        List<WebElement> ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
+                    row = i + 1;
+                    break;
+                }
+            }
+        String xpath = "//tbody/tr["+row+"]/td/div/a[2]/span";
+        WebElement editButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.waitAndClick(editButton,2);
+        Driver.wait(1);
+
+    }
+
+    //TC07
+    @Then("User clicks view button Staff")
+    public void user_clicks_view_button_staff(DataTable dataTable) {
+        List<String> wantedPatient=dataTable.row(0);
+        Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,wantedPatient.get(1));
+        Driver.wait(2);
+        int row = 1;
+        List<WebElement> nameList= viewByAdminAndStaffPage.nameList;     // Otherwise it gave exception
+        List<WebElement> ssnList= viewByAdminAndStaffPage.ssnList;       // Otherwise it gave exception
+        for (int i = 0; i < nameList.size(); i++) {
+            if (nameList.get(i).getText().equals(wantedPatient.get(0)) && ssnList.get(i).getText().equals(wantedPatient.get(1))) {
+                row = i + 1;
+                break;
+            }
+        }
+        String xpath = "//tbody/tr["+row+"]/td/div/a[1]/span";
+        WebElement viewButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.waitAndClick(viewButton,2);
+        Driver.wait(1);
     }
 
     //TC08
@@ -193,5 +362,7 @@ public class US09_AdminStaffStepDefs {
     public void userVerifiesAllInformationsAreDeleted() {
         Driver.wait(5);
         Assert.assertTrue(userManagement.deleteSuccessMessage.getText().contains("A Patient is deleted with identifier"));
+
+ */
     }
-}
+
