@@ -12,16 +12,23 @@ public class US01_RegistrantDBSteps {
 
     List<Object> ssnList;
 
-    @Given("user sets a connection with database")
-    public void userSetsAConnectionWithDatabase() {
-        DBUtils.getConnection();
+   // @Given("user sets a connection with database")
+    //public void userSetsAConnectionWithDatabase() {
+      //  DBUtils.getConnection();
 
-    }
+    //}
     @And("user selects all {string} column data")
     public void userSelectsAllColumnData(String ssn) {
         String query = "select * from jhi_user";
         ssnList= DBUtils.getColumnData(query,ssn);
     }
+  //  }
+
+  //  @And("user selects all {string} column data")
+    //public void userSelectsAllColumnData(String ssn) {
+      //  String query = "select * from jhi_user";
+        //ssnList= DBUtils.getColumnData(query,ssn);
+//    }
 
     @Then("user validates registrant {string} ids with database")
     public void userValidatesRegistrantIdsWithDatabase(String ssn) {

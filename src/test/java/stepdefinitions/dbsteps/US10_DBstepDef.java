@@ -17,23 +17,23 @@ public class US10_DBstepDef {
     public void userCreatesAConnectionWithDBUsingAnd(String url, String username, String password) {
     }
 
-/*
-    @Given("user send the to DB  {string} and {string}")
-    public void userSendTheToDBAnd(String query, String columnName) {
-        dbAppointment= DBUtils.getColumnData(query,columnName);
-        System.out.println(dbAppointment);
-    }
+        /*
+            @Given("user send the to DB  {string} and {string}")
+            public void userSendTheToDBAnd(String query, String columnName) {
+                dbAppointment= DBUtils.getColumnData(query,columnName);
+                System.out.println(dbAppointment);
+            }
 
 
-    @Then("user validates DB data")
-    public void userValidatesDBData() {
-        List<String> expectedstatus = new ArrayList<>();
-        expectedstatus.add("COMPLETED");
-        expectedstatus.add("PENDING");
-    }
+            @Then("user validates DB data")
+            public void userValidatesDBData() {
+                List<String> expectedstatus = new ArrayList<>();
+                expectedstatus.add("COMPLETED");
+                expectedstatus.add("PENDING");
+            }
 
 
- */
+         */
 
     @Given("User connects to database")
     public void userConnectsToDatabase() {DBUtils.getConnection();

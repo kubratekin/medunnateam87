@@ -29,7 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="ba1ebaa6-384e-4714-8a3d-363d08d81aa9">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from staff]]></console>
+      <console name="Connection" type="STANDARD" schema="public" session="Main">select * from staff</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
