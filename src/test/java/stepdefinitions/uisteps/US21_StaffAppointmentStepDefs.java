@@ -2,6 +2,7 @@ package stepdefinitions.uisteps;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.*;
@@ -47,9 +48,11 @@ public class US21_StaffAppointmentStepDefs {
     @When("User enters patient SSN {string} in the search box")
     public void user_enters_patient_ssn_in_the_search_box(String ssn) {
         Driver.waitAndSendText(viewByAdminAndStaffPage.ssnSearchBox,ssn,5);
+        Driver.wait(3);
     }
     @When("User clicks Show Appointments")
-    public void user_clicks_show_appointments() {
+    public void user_clicks_show_appointments() throws InterruptedException {
+        Thread.sleep(2000);
         Driver.waitAndClick(viewByAdminAndStaffPage.showAppointmentButton,2);
     }
     @When("User clicks edit and changes status to PENDING")
@@ -104,20 +107,28 @@ public class US21_StaffAppointmentStepDefs {
     }
 
     @When("User clicks edit and selects the appropriate doctor {string} for the patient")
-    public void userClicksEditAndSelectsTheAppropriateDoctorForThePatient(String doctor) {
+    public void userClicksEditAndSelectsTheAppropriateDoctorForThePatient(String doctor) throws InterruptedException {
         Driver.waitAndClick(patientAppointment.editButton,2);
         Driver.wait(2);
         LocalDateTime myDateObj = LocalDateTime.now().plusDays(1);
-        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
         String startDateTime = myDateObj.format(myFormatObj);
-        System.out.println(startDateTime);
-        LocalDateTime endDateObj = LocalDateTime.now().plusDays(1);
-        DateTimeFormatter endFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String startDate = startDateTime.substring(0,11);
+        String startTime = startDateTime.substring(12);
+        System.out.println(startDate);
+        System.out.println(startTime);
+        LocalDateTime endDateObj = LocalDateTime.now().plusDays(1).plusMinutes(2);
+        DateTimeFormatter endFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
         String endDateTime = endDateObj.format(endFormatObj);
-        System.out.println(endDateTime);
-        Driver.waitAndSendText(editAppointment.startDateBox,startDateTime,2);
-        Driver.waitAndSendText(editAppointment.endDateBox,endDateTime,2);
-        Driver.wait(3);
+        String endDate = endDateTime.substring(0,11);
+        String endTime = endDateTime.substring(12);
+        System.out.println(endDate);
+        System.out.println(endTime);
+        Driver.wait(1);
+        Driver.waitAndSendText(editAppointment.startDateBox,startDate + Keys.ARROW_RIGHT + startTime,2);
+        Thread.sleep(2000);
+        Driver.waitAndSendText(editAppointment.endDateBox,endDate + Keys.ARROW_RIGHT + endTime,2);
+        Thread.sleep(3000);
         Driver.selectByVisibleText(editAppointment.physicianDropdown,"102975:team87doctor002 team87doctor002:ALLERGY_IMMUNOLOGY");
         Driver.waitAndClick(editAppointment.saveButton,2);
     }
