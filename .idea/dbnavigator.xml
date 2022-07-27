@@ -17,8 +17,8 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="UTF-8" />
-      <charset value="UTF-8" />
+      <charset value="windows-1254" />
+      <charset value="windows-1254" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -39,6 +39,7 @@
     <connection id="b54426d0-511e-467f-8bcb-fa3be61b605b" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="b54426d0-511e-467f-8bcb-fa3be61b605b" dataset="information_schema.sql_features" active-filter-id="" />
     <filter-actions connection-id="b54426d0-511e-467f-8bcb-fa3be61b605b" dataset="public.jhi_user" active-filter-id="" />
     <filter-actions connection-id="b54426d0-511e-467f-8bcb-fa3be61b605b" dataset="public.jhi_authority" active-filter-id="" />
   </component>
