@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.ConfigReader;
 import utilities.DBUtils;
 import utilities.Driver;
-import utilities.ReusableMethods;
+
 
 import java.io.IOException;
 
