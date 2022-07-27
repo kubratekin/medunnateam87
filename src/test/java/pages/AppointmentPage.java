@@ -84,6 +84,22 @@ public class AppointmentPage {
     @FindBy(id="appointment-heading")
     public WebElement appointmentsTitle;
 
+    @FindBy(xpath = "//h2[text()='Make an Appointment']")
+    public WebElement makeappointmentTitleinPortal;
+
+    @FindBy(id= "fromDate")
+    public WebElement fromDate;
+
+    @FindBy(id= "toDate")
+    public WebElement toDate;
+
+    @FindBy(xpath = "//table/tbody/tr/td[3]")
+    public WebElement startDateTime;
+
+    @FindBy(xpath = "//span[text()='Make an Appointment']")
+    public WebElement makeanAppointmentButton;
+
+
 
 
 
