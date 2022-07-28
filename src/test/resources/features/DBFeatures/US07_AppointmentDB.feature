@@ -1,5 +1,5 @@
 @team87
-Feature: appointment database validation
+Feature: US07_DB_appointment database validation
 
   @AppointmentDatabaseValidation
   Scenario Outline: Validate appointments by id with database

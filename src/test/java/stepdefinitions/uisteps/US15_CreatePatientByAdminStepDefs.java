@@ -49,7 +49,7 @@ public void Go_to_medunna_home_page() {
     @Then("Admin clicks the Create a new Patient Button")
     public void admin_clicks_the_create_a_new_patient_button() {
 
-        Driver.waitAndClick(createPatientPage.createNewPatientButton);
+        Driver.waitAndClick(createPatientPage.createNewPatientButton,2);
     }
 
 //-----------------Login steps----------------
