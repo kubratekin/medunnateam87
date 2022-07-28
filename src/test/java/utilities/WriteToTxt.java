@@ -4,6 +4,8 @@ import pojos.*;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.io.IOException;
+
 
 public class WriteToTxt {
 
@@ -111,23 +113,42 @@ public class WriteToTxt {
         }
     }
 
-    public static void saveRoomData(String roomNumber, int price, String createdDate){
-        try{
+    public static void saveRoomData(String roomNumber, int price, String createdDate) {
+        try {
 
             FileWriter fileWriter = new FileWriter("./src/test/resources/testdata/RoomData.txt", false);
 
             BufferedWriter writer = new BufferedWriter(fileWriter);
 
 
-            writer.append("Room "+roomNumber+"\n");
+            writer.append("Room " + roomNumber + "\n");
 
             writer.close();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+        public static void saveMessagesData(Messages messages){
 
+            try {
+                FileWriter fileWriter = new FileWriter(ConfigReader.getProperty("messagesFile"), true);
+
+
+                BufferedWriter writer = new BufferedWriter(fileWriter);
+
+//            writer.append(registrant.getFirstName() + "," + registrant.getLastName() + ","
+//                            + registrant.getUsername() + "," + registrant.getEmail() + ","
+//                            + registrant.getPassword() + "," + registrant.getSSN() + ", \n");
+
+                writer.append(messages.toString() + ", \n");
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
     }
 
-}
+
+

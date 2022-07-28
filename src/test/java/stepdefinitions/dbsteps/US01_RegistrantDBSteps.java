@@ -16,6 +16,12 @@ public class US01_RegistrantDBSteps {
     //public void userSetsAConnectionWithDatabase() {
       //  DBUtils.getConnection();
 
+    //}
+    @And("user selects all {string} column data")
+    public void userSelectsAllColumnData(String ssn) {
+        String query = "select * from jhi_user";
+        ssnList= DBUtils.getColumnData(query,ssn);
+    }
   //  }
 
   //  @And("user selects all {string} column data")
