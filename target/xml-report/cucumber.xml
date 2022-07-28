@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="76.365">
-<testcase classname="Test_User_Management" name="test" time="75.946">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="58.887">
+<testcase classname="Test_User_Management" name="test" time="58.258">
 <system-out><![CDATA[Given Admin goes to Medunna url.............................................passed
 And Admin clicks on Login Dropdown Icon.....................................passed
 And Admin clicks on SignIn..................................................passed

@@ -47,6 +47,7 @@ public class US10_AppointmentPage {
     @FindBy(xpath = "//select[@id='appointment-status']")
     public WebElement statusapp;
 
+
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement savesubmit;
     // @FindBy(xpath = "//button[@id='save-entity']")

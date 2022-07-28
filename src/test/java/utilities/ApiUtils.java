@@ -7,7 +7,6 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import pojos.US16_Room;
 import pojos.US16_RoomPost;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -106,7 +105,7 @@ public class ApiUtils {
         response = given()
                 .spec(spec)
                 .body(requestBody)
-                 .post(relativePath);
+                .post(relativePath);
     }
     public static void put(String relativePath){
         response = given()
@@ -165,9 +164,7 @@ public class ApiUtils {
     public static void clearApiPool(){
         objectPool.clear();
     }
-
     public static Response getRequest(String token, String endpoint) {
-
         Response response = given().headers(
                 "Authorization",
                 "Bearer " + token,
@@ -175,13 +172,8 @@ public class ApiUtils {
                 ContentType.JSON,
                 "Accept",
                 ContentType.JSON).when().get(endpoint);
-
-
         return response;
-
-
     }
-
     public static Response deleteRequest(String token, String endpoint){
         Response response = given().headers(
                 "Authorization",
@@ -192,12 +184,8 @@ public class ApiUtils {
                 ContentType.JSON).when().delete(endpoint);
         return  response;
     }
-
     public static Response postRequestRoom(String token, String endpoint, US16_RoomPost room) throws Exception {
-
         ObjectMapper obj=new ObjectMapper();
-
-
         Response response = given().headers(
                 "Authorization",
                 "Bearer " + token,
@@ -206,16 +194,9 @@ public class ApiUtils {
                 "Accept",
                 ContentType.JSON).body(obj.writeValueAsString(room)).when().post(endpoint);
         return  response;
-
-
     }
-
-
     public static Response putRequestRoom(String token, String endpoint, US16_Room room) throws Exception {
-
         ObjectMapper obj=new ObjectMapper();
-
-
         Response response = given().headers(
                 "Authorization",
                 "Bearer " + token,
@@ -224,9 +205,5 @@ public class ApiUtils {
                 "Accept",
                 ContentType.JSON).body(obj.writeValueAsString(room)).when().put(endpoint);
         return  response;
-
-
     }
-
 }
-
