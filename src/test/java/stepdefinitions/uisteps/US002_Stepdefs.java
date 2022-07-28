@@ -16,7 +16,7 @@ import utilities.Driver;
 
 
 public class US002_Stepdefs {
-
+/*
     HomePageMedunna homePageMedunna = new HomePageMedunna();
     RegistrationPage registrationPage = new RegistrationPage();
 
@@ -106,6 +106,8 @@ public class US002_Stepdefs {
     @And("user provides the invalid email as {string}")
     public void userProvidesTheInvalidEmailAs(String arg0) {
         registrationPage.emailTextbox.sendKeys(arg0 + Keys.ENTER);
+
+ */
     }
 
 
@@ -113,4 +115,4 @@ public class US002_Stepdefs {
 
 
 
-}
+

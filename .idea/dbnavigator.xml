@@ -17,8 +17,8 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="UTF-8" />
-      <charset value="UTF-8" />
+      <charset value="windows-1254" />
+      <charset value="windows-1254" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -28,16 +28,7 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="b54426d0-511e-467f-8bcb-fa3be61b605b">
-      <console name="Connection 51" type="STANDARD" schema="" session="Main" />
-    </connection>
-    <connection id="c104439b-3ce6-4068-83f7-90b22f9e4d9d">
-      <console name="Medunna DB" type="STANDARD" schema="" session="Main" />
-    </connection>
-    <connection id="14df6f4b-6ee6-445f-aff0-a8b847e84d25">
-      <console name="Medunna DB" type="STANDARD" schema="" session="Main" />
-    </connection>
-    <connection id="7d979907-5740-48b3-a6ad-e6eaf27bcad6">
+    <connection id="ba1ebaa6-384e-4714-8a3d-363d08d81aa9">
       <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
@@ -45,14 +36,7 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="b54426d0-511e-467f-8bcb-fa3be61b605b" />
-    <connection id="c104439b-3ce6-4068-83f7-90b22f9e4d9d" />
-    <connection id="14df6f4b-6ee6-445f-aff0-a8b847e84d25" />
-    <connection id="7d979907-5740-48b3-a6ad-e6eaf27bcad6" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="b54426d0-511e-467f-8bcb-fa3be61b605b" dataset="public.jhi_user" active-filter-id="" />
-    <filter-actions connection-id="b54426d0-511e-467f-8bcb-fa3be61b605b" dataset="public.jhi_authority" active-filter-id="" />
+    <connection id="ba1ebaa6-384e-4714-8a3d-363d08d81aa9" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -83,275 +67,23 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b54426d0-511e-467f-8bcb-fa3be61b605b" active="true" signed="true">
-        <database>
-          <name value="Connection 51" />
-          <description value="" />
-          <database-type value="POSTGRES" />
-          <config-type value="BASIC" />
-          <database-version value="10.15" />
-          <driver-source value="BUILTIN" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="DATABASE" />
-          <host value="medunna.com" />
-          <port value="5432" />
-          <database value="medunna_db" />
-          <type value="USER_PASSWORD" />
-          <user value="medunnadb_user" />
-          <deprecated-pwd value="TWVkdW5uYWRiX0AxMjk=" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <deprecated-proxy-pwd value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="true" />
-          <connect-automatically value="true" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="false" />
-          <environment-type value="default" />
-          <connectivity-timeout value="5" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter>
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-          <object-name-filters />
-        </object-filters>
-      </connection>
-      <connection id="c104439b-3ce6-4068-83f7-90b22f9e4d9d" active="true" signed="true">
-        <database>
-          <name value="Medunna DB" />
-          <description value="" />
-          <database-type value="POSTGRES" />
-          <config-type value="BASIC" />
-          <database-version value="10.15" />
-          <driver-source value="BUILTIN" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="DATABASE" />
-          <host value="medunna.com" />
-          <port value="5432" />
-          <database value="medunna_db" />
-          <type value="USER_PASSWORD" />
-          <user value="medunnadb_user" />
-          <deprecated-pwd value="TWVkdW5uYWRiX0AxMjk=" />
-        </database>
-        <properties>
-          <auto-commit value="true" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <deprecated-proxy-pwd value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="true" />
-          <connect-automatically value="true" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="false" />
-          <environment-type value="default" />
-          <connectivity-timeout value="5" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter>
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-          <object-name-filters />
-        </object-filters>
-      </connection>
-      <connection id="14df6f4b-6ee6-445f-aff0-a8b847e84d25" active="true" signed="true">
-        <database>
-          <name value="Medunna DB" />
-          <description value="" />
-          <database-type value="POSTGRES" />
-          <config-type value="BASIC" />
-          <database-version value="10.15" />
-          <driver-source value="BUILTIN" />
-          <driver-library value="" />
-          <driver value="" />
-          <url-type value="DATABASE" />
-          <host value="medunna.com" />
-          <port value="5432" />
-          <database value="medunna_db" />
-          <type value="USER_PASSWORD" />
-          <user value="medunnadb_user" />
-          <deprecated-pwd value="TWVkdW5uYWRiX0AxMjk=" />
-        </database>
-        <properties>
-          <auto-commit value="false" />
-        </properties>
-        <ssh-settings>
-          <active value="false" />
-          <proxy-host value="" />
-          <proxy-port value="22" />
-          <proxy-user value="" />
-          <deprecated-proxy-pwd value="" />
-          <auth-type value="PASSWORD" />
-          <key-file value="" />
-          <key-passphrase value="" />
-        </ssh-settings>
-        <ssl-settings>
-          <active value="false" />
-          <certificate-authority-file value="" />
-          <client-certificate-file value="" />
-          <client-key-file value="" />
-        </ssl-settings>
-        <details>
-          <charset value="UTF-8" />
-          <session-management value="true" />
-          <ddl-file-binding value="true" />
-          <database-logging value="true" />
-          <connect-automatically value="false" />
-          <restore-workspace value="true" />
-          <restore-workspace-deep value="false" />
-          <environment-type value="default" />
-          <connectivity-timeout value="5" />
-          <idle-time-to-disconnect value="30" />
-          <idle-time-to-disconnect-pool value="5" />
-          <credential-expiry-time value="10" />
-          <max-connection-pool-size value="7" />
-          <alternative-statement-delimiter value="" />
-        </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter>
-            <object-type name="SCHEMA" enabled="true" />
-            <object-type name="USER" enabled="true" />
-            <object-type name="ROLE" enabled="true" />
-            <object-type name="PRIVILEGE" enabled="true" />
-            <object-type name="CHARSET" enabled="true" />
-            <object-type name="TABLE" enabled="true" />
-            <object-type name="VIEW" enabled="true" />
-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
-            <object-type name="NESTED_TABLE" enabled="true" />
-            <object-type name="COLUMN" enabled="true" />
-            <object-type name="INDEX" enabled="true" />
-            <object-type name="CONSTRAINT" enabled="true" />
-            <object-type name="DATASET_TRIGGER" enabled="true" />
-            <object-type name="DATABASE_TRIGGER" enabled="true" />
-            <object-type name="SYNONYM" enabled="true" />
-            <object-type name="SEQUENCE" enabled="true" />
-            <object-type name="PROCEDURE" enabled="true" />
-            <object-type name="FUNCTION" enabled="true" />
-            <object-type name="PACKAGE" enabled="true" />
-            <object-type name="TYPE" enabled="true" />
-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-            <object-type name="ARGUMENT" enabled="true" />
-            <object-type name="DIMENSION" enabled="true" />
-            <object-type name="CLUSTER" enabled="true" />
-            <object-type name="DBLINK" enabled="true" />
-          </object-type-filter>
-          <object-name-filters />
-        </object-filters>
-      </connection>
-      <connection id="7d979907-5740-48b3-a6ad-e6eaf27bcad6" active="true" signed="true">
+      <connection id="ba1ebaa6-384e-4714-8a3d-363d08d81aa9" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
-          <database-version value="9999.0" />
+          <database-version value="10.15" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="localhost" />
+          <host value="medunna.com" />
           <port value="5432" />
-          <database value="postgres" />
+          <database value="medunna_db" />
           <type value="USER_PASSWORD" />
-          <user value="" />
-          <deprecated-pwd value="" />
+          <user value="medunnadb_user" />
+          <deprecated-pwd value="TWVkdW5uYWRiX0AxMjk=" />
         </database>
         <properties>
           <auto-commit value="false" />
@@ -457,12 +189,12 @@
       </filters>
       <sorting>
         <object-type name="COLUMN" sorting-type="NAME" />
-        <object-type name="FUNCTION" sorting-type="NAME" />
+        <object-type name="FUNCTİON" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
       </sorting>
       <default-editors>
-        <object-type name="VIEW" editor-type="SELECTION" />
+        <object-type name="VİEW" editor-type="SELECTION" />
         <object-type name="PACKAGE" editor-type="SELECTION" />
         <object-type name="TYPE" editor-type="SELECTION" />
       </default-editors>
@@ -473,24 +205,24 @@
           <object-type name="SCHEMA" enabled="true" />
           <object-type name="USER" enabled="false" />
           <object-type name="ROLE" enabled="false" />
-          <object-type name="PRIVILEGE" enabled="false" />
+          <object-type name="PRİVİLEGE" enabled="false" />
           <object-type name="CHARSET" enabled="false" />
           <object-type name="TABLE" enabled="true" />
-          <object-type name="VIEW" enabled="true" />
-          <object-type name="MATERIALIZED VIEW" enabled="true" />
-          <object-type name="INDEX" enabled="true" />
-          <object-type name="CONSTRAINT" enabled="true" />
-          <object-type name="DATASET TRIGGER" enabled="true" />
-          <object-type name="DATABASE TRIGGER" enabled="true" />
+          <object-type name="VİEW" enabled="true" />
+          <object-type name="MATERİALİZED VİEW" enabled="true" />
+          <object-type name="İNDEX" enabled="true" />
+          <object-type name="CONSTRAİNT" enabled="true" />
+          <object-type name="DATASET TRİGGER" enabled="true" />
+          <object-type name="DATABASE TRİGGER" enabled="true" />
           <object-type name="SYNONYM" enabled="false" />
           <object-type name="SEQUENCE" enabled="true" />
           <object-type name="PROCEDURE" enabled="true" />
-          <object-type name="FUNCTION" enabled="true" />
+          <object-type name="FUNCTİON" enabled="true" />
           <object-type name="PACKAGE" enabled="true" />
           <object-type name="TYPE" enabled="true" />
-          <object-type name="DIMENSION" enabled="false" />
+          <object-type name="DİMENSİON" enabled="false" />
           <object-type name="CLUSTER" enabled="false" />
-          <object-type name="DBLINK" enabled="true" />
+          <object-type name="DBLİNK" enabled="true" />
         </lookup-objects>
         <force-database-load value="false" />
         <prompt-connection-selection value="true" />
