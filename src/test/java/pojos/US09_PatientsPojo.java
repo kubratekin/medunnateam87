@@ -23,6 +23,14 @@ public class US09_PatientsPojo {
         this.lastName = lastName;
         this.phone = phone;
         this.email = email;
+    }
+    public US09_PatientsPojo(String firstName, String lastName, String phone, String email, US09_UserPojo user) {
+//        this.createdBy = createdBy;
+//        this.createdDate = createdDate;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.email = email;
         this.user = user;
     }
 
