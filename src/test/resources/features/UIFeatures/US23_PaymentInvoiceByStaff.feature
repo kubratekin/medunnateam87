@@ -1,6 +1,6 @@
 @US23_Staff_Payment_Proccess
 Feature: US23 Payment Invoice by Staff
-  @TC01
+  @US23TC01
   Scenario: TC01 Staff can navigate to Payment Invoice process
     Given Staff goes to medunna.com
     When Staff click Sign in Link
@@ -14,7 +14,7 @@ Feature: US23 Payment Invoice by Staff
     Then Verify PAYMENT DETAIL title
     And Close the browser
 
-  @TC02
+  @US23TC02
   Scenario: TC02 The patient should have a status of completed to create an invoice
     Given Staff goes to medunna.com
     When Staff click Sign in Link
@@ -29,7 +29,7 @@ Feature: US23 Payment Invoice by Staff
     Then Verify Create Invoice button is visible
     And Close the browser
 
-  @TC03
+  @US23TC03
   Scenario: TC03 The patient should have a status of cancelled to create an invoice
     Given Staff goes to medunna.com
     When Staff click Sign in Link
@@ -44,7 +44,7 @@ Feature: US23 Payment Invoice by Staff
     Then Verify Create Invoice button is visible
     And Close the browser
 
-  @TC04
+  @US23TC04
   Scenario:Staff can view all invoice for the patient
     Given Staff goes to medunna.com
     When Staff click Sign in Link
@@ -58,7 +58,7 @@ Feature: US23 Payment Invoice by Staff
     Then Verify Exam Fee, Test Item Price, Create Invoice button
     And Close the browser
 
-  @TC05
+  @US23TC05
   Scenario:Staff can view the invoice sent to patient
     Given Staff goes to medunna.com
     When Staff click Sign in Link
