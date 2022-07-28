@@ -10,7 +10,7 @@ import utilities.ConfigReader;
 import io.restassured.response.Response;
 import java.util.HashMap;
 import java.util.Map;
-import utilities.Authentication;
+//import utilities.Authentication;
 
 import static io.restassured.RestAssured.*;
 
@@ -47,7 +47,7 @@ public class US19_API_StaffStepDef extends Authentication{
     public void admin_set_get_request_for_staff_and_response() {
 
         response = given().headers(
-                "Authorization","Bearer "+generateToken(),
+                "Authorization","Bearer "+ generateToken(),
                         "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when().
                 get(ConfigReader.getProperty("staff_endpoint"));
         //        response.prettyPrint();
