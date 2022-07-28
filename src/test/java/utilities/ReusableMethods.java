@@ -260,5 +260,43 @@ public class ReusableMethods {
         return patientInfo;
     }
 
+    public static void findPatientAmongPagesAndClickID(String firstName,String ssn){
+        WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
+        WebElement previousPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[2]/a"));
+        List<WebElement> nameList;
+        List<WebElement> ssnList;
+        int row = 1;
+        int pagesNumber = Integer.parseInt(Driver.getDriver().findElement(By.xpath("//nav/ul/li[7]")).getText()); // number of last page
+        boolean doWhile = false;        // For breaking the loop
+        do {
+            nameList= viewByAdmin.nameList;     // Otherwise it gave exception
+            ssnList= viewByAdmin.ssnList;       // Otherwise it gave exception
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(firstName) && ssnList.get(i).getText().equals(ssn)) {
+                    row = i + 1;
+                    doWhile=true;
+                    break;
+                }
+            }
+            if (doWhile){
+                break;
+            }
+            nameList.clear();
+            ssnList.clear();
+            String showingNumberOfItems = Driver.getDriver().findElement(By.xpath("//div/div/span")).getText();  // To be sure that this is page 1 or not.
+            String [] showingNumberOFItems = showingNumberOfItems.split(" ");            // To be sure that this is page 1 or not.
+            if (Integer.parseInt(showingNumberOFItems[1])==1){
+                Driver.waitAndClick(lastPageButton,2);
+            }else {
+                Driver.waitAndClick(previousPageButton,2);
+                pagesNumber--;
+            }
+        } while (pagesNumber>1);
+        String xpath = "//tbody/tr["+row+"]/td[1]/a";
+        WebElement idButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.wait(2);
+        Driver.waitAndClick(idButton,2);
+    }
+
 
 }

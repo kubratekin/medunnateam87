@@ -29,6 +29,37 @@ Feature: US23 Payment Invoice by Staff
     Then Verify Create Invoice button is visible
     And Close the browser
 
+
+
+  @US23TC04
+  Scenario:TC04 Staff can view all invoice for the patient
+    Given Staff goes to medunna.com
+    When Staff click Sign in Link
+    And Provides the username "team87staff001" textbox
+    And Provides the password "1234567" textbox
+    And Clicks the Sign in button
+    And Clicks the My Page and Search Patient
+    And Search patient with SSN "417-44-8506"
+    And Clicks Show Appointments button
+    And Clicks Payment Invoice Proccess button
+    Then Verify Exam Fee, Test Item Price, Create Invoice button
+    And Close the browser
+
+  @US23TC05
+  Scenario: TC05 Staff can view the invoice sent to patient
+    Given Staff goes to medunna.com
+    When Staff click Sign in Link
+    And Provides the username "team87staff001" textbox
+    And Provides the password "1234567" textbox
+    And Clicks the Sign in button
+    And Clicks the My Page and Search Patient
+    And Search patient with SSN "417-44-8505"
+    And Clicks Show Appointments button
+    And Clicks Payment Invoice Proccess button
+    And Clicks Show Invoice button
+    Then Verify INVOICE title is visible
+    And Close the browser
+
   @US23TC03
   Scenario: TC03 The patient should have a status of cancelled to create an invoice
     Given Staff goes to medunna.com
@@ -43,36 +74,6 @@ Feature: US23 Payment Invoice by Staff
     And Clicks Payment Invoice Proccess button
     Then Verify Create Invoice button is visible
     And Close the browser
-
-  @US23TC04
-  Scenario:Staff can view all invoice for the patient
-    Given Staff goes to medunna.com
-    When Staff click Sign in Link
-    And Provides the username "team87staff001" textbox
-    And Provides the password "1234567" textbox
-    And Clicks the Sign in button
-    And Clicks the My Page and Search Patient
-    And Search patient with SSN "417-44-8506"
-    And Clicks Show Appointments button
-    And Clicks Payment Invoice Proccess button
-    Then Verify Exam Fee, Test Item Price, Create Invoice button
-    And Close the browser
-
-  @US23TC05
-  Scenario:Staff can view the invoice sent to patient
-    Given Staff goes to medunna.com
-    When Staff click Sign in Link
-    And Provides the username "team87staff001" textbox
-    And Provides the password "1234567" textbox
-    And Clicks the Sign in button
-    And Clicks the My Page and Search Patient
-    And Search patient with SSN "417-44-8505"
-    And Clicks Show Appointments button
-    And Clicks Payment Invoice Proccess button
-    And Clicks Show Invoice button
-    Then Verify INVOICE title is visible
-    And Close the browser
-
 
 
 

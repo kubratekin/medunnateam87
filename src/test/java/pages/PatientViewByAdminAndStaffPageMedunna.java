@@ -25,10 +25,10 @@ public class PatientViewByAdminAndStaffPageMedunna {
     @FindBy(xpath = "//*[contains(text(), 'A Patient is updated with identifier')]")
     public WebElement infoSavedMessage;
 
-    @FindBy(xpath = "((//table/tbody/tr/td)[16]/div/a)[2]")
+    @FindBy(xpath = "//tbody/tr/td/div/a[2]")
     public WebElement editButton;
 
-    @FindBy(xpath = "((//table/tbody/tr/td)[16]/div/a)[1]")
+    @FindBy(xpath = "//tbody/tr/td/div/a[1]")
     public WebElement viewButton;
 
     @FindBy(css = ".form-control")

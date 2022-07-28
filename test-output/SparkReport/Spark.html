@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 27, 2022 05:01:45 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 28, 2022 08:33:30 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 27, 2022 05:01:45 PM</h3>
+<h3>Jul 28, 2022 08:33:30 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 27, 2022 05:02:06 PM</h3>
+<h3>Jul 28, 2022 08:35:13 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
+<small data-tooltip='20%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'><b>8</b> steps passed</small></div>
+<div><small data-tooltip='93%'><b>54</b> steps passed</small></div>
 <div>
-<small data-tooltip='8%'><b>1</b> steps failed,
+<small data-tooltip='1%'><b>1</b> steps failed,
 <b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"US23 Payment Invoice by Staff":19.698
+"US23 Payment Invoice by Staff":101.554
 };
 </script>
 <div class="row">
@@ -177,6 +177,38 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@US23TC01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US23TC04</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US23_Staff_Payment_Proccess</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>@US23TC02</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@US23TC03</td>
 <td>0</td>
 <td>1</td>
@@ -185,12 +217,12 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@US23_Staff_Payment_Proccess</td>
-<td>0</td>
+<td>@US23TC05</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -220,13 +252,13 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
+passChild: 4,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 8,
+passGrandChild: 54,
 failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 3,
@@ -251,7 +283,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US23TC03</a><a class="dropdown-item" href="#">@US23_Staff_Payment_Proccess</a>
+<a class="dropdown-item" href="#">@US23TC01</a><a class="dropdown-item" href="#">@US23TC04</a><a class="dropdown-item" href="#">@US23_Staff_Payment_Proccess</a><a class="dropdown-item" href="#">@US23TC02</a><a class="dropdown-item" href="#">@US23TC03</a><a class="dropdown-item" href="#">@US23TC05</a>
 </ul>
 </li>
 </ul>
@@ -264,7 +296,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">US23 Payment Invoice by Staff</p>
             <p class="text-sm">
-              <span>5:01:46 PM</span> / <span>00:00:19:698</span>
+              <span>8:33:31 PM</span> / <span>00:01:41:554</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -273,9 +305,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">US23 Payment Invoice by Staff</h5>
-<span class='badge badge-success'>07.27.2022 5:01:46 PM</span>
-<span class='badge badge-danger'>07.27.2022 5:02:06 PM</span>
-<span class='badge badge-default'>00:00:19:698</span>
+<span class='badge badge-success'>07.28.2022 8:33:31 PM</span>
+<span class='badge badge-danger'>07.28.2022 8:35:13 PM</span>
+<span class='badge badge-default'>00:01:41:554</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -287,7 +319,281 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC03 The patient should have a status of cancelled to create an invoice</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01 Staff can navigate to Payment Invoice process</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_goes_to_https_medunna_com()">
+                <span>Given Staff goes to medunna.com</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_click_sign_in_link()">
+                <span>When Staff click Sign in Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_username_textbox(java.lang.String)">
+                <span>And Provides the username "team87staff001" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_password_textbox(java.lang.String)">
+                <span>And Provides the password "1234567" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_sign_in_button()">
+                <span>And Clicks the Sign in button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_my_page_and_search_patient()">
+                <span>And Clicks the My Page and Search Patient</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.search_patient_with_ssn(java.lang.String)">
+                <span>And Search patient with SSN "417-44-8506"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_show_appointments_button()">
+                <span>And Clicks Show Appointments button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_payment_invoice_proccess_button()">
+                <span>And Clicks Payment Invoice Proccess button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.verify_payment_detail_title()">
+                <span>Then Verify PAYMENT DETAIL title</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.close_the_browser()">
+                <span>And Close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>TC02 The patient should have a status of completed to create an invoice</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_goes_to_https_medunna_com()">
+                <span>Given Staff goes to medunna.com</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_click_sign_in_link()">
+                <span>When Staff click Sign in Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_username_textbox(java.lang.String)">
+                <span>And Provides the username "team87staff001" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_password_textbox(java.lang.String)">
+                <span>And Provides the password "1234567" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_sign_in_button()">
+                <span>And Clicks the Sign in button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_my_page_and_search_patient()">
+                <span>And Clicks the My Page and Search Patient</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.search_patient_with_ssn(java.lang.String)">
+                <span>And Search patient with SSN "417-44-8506"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_show_appointments_button()">
+                <span>And Clicks Show Appointments button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.verify_the_status_as_completed()">
+                <span>Then Verify the status as completed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_payment_invoice_proccess_button()">
+                <span>And Clicks Payment Invoice Proccess button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.verify_create_invoice_button_is_visible()">
+                <span>Then Verify Create Invoice button is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.close_the_browser()">
+                <span>And Close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>TC04 Staff can view all invoice for the patient</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_goes_to_https_medunna_com()">
+                <span>Given Staff goes to medunna.com</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_click_sign_in_link()">
+                <span>When Staff click Sign in Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_username_textbox(java.lang.String)">
+                <span>And Provides the username "team87staff001" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_password_textbox(java.lang.String)">
+                <span>And Provides the password "1234567" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_sign_in_button()">
+                <span>And Clicks the Sign in button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_my_page_and_search_patient()">
+                <span>And Clicks the My Page and Search Patient</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.search_patient_with_ssn(java.lang.String)">
+                <span>And Search patient with SSN "417-44-8506"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_show_appointments_button()">
+                <span>And Clicks Show Appointments button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_payment_invoice_proccess_button()">
+                <span>And Clicks Payment Invoice Proccess button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.verify_exam_fee_test_item_price_create_invoice_button()">
+                <span>Then Verify Exam Fee, Test Item Price, Create Invoice button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.close_the_browser()">
+                <span>And Close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>TC05 Staff can view the invoice sent to patient</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_goes_to_https_medunna_com()">
+                <span>Given Staff goes to medunna.com</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.staff_click_sign_in_link()">
+                <span>When Staff click Sign in Link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_username_textbox(java.lang.String)">
+                <span>And Provides the username "team87staff001" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.provides_the_password_textbox(java.lang.String)">
+                <span>And Provides the password "1234567" textbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_sign_in_button()">
+                <span>And Clicks the Sign in button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_the_my_page_and_search_patient()">
+                <span>And Clicks the My Page and Search Patient</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.search_patient_with_ssn(java.lang.String)">
+                <span>And Search patient with SSN "417-44-8505"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_show_appointments_button()">
+                <span>And Clicks Show Appointments button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_payment_invoice_proccess_button()">
+                <span>And Clicks Payment Invoice Proccess button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.clicks_show_invoice_button()">
+                <span>And Clicks Show Invoice button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.verify_invoice_title_is_visible()">
+                <span>Then Verify INVOICE title is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.close_the_browser()">
+                <span>And Close the browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log fail-bg mr-2">Fail</span>TC03 The patient should have a status of cancelled to create an invoice</div>
       </div>
     </div>
         <div class="">
@@ -339,7 +645,7 @@ eventsCount: 5,
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at stepdefinitions.uisteps.US23_PaymentInvoiceByStaffStepDefs.verify_the_status_as_cancelled(US23_PaymentInvoiceByStaffStepDefs.java:96)
-	at ✽.Verify the status as cancelled(file:///C:/Users/yusuf/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US23_PaymentInvoiceByStaff.feature:42)
+	at ✽.Verify the status as cancelled(file:///C:/Users/yusuf/IdeaProjects/medunnateam87/./src/test/resources/features/UIFeatures/US23_PaymentInvoiceByStaff.feature:73)
 </textarea>
       
       </div>
@@ -378,10 +684,196 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US23TC01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US23TC01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01 Staff can navigate to Payment Invoice process</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC01 Staff can navigate to Payment Invoice process</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US23TC04</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US23TC04</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>TC04 Staff can view all invoice for the patient</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC04 Staff can view all invoice for the patient</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US23_Staff_Payment_Proccess</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US23_Staff_Payment_Proccess</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01 Staff can navigate to Payment Invoice process</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC01 Staff can navigate to Payment Invoice process</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>TC02 The patient should have a status of completed to create an invoice</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC02 The patient should have a status of completed to create an invoice</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>TC04 Staff can view all invoice for the patient</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC04 Staff can view all invoice for the patient</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>TC05 Staff can view the invoice sent to patient</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC05 Staff can view the invoice sent to patient</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:34:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>TC03 The patient should have a status of cancelled to create an invoice</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC03 The patient should have a status of cancelled to create an invoice</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US23TC02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US23TC02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:33:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>TC02 The patient should have a status of completed to create an invoice</a>
+<div class="">
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC02 The patient should have a status of completed to create an invoice</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -406,9 +898,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:01:46 PM</td>
+<td>20:34:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC03 The patient should have a status of cancelled to create an invoice</a>
+<a href="#" class="linked" test-id='1' id='52'>TC03 The patient should have a status of cancelled to create an invoice</a>
 <div class="">
 <span class="badge badge-default">US23 Payment Invoice by Staff.TC03 The patient should have a status of cancelled to create an invoice</span>
 </div>
@@ -421,15 +913,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US23_Staff_Payment_Proccess</p>
+<p class="name">@US23TC05</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US23_Staff_Payment_Proccess</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@US23TC05</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -440,13 +932,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:01:46 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:34:29 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC03 The patient should have a status of cancelled to create an invoice</a>
+<a href="#" class="linked" test-id='1' id='39'>TC05 Staff can view the invoice sent to patient</a>
 <div class="">
-<span class="badge badge-default">US23 Payment Invoice by Staff.TC03 The patient should have a status of cancelled to create an invoice</span>
+<span class="badge badge-default">US23 Payment Invoice by Staff.TC05 Staff can view the invoice sent to patient</span>
 </div>
 </td>
 </tr>
@@ -494,9 +986,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:02:06 PM</td>
+<td>20:35:12 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='11'>Then Verify the status as cancelled</a>
+<a href="#" class="linked" test-id='1' id='61'>Then Verify the status as cancelled</a>
 <div class="">
 <span class="badge badge-default">US23 Payment Invoice by Staff.TC03 The patient should have a status of cancelled to create an invoice.Then Verify the status as cancelled</span>
 </div>
