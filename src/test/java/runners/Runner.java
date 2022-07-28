@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",//MUST
         glue = "stepdefinitions",//MUST
-        tags = "@US23_Staff_Payment_Proccess",
+        tags = "@US17_Api",
         dryRun = false
 )
 public class Runner {

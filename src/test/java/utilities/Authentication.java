@@ -27,4 +27,5 @@ public class Authentication {
         JsonPath json = response.jsonPath();
         return json.getString("id_token");
     }
+
 }
