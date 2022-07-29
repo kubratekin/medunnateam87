@@ -1,4 +1,4 @@
-
+@US19 @team87
 Feature:US19_Edit or Delete Staff information by Admin and validate with API
   Scenario:US19 Admin should validate staff info using API
     Given Admin set the params for staff info

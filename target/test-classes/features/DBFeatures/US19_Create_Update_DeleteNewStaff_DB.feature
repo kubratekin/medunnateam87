@@ -1,4 +1,4 @@
-
+  @US19 @team87
   Feature: US19_Edit or Delete Staff information by Admin and validate with DB
     Scenario: US19 Admin should validate staff info using DB
       Given Admin connects to DB
