@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.55">
-<testcase classname="create_and_validate_test_item_using_api" name="create_test_item_using_post_request" time="5.316">
-<system-out><![CDATA[Given admin sets the path params to create test items.......................passed
-And admin sets the expected data............................................passed
-And admin sends post request and get the response...........................passed
-Then admin validates the test items.........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="create_and_validate_test_item_using_api" name="validate_test_item_using_get_request" time="1.558">
-<system-out><![CDATA[Given admin sets the path params to read test items.........................passed
-And admin sends a get request for created test item.........................passed
-Then admin validates the test item..........................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.164">
+<testcase classname="US_018_TC012_DB Validating all physicians using DB" name="US_018_TC012_DB Validating all physicians using DB" time="7.667">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given user goes to webpage..................................................passed
+When eh User click on the account dropdown toggle...........................passed
+And eh User clicks on the Sign in button....................................passed
+And eh User enters the user login credentials "team87_admin" and "1234567"..passed
+And eh User click on the Sign in button.....................................passed
+Then eh User verifies successful log in as an Administrator by verifying "Administration" user type visibility.passed
+And eh User navigates to Physicians page....................................passed
+Then eh User verifies successful landing to the Physicians page.............passed
+Then User retrieves the info for all Physicians from the first page.........passed
+And user connects to medunna_db with valid credentials......................passed
+Then eh User retrieves physician details for each physician retrieved earlier from the UI and verifies the returned information matches with the edited data..failed
+
+StackTrace:
+java.lang.NullPointerException
+	at stepdefinitions.dbsteps.US18_DBStepDefs.siUserRetrievesPhysicianDetailsForEachPhysicianRetrievedEarlierFromTheUIAndVerifiesTheReturnedInformationMatchesWithTheEditedData(US18_DBStepDefs.java:36)
+	at ✽.eh User retrieves physician details for each physician retrieved earlier from the UI and verifies the returned information matches with the edited data.(file:///C:/Users/SEMA/IdeaProjects/medunnateam87/./src/test/resources/features/DBFeatures/US18_DB.feature:14)
+]]></failure>
 </testcase>
 </testsuite>

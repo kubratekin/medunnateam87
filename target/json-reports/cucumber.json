@@ -3,140 +3,205 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-07-29T19:11:07.920Z",
-        "line": 5,
-        "name": "create_test_item_using_post_request",
+        "start_timestamp": "2022-07-29T19:49:50.204Z",
+        "line": 17,
+        "name": "US_018_TC012_DB Validating all physicians using DB",
         "description": "",
-        "id": "create-and-validate-test-item-using-api;create-test-item-using-post-request",
+        "id": "us-018-tc012-db-validating-all-physicians-using-db;us-018-tc012-db-validating-all-physicians-using-db;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 898000000,
+              "duration": 4703000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user goes to webpage",
+            "match": {
+              "location": "stepdefinitions.uisteps.US002_Stepdefs.user_goes_to_webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 336000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "eh User click on the account dropdown toggle",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.user_click_on_the_account_dropdown_toggle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "admin sets the path params to create test items",
+            "name": "eh User clicks on the Sign in button",
             "match": {
-              "location": "stepdefinitions.apisteps.US17_ApiStepDefs.admin_sets_the_path_params_to_create_test_items()"
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.UserClicksOnTheLink()"
             },
-            "keyword": "Given "
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "eh User enters the user login credentials \"team87_admin\" and \"1234567\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team87_admin\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"1234567\"",
+                  "offset": 61
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.UserEntersTheAdminLoginCredentialsAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "eh User click on the Sign in button",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.UserClickOnTheButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 412000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "eh User verifies successful log in as an Administrator by verifying \"Administration\" user type visibility",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Administration\"",
+                  "offset": 68
+                }
+              ],
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.UserVerifiesSuccessfulLogInAsAnAdministratorByVerifyingUserTypeVisibility(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "eh User navigates to Physicians page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.user_navigates_to_physicians_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "eh User verifies successful landing to the Physicians page",
+            "match": {
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.user_verifies_successful_landing_to_the_physicians_page()"
+            },
+            "keyword": "Then "
           },
           {
             "result": {
               "duration": 2000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "admin sets the expected data",
+            "line": 12,
+            "name": "User retrieves the info for all Physicians from the first page",
             "match": {
-              "location": "stepdefinitions.apisteps.US17_ApiStepDefs.admin_sets_the_expected_data()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4232000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "admin sends post request and get the response",
-            "match": {
-              "location": "stepdefinitions.apisteps.US17_ApiStepDefs.admin_sends_post_request_and_get_the_response()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 66000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "admin validates the test items",
-            "match": {
-              "location": "stepdefinitions.apisteps.US17_ApiStepDefs.admin_validates_the_test_items()"
+              "location": "stepdefinitions.uisteps.US_018_stepdefs.userRetrievesTheInfoForAllPhysiciansFromTheFirstPage()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US17_Api"
           },
           {
-            "name": "@US17_Api_01"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-07-29T19:11:13.325Z",
-        "line": 13,
-        "name": "validate_test_item_using_get_request",
-        "description": "",
-        "id": "create-and-validate-test-item-using-api;validate-test-item-using-get-request",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "result": {
+              "duration": 1401000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user connects to medunna_db with valid credentials",
+            "match": {
+              "location": "stepdefinitions.dbsteps.US_002_DB_Stepdefs.user_connects_to_medunna_db_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
-              "duration": 6000000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinitions.dbsteps.US18_DBStepDefs.siUserRetrievesPhysicianDetailsForEachPhysicianRetrievedEarlierFromTheUIAndVerifiesTheReturnedInformationMatchesWithTheEditedData(US18_DBStepDefs.java:36)\r\n\tat ✽.eh User retrieves physician details for each physician retrieved earlier from the UI and verifies the returned information matches with the edited data.(file:///C:/Users/SEMA/IdeaProjects/medunnateam87/./src/test/resources/features/DBFeatures/US18_DB.feature:14)\r\n",
+              "duration": 67000000,
+              "status": "failed"
             },
             "line": 14,
-            "name": "admin sets the path params to read test items",
+            "name": "eh User retrieves physician details for each physician retrieved earlier from the UI and verifies the returned information matches with the edited data.",
             "match": {
-              "location": "stepdefinitions.apisteps.US17_ApiStepDefs.admin_sets_the_path_params_to_read_test_items()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1475000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "admin sends a get request for created test item",
-            "match": {
-              "location": "stepdefinitions.apisteps.US17_ApiStepDefs.admin_sends_a_get_request_for_created_test_item()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "admin validates the test item",
-            "match": {
-              "location": "stepdefinitions.apisteps.US17_ApiStepDefs.admin_validates_the_test_item()"
+              "location": "stepdefinitions.dbsteps.US18_DBStepDefs.siUserRetrievesPhysicianDetailsForEachPhysicianRetrievedEarlierFromTheUIAndVerifiesTheReturnedInformationMatchesWithTheEditedData()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US17_Api"
+            "name": "@US_018_TC_012_DB"
           },
           {
-            "name": "@US17_Api_02"
+            "name": "@db"
+          },
+          {
+            "name": "@Sprint2"
           }
         ]
       }
     ],
-    "name": "create_and_validate_test_item_using_api",
+    "name": "US_018_TC012_DB Validating all physicians using DB",
     "description": "",
-    "id": "create-and-validate-test-item-using-api",
+    "id": "us-018-tc012-db-validating-all-physicians-using-db",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/APIFeatures/US17_Api.feature",
+    "uri": "file:src/test/resources/features/DBFeatures/US18_DB.feature",
     "tags": [
       {
-        "name": "@US17_Api",
+        "name": "@US_018_TC_012_DB",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@db",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 19
+        }
+      },
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 23
         }
       }
     ]
