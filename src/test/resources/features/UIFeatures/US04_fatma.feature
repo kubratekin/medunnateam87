@@ -93,14 +93,3 @@ Feature:Login page should be accessible only with valid credentials
     Examples:
       | wusername | wpassword |
       | team87inc | 1Finci    |
-
-
-
-
-
-
-
-
-
-
-

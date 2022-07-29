@@ -1,4 +1,4 @@
-package stepdefinitions.uisteps;
+/* package stepdefinitions.uisteps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -71,3 +71,5 @@ public class US10_PatientStepDef {
 
 
 }
+
+ */

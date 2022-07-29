@@ -1,4 +1,7 @@
-package stepdefinitions.uisteps;
+
+
+   /*
+   package stepdefinitions.uisteps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,8 +19,7 @@ import utilities.ReusableMethods;
 import java.io.IOException;
 
 public class US14_StepDefs {
-
-    WebDriver driver;
+WebDriver driver;
     CommonPageElement cp = new CommonPageElement();
     LoginPage login = new LoginPage();
     US14_Page us14Page = new US14_Page();
@@ -149,3 +151,5 @@ public class US14_StepDefs {
         Assert.assertTrue(us14Page.successMsgAlert.isDisplayed());
     }
 }
+
+    */
