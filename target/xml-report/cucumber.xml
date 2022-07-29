@@ -1,17 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.043">
-<testcase classname="US25_AppointmentOnPortal" name="TC08" time="21.966">
-<system-out><![CDATA[Given user goes to Medunna webpage..........................................passed
-When navigate to Sign in page...............................................passed
-When user enters "ali6589" and "1234" clicks sign in........................passed
-And user clicks to Make an appointment button under My Pages menu...........passed
-And user provides the "123-457-7896" phone number...........................passed
-And user selects future date................................................passed
-And user click Send an Appointment Request..................................passed
-Then verify Appointment registration saved! We will call you as soon as possible. is displayed.passed
-When navigate to My Appointments............................................passed
-Then verify that the created Appointment is displayed.......................passed
-And close the application...................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="117.104">
+<testcase classname="US19_Edit or Delete Staff information by Admin and validate with API" name="US19 Admin should validate staff info using API" time="8.139">
+<system-out><![CDATA[Given Admin set the params for staff info...................................passed
+And Admin set expected data.................................................passed
+And Admin set get request for staff and response............................passed
+Then Admin validates staff info.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US19_Edit or Delete Staff information by Admin and validate with DB" name="US19 Admin should validate staff info using DB" time="1.593">
+<system-out><![CDATA[Given Admin connects to DB..................................................passed
+When Admin gets all "id" from DB............................................passed
+Then Admin verifies Staff exist at DB "138219"..............................passed
+And Admin closes the DB connection..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US19 Create new Staff-Update existing Staff-View and Delete the Staff-Validate with API and DB" name="TC0001 Admin can search new Staff among registered people using their SSN" time="17.248">
+<system-out><![CDATA[Given Admin is on the login page............................................passed
+When Admin clicks on login dropdown icon....................................passed
+And Admin clicks on sign in dropdown........................................passed
+And Admin sends username "<username>".......................................passed
+And Admin sends password "<password>".......................................passed
+Then Admin clicks on the sign in dropdown...................................passed
+And Admin clicks Items&Titles Dropdown......................................passed
+And Admin clicks StaffDropdown..............................................passed
+And Admin clicks Create a new staff button..................................passed
+And Admin selects Use search checkbox.......................................passed
+And Admin fills SSN box with "358-65-3578" number...........................passed
+And Admin clicks Search User button.........................................passed
+And Admin verify "user found with search SSN" message is visible............passed
+Then Admin close the application............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US19 Create new Staff-Update existing Staff-View and Delete the Staff-Validate with API and DB" name="TC0002 All their information should be populated" time="36.931">
+<system-out><![CDATA[Given Admin is on the login page............................................passed
+When Admin clicks on login dropdown icon....................................passed
+And Admin clicks on sign in dropdown........................................passed
+And Admin sends username "<username>".......................................passed
+And Admin sends password "<password>".......................................passed
+Then Admin clicks on the sign in dropdown...................................passed
+And Admin clicks Items&Titles Dropdown......................................passed
+And Admin clicks StaffDropdown..............................................passed
+And Admin clicks Create a new staff button..................................passed
+And Admin selects Use search checkbox.......................................passed
+And Admin fills "241-43-2917" box...........................................passed
+And Admin clicks Search User button.........................................passed
+And Admin fills "07/10/2001" and "111-223-1930" from birthdate and phone boxes.passed
+And Admin selects Blood Group...............................................passed
+And Admin fills "1232 Sandia ave. Fremont" and "This is test" boxes.........passed
+And Admin selects Country and City from dropdown boxes......................passed
+When Admin clicks Save button...............................................passed
+And Admin verifies to "A new Staff is created" message is visible...........passed
+Then Admin close the application............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US19 Create new Staff-Update existing Staff-View and Delete the Staff-Validate with API and DB" name="TC0003 User (Admin) can select a user from the existing users (registered people)" time="15.806">
+<system-out><![CDATA[Given Admin is on the login page............................................passed
+When Admin clicks on login dropdown icon....................................passed
+And Admin clicks on sign in dropdown........................................passed
+And Admin sends username "<username>".......................................passed
+And Admin sends password "<password>".......................................passed
+Then Admin clicks on the sign in dropdown...................................passed
+And Admin clicks Items&Titles Dropdown......................................passed
+And Admin clicks StaffDropdown..............................................passed
+And Admin selects any user from the existing users..........................passed
+And Admin verifies selected user all information is visible.................passed
+Then Admin close the application............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US19 Create new Staff-Update existing Staff-View and Delete the Staff-Validate with API and DB" name="TC0004 User can edit their info" time="21.982">
+<system-out><![CDATA[Given Admin is on the login page............................................passed
+When Admin clicks on login dropdown icon....................................passed
+And Admin clicks on sign in dropdown........................................passed
+And Admin sends username "<username>".......................................passed
+And Admin sends password "<password>".......................................passed
+Then Admin clicks on the sign in dropdown...................................passed
+And Admin clicks Items&Titles Dropdown......................................passed
+And Admin clicks StaffDropdown..............................................passed
+And Admin clicks edit button................................................passed
+And Admin change firstname "firstname edited" and lastname "lastname edited".passed
+And Admin fill "04/03/1968" and "123-451-6787" from birthdate and phone boxes.passed
+And Admin fills bloodgroup..................................................passed
+And Admin fill "New York 1234 street" and "Next test" boxes.................passed
+And Admin select Country and City from dropdown boxes.......................passed
+When Admin clicks Save button...............................................passed
+And Admin verifies that "A Staff is updated" message is visible.............passed
+Then Admin close the application............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US19 Create new Staff-Update existing Staff-View and Delete the Staff-Validate with API and DB" name="TC0005 User can delete their info" time="13.59">
+<system-out><![CDATA[Given Admin is on the login page............................................passed
+When Admin clicks on login dropdown icon....................................passed
+And Admin clicks on sign in dropdown........................................passed
+And Admin sends username "<username>".......................................passed
+And Admin sends password "<password>".......................................passed
+Then Admin clicks on the sign in dropdown...................................passed
+And Admin clicks Items&Titles Dropdown......................................passed
+And Admin clicks StaffDropdown..............................................passed
+And Admin clicks Delete Button at the Staff Page............................passed
+And Admin clicks Delete Button at he Alert Page.............................passed
+And Admin verifies at "A Staff is deleted" message is visible...............passed
+Then Admin close the application............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
