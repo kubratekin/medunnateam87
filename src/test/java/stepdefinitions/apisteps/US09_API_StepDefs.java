@@ -105,6 +105,8 @@ public class US09_API_StepDefs extends Authentication{
     }
 
 
+   /*
+
     @Given("User sets the path params to create and update patient info")
     public void userSetsThePathParamsToCreateAndUpdatePatientInfo() {
         spec.pathParams("first","api","second","patients");
@@ -121,191 +123,25 @@ public class US09_API_StepDefs extends Authentication{
         response.then().assertThat().statusCode(201);
     }
 
-//    @And("User sends Put request to update patient info firstname {string} lastname {string} email {string} ssn {string}")
-//    public void userSendsPutRequestToUpdatePatientInfoFirstnameLastnameEmailSsn(String firstName, String lastName, String email, String ssn) {
-//        user= new US09_UserPojo(firstName,lastName,"team87apiPatient",ssn);
-//        patient= new US09_PatientsPojo(firstName,lastName,"1234567890",email);
-//        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
-//                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
-//                contentType(ContentType.JSON).body(patient).when().put(ConfigReader.getProperty("patient_endpoint"));
-//        response.prettyPrint();
-//        response.then().assertThat().statusCode(201);
-//    }
-//
-//    @Then("User validates patient new info firstname {string} lastname {string} email {string} ssn {string}")
-//    public void userValidatesPatientNewInfoFirstnameLastnameEmailSsn(String firstName, String lastName, String email, String ssn) {
-//
-//    }
-
-
-
-    /*
-    @Given("User sets the path params to read patient info")
-    public void user_sets_the_path_params_to_read_patient_info() {
-        RequestSpecification spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-        spec.pathParams("first","api","second","patients");
-    }
-
-    @Given("User sets expected data")
-    public void user_sets_expected_data() {
-        expectedDataMap=new HashMap<>();
-        expectedDataMap.put("firstName","team87del2");
-        expectedDataMap.put("lastName","team87");
-        expectedDataMap.put("email","aa@b.com");
-        expectedDataMap.put("ssn","872-22-2222");
-    }
-
-    @When("User send get request for patient info and get response")
-    public void user_send_get_request_for_patient_info_and_get_response() {
+    @Given("User sends Put request to update patient info firstname {string} lastname {string} email {string} ssn {string}")
+    public void user_sends_put_request_to_update_patient_info_firstname_lastname_email_ssn(String firstName, String lastName, String email, String ssn) {
+        user= new US09_UserPojo(firstName,lastName,"team87apiPatient",ssn);
+        patient= new US09_PatientsPojo(firstName,lastName,"1234567891",email,user);
         response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
-                                    "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
-                .get(ConfigReader.getProperty("patients_endpoint"));
-//        response.prettyPrint();
-    }
-
-    @Then("User validates patient info {string} {string} {string} {string} .")
-    public void userValidatesPatientInfo(String firstname, String lastname, String email, String ssn) {
+                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
+                contentType(ContentType.JSON).body(patient).when().put(ConfigReader.getProperty("patient_endpoint"));
         response.then().assertThat().statusCode(200);
-        patients = response.as(List.class);
-        boolean flag= false;
-        for (Object patient : patients) {
-            if (((Map) patient).get("firstName").equals(firstname) &&
-                    ((Map) patient).get("lastName").equals(lastname) &&
-                    ((Map) patient).get("email").equals(email) ) {
-                flag=true;
-                System.out.println(patient);
-                Assert.assertEquals(ssn, ((Map) (((Map) patient).get("user"))).get("ssn"));
-            }
-        }
-        Assert.assertTrue(flag);
-*/
-
-            // One patient validation with ID
-//        Map<String,Object> actualData = response.as(HashMap.class);
-//        System.out.println(actualData.toString());
-//        Assert.assertEquals(expectedDataMap.get("firstName"),actualData.get("firstName"));
-//        Assert.assertEquals(expectedDataMap.get("lastName"),actualData.get("lastName"));
-//        Assert.assertEquals(expectedDataMap.get("email"),actualData.get("email"));
-//        Assert.assertEquals(expectedDataMap.get("ssn"),((Map<?, ?>)actualData.get("user")).get("ssn"));
-//    }
-
-
-
-
-//  TC11
-/*
-
-    Medunna medunna = new Medunna();
-    Map<String,String> userMap = new HashMap<>();
-    Map<String,Object> bodyMap = new HashMap<>();
-    public static String patientsEndPoint = "https://medunna.com/api/patients";
-    public static String patientEndPoint = "";
-    public static Object ID ;
-
-    @Given("User sets the path params to create and update patient info")
-    public void userSetsThePathParamsToCreateAndUpdatePatientInfo() {
-        RequestSpecification spec = medunna.setup();
-        spec.pathParams("first","api","second","patients");
     }
 
-    @When("User creates new patient using Post request firstname {string} lastname {string} email {string} ssn {string}")
-    public void userCreatesNewPatientUsingPostRequestFirstnameLastnameEmailSsn(String firstname, String lastname, String email, String ssn) throws IOException {
-        userMap.put("firstName",firstname);
-        userMap.put("lastName",lastname);
-        userMap.put("email",email);
-        userMap.put("ssn",ssn);
-
-        bodyMap.put("firstName",firstname);
-        bodyMap.put("lastName",lastname);
-        bodyMap.put("email",email);
-        bodyMap.put("phone","123-123-1234");
-        bodyMap.put("user",userMap);
-        Object [] patient={bodyMap};
-
-        response = given().headers("Authorization","Bearer "+generateToken(),
-                "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
-                contentType(ContentType.JSON).body(patient).when().post(patientsEndPoint);
-        //response.then().assertThat().statusCode(201);
-//        ID = ApiUtils.getPatientID(firstname,lastname,email);
-//        System.out.println(ID);
+    @Then("User sends delete request and verifies that patient id {string} has been deleted.")
+    public void user_sends_delete_request_and_verifies_that_patient_id_has_been_deleted(String id) {
+        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
+                "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).contentType(ContentType.JSON)
+                .when().delete(ConfigReader.getProperty("api_patients_id_endpoint")+id);
+        response.then().assertThat().statusCode(200);
 
     }
 
-    @And("User sends Put request to update patient info firstname {string} lastname {string} email {string} ssn {string}")
-    public void userSendsPutRequestToUpdatePatientInfoFirstnameLastnameEmailSsn(String firstName, String lastName, String email, String ssn) {
-        //patientEndPoint = patientsEndPoint.concat(ID);
-        userMap.replace("firstName",firstName);
-        userMap.replace("lastName",lastName);
-        userMap.replace("email",email);
-        userMap.replace("ssn",ssn);
-
-        bodyMap.replace("firstName",firstName);
-        bodyMap.replace("lastName",lastName);
-        bodyMap.replace("email",email);
-        bodyMap.replace("phone","321-321-4321");
-        bodyMap.replace("user",userMap);
-        Object [] newPatient = {bodyMap};
-        response = given().headers("Authorization","Bearer "+generateToken(),
-                "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
-                contentType(ContentType.JSON).body(newPatient).when().patch(ConfigReader.getProperty("patients_search_endpoint"));
-    }
-*/
-/*
-[
-    {
-        "createdBy": "editpatient",
-        "createdDate": "2022-07-13T23:55:38.512683Z",
-        "id": 118125,
-        "firstName": "EditPatient",
-        "lastName": "Edit",
-        "birthDate": null,
-        "phone": "6479376850",
-        "gender": null,
-        "bloodGroup": null,
-        "adress": null,
-        "email": "editpatient@gmail.com",
-        "description": null,
-        "user": {
-            "createdBy": "anonymousUser",
-            "createdDate": "2022-07-13T23:52:49.148647Z",
-            "id": 118458,
-            "login": "editpatient",
-            "firstName": "EditPatient",
-            "lastName": "Edit",
-            "email": "editpatient@gmail.com",
-            "activated": true,
-            "langKey": "en",
-            "imageUrl": null,
-            "resetDate": null,
-            "ssn": "123-66-5556"
-        },
-        "appointments": null,
-        "inPatients": null,
-        "country": null,
-        "cstate": null
-    }
-]
- *//*
-
-    @Then("User validates patient new info firstname {string} lastname {string} email {string} ssn {string}")
-    public void userValidatesPatientNewInfoFirstnameLastnameEmailSsn(String firstName, String lastName, String email, String ssn) {
-        response = given().headers("Authorization","Bearer "+generateToken(),
-                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when()
-                .get(ConfigReader.getProperty("patients_search_endpoint2"));
-        response.prettyPrint();
-        List actualDataList = response.as(List.class);
-        System.out.println(actualDataList.size());
-
-
-
-
-
-//        Assert.assertEquals(firstName,actualData.get("firstName"));
-//        Assert.assertEquals(lastName,actualData.get("lastName"));
-//        Assert.assertEquals(email,actualData.get("email"));
-//        Assert.assertEquals("321-321-4321",actualData.get("phone"));
-//        Assert.assertEquals(ssn,((Map<?, ?>)actualData.get("user")).get("ssn"));
-    }
-*/
+    */
 
 }

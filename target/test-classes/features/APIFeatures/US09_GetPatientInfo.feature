@@ -17,9 +17,10 @@ Feature: US09_API_Validating Info USing API
 
 
 
-  @US09_TC11
-  Scenario: TC11_User can update patient information.
-    Given User sets the path params to create and update patient info
-    When User creates new patient using Post request firstname "team87apiPatient" lastname "team87" email "te@m87.com" ssn "878-87-8787"
-#    And User sends Put request to update patient info firstname "team87newApi" lastname "87team" email "team@87.com" ssn "877-78-7878"
+#  @US09_TC11
+#  Scenario: TC11_User can update patient information.
+#    Given User sets the path params to create and update patient info
+#    When User creates new patient using Post request firstname "team87apiPatient" lastname "team87" email "te@m87.com" ssn "878-87-8787"
+#   And User sends Put request to update patient info firstname "team87newApi" lastname "87team" email "team@87.com" ssn "877-78-7878"
 #    Then User validates patient new info firstname "team87newApi" lastname "87team" email "team@87.com" ssn "877-78-7878"
+#    Then User sends delete request and verifies that patient id "139809" has been deleted.

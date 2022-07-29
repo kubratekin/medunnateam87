@@ -10,4 +10,3 @@ Feature: US07_DB_appointment database validation
     Examples: test data
       | email   |
       |berkbey@gamil.com|
-
