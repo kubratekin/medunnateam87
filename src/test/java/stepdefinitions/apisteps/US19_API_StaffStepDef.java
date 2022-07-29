@@ -1,6 +1,5 @@
 package stepdefinitions.apisteps;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.*;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
