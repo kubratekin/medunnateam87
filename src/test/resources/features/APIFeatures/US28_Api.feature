@@ -1,4 +1,4 @@
-@US028
+@US028Api
 Feature:create_country_using_api
   @US028_Api01
   Scenario:create_country_using_post_request

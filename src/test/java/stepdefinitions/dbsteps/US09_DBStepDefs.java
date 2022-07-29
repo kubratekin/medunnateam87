@@ -23,8 +23,8 @@ public class US09_DBStepDefs {
     public void user_gets_information_from_DB() {
         String query = "SELECT ssn, first_name, last_name, email FROM jhi_user WHERE EXISTS (SELECT * FROM patient WHERE patient.user_id = jhi_user.id)";
         patientInfoTable= DBUtils.getQueryResultMap(query);
-//        System.out.println(patientInfoTable);
-//        System.out.println(patientInfoTable.size());
+        System.out.println(patientInfoTable);
+        System.out.println(patientInfoTable.size());
 
     }
     @Then("User verifies that patients exists in DB {string} {string} {string} {string}")

@@ -19,10 +19,13 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public abstract class Driver {
+
+    static US17_Page us17Page = new US17_Page();
+
 //My Driver class is abstract so I do not create an object of this class
 //TestBase class is also abstract
 
-    private static int timeout = 5;
+    private static final int timeout = 5;
     private Driver(){
     }
     private static WebDriver driver;
@@ -56,6 +59,43 @@ public abstract class Driver {
 
             }
         }
+        assert driver != null;
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        return driver;
+    }
+
+    public static WebDriver getDriver2(String browser){
+        if(driver==null) {
+            switch (browser) {
+                case "chrome":
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    break;
+
+                case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    break;
+
+                case "ie":
+                    WebDriverManager.iedriver().setup();
+                    driver = new InternetExplorerDriver();
+                    break;
+
+                case "chrome-headless":
+//                    WebDriverManager.chromedriver().setup();
+//                    driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+                    WebDriverManager.chromedriver().setup();
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("headless");
+                    options.addArguments("disable-gpu");
+                    driver = new ChromeDriver(options);
+                    break;
+
+            }
+        }
+        assert driver != null;
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         return driver;
@@ -339,4 +379,48 @@ public abstract class Driver {
         JavascriptExecutor jsexecutor = ((JavascriptExecutor) Driver.getDriver());
         jsexecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
+    public static void findItemAmongPagesDeleteButton(String name, String description){
+        WebElement lastPageButton = Driver.getDriver().findElement(By.xpath("//nav/ul/li[last()]/a"));
+
+        int pagesNumber = Integer.parseInt(Driver.getDriver().findElement(By.xpath("//nav/ul/li[7]")).getText());
+        Driver.waitAndClickElement(lastPageButton,2);
+
+        List<WebElement> nameList;
+        List<WebElement> desList;
+
+        int row = 1;
+        // number of last page
+        boolean doWhile = false;        // For breaking the loop
+        do {
+            nameList= us17Page.nameInfo ;     // Otherwise it gave exception
+            desList= us17Page.desInfo;         // Otherwise it gave exception
+            System.out.println(nameList.size());
+            System.out.println(desList.size());
+
+            for (int i = 0; i < nameList.size(); i++) {
+                if (nameList.get(i).getText().equals(name) && desList.get(i).getText().equals(description)) {
+                    row = i + 1;
+                    doWhile=true;
+                    break;
+                }
+            }
+            nameList.clear();
+            desList.clear();
+
+            if (doWhile){
+                break;
+            }
+
+        } while (pagesNumber>1);
+
+        String xpath = "//tbody//tr["+row+"]//td[8]/div/a[3]";
+        WebElement deleteButton = Driver.getDriver().findElement(By.xpath(xpath));
+        Driver.waitAndClickElement(deleteButton,2);
+        Driver.wait(2);
+        Driver.waitAndClickElement(us17Page.deleteButton2,2);
+
+    }
+
+
 }

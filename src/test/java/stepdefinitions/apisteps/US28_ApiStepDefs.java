@@ -18,7 +18,8 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static utilities.Authentication.generateToken;
+import static stepdefinitions.apisteps.Authentication.generateToken;
+
 
 public class US28_ApiStepDefs {
 

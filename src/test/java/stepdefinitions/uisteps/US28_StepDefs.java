@@ -92,8 +92,8 @@ public class US28_StepDefs {
 
 
 
-    @Given("admin clicks on Save button")
-    public void admin_clicks_on_save_button() throws InterruptedException, IOException {
+    @Given("admin click on Save button")
+    public void admin_click_on_save_button() throws InterruptedException, IOException {
         admin28.saveButton.click();
         Thread.sleep(2000);
         ReusableMethods.getScreenshot("not created state");

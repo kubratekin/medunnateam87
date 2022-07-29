@@ -24,6 +24,7 @@ public class US01_RegistrationSteps {
     @Given("user goes to Medunna page")
     public void user_goes_to_medunna_page() {
         Driver.getDriver().get(ConfigReader.getProperty("medunnaUrl"));
+
     }
 
 
