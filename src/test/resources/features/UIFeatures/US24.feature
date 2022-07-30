@@ -1,5 +1,5 @@
 @US24
-@team87
+@team87-2
 Feature: US24_Patient can view the test result and the invoice
   Background:User on My Appointment Page
     Given User is on the login page

@@ -1,4 +1,4 @@
-@US16
+@US16 @team87-2
 Feature: Room creation by Admin. View, Update, Delete.
 
   @US16_TC01

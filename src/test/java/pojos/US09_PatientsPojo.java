@@ -11,6 +11,7 @@ public class US09_PatientsPojo {
     private String lastName;
     private String phone;
     private String email;
+    //private String ssn;
     private US09_UserPojo user ;
 
     public US09_PatientsPojo() {
@@ -23,6 +24,7 @@ public class US09_PatientsPojo {
         this.lastName = lastName;
         this.phone = phone;
         this.email = email;
+        //this.ssn = ssn;
     }
     public US09_PatientsPojo(String firstName, String lastName, String phone, String email, US09_UserPojo user) {
 //        this.createdBy = createdBy;
@@ -31,6 +33,7 @@ public class US09_PatientsPojo {
         this.lastName = lastName;
         this.phone = phone;
         this.email = email;
+        //this.ssn = ssn;
         this.user = user;
     }
 
@@ -82,6 +85,14 @@ public class US09_PatientsPojo {
         this.email = email;
     }
 
+//    public String getSsn() {
+//        return ssn;
+//    }
+//
+//    public void setSsn(String ssn) {
+//        this.ssn = ssn;
+//    }
+
     public US09_UserPojo getUser() {
         return user;
     }
@@ -90,15 +101,15 @@ public class US09_PatientsPojo {
         this.user = user;
     }
 
+
     @Override
     public String toString() {
         return "US09_PatientsPojo{" +
-               // "createdBy='" + createdBy + '\'' +
-             //   ", createdDate='" + createdDate + '\'' +
-                ", firstName='" + firstName + '\'' +
+                "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
+                //", ssn='" + ssn + '\'' +
                 ", user=" + user +
                 '}';
     }

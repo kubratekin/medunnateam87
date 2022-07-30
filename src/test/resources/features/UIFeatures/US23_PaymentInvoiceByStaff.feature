@@ -1,4 +1,5 @@
 @US23_Staff_Payment_Proccess
+@team87-2
 Feature: US23 Payment Invoice by Staff
   @TC01
   Scenario: TC01 Staff can navigate to Payment Invoice process
