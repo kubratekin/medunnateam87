@@ -94,7 +94,7 @@ public class US23_PaymentInvoiceByStaffStepDefs {
     @Then("Verify the status as cancelled")
     public void verify_the_status_as_cancelled() {
         System.out.println(paymentInvoiceByStaffPage.appointmentsStatus.getText());
-        Assert.assertEquals(paymentInvoiceByStaffPage.appointmentsStatus.getText(),"CANCELLED");
+        Assert.assertEquals("CANCELLED",paymentInvoiceByStaffPage.appointmentsStatus.getText());
     }
 
 //---------------TC04-------------------

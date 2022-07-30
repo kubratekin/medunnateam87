@@ -1,6 +1,5 @@
 package stepdefinitions.apisteps;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.*;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -47,7 +46,7 @@ public class US19_API_StaffStepDef extends Authentication{
     public void admin_set_get_request_for_staff_and_response() {
 
         response = given().headers(
-                "Authorization","Bearer "+generateToken(),
+                "Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
                         "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).when().
                 get(ConfigReader.getProperty("staff_endpoint"));
         //        response.prettyPrint();

@@ -43,8 +43,9 @@ public class US04_UserLogInStepDefs {
 
     @Given("user enters {string} username and {string} password")
     public void user_enters_username_and_password(String username, String password) {
-        userLogin.username.sendKeys(username);
-        userLogin.password.sendKeys(password);
+        userLogin.username.sendKeys("team87inci");
+        userLogin.password.sendKeys("1Finci.");
+
     }
 
     @Given("user verifies remember me check box is clickable")
@@ -152,6 +153,9 @@ public class US04_UserLogInStepDefs {
         Thread.sleep(1000);
         Assert.assertTrue(userLogin.authenticationToaster.isDisplayed());
     }
+
+
+
 
 
 }
