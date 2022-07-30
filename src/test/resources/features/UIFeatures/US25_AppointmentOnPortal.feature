@@ -1,4 +1,5 @@
 @team87 @US25
+@team87-2
 Feature: US25_AppointmentOnPortal
 
   Background: open medunna page

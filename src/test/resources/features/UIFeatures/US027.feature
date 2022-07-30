@@ -1,4 +1,5 @@
 @US027
+@team87-2
 Feature: US027 Admin should be able to go to messages portal and view all messages, their authors and emails
 
   @US027_TC001
@@ -13,6 +14,7 @@ Feature: US027 Admin should be able to go to messages portal and view all messag
     Given FK Admin clicks on messages button
     Then FK Admin verifies the messages page is displayed
     Then FK Admin verifies all names, emails and messages are displayed
+    And User closes the browser
 
   @US027_TC002
   Scenario Outline: Admin should be able to create messages
@@ -33,6 +35,7 @@ Feature: US027 Admin should be able to go to messages portal and view all messag
     And FK Admin enters message "<Message>" into message text box
     And FK Admin clicks on save button in create or edit a message page
     Then FK Admin verifies successfully created message is displayed
+    And User closes the browser
 
     Examples:
       | Name          | Email                  | Subject       | Message               |
@@ -57,7 +60,7 @@ Feature: US027 Admin should be able to go to messages portal and view all messag
     And FK Admin updates the message "<Message>" into message text box
     And FK Admin clicks on save button in create or edit a message page
     Then FK Admin verifies successfully updated message is displayed
-
+    And User closes the browser
 
     Examples:
       | Name         | Email                 | Subject       | Message               |
@@ -78,6 +81,7 @@ Feature: US027 Admin should be able to go to messages portal and view all messag
     Then FK Admin verifies the delete confirmation toast container is displayed
     And FK Admin clicks the delete button in the toast container
     Then FK Admin verifies successfully deleted message is displayed
+    And User closes the browser
 
   @US027_TC005 @Api
   Scenario: Admin should validate creating messages using API
@@ -88,6 +92,7 @@ Feature: US027 Admin should be able to go to messages portal and view all messag
     Then FK Admin save all aappii information for message
     Then FK Admin verify aappii records for message
 
+
   @US027_TC006 @Db
   Scenario:Admin should validate messages with DB
     Given FK Admin connects to the database
@@ -95,3 +100,4 @@ Feature: US027 Admin should be able to go to messages portal and view all messag
     And FK Admin reads all of the "message" column data from "cmessage" table
     And FK Admin reads all of the "select * from cmessage" and "id" and "name" and "email" and "subject" and "message" column data
     Then FK Admin verifies the creation is successfull using DB
+

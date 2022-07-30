@@ -1,4 +1,4 @@
-  @US19 @team87
+  @US19 @team87-2
   Feature:US19 Create new Staff-Update existing Staff-View and Delete the Staff-Validate with API and DB
     Scenario Outline: TC0001 Admin can search new Staff among registered people using their SSN
       Given Admin is on the login page

@@ -1,4 +1,4 @@
-@team87
+ @team87
 @US09DB
 Feature: US09_DB Validations
   @US09DB_TC11

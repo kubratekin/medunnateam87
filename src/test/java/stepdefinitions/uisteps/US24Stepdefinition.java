@@ -29,18 +29,22 @@ public class US24Stepdefinition {
     }
     @Then("Patient clicks on My Appointments")
     public void patient_clicks_on_my_appointments() {
-        us24Page.myAppointments.click();
+        Driver.wait(2);
+        Driver.waitAndClick(us24Page.myAppointments,2);
     }
     @Then("Patient clicks on one of the Show Tests")
     public void patient_clicks_on_one_of_the_show_tests() {
-        us24Page.showTests.click();
+        Driver.wait(2);
+        Driver.waitAndClick(us24Page.showTests,2);
     }
     @Then("Patient clicks on one of the View Results")
     public void patient_clicks_on_one_of_the_view_results() {
-        us24Page.viewResults.click();
+        Driver.wait(2);
+        Driver.waitAndClick(us24Page.viewResults,2);
     }
     @Then("Patient verifies test results header is displayed")
     public void patient_verifies_test_results_header_is_displayed() {
+        Driver.wait(1);
         List<String> expectedHeaderList = Arrays.asList("ID", "Name", "Result", "Default Min. Value", "Default Max. Value","Test","Description","Date","");
         List<String> actualHeaderList= new ArrayList<>();
         for (WebElement w: us24Page.testHeader){
@@ -60,7 +64,8 @@ public class US24Stepdefinition {
     }
     @Then("Patient clicks on one of the Show Invoice")
     public void patient_clicks_on_one_of_the_show_invoice() {
-        us24Page.showInvoice.click();
+        Driver.wait(1);
+        Driver.waitAndClick(us24Page.showInvoice,2);
     }
     @Then("Patient verifies Invoice header is displayed")
     public void patient_verifies_invoice_header_is_displayed() {

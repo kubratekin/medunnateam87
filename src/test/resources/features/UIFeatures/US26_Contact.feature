@@ -1,4 +1,4 @@
-@US26_Contact @team87
+@US26_Contact @team87-2
 Feature: Test Registrant data
 
   Background:
