@@ -25,27 +25,27 @@ public class US_027_AdminPagesStepDefs {
 
     @Given("FK Admin clicks on human icon")
     public void fk_admin_clicks_on_human_icon() {
-        kfp.accountmenu.click();
+        Driver.waitAndClick(kfp.accountmenu,2);
         Driver.wait(2);
     }
 
     @Given("FK Admin clicks on sign in button under human icon at homepage")
     public void fk_admin_clicks_on_sign_in_button_under_human_icon_at_homepage() {
-        kfp.homePageSignIn.click();
+        Driver.waitAndClick(kfp.homePageSignIn,2);
         Driver.wait(2);
 
     }
 
     @Given("FK Admin sends username {string} and password {string} in sign in page")
     public void fk_admin_sends_username_and_password_in_sign_in_page(String username, String password) {
-        Driver.waitAndSendText(kfp.adminnUserName, username);
-        Driver.waitAndSendText(kfp.adminnPassword, password);
+        Driver.waitAndSendText(kfp.adminnUserName, username,2);
+        Driver.waitAndSendText(kfp.adminnPassword, password,2);
 
     }
 
     @Given("FK Admin clicks on sign in button in sign in page")
     public void fk_admin_clicks_on_sign_in_button_in_sign_in_page() {
-        kfp.adminnSignInButton.click();
+        Driver.waitAndClick(kfp.adminnSignInButton,2);
         Driver.wait(2);
 
     }
@@ -58,13 +58,13 @@ public class US_027_AdminPagesStepDefs {
 
     @Then("FK Admin clicks on items and titles dropdown")
     public void fk_admin_clicks_on_items_and_titles_dropdown() {
-        kfp.adminPageItemsAndTitlesDropDown.click();
+        Driver.waitAndClick(kfp.adminPageItemsAndTitlesDropDown,2);
         Driver.wait(2);
     }
 
     @Given("FK Admin clicks on messages button")
     public void fk_admin_clicks_on_messages_button() {
-        kfp.adminItemsAndTitlesDropdownMessagesButton.click();
+        Driver.waitAndClick(kfp.adminItemsAndTitlesDropdownMessagesButton,2);
         Driver.wait(2);
     }
 

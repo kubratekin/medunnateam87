@@ -15,7 +15,7 @@ public class US23_PaymentInvoiceByStaffStepDefs {
 
     @Given("Staff goes to medunna.com")
     public void staff_goes_to_https_medunna_com() {
-        Driver.getDriver().get(ConfigReader.getProperty("app_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("medunnaUrl"));
     }
     @When("Staff click Sign in Link")
     public void staff_click_sign_in_link() {
@@ -48,7 +48,7 @@ public class US23_PaymentInvoiceByStaffStepDefs {
     @When("Search patient with SSN {string}")
     public void search_patient_with_ssn(String ssn) {
         Driver.wait(1);
-        Driver.waitAndSendText(paymentInvoiceByStaffPage.ssnSerchBox,ssn);
+        Driver.waitAndSendText(paymentInvoiceByStaffPage.ssnSerchBox,ssn,2);
         Driver.wait(1);
     }
     @When("Clicks Show Appointments button")
@@ -70,6 +70,7 @@ public class US23_PaymentInvoiceByStaffStepDefs {
     }
     @Then("Verify PAYMENT DETAIL title")
     public void verify_payment_detail_title() {
+        Driver.wait(2);
         Assert.assertTrue(paymentInvoiceByStaffPage.paymentDetailTitle.isDisplayed());
     }
     @And("Close the browser")
@@ -93,7 +94,7 @@ public class US23_PaymentInvoiceByStaffStepDefs {
     @Then("Verify the status as cancelled")
     public void verify_the_status_as_cancelled() {
         System.out.println(paymentInvoiceByStaffPage.appointmentsStatus.getText());
-        Assert.assertEquals(paymentInvoiceByStaffPage.appointmentsStatus.getText(),"CANCELLED");
+        Assert.assertEquals("CANCELLED",paymentInvoiceByStaffPage.appointmentsStatus.getText());
     }
 
 //---------------TC04-------------------

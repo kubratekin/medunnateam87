@@ -1,6 +1,8 @@
-package stepdefinitions.uisteps;
 
-import io.cucumber.java.en.And;
+
+   /*
+   package stepdefinitions.uisteps;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,11 +18,8 @@ import utilities.ReusableMethods;
 
 import java.io.IOException;
 
-
 public class US14_StepDefs {
-
-
-    WebDriver driver;
+WebDriver driver;
     CommonPageElement cp = new CommonPageElement();
     LoginPage login = new LoginPage();
     US14_Page us14Page = new US14_Page();
@@ -34,7 +33,7 @@ public class US14_StepDefs {
     @When("navigates the Sign in page")
     public void navigates_the_sign_in_page() {
 
-        Driver.waitAndClick(cp.signInAndRegistrationPortal,1);
+        Driver.waitAndClick(cp.signInAndRegistrationPortal);
         cp.signIn.click();
     }
 
@@ -73,10 +72,10 @@ public class US14_StepDefs {
         Driver.closeDriver();
     }
 
-    @And("doctor click on Edit button on a {string}")
-    public void doctor_click_on_edit_button_on_a(String inpatient) {
+    @When("doctor clicks on Edit button on a {string}")
+    public void doctor_clicks_on_edit_button_on_a(String inpatient) {
 
-        Driver.waitAndClick(us14Page.editButton, 1);
+        Driver.waitAndClick(us14Page.editButton);
     }
 
 
@@ -84,7 +83,7 @@ public class US14_StepDefs {
     public void doctor_updates_the_description_field_as(String description) throws IOException {
 
         us14Page.description.clear();
-        Driver.waitAndSendText(us14Page.description,"The patient has asthma",1);
+        Driver.waitAndSendText(us14Page.description,"The patient has asthma");
         Driver.clickWithJS(us14Page.saveButton);
         ReusableMethods.waitFor(2);
         ReusableMethods.getScreenshot("Description Info");
@@ -100,7 +99,7 @@ public class US14_StepDefs {
     @When("doctor updates the Created Date field as {string}")
     public void doctor_updates_the_created_date_field_as(String createdDate) throws IOException {
 
-        Driver.waitAndSendText(us14Page.createdDate, "20/07/2022",1);
+        Driver.waitAndSendText(us14Page.createdDate, "08/06/2022");
         ReusableMethods.waitFor(2);
         Driver.clickWithJS(us14Page.saveButton);
         ReusableMethods.waitFor(2);
@@ -115,14 +114,13 @@ public class US14_StepDefs {
     }
 
     @When("doctor updates the Status field as {string}")
-    public void doctor_updates_the_status_field_as(String status) throws IOException {
+    public void doctor_updates_the_status_field_as(String status) {
 
         Driver.scrollIntoViewJS(us14Page.status);
         Driver.selectByVisibleText(us14Page.status, "UNAPPROVED");
         ReusableMethods.waitFor(1);
         Driver.clickWithJS(us14Page.saveButton);
         ReusableMethods.waitFor(1);
-        ReusableMethods.getScreenshot("Does the status update from STAYING to UNAPPROVED?");
 
     }
 
@@ -132,64 +130,16 @@ public class US14_StepDefs {
         Assert.assertTrue(us14Page.failureMessage.isDisplayed());
     }
 
-    @When("doctor clicks on Edit button")
-    public void doctor_clicks_on_edit_button_of_an_inpatient() {
-
-        Driver.waitAndClick(us14Page.editButton2,1);
-    }
-
-    @When("doctor updates status of the inpatient as UNAPPROVED")
-    public void doctor_updates_status_of_the_inpatient_as_unapproved() throws IOException {
-
-        Driver.scrollIntoViewJS(us14Page.status);
-        Driver.selectByVisibleText(us14Page.status, "UNAPPROVED");
-        ReusableMethods.waitFor(1);
-        Driver.clickWithJS(us14Page.saveButton);
-        ReusableMethods.waitFor(2);
-        ReusableMethods.getScreenshot("Can the status update as UNAPPROVED by the doctor?");
-    }
-
-
-    @Then("doctor verifies Status field is updatable of the inpatient")
-    public void doctor_verifies_status_field_is_updatable_of_the_inpatient() {
-
-        Assert.assertTrue(us14Page.failureMessage.isDisplayed());
-    }
-
-    @When("doctor updates status of the inpatient as STAYING")
-    public void doctor_updates_status_of_the_inpatient_as_staying() throws IOException {
-
-        Driver.scrollIntoViewJS(us14Page.status);
-        Driver.selectByVisibleText(us14Page.status, "STAYING");
-        ReusableMethods.waitFor(1);
-        Driver.clickWithJS(us14Page.saveButton);
-        ReusableMethods.waitFor(2);
-        ReusableMethods.getScreenshot("Can the status update as STAYING by the doctor?");
-    }
-
-
-    @When("doctor updates status of the inpatient as CANCELLED")
-    public void doctor_updates_status_of_the_inpatient_as_cancelled() throws IOException {
-
-        Driver.scrollIntoViewJS(us14Page.status);
-        Driver.selectByVisibleText(us14Page.status, "CANCELLED");
-        ReusableMethods.waitFor(1);
-        Driver.clickWithJS(us14Page.saveButton);
-        ReusableMethods.waitFor(1);
-        ReusableMethods.getScreenshot("Can the status update as CANCELLED by the doctor?");
-    }
-
-
-    @And("doctor clicks on Edit button on a {string}")
+    @When("doctor clicks on Edit button on a {string}")
     public void doctor_clicks_on_edit_button_on_a_inpatient(String inpatient) {
 
-        Driver.waitAndClick(us14Page.editButton,1);
+        Driver.waitAndClick(us14Page.editButton);
     }
 
     @When("doctor selects a room that is available")
     public void doctor_selects_a_room_that_is_available() throws IOException {
 
-        Driver.waitAndSendText(us14Page.room,"160:TWIN",1);
+        Driver.waitAndSendText(us14Page.room,"421:TWIN");
         ReusableMethods.waitFor(1);
         Driver.clickWithJS(us14Page.saveButton);
         ReusableMethods.waitFor(1);
@@ -201,3 +151,5 @@ public class US14_StepDefs {
         Assert.assertTrue(us14Page.successMsgAlert.isDisplayed());
     }
 }
+
+    */

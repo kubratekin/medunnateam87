@@ -105,22 +105,22 @@ public class US09_API_StepDefs extends Authentication{
     }
 
 
+//    @When("User creates new patient using Post request firstname {string} lastname {string} email {string} ssn {string}")
+//    public void userCreatesNewPatientUsingPostRequestFirstnameLastnameEmailSsn(String firstname, String lastname, String email, String ssn) throws IOException {
+//        user= new US09_UserPojo(firstname,lastname,"team87apiPatient",ssn);
+//        patient= new US09_PatientsPojo(firstname,lastname,"1234567890",email);
+//        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
+//                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
+//                contentType(ContentType.JSON).body(patient).when().post(ConfigReader.getProperty("patient_endpoint"));
+//        response.prettyPrint();
+//        response.then().assertThat().statusCode(201);
+//    }
+
    /*
 
     @Given("User sets the path params to create and update patient info")
     public void userSetsThePathParamsToCreateAndUpdatePatientInfo() {
         spec.pathParams("first","api","second","patients");
-    }
-
-    @When("User creates new patient using Post request firstname {string} lastname {string} email {string} ssn {string}")
-    public void userCreatesNewPatientUsingPostRequestFirstnameLastnameEmailSsn(String firstname, String lastname, String email, String ssn) throws IOException {
-        user= new US09_UserPojo(firstname,lastname,"team87apiPatient",ssn);
-        patient= new US09_PatientsPojo(firstname,lastname,"1234567890",email);
-        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
-                        "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).
-                contentType(ContentType.JSON).body(patient).when().post(ConfigReader.getProperty("patient_endpoint"));
-        response.prettyPrint();
-        response.then().assertThat().statusCode(201);
     }
 
     @Given("User sends Put request to update patient info firstname {string} lastname {string} email {string} ssn {string}")
@@ -133,15 +133,17 @@ public class US09_API_StepDefs extends Authentication{
         response.then().assertThat().statusCode(200);
     }
 
-    @Then("User sends delete request and verifies that patient id {string} has been deleted.")
-    public void user_sends_delete_request_and_verifies_that_patient_id_has_been_deleted(String id) {
-        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
-                "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).contentType(ContentType.JSON)
-                .when().delete(ConfigReader.getProperty("api_patients_id_endpoint")+id);
-        response.then().assertThat().statusCode(200);
-
-    }
-
     */
+
+//    @Then("User sends delete request and verifies that patient id {string} has been deleted.")
+//    public void user_sends_delete_request_and_verifies_that_patient_id_has_been_deleted(String id) {
+//        response = given().headers("Authorization","Bearer "+generateToken(ConfigReader.getProperty("Admin_username"), ConfigReader.getProperty("Admin_pass")),
+//                "Content-Type", ContentType.JSON,"Accept",ContentType.JSON).contentType(ContentType.JSON)
+//                .when().delete(ConfigReader.getProperty("api_patients_id_endpoint"));
+//        response.then().assertThat().statusCode(200);
+//
+//    }
+
+
 
 }

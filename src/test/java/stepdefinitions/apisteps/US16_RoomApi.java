@@ -25,7 +25,7 @@ import static utilities.WriteToTxt.saveRoomData;
 
 public class US16_RoomApi {
 
-    US16_Pages us16Pages = new US16_Pages();
+    //US16_Pages us16Pages = new US16_Pages();
     Faker faker = new Faker();
     US16_Room room;
     Response response;

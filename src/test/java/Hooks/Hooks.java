@@ -44,10 +44,10 @@ public class Hooks {
         DBUtils.createConnection();
     }
 
-    @Before(order = 1, value = "@UIRegistration")
-    public void navigateToRegistration(){
-        Driver.getDriver().get(ConfigReader.getProperty("medunnaRegistration"));
-    }
+//    @Before(order = 1, value = "@UIRegistration")
+//    public void navigateToRegistration(){
+//        Driver.getDriver().get(ConfigReader.getProperty("medunnaRegistration"));
+//    }
 
 
     @After(value="~Api")

@@ -1,4 +1,4 @@
-package stepdefinitions.uisteps;
+/*package stepdefinitions.uisteps;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
@@ -70,7 +70,7 @@ public class US01_RegistrationSteps {
         registrationPage.newPasswordTextbox.sendKeys(password+ Keys.ENTER);
         Assert.assertTrue(registrationPage.registrationSavedAlert.isDisplayed());
     }
-*/
+
    //TC02
     @When("User enters an {string} with sign after 3rd and 5th digits")
     public void user_enters_an_with_sign_after_3rd_and_5th_digits(String invalidSSN) {
@@ -154,3 +154,4 @@ public class US01_RegistrationSteps {
 
 
 }
+*/
